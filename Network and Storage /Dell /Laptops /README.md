@@ -1,4 +1,4 @@
-# Dell Laptop and Storage Drivers
+# OSDCloud Dell Laptop and Storage Drivers
 
 # - Alienware models
 # - XPS models
