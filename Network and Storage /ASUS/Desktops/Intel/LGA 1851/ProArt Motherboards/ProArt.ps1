@@ -10,7 +10,10 @@ $GHURL = "https://github.com/osdcloudcline/OSDCloudDrivers"
 ####################################################################################
 
 $ProArtEthernetURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201851/CSM%20MProArtboards/Ethernet%20and%20WiFi/RealtekLANDrivers.zip"
-$ProArtWiFiURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201851/CSM%20MProArtboards/Ethernet%20and%20WiFi/MediaTek-WiFiDrivers.zip"
+$ProArtWiFi1URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201851/CSM%20MProArtboards/Ethernet%20and%20WiFi/MediaTek-WiFiDrivers.zip"
+$ProArtWiFi2URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201851/CSM%20MProArtboards/Ethernet%20and%20WiFi/MediaTek-WiFiDrivers.zip"
+$ProArtWiFi3URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201851/CSM%20MProArtboards/Ethernet%20and%20WiFi/MediaTek-WiFiDrivers.zip"
+$ProArtWiFi4URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201851/CSM%20MProArtboards/Ethernet%20and%20WiFi/MediaTek-WiFiDrivers.zip"
 $ProArtStorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201851/CSM%20MProArtboards/Storage/IRST-StorageDrivers.zip"
 
 
