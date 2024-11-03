@@ -28,3 +28,5 @@ Import-Module -Name OSD -Force
 ## ASUS LGA 1851 - Business Motherboard URLs
 ############################################################################################################
 
+$BusinessLANURL = ""
+$BusinessWiFiURL = ""
