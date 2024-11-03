@@ -9,7 +9,7 @@ $GHURL = "https://github.com/osdcloudcline/OSDCloudDrivers"
 #                   LGA 1851 Ethernet, WiFi and Storage Driver URLs
 ####################################################################################
 
-$OtherEthernetURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201851/CSM%20Motherboards/Ethernet%20and%20WiFi/RealtekLANDrivers.zip"
+$OtherEthernetURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201851/Other%20Motherboards/Ethernet%20and%20WiFi/RealTek-LANDrivers.zip"
 $OtherWiFiURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201851/CSM%20Motherboards/Ethernet%20and%20WiFi/MediaTek-WiFiDrivers.zip"
 $OtherStorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201851/CSM%20Motherboards/Storage/IRST-StorageDrivers.zip"
 
