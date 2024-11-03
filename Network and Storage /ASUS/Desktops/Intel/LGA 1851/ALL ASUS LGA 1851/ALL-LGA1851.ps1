@@ -41,7 +41,7 @@ Get-LGA1851Storage
 Write-Verbose "Processing: ASUS LGA 1851 Other Motherboards" -Verbose
 Write-Host
 
-$OtherLGA1851 = Invoke-WebReques("")
+$OtherLGA1851 = Invoke-WebReques("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201851/Other%20Motherboards/Other.ps1")
 Invoke-Expression $($OtherLGA1851.Content)
 
 Get-LGA1851Storage
