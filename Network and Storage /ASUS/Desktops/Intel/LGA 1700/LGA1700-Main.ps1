@@ -157,7 +157,7 @@ do
     Invoke-Expression $($Workstation.Content)
     }
 '10'{cls
-    $ALL1700 = Invoke-WebRequest("")
+    $ALL1700 = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201700/ALL%20LGA%201700/ALL-LGA1700.ps1")
     Invoke-Expression $($ALL1700.Content)
     }
 '11'{cls
