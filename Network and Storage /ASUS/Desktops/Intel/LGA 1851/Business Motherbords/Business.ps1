@@ -28,7 +28,7 @@ $BusinessEthernet = "$BusinessDestination\Ethernet"
 $BusinessWiFi = "$BusinessDestination\WiFi"
 $BusinessStorage = "$BusinessDestination\Storage"
 
-Import-Module -Name OSD -Force -AllowClobber -SkipPublisherCheck
+Import-Module -Name OSD -Force 
 
 Write-Verbose "Acquiring ASUS LGA 1851 Business Motherboard Ethernet Drivers from $GHURL" -Verbose
 
