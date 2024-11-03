@@ -149,7 +149,7 @@ do
     Invoke-Expression $($TUFGaming.Content)
     }
 '8'{cls
-    $Expedition = Invoke-WebRequest("")
+    $Expedition = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201700/Expedition%20Motherboards/Expedition.ps1")
     Invoke-Expression $($Expedition.Content)
     }
 '9'{cls
