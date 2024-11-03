@@ -86,7 +86,7 @@ Write-Host
 Write-Host '                                                                              ' -BackgroundColor White                                                              
 Write-Host '            This OSDCloud section allows the user to perform:                 ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '     - Creating ISO images for Desktop motherboards                           ' -ForegroundColor DarkBlue -BackgroundColor White
-Write-Host '       LGA 1851 model lines:                                                  ' -ForegroundColor DarkBlue -BackgroundColor White
+Write-Host '       LGA 1700 model lines:                                                  ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '     - ASUS: Intel LGA 1700 Business motherboards                             ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '     - ASUS: Intel LGA 1700 CSM motherboards                                  ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '     - ASUS: Intel LGA 1700 Other motherboards                                ' -ForegroundColor DarkBlue -BackgroundColor White
@@ -95,6 +95,7 @@ Write-Host '     - ASUS: Intel LGA 1700 ProArt motherboards                     
 Write-Host '     - ASUS: Intel LGA 1700 ROG - Republic of Gamers motherboards             ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '     - ASUS: Intel LGA 1700 TUF Gaming motherboards                           ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '     - ASUS: Intel LGA 1700 Expedition motherboards                           ' -ForegroundColor DarkBlue -BackgroundColor White
+Write-Host '     - ASUS: Intel LGA 1700 Workstation motherboards                           ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '     - ASUS: ALL Intel LGA 1700 motherboards                                  ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '                                                                              ' -BackgroundColor White
 pause
@@ -109,9 +110,10 @@ Write-Host " 5. OSDCloud: Create ISO - LGA 1700 ProArt motherboards"
 Write-Host " 6. OSDCloud: Create ISO - LGA 1700 ROG - Republic of Gamers motherboards"
 Write-Host " 7. OSDCloud: Create ISO - LGA 1700 TUF Gaming motherboards"
 Write-Host " 8. OSDCloud: Create ISO - LGA 1700 Expedition motherboards"
-Write-Host " 9. OSDCloud: Create ISO - ALL LGA 1700 motherboards"
-Write-Host " 10. OSDCloud: Get Help"
-Write-Host " 11. Return to Main Menu"
+Write-Host " 9. OSDCloud: Create ISO - LGA 1700 Workstation motherboards"
+Write-Host " 10. OSDCloud: Create ISO - ALL LGA 1700 motherboards"
+Write-Host " 11. OSDCloud: Get Help"
+Write-Host " 12. Return to Main Menu"
 
 do 
 {
@@ -147,26 +149,30 @@ do
     Invoke-Expression $($TUFGaming.Content)
     }
 '8'{cls
-    $TUFGaming = Invoke-WebRequest("")
-    Invoke-Expression $($TUFGaming.Content)
+    $Expedition = Invoke-WebRequest("")
+    Invoke-Expression $($Expedition.Content)
     }
 '9'{cls
+    $Workstation = Invoke-WebRequest("")
+    Invoke-Expression $($Workstation.Content)
+    }
+'10'{cls
     $ALL1700 = Invoke-WebRequest("")
     Invoke-Expression $($ALL1700.Content)
     }
-'10'{cls
+'11'{cls
     Get-Command -Module OSD | Out-File -FilePath "C:\OSDCloud\Help\Commands\OSD\OSDFunctions.txt"
     Start-Process -FilePath "C:\OSDCloud\Help\Commands\OSD\OSDFunctions.txt"
     pause
     Show-MainMenu
     }
-'11'{cls
+'12'{cls
     $OSDCloudMain = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloud/raw/refs/heads/main/Scripts/NEW-OSDCloudMain.ps1")
     Invoke-Expression $($OSDCloudMain.Content)
    }
     }
     }
-     until ($selection -eq '10'){Invoke-Expression $($OSDCloudMain.Content)}
+     until ($selection -eq '12'){Invoke-Expression $($OSDCloudMain.Content)}
     }
 
     
