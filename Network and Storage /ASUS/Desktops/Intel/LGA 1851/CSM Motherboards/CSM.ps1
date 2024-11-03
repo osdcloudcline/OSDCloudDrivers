@@ -18,7 +18,7 @@ $CSMStorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/head
 #             LGA 1851 Ethernet, WiFi and Storage Driver Download Destination
 ####################################################################################
 
-$CSMDestination = "C:\OSDCloud\Drivers\Motherboards\ASUS\LGA1851\Business"
+$CSMDestination = "C:\OSDCloud\Drivers\Motherboards\ASUS\LGA1851\CSM"
 
 ####################################################################################
 #             LGA 1851 Ethernet, WiFi and Storage Driver Extraction Destination
