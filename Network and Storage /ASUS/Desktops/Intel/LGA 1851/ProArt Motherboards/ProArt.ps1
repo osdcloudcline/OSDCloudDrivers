@@ -9,7 +9,7 @@ $GHURL = "https://github.com/osdcloudcline/OSDCloudDrivers"
 #                   LGA 1851 Ethernet, WiFi and Storage Driver URLs
 ####################################################################################
 
-$ProArtEthernetURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201851/CSM%20MProArtboards/Ethernet%20and%20WiFi/RealtekLANDrivers.zip"
+$ProArtEthernetURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201851/ProArt%20Motherboards/Ethernet%20and%20WiFi/Marvell-LANDriver.zip"
 $ProArtWiFi1URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201851/CSM%20MProArtboards/Ethernet%20and%20WiFi/MediaTek-WiFiDrivers.zip"
 $ProArtWiFi2URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201851/CSM%20MProArtboards/Ethernet%20and%20WiFi/MediaTek-WiFiDrivers.zip"
 $ProArtWiFi3URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201851/CSM%20MProArtboards/Ethernet%20and%20WiFi/MediaTek-WiFiDrivers.zip"
