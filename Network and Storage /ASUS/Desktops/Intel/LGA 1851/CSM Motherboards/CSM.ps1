@@ -11,7 +11,7 @@ $GHURL = "https://github.com/osdcloudcline/OSDCloudDrivers"
 
 $CSMEthernetURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201851/CSM%20Motherboards/Ethernet%20and%20WiFi/RealtekLANDrivers.zip"
 $CSMWiFiURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201851/CSM%20Motherboards/Ethernet%20and%20WiFi/MediaTek-WiFiDrivers.zip"
-$CSMStorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201851/Business%20Motherbords/Storage/IRSTDrivers.zip"
+$CSMStorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201851/CSM%20Motherboards/Storage/IRST-StorageDrivers.zip"
 
 
 ####################################################################################
@@ -44,7 +44,7 @@ Write-Verbose "Processing: ZIP File extraction" -Verbose
 
 Expand-7Zip -ArchiveFileName "$CSMDestination\Realtek-LANDriver.zip" -TargetPath $CSMEthernet  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$CSMDestination\MediaTekWiFiDrivers.zip" -TargetPath $CSMWiFi  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$CSMDestination\IRSTDrivers.zip" -TargetPath $CSMStorage  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$CSMDestination\IRST-StorageDrivers.zi" -TargetPath $CSMStorage  -ErrorAction SilentlyContinue 
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
 
