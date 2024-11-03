@@ -46,9 +46,9 @@ Write-Verbose "ASUS LGA 1851 Business Motherboard Drivers downloaded" -Verbose
 
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 
-Expand-Archive -Path "$BusinessDestination\Realtek-LANDriver.zip" -DestinationPath $BusinessEthernet -Force -ErrorAction SilentlyContinue 
-Expand-Archive -Path "$BusinessDestination\MediaTekWiFiDrivers.zip" -DestinationPath $BusinessWiFi -Force -ErrorAction SilentlyContinue 
-Expand-Archive -Path "$BusinessDestination\IRSTDrivers.zip" -DestinationPath $BusinessStorage -Force -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$BusinessDestination\Realtek-LANDriver.zip" -TargetPath $BusinessEthernet  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$BusinessDestination\MediaTekWiFiDrivers.zip" -TargetPath $BusinessWiFi  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$BusinessDestination\IRSTDrivers.zip" -TargetPath $BusinessStorage  -ErrorAction SilentlyContinue 
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
 
