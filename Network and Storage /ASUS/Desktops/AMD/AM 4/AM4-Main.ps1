@@ -94,7 +94,7 @@ Write-Host '     - ASUS: AMD AM4 PRIME motherboards                             
 Write-Host '     - ASUS: AMD AM4 ProArt motherboards                                      ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '     - ASUS: AMD AM4 ROG - Republic of Gamers motherboards                    ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '     - ASUS: AMD AM4 TUF Gaming motherboards                                  ' -ForegroundColor DarkBlue -BackgroundColor White
-Write-Host '     - ASUS: AMD AM4 Expedition motherboards                                  ' -ForegroundColor DarkBlue -BackgroundColor White
+Write-Host '     - ASUS: AMD AM4 Workstation motherboards                                  ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '     - ASUS: ALL AMD AM4 motherboards                                         ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '                                                                              ' -BackgroundColor White
 pause
@@ -108,7 +108,7 @@ Write-Host " 4. OSDCloud: Create ISO - AMD AM4 PRIME motherboards"
 Write-Host " 5. OSDCloud: Create ISO - AMD AM4 ProArt motherboards"
 Write-Host " 6. OSDCloud: Create ISO - AMD AM4 ROG - Republic of Gamers motherboards"
 Write-Host " 7. OSDCloud: Create ISO - AMD AM4 TUF Gaming motherboards"
-Write-Host " 8. OSDCloud: Create ISO - AMD AM4 Expedition motherboards"
+Write-Host " 8. OSDCloud: Create ISO - AMD AM4 Workstation motherboards"
 Write-Host " 9. OSDCloud: Create ISO - ALL AMD AM4 motherboards"
 Write-Host " 10. OSDCloud: Get Help"
 Write-Host " 11. Return to Main Menu"
@@ -147,8 +147,8 @@ do
     Invoke-Expression $($TUFGaming.Content)
     }
 '8'{cls
-    $TUFGaming = Invoke-WebRequest("")
-    Invoke-Expression $($TUFGaming.Content)
+    $Workstation = Invoke-WebRequest("")
+    Invoke-Expression $($Workstation.Content)
     }
 '9'{cls
     $ALLAM4 = Invoke-WebRequest("")
