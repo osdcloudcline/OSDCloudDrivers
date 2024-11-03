@@ -49,7 +49,7 @@ Get-LGA1851Storage
 Write-Verbose "Processing: ASUS LGA 1851 PRIME Motherboards" -Verbose
 Write-Host
 
-$PRIMELGA1851 = Invoke-WebReques("")
+$PRIMELGA1851 = Invoke-WebReques("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201851/PRIME%20Motherboards/PRIME.ps1")
 Invoke-Expression $($PRIMELGA1851.Content)
 
 Get-LGA1851Storage
