@@ -133,7 +133,7 @@ do
     Invoke-Expression $($Other.Content)
     }
 '4'{cls
-    $PRIME = Invoke-WebRequest("")
+    $PRIME = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201700/PRIME%20Motherboards/PRIME.ps1")
     Invoke-Expression $($PRIME.Content)
     }
 '5'{cls
