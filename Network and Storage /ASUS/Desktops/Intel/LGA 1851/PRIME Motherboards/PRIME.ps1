@@ -30,21 +30,21 @@ $PRIMEStorage = "$PRIMEDestination\Storage"
 
 Import-Module -Name OSD -Force 
 
-Write-Verbose "Acquiring ASUS LGA 1851 PRIME MPRIMEboard Ethernet Drivers from $GHURL" -Verbose
+Write-Verbose "Acquiring ASUS LGA 1851 PRIME Motherboard Ethernet Drivers from $GHURL" -Verbose
 
 Save-WebFile -SourceUrl $PRIMEEthernetURL -DestinationDirectory $PRIMEDestination
 
-Write-Verbose "Acquiring ASUS LGA 1851 PRIME MPRIMEboard WiFi Drivers from $GHURL" -Verbose
+Write-Verbose "Acquiring ASUS LGA 1851 PRIME Motherboard WiFi Drivers from $GHURL" -Verbose
 
 Save-WebFile -SourceUrl $PRIMEWiFiURL -DestinationDirectory $PRIMEDestination
 
-Write-Verbose "ASUS LGA 1851 PRIME MPRIMEboard Drivers downloaded" -Verbose
+Write-Verbose "ASUS LGA 1851 PRIME Motherboard Drivers downloaded" -Verbose
 
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 
 Expand-7Zip -ArchiveFileName "$PRIMEDestination\Realtek-LANDriver.zip" -TargetPath $PRIMEEthernet  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$PRIMEDestination\MediaTekWiFiDrivers.zip" -TargetPath $PRIMEWiFi  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PRIMEDestination\IRST-StorageDrivers.zi" -TargetPath $PRIMEStorage  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$PRIMEDestination\IRST-StorageDrivers.zip" -TargetPath $PRIMEStorage  -ErrorAction SilentlyContinue 
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
 
