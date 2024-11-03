@@ -4,5 +4,5 @@ Start-Transcript
 
 Get-Date
 
-$BusinessLGA1851 = Invoke-WebRequest("")
+$BusinessLGA1851 = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201851/Business%20Motherbords/Business.ps1")
 Invoke-Expression $($BusinessLGA1851.Content)
