@@ -6,27 +6,27 @@ Get-Date
 $GHURL = "https://github.com/osdcloudcline/OSDCloudDrivers"
 
 ####################################################################################
-#                   LGA 1851 Ethernet and WiFi Driver URLs
+#                   LGA 1851 Ethernet, WiFi and Storage Driver URLs
 ####################################################################################
 
 $CSMEthernetURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201851/CSM%20Motherboards/Ethernet%20and%20WiFi/RealtekLANDrivers.zip"
 $CSMWiFiURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201851/CSM%20Motherboards/Ethernet%20and%20WiFi/MediaTek-WiFiDrivers.zip"
-
+$CSMStorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201851/Business%20Motherbords/Storage/IRSTDrivers.zip"
 
 
 ####################################################################################
-#             LGA 1851 Ethernet and WiFi Driver Download Destination
+#             LGA 1851 Ethernet, WiFi and Storage Driver Download Destination
 ####################################################################################
 
 $CSMDestination = "C:\OSDCloud\Drivers\Motherboards\ASUS\LGA1851\Business"
 
 ####################################################################################
-#             LGA 1851 Ethernet and WiFi Driver Extraction Destination
+#             LGA 1851 Ethernet, WiFi and Storage Driver Extraction Destination
 ####################################################################################
 
 $CSMEthernet = "$CSMDestination\Ethernet"
 $CSMWiFi = "$CSMDestination\WiFi"
-
+$CSMStorage = "$CSMDestination\Storage"
 
 Import-Module -Name OSD -Force 
 
@@ -44,7 +44,7 @@ Write-Verbose "Processing: ZIP File extraction" -Verbose
 
 Expand-7Zip -ArchiveFileName "$CSMDestination\Realtek-LANDriver.zip" -TargetPath $CSMEthernet  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$CSMDestination\MediaTekWiFiDrivers.zip" -TargetPath $CSMWiFi  -ErrorAction SilentlyContinue 
-
+Expand-7Zip -ArchiveFileName "$CSMDestination\IRSTDrivers.zip" -TargetPath $CSMStorage  -ErrorAction SilentlyContinue 
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
 
