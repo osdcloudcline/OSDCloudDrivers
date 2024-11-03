@@ -3,10 +3,53 @@ Start-Transcript
 
 Get-Date
 
+$GHURL = "https://github.com/osdcloudcline/OSDCloudDrivers"
+
 ####################################################################################
 #                   LGA 1851 Ethernet, WiFi and Storage Driver URLs
 ####################################################################################
 
-$BusinessEthernet = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201851/Business%20Motherbords/Ethernet%20and%20WiFi/Realtek-LANDriver.zip"
-$BusinessWiFi = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201851/Business%20Motherbords/Ethernet%20and%20WiFi/MediaTekWiFiDrivers.zip"
-$BusinessStorage = ""
+$BusinessEthernetURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201851/Business%20Motherbords/Ethernet%20and%20WiFi/Realtek-LANDriver.zip"
+$BusinessWiFiURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201851/Business%20Motherbords/Ethernet%20and%20WiFi/MediaTekWiFiDrivers.zip"
+$BusinessStorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201851/Business%20Motherbords/Storage/IRSTDrivers.zip"
+
+
+####################################################################################
+#             LGA 1851 Ethernet, WiFi and Storage Driver Download Destination
+####################################################################################
+
+$BusinessDestination = "C:\OSDCloud\Drivers\Motherboards\ASUS\LGA1851\Business"
+
+####################################################################################
+#             LGA 1851 Ethernet, WiFi and Storage Driver Extraction Destination
+####################################################################################
+
+$BusinessEthernet = "$BusinessDestination\Ethernet"
+$BusinessWiFi = "$BusinessDestination\WiFi"
+$BusinessStorage = "$BusinessDestination\Storage"
+
+Import-Module -Name OSD -Force -AllowClobber -SkipPublisherCheck
+
+Write-Verbose "Acquiring ASUS LGA 1851 Business Motherboard Ethernet Drivers from $GHURL" -Verbose
+
+Save-WebFile -SourceUrl $BusinessEthernetURL -DestinationDirectory $BusinessDestination
+
+Write-Verbose "Acquiring ASUS LGA 1851 Business Motherboard WiFi Drivers from $GHURL" -Verbose
+
+Save-WebFile -SourceUrl $BusinessWiFiURL -DestinationDirectory $BusinessDestination
+
+Write-Verbose "Acquiring ASUS LGA 1851 Business Motherboard Storage Drivers from $GHURL" -Verbose
+
+Save-WebFile -SourceUrl $BusinessStorageURL -DestinationDirectory $BusinessDestination
+
+Write-Verbose "ASUS LGA 1851 Business Motherboard Drivers downloaded" -Verbose
+
+Write-Verbose "Processing: ZIP File extraction" -Verbose
+
+Expand-Archive -Path "$BusinessDestination\Realtek-LANDriver.zip" -DestinationPath $BusinessEthernet -Force
+Expand-Archive -Path "$BusinessDestination\MediaTekWiFiDrivers.zip" -DestinationPath $BusinessWiFi -Force
+Expand-Archive -Path "$BusinessDestination\IRSTDrivers.zip" -DestinationPath $BusinessStorage -Force
+
+Write-Verbose "ZIP Files extracted successfully" -Verbose
+
+Stop-Transcript
