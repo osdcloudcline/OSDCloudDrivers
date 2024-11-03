@@ -19,6 +19,13 @@ Dismount-WindowsImage -Path $mountdir -Save
 
 }
 
+Function Get-LGA1851Business(){
+$BusinessLANURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201851/Business%20Motherbords/Ethernet%20and%20WiFi/Realtek-LANDriver.zip"
+$BusinessWiFiURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201851/Business%20Motherbords/Ethernet%20and%20WiFi/MediaTekWiFiDrivers.zip"
+$BusinessStorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201851/Business%20Motherbords/Storage/IRSTDrivers.zip"
+
+
+}
 Write-Host "Configuring OSD PowerShell Modules..." -ForegroundColor Green
 
 Install-Module -Name OSD -Force -AllowClobber -SkipPublisherCheck 
@@ -30,4 +37,6 @@ Import-Module -Name OSD -Force
 
 $BusinessLANURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201851/Business%20Motherbords/Ethernet%20and%20WiFi/Realtek-LANDriver.zip"
 $BusinessWiFiURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201851/Business%20Motherbords/Ethernet%20and%20WiFi/MediaTekWiFiDrivers.zip"
-$BusinessStorageURL = ""
+$BusinessStorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201851/Business%20Motherbords/Storage/IRSTDrivers.zip"
+
+
