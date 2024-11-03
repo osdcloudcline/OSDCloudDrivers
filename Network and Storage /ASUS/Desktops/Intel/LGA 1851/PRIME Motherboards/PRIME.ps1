@@ -11,14 +11,14 @@ $GHURL = "https://github.com/osdcloudcline/OSDCloudDrivers"
 
 $PRIMEEthernetURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201851/PRIME%20Motherboards/Ethernet%20and%20WiFi/RealTek-LANDrivers.zip"
 $PRIMEWiFiURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201851/PRIME%20Motherboards/Ethernet%20and%20WiFi/MediaTek-WiFiDrivers.zip"
-$PRIMEStorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201851/CSM%20MPRIMEboards/Storage/IRST-StorageDrivers.zip"
+$PRIMEStorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201851/PRIME%20Motherboards/Storage/IRST-StorageDrivers.zip"
 
 
 ####################################################################################
 #             LGA 1851 Ethernet, WiFi and Storage Driver Download Destination
 ####################################################################################
 
-$PRIMEDestination = "C:\OSDCloud\Drivers\MPRIMEboards\ASUS\LGA1851\PRIME"
+$PRIMEDestination = "C:\OSDCloud\Drivers\Motherboards\ASUS\LGA1851\PRIME"
 
 ####################################################################################
 #             LGA 1851 Ethernet, WiFi and Storage Driver Extraction Destination
