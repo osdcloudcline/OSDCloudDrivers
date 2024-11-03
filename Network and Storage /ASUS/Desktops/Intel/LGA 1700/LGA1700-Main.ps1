@@ -95,7 +95,7 @@ Write-Host '     - ASUS: Intel LGA 1700 ProArt motherboards                     
 Write-Host '     - ASUS: Intel LGA 1700 ROG - Republic of Gamers motherboards             ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '     - ASUS: Intel LGA 1700 TUF Gaming motherboards                           ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '     - ASUS: Intel LGA 1700 Expedition motherboards                           ' -ForegroundColor DarkBlue -BackgroundColor White
-Write-Host '     - ASUS: Intel LGA 1700 Workstation motherboards                           ' -ForegroundColor DarkBlue -BackgroundColor White
+Write-Host '     - ASUS: Intel LGA 1700 Workstation motherboards                          ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '     - ASUS: ALL Intel LGA 1700 motherboards                                  ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '                                                                              ' -BackgroundColor White
 pause
