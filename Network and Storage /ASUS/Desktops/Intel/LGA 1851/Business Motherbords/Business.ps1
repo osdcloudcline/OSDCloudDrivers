@@ -1,5 +1,5 @@
 $LGA1851Business = "C:\Logs\OSDCloud\LGA1851\Business.log"
-Start-Transcript
+Start-Transcript -Path $LGA1851Business
 
 Get-Date
 
@@ -37,6 +37,10 @@ Save-WebFile -SourceUrl $BusinessEthernetURL -DestinationDirectory $BusinessDest
 Write-Verbose "Acquiring ASUS LGA 1851 Business Motherboard WiFi Drivers from $GHURL" -Verbose
 
 Save-WebFile -SourceUrl $BusinessWiFiURL -DestinationDirectory $BusinessDestination
+
+Write-Verbose "Acquiring ASUS LGA 1851 Business Motherboard Storage Drivers from $GHURL" -Verbose
+
+Save-WebFile -SourceUrl $BusinessStorageURL -DestinationDirectory $BusinessDestination
 
 Write-Verbose "ASUS LGA 1851 Business Motherboard Drivers downloaded" -Verbose
 
