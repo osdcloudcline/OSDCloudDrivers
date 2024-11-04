@@ -86,9 +86,11 @@ Start-Transcript -Path $LGA1851VirtualDrivers
 
 Write-Verbose "Processing: VMWare ESXI Virtualization Drivers" -Verbose
 
-Write-Verbose "Processing: Proxmox Virtual I/O Virtualization Drivers" -Verbose
-
 Write-Verbose "Processing: Hyper-V Virtualization Drivers" -Verbose
+
+Write-Verbose "Processing: VMWare Workstation Professional Virtualization Drivers" -Verbose
+
+Write-Verbose "Processing: Proxmox Virtual I/O Virtualization Drivers" -Verbose
 
 Write-Verbose "Processing: Docker Virtualization Drivers" -Verbose
 
