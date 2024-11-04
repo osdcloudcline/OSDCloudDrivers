@@ -28,7 +28,10 @@ $ProArtDestination = "C:\OSDCloud\Drivers\Motherboards\ASUS\LGA1851\ProArt"
 ####################################################################################
 
 $ProArtEthernet = "$ProArtDestination\Ethernet"
-$ProArtWiFi = "$ProArtDestination\WiFi"
+$ProArtWiFi1 = "$ProArtDestination\WiFi1"
+$ProArtWiFi2 = "$ProArtDestination\WiFi2"
+$ProArtWiFi3 = "$ProArtDestination\WiFi3"
+$ProArtWiFi4 = "$ProArtDestination\WiFi4"
 $ProArtStorage = "$ProArtDestination\Storage"
 
 Import-Module -Name OSD -Force 
@@ -49,10 +52,10 @@ Write-Verbose "ASUS LGA 1851 ProArt Motherboard Drivers downloaded" -Verbose
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 
 Expand-7Zip -ArchiveFileName "$ProArtDestination\Marvell-LANDriver.zip" -TargetPath $ProArtEthernet  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$ProArtDestination\Intel-WiFiDrivers-1.zip" -TargetPath $ProArtWiFi  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$ProArtDestination\Intel-WiFiDrivers-2.zip" -TargetPath $ProArtWiFi  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$ProArtDestination\Intel-WiFiDrivers-3.zip" -TargetPath $ProArtWiFi  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$ProArtDestination\Intel-WiFiDrivers-4.zip" -TargetPath $ProArtWiFi  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$ProArtDestination\Intel-WiFiDrivers-1.zip" -TargetPath $ProArtWiFi1  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$ProArtDestination\Intel-WiFiDrivers-2.zip" -TargetPath $ProArtWiFi2  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$ProArtDestination\Intel-WiFiDrivers-3.zip" -TargetPath $ProArtWiFi3  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$ProArtDestination\Intel-WiFiDrivers-4.zip" -TargetPath $ProArtWiFi4  -ErrorAction SilentlyContinue 
 
 
 Expand-7Zip -ArchiveFileName "$ProArtDestination\IRST-StorageDriver.zip" -TargetPath $ProArtStorage  -ErrorAction SilentlyContinue 
