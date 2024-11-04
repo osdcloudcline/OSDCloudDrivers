@@ -1,5 +1,5 @@
 $LGA1851Other = "C:\Logs\OSDCloud\LGA1851\Other.log"
-Start-Transcript
+Start-Transcript -Path $LGA1851Other
 
 Get-Date
 
