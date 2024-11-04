@@ -66,14 +66,12 @@ Write-Verbose "Processing: ZIP File extraction" -Verbose
 
 Expand-7Zip -ArchiveFileName "$ROGDestination\Intel-I226-LANDriver.zip" -TargetPath $ROGEthernet1  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$ROGDestination\Marvell-LANDriver.zip" -TargetPath $ROGEthernet2  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$ROGDestination\RealTek-LANDriver-1126.zip" -TargetPath $ROGEthernet3  -ErrorAction SilentlyContinue
- 
+Expand-7Zip -ArchiveFileName "$ROGDestination\RealTek-LANDriver-1126.zip" -TargetPath $ROGEthernet3  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$ROGDestination\Intel-WiFiDrivers-1.zip" -TargetPath $ROGWiFi1  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$ROGDestination\Intel-WiFiDrivers-2.zip" -TargetPath $ROGWiFi2  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$ROGDestination\Intel-WiFiDrivers-3.zip" -TargetPath $ROGWiFi3  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$ROGDestination\Intel-WiFiDrivers-4.zip" -TargetPath $ROGWiFi4  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$ROGDestination\MK-WiFiDriver.zip" -TargetPath $ROGWiFi5  -ErrorAction SilentlyContinue 
-
 Expand-7Zip -ArchiveFileName "$ROGDestination\IRST-StorageDriver.zip" -TargetPath $ROGStorage  -ErrorAction SilentlyContinue 
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
