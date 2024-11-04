@@ -1,5 +1,5 @@
 $LGA1851ROG = "C:\Logs\OSDCloud\LGA1851\ROG.log"
-Start-Transcript
+Start-Transcript -Path $LGA1851ROG
 
 Get-Date
 
