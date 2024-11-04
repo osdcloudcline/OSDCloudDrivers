@@ -47,6 +47,10 @@ Save-WebFile -SourceUrl $ProArtWiFi2URL -DestinationDirectory $ProArtDestination
 Save-WebFile -SourceUrl $ProArtWiFi3URL -DestinationDirectory $ProArtDestination
 Save-WebFile -SourceUrl $ProArtWiFi4URL -DestinationDirectory $ProArtDestination
 
+Write-Verbose "Acquiring ASUS LGA 1851 PRIME Motherboard Storage Drivers from $GHURL" -Verbose
+
+Save-WebFile -SourceUrl $ProArtStorageURL -DestinationDirectory $ProArtDestination
+
 Write-Verbose "ASUS LGA 1851 ProArt Motherboard Drivers downloaded" -Verbose
 
 Write-Verbose "Processing: ZIP File extraction" -Verbose
@@ -56,8 +60,6 @@ Expand-7Zip -ArchiveFileName "$ProArtDestination\Intel-WiFiDrivers-1.zip" -Targe
 Expand-7Zip -ArchiveFileName "$ProArtDestination\Intel-WiFiDrivers-2.zip" -TargetPath $ProArtWiFi2  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$ProArtDestination\Intel-WiFiDrivers-3.zip" -TargetPath $ProArtWiFi3  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$ProArtDestination\Intel-WiFiDrivers-4.zip" -TargetPath $ProArtWiFi4  -ErrorAction SilentlyContinue 
-
-
 Expand-7Zip -ArchiveFileName "$ProArtDestination\IRST-StorageDriver.zip" -TargetPath $ProArtStorage  -ErrorAction SilentlyContinue 
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
