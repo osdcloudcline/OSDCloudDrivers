@@ -1,5 +1,5 @@
 $LGA1851ProArt = "C:\Logs\OSDCloud\LGA1851\ProArt.log"
-Start-Transcript
+Start-Transcript -Path $LGA1851ProArt
 
 Get-Date
 
