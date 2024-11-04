@@ -38,6 +38,10 @@ Write-Verbose "Acquiring ASUS LGA 1851 PRIME Motherboard WiFi Drivers from $GHUR
 
 Save-WebFile -SourceUrl $PRIMEWiFiURL -DestinationDirectory $PRIMEDestination
 
+Write-Verbose "Acquiring ASUS LGA 1851 PRIME Motherboard Storage Drivers from $GHURL" -Verbose
+
+Save-WebFile -SourceUrl $PRIMEStorageURL -DestinationDirectory $PRIMEDestination
+
 Write-Verbose "ASUS LGA 1851 PRIME Motherboard Drivers downloaded" -Verbose
 
 Write-Verbose "Processing: ZIP File extraction" -Verbose
