@@ -1,5 +1,5 @@
 $LGA1851PRIME = "C:\Logs\OSDCloud\LGA1851\PRIME.log"
-Start-Transcript
+Start-Transcript -Path $LGA1851PRIME
 
 Get-Date
 
