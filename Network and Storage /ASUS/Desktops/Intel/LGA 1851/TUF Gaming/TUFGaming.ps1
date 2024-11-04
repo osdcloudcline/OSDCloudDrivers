@@ -1,5 +1,5 @@
 $LGA1851TUF = "C:\Logs\OSDCloud\LGA1851\TUF.log"
-Start-Transcript
+Start-Transcript -Path $LGA1851TUF
 
 Get-Date
 
