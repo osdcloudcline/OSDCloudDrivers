@@ -47,7 +47,7 @@ Save-WebFile -SourceUrl $ProArtWiFi2URL -DestinationDirectory $ProArtDestination
 Save-WebFile -SourceUrl $ProArtWiFi3URL -DestinationDirectory $ProArtDestination
 Save-WebFile -SourceUrl $ProArtWiFi4URL -DestinationDirectory $ProArtDestination
 
-Write-Verbose "Acquiring ASUS LGA 1851 PRIME Motherboard Storage Drivers from $GHURL" -Verbose
+Write-Verbose "Acquiring ASUS LGA 1851 ProArt Motherboard Storage Drivers from $GHURL" -Verbose
 
 Save-WebFile -SourceUrl $ProArtStorageURL -DestinationDirectory $ProArtDestination
 
