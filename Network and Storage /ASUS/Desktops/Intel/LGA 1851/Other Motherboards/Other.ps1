@@ -38,6 +38,10 @@ Write-Verbose "Acquiring ASUS LGA 1851 Other Motherboard WiFi Drivers from $GHUR
 
 Save-WebFile -SourceUrl $OtherWiFiURL -DestinationDirectory $OtherDestination
 
+Write-Verbose "Acquiring ASUS LGA 1851 Other Motherboard Storage Drivers from $GHURL" -Verbose
+
+Save-WebFile -SourceUrl $OtherStorageURL -DestinationDirectory $OtherDestination
+
 Write-Verbose "ASUS LGA 1851 Other Motherboard Drivers downloaded" -Verbose
 
 Write-Verbose "Processing: ZIP File extraction" -Verbose
