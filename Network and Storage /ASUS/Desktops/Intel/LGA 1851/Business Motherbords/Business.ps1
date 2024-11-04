@@ -54,28 +54,4 @@ Write-Verbose "ZIP Files extracted successfully" -Verbose
 
 Stop-Transcript
 
-$LGA1851VirtualDrivers = "C:\Logs\OSDCloud\ASUS\LGA1851Virtual.log"
 
-Start-Transcript -Path $LGA1851VirtualDrivers
-
-Write-Verbose "Processing: VMWare ESXI Virtualization Drivers" -Verbose
-
-Write-Verbose "Processing: Proxmox Virtual I/O Virtualization Drivers" -Verbose
-
-Write-Verbose "Processing: Hyper-V Virtualization Drivers" -Verbose
-
-Write-Verbose "Processing: Docker Virtualization Drivers" -Verbose
-
-Stop-Transcript
-
-$LGA1851ExtraFiles = "C:\Logs\OSDCloud\ASUS\LGA1851ExtraFiles.log"
-
-Start-Transcript -Path $LGA1851ExtraFiles
-
-Write-Verbose "Processing: Adding Google Chrome portable browser" -Verbose
-
-Write-Verbose "Processing: Adding User Profile Backup and Restore" -Verbose
-
-Write-Verbose "Processing: VBS Scripting Support" -Verbose
-
-Stop-Transcript
