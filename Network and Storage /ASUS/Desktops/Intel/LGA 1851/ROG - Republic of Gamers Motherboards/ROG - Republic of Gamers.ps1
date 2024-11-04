@@ -56,7 +56,11 @@ Save-WebFile -SourceUrl $ROGWiFi3URL -DestinationDirectory $ROGDestination
 Save-WebFile -SourceUrl $ROGWiFi4URL -DestinationDirectory $ROGDestination
 Save-WebFile -SourceUrl $ROGWiFi5URL -DestinationDirectory $ROGDestination
 
-Write-Verbose "ASUS LGA 1851 ProArt Motherboard Drivers downloaded" -Verbose
+Write-Verbose "Acquiring ASUS LGA 1851 ROG Motherboard Storage Drivers from $GHURL" -Verbose
+
+Save-WebFile -SourceUrl $ROGStorageURL -DestinationDirectory $ROGDestination
+
+Write-Verbose "ASUS LGA 1851 ROG Motherboard Drivers downloaded" -Verbose
 
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 
@@ -70,7 +74,7 @@ Expand-7Zip -ArchiveFileName "$ROGDestination\Intel-WiFiDrivers-3.zip" -TargetPa
 Expand-7Zip -ArchiveFileName "$ROGDestination\Intel-WiFiDrivers-4.zip" -TargetPath $ROGWiFi4  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$ROGDestination\MK-WiFiDriver.zip" -TargetPath $ROGWiFi5  -ErrorAction SilentlyContinue 
 
-Expand-7Zip -ArchiveFileName "$ROGDestination\IRST-StorageDriver.zip" -TargetPath $ProArtStorage  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$ROGDestination\IRST-StorageDriver.zip" -TargetPath $ROGStorage  -ErrorAction SilentlyContinue 
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
 
