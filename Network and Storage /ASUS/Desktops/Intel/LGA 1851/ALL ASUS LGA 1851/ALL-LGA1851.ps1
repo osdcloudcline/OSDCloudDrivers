@@ -73,7 +73,7 @@ Get-LGA1851Storage
 Write-Verbose "Processing: ASUS LGA 1851 TUF Gaming Motherboards" -Verbose
 Write-Host
 
-$TUFLGA1851 = Invoke-WebReques("")
+$TUFLGA1851 = Invoke-WebReques("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201851/TUF%20Gaming/TUFGaming.ps1")
 Invoke-Expression $($TUFLGA1851.Content)
 
 Get-LGA1851Storage
