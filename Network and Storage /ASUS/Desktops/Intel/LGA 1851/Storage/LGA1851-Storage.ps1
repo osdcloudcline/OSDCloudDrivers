@@ -26,11 +26,11 @@ $LGA1851StorageDestination = "C:\OSDCloud\Drivers\Motherboards\ASUS\LGA1851\GenS
 
 Import-Module -Name OSD -Force 
 
-Write-Verbose "Acquiring ASUS LGA 1851Motherboard General Storage Drivers from $GHURL" -Verbose
+Write-Verbose "Acquiring ASUS LGA 1851 Motherboard General Storage Drivers from $GHURL" -Verbose
 
 Save-WebFile -SourceUrl $LGA1851StorageURL -DestinationDirectory $ROGDestination
 
-Write-Verbose "ASUS LGA 1851 Business Motherboard Drivers downloaded" -Verbose
+Write-Verbose "ASUS LGA 1851 Motherboard General Storage Drivers downloaded" -Verbose
 
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 
