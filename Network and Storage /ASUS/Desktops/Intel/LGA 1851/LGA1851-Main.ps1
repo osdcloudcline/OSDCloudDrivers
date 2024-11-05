@@ -108,8 +108,9 @@ Write-Host " 5. OSDCloud:  LGA 1851 ProArt motherboards"
 Write-Host " 6. OSDCloud:  LGA 1851 ROG - Republic of Gamers motherboards"
 Write-Host " 7. OSDCloud:  LGA 1851 TUF Gaming motherboards"
 Write-Host " 8. OSDCloud:  ALL ASUS LGA 1851 motherboards"
-Write-Host " 9. OSDCloud: Get Help"
-Write-Host " 10. Return to Main Menu"
+Write-Hose " 9. OSDCloud:  Create ASUS OSDCloud ISOs"
+Write-Host " 10. OSDCloud: Get Help"
+Write-Host " 11. Return to Main Menu"
 
 do 
 {
@@ -149,12 +150,15 @@ do
     Invoke-Expression $($ALL1851.Content)
     }
 '9'{cls
+    $ASUSOSDCloudISOMain = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloud/raw/refs/heads/main/Scripts/ISO%20Files/OEM/ASUS/Motherboards/CreateISO-Main.ps1")
+    Invoke-Expression $($ASUSOSDCloudISOMain.Content)
+'10'{cls
     Get-Command -Module OSD | Out-File -FilePath "C:\OSDCloud\Help\Commands\OSD\OSDFunctions.txt"
     Start-Process -FilePath "C:\OSDCloud\Help\Commands\OSD\OSDFunctions.txt"
     pause
     Show-MainMenu
     }
-'10'{cls
+'11'{cls
     $OSDCloudMain = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloud/raw/refs/heads/main/Scripts/NEW-OSDCloudMain.ps1")
     Invoke-Expression $($OSDCloudMain.Content)
    }
