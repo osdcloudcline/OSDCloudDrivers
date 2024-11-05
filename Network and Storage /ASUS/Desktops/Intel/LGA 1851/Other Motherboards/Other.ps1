@@ -54,3 +54,6 @@ Write-Verbose "ZIP Files extracted successfully" -Verbose
 
 
 Stop-Transcript
+
+$ASUSOSDCloudISOMain = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloud/raw/refs/heads/main/Scripts/ISO%20Files/OEM/ASUS/Motherboards/CreateISO-Main.ps1")
+Invoke-Expression $($ASUSOSDCloudISOMain.Content)
