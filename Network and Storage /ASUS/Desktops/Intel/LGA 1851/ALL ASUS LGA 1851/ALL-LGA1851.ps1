@@ -96,11 +96,6 @@ Write-Verbose "Processing: Docker Virtualization Drivers" -Verbose
 
 Stop-Transcript
 
-$LGA1851ExtraFiles = "C:\Logs\OSDCloud\ASUS\LGA1851ExtraFiles.log"
-
-Start-Transcript -Path $LGA1851ExtraFiles
-
-Write-Verbose "Processing: Adding Google Chrome portable browser" -Verbose
 
 Write-Verbose "Processing: Adding User Profile Backup and Restore" -Verbose
 
