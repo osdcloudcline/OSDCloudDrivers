@@ -85,8 +85,8 @@ Write-Host
 Write-Host 
 Write-Host '                                                                              ' -BackgroundColor White                                                              
 Write-Host '            This OSDCloud section allows the user to perform:                 ' -ForegroundColor DarkBlue -BackgroundColor White
-Write-Host '     - Creating ISO images for Desktop motherboards                           ' -ForegroundColor DarkBlue -BackgroundColor White
-Write-Host '       LGA 1851 model lines:                                                  ' -ForegroundColor DarkBlue -BackgroundColor White
+Write-Host '     - Begin the prerequitsite process for creating OSDCloud ISOs for         ' -ForegroundColor DarkBlue -BackgroundColor White
+Write-Host '       the following LGA 1851 model lines:                                    ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '     - ASUS: Intel LGA 1851 Business motherboards                             ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '     - ASUS: Intel LGA 1851 CSM motherboards                                  ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '     - ASUS: Intel LGA 1851 Other motherboards                                ' -ForegroundColor DarkBlue -BackgroundColor White
@@ -100,14 +100,14 @@ pause
 Clear-Host
 
 Write-Host "======= $Title ======"
-Write-Host " 1. OSDCloud: Create ISO - LGA 1851 Business motherboards"
-Write-Host " 2. OSDCloud: Create ISO - LGA 1851 CSM motherboards"
-Write-Host " 3. OSDCloud: Create ISO - LGA 1851 Other motherboards"
-Write-Host " 4. OSDCloud: Create ISO - LGA 1851 PRIME motherboards"
-Write-Host " 5. OSDCloud: Create ISO - LGA 1851 ProArt motherboards"
-Write-Host " 6. OSDCloud: Create ISO - LGA 1851 ROG - Republic of Gamers motherboards"
-Write-Host " 7. OSDCloud: Create ISO - LGA 1851 TUF Gaming motherboards"
-Write-Host " 8. OSDCloud: Create ISO - ALL LGA 1851 motherboards"
+Write-Host " 1. OSDCloud:  LGA 1851 Business motherboards"
+Write-Host " 2. OSDCloud:  LGA 1851 CSM motherboards"
+Write-Host " 3. OSDCloud:  LGA 1851 Other motherboards"
+Write-Host " 4. OSDCloud:  LGA 1851 PRIME motherboards"
+Write-Host " 5. OSDCloud:  LGA 1851 ProArt motherboards"
+Write-Host " 6. OSDCloud:  LGA 1851 ROG - Republic of Gamers motherboards"
+Write-Host " 7. OSDCloud:  LGA 1851 TUF Gaming motherboards"
+Write-Host " 8. OSDCloud:  ALL ASUS LGA 1851 motherboards"
 Write-Host " 9. OSDCloud: Get Help"
 Write-Host " 10. Return to Main Menu"
 
