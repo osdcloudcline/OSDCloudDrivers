@@ -108,7 +108,7 @@ Write-Host " 5. OSDCloud:  LGA 1851 ProArt motherboards"
 Write-Host " 6. OSDCloud:  LGA 1851 ROG - Republic of Gamers motherboards"
 Write-Host " 7. OSDCloud:  LGA 1851 TUF Gaming motherboards"
 Write-Host " 8. OSDCloud:  ALL ASUS LGA 1851 motherboards"
-Write-Hose " 9. OSDCloud:  Create ASUS OSDCloud ISOs"
+Write-Host " 9. OSDCloud:  Create ASUS OSDCloud ISOs"
 Write-Host " 10. OSDCloud: Get Help"
 Write-Host " 11. Return to Main Menu"
 
