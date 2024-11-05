@@ -96,9 +96,3 @@ Write-Verbose "Processing: Docker Virtualization Drivers" -Verbose
 
 Stop-Transcript
 
-
-Write-Verbose "Processing: Adding User Profile Backup and Restore" -Verbose
-
-Write-Verbose "Processing: VBS Scripting Support" -Verbose
-
-Stop-Transcript
