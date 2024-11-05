@@ -152,6 +152,7 @@ do
 '9'{cls
     $ASUSOSDCloudISOMain = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloud/raw/refs/heads/main/Scripts/ISO%20Files/OEM/ASUS/Motherboards/CreateISO-Main.ps1")
     Invoke-Expression $($ASUSOSDCloudISOMain.Content)
+    }
 '10'{cls
     Get-Command -Module OSD | Out-File -FilePath "C:\OSDCloud\Help\Commands\OSD\OSDFunctions.txt"
     Start-Process -FilePath "C:\OSDCloud\Help\Commands\OSD\OSDFunctions.txt"
@@ -164,7 +165,7 @@ do
    }
     }
     }
-     until ($selection -eq '10'){Invoke-Expression $($OSDCloudMain.Content)}
+     until ($selection -eq '11'){Invoke-Expression $($OSDCloudMain.Content)}
     }
 
     
