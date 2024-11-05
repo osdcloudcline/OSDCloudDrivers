@@ -85,8 +85,8 @@ Write-Host
 Write-Host 
 Write-Host '                                                                              ' -BackgroundColor White                                                              
 Write-Host '            This OSDCloud section allows the user to perform:                 ' -ForegroundColor DarkBlue -BackgroundColor White
-Write-Host '     - Begin the prerequitsite process for creating OSDCloud ISOs for         ' -ForegroundColor DarkBlue -BackgroundColor White
-Write-Host '       the following LGA 1851 model lines:                                    ' -ForegroundColor DarkBlue -BackgroundColor White
+Write-Host '     - Begin the prerequitsite download process for creating OSDCloud ISOs    ' -ForegroundColor DarkBlue -BackgroundColor White
+Write-Host '       for the following LGA 1851 model lines:                                ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '     - ASUS: Intel LGA 1851 Business motherboards                             ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '     - ASUS: Intel LGA 1851 CSM motherboards                                  ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '     - ASUS: Intel LGA 1851 Other motherboards                                ' -ForegroundColor DarkBlue -BackgroundColor White
