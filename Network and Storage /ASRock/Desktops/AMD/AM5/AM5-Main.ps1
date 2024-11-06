@@ -88,11 +88,8 @@ Write-Host
 Write-Host '                                                                              ' -BackgroundColor White                                                              
 Write-Host '            This OSDCloud section allows the user to perform:                 ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '     - Creating ISO images for Desktop motherboards                           ' -ForegroundColor DarkBlue -BackgroundColor White
-Write-Host '       AMD AM4 model lines:                                                   ' -ForegroundColor DarkBlue -BackgroundColor White
-Write-Host '     - ASRock: AMD AM5 Extreme motherboards                                   ' -ForegroundColor DarkBlue -BackgroundColor White
-Write-Host '     - ASRock: AMD AM5 Fatal1ty Gaming motherboards                           ' -ForegroundColor DarkBlue -BackgroundColor White
+Write-Host '       AMD AM5 model lines:                                                   ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '     - ASRock: AMD AM5 PRO motherboards                                       ' -ForegroundColor DarkBlue -BackgroundColor White
-Write-Host '     - ASRock: AMD AM5 Phantom Gaming motherboards                            ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '     - ASRock: AMD AM5 Steel Legend motherboards                              ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '     - ASRock: AMD AM5 Taichi motherboards                                    ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '     - ASRock: ALL AMD AM5 motherboards                                       ' -ForegroundColor DarkBlue -BackgroundColor White
