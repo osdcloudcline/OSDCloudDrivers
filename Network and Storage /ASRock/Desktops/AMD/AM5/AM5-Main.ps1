@@ -99,8 +99,8 @@ Clear-Host
 
 Write-Host "======= $Title ======"
 Write-Host " 1. OSDCloud: AMD AM5 PRO motherboards"
-Write-Host " 2. OSDCloud: AMD AM5 Taichi motherboards"
-Write-Host " 3. OSDCloud: AMD AM5 Steel Legend motherboards"
+Write-Host " 2. OSDCloud: AMD AM5 Steel Legend motherboards"
+Write-Host " 3. OSDCloud: AMD AM5 Taichi motherboards"
 Write-Host " 4. OSDCloud: ALL AMD AM5 motherboards"
 Write-Host " 5. OSDCloud: Get Help"
 Write-Host " 6. Return to Main Menu"
@@ -115,7 +115,7 @@ do
     Invoke-Expression $($PRO.Content)
     }
 '2'{cls
-    $SteelLegend= Invoke-WebRequest("")
+    $SteelLegend= Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM5/Steel%20Legend%20Motherboards/SteelLegend.ps1")
     Invoke-Expression $($SteelLegend.Content)
     }
 '3'{cls
