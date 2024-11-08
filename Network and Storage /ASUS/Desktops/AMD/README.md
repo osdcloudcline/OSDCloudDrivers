@@ -1,7 +1,7 @@
 # ASUS AMD Socket AM4 and AM5 motherboards - Ethernet network drivers and NVMe and SATA RAID storage drivers
 
 
-##  AM4:
+###  AM4:
  - #### Business motherboards
  - #### CSM motherboards
  - #### Other motherboards
@@ -11,7 +11,7 @@
  - #### TUF Gaming motherboards
  - #### Workstation motherboards
 
-##  AM5:
+###  AM5:
  - #### Business motherboards
  - #### CSM motherboards
  - #### Expedition motherboards
