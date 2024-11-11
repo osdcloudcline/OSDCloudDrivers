@@ -18,7 +18,7 @@ Invoke-Expression $($LGA1851Storage.Content)
 
 $LGA1851 = "C:\Logs\OSDCloud\ASUS\LGA1851.log"
 
-Start-Transcript
+Start-Transcript -Path $LGA1851
 
 Get-Date
 
