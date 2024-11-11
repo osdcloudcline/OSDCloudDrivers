@@ -1,5 +1,5 @@
-$LGA1851Business = "C:\Logs\OSDCloud\ASUS\LGA1700\Business.log"
-Start-Transcript -Path $LGA1851Business
+$LGA1700Business = "C:\Logs\OSDCloud\ASUS\LGA1700\Business.log"
+Start-Transcript -Path $LGA1700Business
 
 Get-Date
 
