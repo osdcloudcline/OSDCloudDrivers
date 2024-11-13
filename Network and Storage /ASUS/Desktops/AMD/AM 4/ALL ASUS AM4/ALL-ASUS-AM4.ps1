@@ -30,3 +30,6 @@ Write-Host
 
 $BusinessAM4 = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/AMD/AM%204/Business%20Motherboards/Business.ps1")
 Invoke-Expression $($BusinessAM4.Content)
+
+Get-AM4Storage
+
