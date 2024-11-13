@@ -76,7 +76,7 @@ Get-AM4Storage
 Write-Verbose "Processing: ASUS AM4 TUF Gaming Motherboards" -Verbose
 Write-Host
 
-$TUFGamingAM4 = Invoke-WebRequest("")
+$TUFGamingAM4 = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/AMD/AM%204/TUF%20Gaming%20Motherboards/TUF%20Gaming.ps1")
 Invoke-Expression $($TUFGamingAM4.Content)
 
 Get-AM4Storage
