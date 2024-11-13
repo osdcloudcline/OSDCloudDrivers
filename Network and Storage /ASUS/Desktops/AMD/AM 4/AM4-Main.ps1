@@ -127,7 +127,7 @@ do
     Invoke-Expression $($CSM.Content)
     }
 '3'{cls
-    $Other = Invoke-WebRequest("")
+    $Other = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/AMD/AM%204/Other%20Motherboards/Others.ps1")
     Invoke-Expression $($Other.Content)
     }
 '4'{cls
