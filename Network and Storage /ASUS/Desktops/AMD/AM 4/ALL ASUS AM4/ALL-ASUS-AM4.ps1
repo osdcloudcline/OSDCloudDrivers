@@ -19,3 +19,12 @@ Invoke-Expression $($AM4Storage.Content)
 }
 }
 
+$AM4 = "C:\Logs\OSDCloud\ASUS\AM4.log"
+
+Start-Transcript -Path $AM4
+
+Get-Date
+
+Write-Verbose "Processing: ASUS AM4 Business Motherboards" -Verbose
+Write-Host
+
