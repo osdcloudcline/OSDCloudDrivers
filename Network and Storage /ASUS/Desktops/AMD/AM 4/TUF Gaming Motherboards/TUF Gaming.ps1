@@ -93,13 +93,13 @@ Write-Host
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$TUFGamingDestination\TUFGaming-Intel-I255-I226-LANDrivers.zipp" -TargetPath $TUFGamingEthernet1  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$TUFGamingDestination\TUFGaming-Intel-I255-I226-LANDrivers.zip" -TargetPath $TUFGamingEthernet1  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$TUFGamingDestination\TUFGaming-Realtek1-LANDrivers.zip" -TargetPath $TUFGamingEthernet2  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$TUFGamingDestination\TUFGaming-Realtek2-LANDrivers.zip" -TargetPath $TUFGamingEthernet3  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$TUFGamingDestination\TUFGaming-Realtek3-LANDrivers.zip" -TargetPath $TUFGamingEthernet4  -ErrorAction SilentlyContinue 
 
 
-Expand-7Zip -ArchiveFileName "$TUFGamingDestination\TUFGaming-Intel1-WiFiDrivers.zi" -TargetPath $TUFGamingWiFi1  -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "$TUFGamingDestination\TUFGaming-Intel1-WiFiDrivers.zip" -TargetPath $TUFGamingWiFi1  -ErrorAction SilentlyContinue
 Expand-7Zip -ArchiveFileName "$TUFGamingDestination\TUFGaming-Intel2P1-WiFiDrivers.zip" -TargetPath $TUFGamingWiFi2  -ErrorAction SilentlyContinue
 Expand-7Zip -ArchiveFileName "$TUFGamingDestination\TUFGaming-Intel2P2-WiFiDrivers.zip" -TargetPath $TUFGamingWiFi3  -ErrorAction SilentlyContinue
 Expand-7Zip -ArchiveFileName "$TUFGamingDestination\TUFGaming-MediaTech-WiFiDrivers.zip" -TargetPath $TUFGamingWiFi4  -ErrorAction SilentlyContinue 
