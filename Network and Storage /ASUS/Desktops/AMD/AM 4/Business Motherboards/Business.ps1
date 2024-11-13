@@ -42,7 +42,7 @@ Write-Verbose "Acquiring ASUS AM4 Business Motherboard Storage Drivers from $GHU
 Save-WebFile -SourceUrl $BusinessStorage1URL -DestinationDirectory $BusinessDestination
 Save-WebFile -SourceUrl $BusinessStorage2URL -DestinationDirectory $BusinessDestination
 
-Write-Verbose "ASUS LGA 1700 Business Motherboard Drivers downloaded" -Verbose
+Write-Verbose "ASUS AM4 Business Motherboard Drivers downloaded" -Verbose
 
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 
