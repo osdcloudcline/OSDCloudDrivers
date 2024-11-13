@@ -28,3 +28,5 @@ Get-Date
 Write-Verbose "Processing: ASUS AM4 Business Motherboards" -Verbose
 Write-Host
 
+$BusinessAM4 = Invoke-WebRequest("")
+Invoke-Expression $($BusinessAM4.Content)
