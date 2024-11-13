@@ -44,6 +44,7 @@ $PRIMEStorage4 = "$PRIMEDestination\Storage4"
 Import-Module -Name OSD -Force 
 
 Write-Verbose "Acquiring ASUS AM4 PRIME Motherboard Ethernet Drivers from $GHURL" -Verbose
+Write-Host
 
 Save-WebFile -SourceUrl $PRIMEEthernetURL1 -DestinationDirectory $PRIMEDestination
 Save-WebFile -SourceUrl $PRIMEEthernetURL2 -DestinationDirectory $PRIMEDestination
@@ -51,10 +52,12 @@ Save-WebFile -SourceUrl $PRIMEEthernetURL3 -DestinationDirectory $PRIMEDestinati
 
 
 Write-Verbose "Acquiring ASUS AM4 PRIME Motherboard WiFi Drivers from $GHURL" -Verbose
+Write-Host
 
 Save-WebFile -SourceUrl $PRIMEWiFiURL -DestinationDirectory $PRIMEDestination
 
 Write-Verbose "Acquiring ASUS AM4 PRIME Motherboard Storage Drivers from $GHURL" -Verbose
+Write-Host
 
 Save-WebFile -SourceUrl $PRIMEStorageURL1 -DestinationDirectory $PRIMEDestination
 Save-WebFile -SourceUrl $PRIMEStorageURL2 -DestinationDirectory $PRIMEDestination
@@ -62,8 +65,10 @@ Save-WebFile -SourceUrl $PRIMEStorageURL3 -DestinationDirectory $PRIMEDestinatio
 Save-WebFile -SourceUrl $PRIMEStorageURL4 -DestinationDirectory $PRIMEDestination
 
 Write-Verbose "ASUS AM4 PRIME Motherboard Drivers downloaded" -Verbose
+Write-Host
 
 Write-Verbose "Processing: ZIP File extraction" -Verbose
+Write-Host
 
 Expand-7Zip -ArchiveFileName "$PRIMEDestination\PRIME-Intel-i211-LANDrivers.zip" -TargetPath $PRIMEEthernet  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$PRIMEDestination\PRIME-Realtek-LANDrivers.zip" -TargetPath $PRIMEEthernet  -ErrorAction SilentlyContinue 
@@ -77,7 +82,7 @@ Expand-7Zip -ArchiveFileName "$PRIMEDestination\PRIME-SATAStorageDrivers.zip" -T
 Expand-7Zip -ArchiveFileName "$PRIMEDestination\PRIME-SATAStorageDrivers2.zip" -TargetPath $PRIMEStorage  -ErrorAction SilentlyContinue 
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
-
+Write-Host
 
 Stop-Transcript
 
