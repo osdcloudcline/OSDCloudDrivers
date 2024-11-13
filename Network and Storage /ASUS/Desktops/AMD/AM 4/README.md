@@ -1,4 +1,4 @@
-# ASUS AMD Socket AM4 motherboards - Ethernet network drivers and NVMe and SATA RAID storage drivers
+# ASUS AMD Socket AM4 motherboards - Ethernet, WiFi, Bluetooth, NVMe and SATA RAID storage drivers
 
  - #### Business motherboards
  - #### CSM motherboards
