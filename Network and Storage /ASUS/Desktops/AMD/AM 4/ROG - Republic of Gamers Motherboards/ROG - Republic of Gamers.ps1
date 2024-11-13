@@ -29,7 +29,7 @@ $ROGStorageURL2 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/hea
 #             AM4 Ethernet, WiFi and Storage Driver Download Destination
 ####################################################################################
 
-$ROGDestination = "C:\OSDCloud\Drivers\Motherboards\ASUS\AM4\ProArt"
+$ROGDestination = "C:\OSDCloud\Drivers\Motherboards\ASUS\AM4\ROG"
 
 ####################################################################################
 #             AM4 Ethernet, WiFi and Storage Driver Extraction Destination
