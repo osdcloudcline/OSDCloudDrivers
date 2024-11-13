@@ -33,25 +33,29 @@ $BusinessStorage2 = "$BusinessDestination\Storage2"
 Import-Module -Name OSD -Force 
 
 Write-Verbose "Acquiring ASUS AM4 Business Motherboard Ethernet Drivers from $GHURL" -Verbose
+Write-Host
 
 Save-WebFile -SourceUrl $BusinessEthernet1URL -DestinationDirectory $BusinessDestination
 Save-WebFile -SourceUrl $BusinessEthernet2URL -DestinationDirectory $BusinessDestination
 
 Write-Verbose "Acquiring ASUS AM4 Business Motherboard Storage Drivers from $GHURL" -Verbose
+Write-Host
 
 Save-WebFile -SourceUrl $BusinessStorage1URL -DestinationDirectory $BusinessDestination
 Save-WebFile -SourceUrl $BusinessStorage2URL -DestinationDirectory $BusinessDestination
 
 Write-Verbose "ASUS AM4 Business Motherboard Drivers downloaded" -Verbose
+Write-Host
 
 Write-Verbose "Processing: ZIP File extraction" -Verbose
+Write-Host
 
 Expand-7Zip -ArchiveFileName "$BusinessDestination\Realtek-LANDrivers.zip" -TargetPath $BusinessEthernet1  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$BusinessDestination\Realtek-LANDrivers-2.zip" -TargetPath $BusinessEthernet2  -ErrorAction SilentlyContinue 
-
 Expand-7Zip -ArchiveFileName "$BusinessDestination\RAID-StorageDrivers-NVMe.zip" -TargetPath $BusinessStorage1  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$BusinessDestination\RAID-StorageDrivers-SATA.zip" -TargetPath $BusinessStorage2  -ErrorAction SilentlyContinue 
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
+Write-Host
 
 Stop-Transcript
