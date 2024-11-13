@@ -36,7 +36,7 @@ Get-AM4Storage
 Write-Verbose "Processing: ASUS AM4 CSM Motherboards" -Verbose
 Write-Host
 
-$CSMAM4 = Invoke-WebRequest("")
+$CSMAM4 = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/AMD/AM%204/CSM%20Motherboards/CSM.ps1")
 Invoke-Expression $($CSMAM4.Content)
 
 Get-AM4Storage
