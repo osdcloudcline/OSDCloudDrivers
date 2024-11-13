@@ -13,7 +13,7 @@ $BusinessEthernet1URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/re
 $BusinessEthernet2URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/AMD/AM%204/Business%20Motherboards/Ethernet%20and%20WiFi/Realtek-LANDrivers-2.zip"
 
 $BusinessStorage1URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/AMD/AM%204/Business%20Motherboards/Storage/RAID-StorageDrivers-NVMe.zip"
-$BusinessStorage2URL = ""
+$BusinessStorage2URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/AMD/AM%204/Business%20Motherboards/Storage/RAID-StorageDrivers-SATA.zip"
 
 ####################################################################################
 #             AM4 Ethernet, WiFi and Storage Driver Download Destination
@@ -50,7 +50,7 @@ Expand-7Zip -ArchiveFileName "$BusinessDestination\Realtek-LANDrivers.zip" -Targ
 Expand-7Zip -ArchiveFileName "$BusinessDestination\Realtek-LANDrivers-2.zip" -TargetPath $BusinessEthernet2  -ErrorAction SilentlyContinue 
 
 Expand-7Zip -ArchiveFileName "$BusinessDestination\RAID-StorageDrivers-NVMe.zip" -TargetPath $BusinessStorage1  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$BusinessDestination\IRSTDrivers.zip" -TargetPath $BusinessStorage2  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$BusinessDestination\RAID-StorageDrivers-SATA.zip" -TargetPath $BusinessStorage2  -ErrorAction SilentlyContinue 
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
 
