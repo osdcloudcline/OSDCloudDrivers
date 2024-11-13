@@ -9,7 +9,7 @@ $GHURL = "https://github.com/osdcloudcline/OSDCloudDrivers"
 #                   AM4 Ethernet, WiFi and Storage Driver URLs
 ####################################################################################
 
-$BusinessEthernet1URL = ""
+$BusinessEthernet1URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/AMD/AM%204/Business%20Motherboards/Ethernet%20and%20WiFi/Realtek-LANDrivers.zip"
 $BusinessEthernet2URL = ""
 
 $BusinessStorage1URL = ""
@@ -46,7 +46,7 @@ Write-Verbose "ASUS LGA 1700 Business Motherboard Drivers downloaded" -Verbose
 
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 
-Expand-7Zip -ArchiveFileName "$BusinessDestination\Intel-I219-LANDrivers.zip" -TargetPath $BusinessEthernet1  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$BusinessDestination\Realtek-LANDrivers.zip" -TargetPath $BusinessEthernet1  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$BusinessDestination\Realtek-LANDriver-1.zip" -TargetPath $BusinessEthernet2  -ErrorAction SilentlyContinue 
 
 Expand-7Zip -ArchiveFileName "$BusinessDestination\IRSTDrivers.zip" -TargetPath $BusinessStorage  -ErrorAction SilentlyContinue 
