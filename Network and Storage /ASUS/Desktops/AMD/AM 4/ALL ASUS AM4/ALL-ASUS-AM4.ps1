@@ -33,3 +33,58 @@ Invoke-Expression $($BusinessAM4.Content)
 
 Get-AM4Storage
 
+Write-Verbose "Processing: ASUS AM4 CSM Motherboards" -Verbose
+Write-Host
+
+$CSMAM4 = Invoke-WebRequest("")
+Invoke-Expression $($CSMAM4.Content)
+
+Get-AM4Storage
+
+Write-Verbose "Processing: ASUS AM4 Other Motherboards" -Verbose
+Write-Host
+
+$OtherAM4 = Invoke-WebRequest("")
+Invoke-Expression $($OtherAM4.Content)
+
+Get-AM4Storage
+
+Write-Verbose "Processing: ASUS AM4 PRIME Motherboards" -Verbose
+Write-Host
+
+$PRIMEAM4 = Invoke-WebRequest("")
+Invoke-Expression $($PRIMEAM4.Content)
+
+Get-AM4Storage
+
+Write-Verbose "Processing: ASUS AM4 ProArt Motherboards" -Verbose
+Write-Host
+
+$ProArtAM4 = Invoke-WebRequest("")
+Invoke-Expression $($ProArtAM4.Content)
+
+Get-AM4Storage
+
+Write-Verbose "Processing: ASUS AM4 ROG - Republic of Gamers Motherboards" -Verbose
+Write-Host
+
+$ROGAM4 = Invoke-WebRequest("")
+Invoke-Expression $($ROGAM4.Content)
+
+Get-AM4Storage
+
+Write-Verbose "Processing: ASUS AM4 TUF Gaming Motherboards" -Verbose
+Write-Host
+
+$TUFGamingAM4 = Invoke-WebRequest("")
+Invoke-Expression $($TUFGamingAM4.Content)
+
+Get-AM4Storage
+
+Write-Verbose "Processing: ASUS AM4 Workstation Motherboards" -Verbose
+Write-Host
+
+$WorkstationAM4 = Invoke-WebRequest("")
+Invoke-Expression $($WorkstationAM4.Content)
+
+Get-AM4Storage
