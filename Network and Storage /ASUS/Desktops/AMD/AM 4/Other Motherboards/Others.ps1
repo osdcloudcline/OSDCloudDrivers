@@ -32,25 +32,27 @@ $OtherStorage = "$OtherDestination\Storage"
 Import-Module -Name OSD -Force 
 
 Write-Verbose "Acquiring ASUS AM4 Other Motherboard Ethernet Drivers from $GHURL" -Verbose
+Write-Host
 
 Save-WebFile -SourceUrl $OtherEthernetURL -DestinationDirectory $OtherDestination
 
-
 Write-Verbose "Acquiring ASUS AM4 Other Motherboard Storage Drivers from $GHURL" -Verbose
+Write-Host
 
 Save-WebFile -SourceUrl $OtherStorageURL -DestinationDirectory $OtherDestination
 
-
 Write-Verbose "ASUS AM4 Other Motherboard Drivers downloaded" -Verbose
+Write-Host
 
 Write-Verbose "Processing: ZIP File extraction" -Verbose
+Write-Host
 
 Expand-7Zip -ArchiveFileName "$OtherDestination\Realtek-LANDrivers.zip" -TargetPath $OtherEthernet  -ErrorAction SilentlyContinue 
-
 
 Expand-7Zip -ArchiveFileName "$OtherDestination\RAID-StorageDrivers-NVMe.zip" -TargetPath $OtherStorage  -ErrorAction SilentlyContinue 
 
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
+Write-Host
 
 Stop-Transcript
