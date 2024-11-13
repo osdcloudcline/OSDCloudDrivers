@@ -44,7 +44,7 @@ Get-AM4Storage
 Write-Verbose "Processing: ASUS AM4 Other Motherboards" -Verbose
 Write-Host
 
-$OtherAM4 = Invoke-WebRequest("")
+$OtherAM4 = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/AMD/AM%204/Other%20Motherboards/Others.ps1")
 Invoke-Expression $($OtherAM4.Content)
 
 Get-AM4Storage
