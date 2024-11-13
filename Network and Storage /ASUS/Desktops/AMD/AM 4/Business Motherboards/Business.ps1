@@ -8,3 +8,10 @@ $GHURL = "https://github.com/osdcloudcline/OSDCloudDrivers"
 ####################################################################################
 #                   AM4 Ethernet, WiFi and Storage Driver URLs
 ####################################################################################
+
+$BusinessEthernet1URL = ""
+$BusinessEthernet2URL = ""
+
+$BusinessStorage1URL = ""
+$BusinessStorage2URL = ""
+
