@@ -19,6 +19,21 @@ Invoke-Expression $($AM4Storage.Content)
 }
 }
 
+Function Get-ESXILANDrivers(){
+
+$ESXILANDrivers1 = (Test-Path -Path "C:\OSDCloud\Drivers\Virtualization\ESXI\Network\vmxnet3.cat" -IsValid)
+$ESXILANDrivers2 = (Test-Path -Path "C:\OSDCloud\Drivers\Virtualization\ESXI\Network\vmxnet3.inf" -IsValid)
+$ESXILANDrivers3 = (Test-Path -Path "C:\OSDCloud\Drivers\Virtualization\ESXI\Network\mxnet3.sys" -IsValid)
+
+If(($ESXILANDrivers1 -eq $true) -and($ESXILANDrivers2 -eq $true) -and($ESXILANDrivers3 -eq $true)){
+Write-Verbose "VMWare ESXI LAN Drivers have been downloaded and expanded" -Verbose
+}
+ElseIf(($ESXILANDrivers1 -eq $false) -and($ESXILANDrivers2 -eq $false) -and($ESXILANDrivers3 -eq $false)){
+$ESXILANDrivers = Invoke-WebRequest("")
+Invoke-Expression $(ESXILANDrivers.Content)
+}
+}
+
 $AM4 = "C:\Logs\OSDCloud\ASUS\AM4.log"
 
 Start-Transcript -Path $AM4
@@ -95,6 +110,8 @@ Start-Transcript -Path $AM4VirtualDrivers
 
 Write-Verbose "Processing: VMWare ESXI Virtualization Drivers" -Verbose
 Write-Host
+
+Get-ESXILANDrivers
 
 Write-Verbose "Processing: Hyper-V Virtualization Drivers" -Verbose
 Write-Host
