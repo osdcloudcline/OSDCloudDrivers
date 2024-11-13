@@ -37,3 +37,21 @@ Write-Verbose "Acquiring ASUS AM4 Business Motherboard Ethernet Drivers from $GH
 Save-WebFile -SourceUrl $BusinessEthernet1URL -DestinationDirectory $BusinessDestination
 Save-WebFile -SourceUrl $BusinessEthernet2URL -DestinationDirectory $BusinessDestination
 
+Write-Verbose "Acquiring ASUS AM4 Business Motherboard Storage Drivers from $GHURL" -Verbose
+
+Save-WebFile -SourceUrl $BusinessStorage1URL -DestinationDirectory $BusinessDestination
+Save-WebFile -SourceUrl $BusinessStorage2URL -DestinationDirectory $BusinessDestination
+
+Write-Verbose "ASUS LGA 1700 Business Motherboard Drivers downloaded" -Verbose
+
+Write-Verbose "Processing: ZIP File extraction" -Verbose
+
+Expand-7Zip -ArchiveFileName "$BusinessDestination\Intel-I219-LANDrivers.zip" -TargetPath $BusinessEthernet1  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$BusinessDestination\Realtek-LANDriver-1.zip" -TargetPath $BusinessEthernet2  -ErrorAction SilentlyContinue 
+
+Expand-7Zip -ArchiveFileName "$BusinessDestination\IRSTDrivers.zip" -TargetPath $BusinessStorage  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$BusinessDestination\IRSTDrivers.zip" -TargetPath $BusinessStorage  -ErrorAction SilentlyContinue 
+
+Write-Verbose "ZIP Files extracted successfully" -Verbose
+
+Stop-Transcript
