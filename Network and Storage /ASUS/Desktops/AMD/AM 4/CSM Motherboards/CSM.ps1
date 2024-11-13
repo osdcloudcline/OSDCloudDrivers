@@ -31,25 +31,27 @@ $CSMStorage2 = "$CSMDestination\Storage2"
 Import-Module -Name OSD -Force 
 
 Write-Verbose "Acquiring ASUS AM4 CSM Motherboard Ethernet Drivers from $GHURL" -Verbose
+Write-Host
 
 Save-WebFile -SourceUrl $CSMEthernetURL -DestinationDirectory $CSMDestination
 
-
 Write-Verbose "Acquiring ASUS AM4 CSM Motherboard Storage Drivers from $GHURL" -Verbose
+Write-Host
 
 Save-WebFile -SourceUrl $CSMStorage1URL -DestinationDirectory $CSMDestination
 Save-WebFile -SourceUrl $CSMStorage2URL -DestinationDirectory $CSMDestination
 
 Write-Verbose "ASUS AM4 CSM Motherboard Drivers downloaded" -Verbose
+Write-Host
 
 Write-Verbose "Processing: ZIP File extraction" -Verbose
+Write-Host
 
 Expand-7Zip -ArchiveFileName "$CSMDestination\Intel-I211-LANDrivers.zip" -TargetPath $CSMEthernet  -ErrorAction SilentlyContinue 
-
-
 Expand-7Zip -ArchiveFileName "$CSMDestination\RAID-StorageDrivers-NVMe.zip" -TargetPath $CSMStorage1  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$CSMDestination\RAID-StorageDrivers-SATA.zip" -TargetPath $CSMStorage2  -ErrorAction SilentlyContinue 
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
+Write-Host
 
 Stop-Transcript
