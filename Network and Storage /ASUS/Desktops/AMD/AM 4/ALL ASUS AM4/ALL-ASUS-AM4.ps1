@@ -68,7 +68,7 @@ Get-AM4Storage
 Write-Verbose "Processing: ASUS AM4 ROG - Republic of Gamers Motherboards" -Verbose
 Write-Host
 
-$ROGAM4 = Invoke-WebRequest("")
+$ROGAM4 = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/AMD/AM%204/ROG%20-%20Republic%20of%20Gamers%20Motherboards/ROG%20-%20Republic%20of%20Gamers.ps1")
 Invoke-Expression $($ROGAM4.Content)
 
 Get-AM4Storage
