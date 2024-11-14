@@ -27,7 +27,7 @@ Save-WebFile -SourceUrl $Storage2 -DestinationDirectory $StorageDestination
 Write-Verbose "Processing: Extracting ASUS AMD Socket AM4 Motherboard NVMe Storage Drivers" -Verbose
 Write-Host
 
-
+Expand-7Zip -ArchiveFileName "$StorageDestination\AM4-RAID-StorageDrivers-NVMe.zip"
 
 Write-Verbose "Processing: Extracting ASUS AMD Socket AM4 Motherboard SATA Storage Drivers" -Verbose
 Write-Host
