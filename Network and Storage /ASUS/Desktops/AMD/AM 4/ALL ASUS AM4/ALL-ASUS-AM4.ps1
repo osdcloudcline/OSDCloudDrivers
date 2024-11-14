@@ -29,7 +29,7 @@ If(($ESXILANDrivers1 -eq $true) -and($ESXILANDrivers2 -eq $true) -and($ESXILANDr
 Write-Verbose "VMWare ESXI LAN Drivers have been downloaded and expanded" -Verbose
 }
 ElseIf(($ESXILANDrivers1 -eq $false) -and($ESXILANDrivers2 -eq $false) -and($ESXILANDrivers3 -eq $false)){
-$ESXILANDrivers = Invoke-WebRequest("")
+$ESXILANDrivers = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/VMWare/ESXIDrivers.ps1")
 Invoke-Expression $(ESXILANDrivers.Content)
 }
 }
