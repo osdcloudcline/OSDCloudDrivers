@@ -12,7 +12,7 @@ Import-Module -Name OSD -Force
 $Storage1 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/AMD/AM%204/Storage/AM4-RAID-StorageDrivers-NVMe.zip"
 $Storage2 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/AMD/AM%204/Storage/AM4-RAID-StorageDrivers-SATA.zip"
 
-$StorageDestination = ""
+$StorageDestination = "C:\OSDCloud\Drivers\Motherboards\ASUS\AM4\Storage"
 
 Write-Verbose "Processing: ASUS AMD Socket AM4 Motherboard NVMe Storage Drivers" -Verbose
 Write-Host
