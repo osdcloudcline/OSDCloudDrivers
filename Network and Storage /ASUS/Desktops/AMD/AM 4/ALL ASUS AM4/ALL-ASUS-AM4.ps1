@@ -43,6 +43,26 @@ Invoke-Expression $(ESXILANDrivers.Content)
 }
 }
 
+Function Get-ESXIStorageDrivers(){
+
+}
+
+Function Get-HyperVDrivers(){
+
+}
+
+Function Get-VMWareWorkstationDrivers(){
+
+}
+
+Function Get-ProxmoxDrivers(){
+
+}
+
+Function Get-DockerDrivers(){
+
+}
+
 $AM4VirtualDrivers = "C:\Logs\OSDCloud\ASUS\AM4Virtual.log"
 
 Start-Transcript -Path $AM4VirtualDrivers
@@ -56,18 +76,27 @@ Get-ESXILANDrivers
 Write-Verbose "Processing: VMWare ESXI Virtualization Storage Drivers" -Verbose
 Write-Host
 
+Get-ESXIStorageDrivers
 
 Write-Verbose "Processing: Hyper-V Virtualization Drivers" -Verbose
 Write-Host
 
+Get-HyperVDrivers
+
 Write-Verbose "Processing: VMWare Workstation Professional Virtualization Drivers" -Verbose
 Write-Host
+
+Get-VMWareWorkstationDrivers
 
 Write-Verbose "Processing: Proxmox Virtual I/O Virtualization Drivers" -Verbose
 Write-Host
 
+Get-ProxmoxDrivers
+
 Write-Verbose "Processing: Docker Virtualization Drivers" -Verbose
 Write-Host
+
+Get-DockerDrivers
 
 Stop-Transcript
 
