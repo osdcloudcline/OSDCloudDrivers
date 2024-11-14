@@ -23,3 +23,13 @@ Write-Verbose "Processing: ASUS AMD Socket AM4 Motherboard SATA Storage Drivers"
 Write-Host
 
 Save-WebFile -SourceUrl $Storage2 -DestinationDirectory $StorageDestination
+
+Write-Verbose "Processing: Extracting ASUS AMD Socket AM4 Motherboard NVMe Storage Drivers" -Verbose
+Write-Host
+
+
+
+Write-Verbose "Processing: Extracting ASUS AMD Socket AM4 Motherboard SATA Storage Drivers" -Verbose
+Write-Host
+
+
