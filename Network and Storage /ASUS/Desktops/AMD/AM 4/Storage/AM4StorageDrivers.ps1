@@ -37,12 +37,4 @@ Write-Host
 
 Expand-7Zip -ArchiveFileName "$StorageDestination\AM4-RAID-StorageDrivers-SATA.zip" -TargetPath $Storage2Destination -ErrorAction SilentlyContinue
 
-Write-Verbose "Processing: Copying ASUS AMD Socket AM4 Motherboard NVMe Storage Drivers to $StorageDestination" -Verbose
-Write-Host
-
-Copy-Item -Path "C:\OSDCloud\Drivers\Motherboards\ASUS\AM4\Storage\NVMe" -Destination "C:\OSDCloud\Drivers\Motherboards\ASUS\AM4\Storage" -Force -Recurse
-
-Write-Verbose "Processing: Copying ASUS AMD Socket AM4 Motherboard SATA Storage Drivers to $StorageDestination" -Verbose
-Write-Host
-
-Copy-Item -Path "C:\OSDCloud\Drivers\Motherboards\ASUS\AM4\Storage\SATA" -Destination "C:\OSDCloud\Drivers\Motherboards\ASUS\AM4\Storage" -Force -Recurse
+Stop-Transcript
