@@ -11,7 +11,7 @@ $AM4Storage8 = (Test-Path -Path "C:\OSDCloud\Drivers\Motherboards\ASUS\AM4\Stora
 $AM4Storage9 = (Test-Path -Path "C:\OSDCloud\Drivers\Motherboards\ASUS\AM4\Storage\rcraid.inf" -IsValid)
 
 If(($AM4Storage1 -eq $true) -and ($AM4Storage2 -eq $true) -and ($AM4Storage3 -eq $true) -and ($AM4Storage4 -eq $true) -and ($AM4Storage5 -eq $true) -and ($AM4Storage6 -eq $true) -and ($AM4Storage7 -eq $true) -and ($AM4Storage8 -eq $true) -and ($AM4Storage9 -eq $true)){
-Write-Verbose "ASUS AM 4 Storage drivers have been downloaded and expanded" -Verbose
+Write-Verbose "ASUS Socket AM4 Storage drivers have been downloaded and expanded" -Verbose
 }
 ElseIf (($AM4Storage1 -eq $false) -and ($AM4Storage2 -eq $false) -and ($AM4Storage3 -eq $false) -and ($AM4Storage4 -eq $false) -and ($AM4Storage5 -eq $false) -and ($AM4Storage6 -eq $false) -and ($AM4Storage7 -eq $false) -and ($AM4Storage8 -eq $false) -and ($AM4Storage9 -eq $false)){
 $AM4Storage = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/AMD/AM%204/Storage/AM4StorageDrivers.ps1")
@@ -33,6 +33,47 @@ $ESXILANDrivers = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDr
 Invoke-Expression $(ESXILANDrivers.Content)
 }
 }
+
+$AM4VirtualDrivers = "C:\Logs\OSDCloud\ASUS\AM4Virtual.log"
+
+Start-Transcript -Path $AM4VirtualDrivers
+
+Write-Verbose "Processing: VMWare ESXI Virtualization Network Drivers" -Verbose
+Write-Host
+
+Get-ESXILANDrivers
+
+
+Write-Verbose "Processing: VMWare ESXI Virtualization Storage Drivers" -Verbose
+Write-Host
+
+
+Write-Verbose "Processing: Hyper-V Virtualization Drivers" -Verbose
+Write-Host
+
+Write-Verbose "Processing: VMWare Workstation Professional Virtualization Drivers" -Verbose
+Write-Host
+
+Write-Verbose "Processing: Proxmox Virtual I/O Virtualization Drivers" -Verbose
+Write-Host
+
+Write-Verbose "Processing: Docker Virtualization Drivers" -Verbose
+Write-Host
+
+Stop-Transcript
+
+$AM4Storage = "C:\Logs\OSDCloud\ASUS\AM4Storage.log"
+
+Start-Transcript -Path $AM4Storage
+
+Get-Date
+
+Write-Verbose "Processing: ASUS AMD Socket AM4 Motherboard Storage Drivers" -Verbose
+Write-Host
+
+Get-AM4Storage
+
+Stop-Transcript
 
 $AM4 = "C:\Logs\OSDCloud\ASUS\AM4.log"
 
@@ -101,29 +142,6 @@ Write-Host
 
 $WorkstationAM4 = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/AMD/AM%204/Workstation%20Motherboards/Workstation.ps1")
 Invoke-Expression $($WorkstationAM4.Content)
-
-Stop-Transcript
-
-$AM4VirtualDrivers = "C:\Logs\OSDCloud\ASUS\AM4Virtual.log"
-
-Start-Transcript -Path $AM4VirtualDrivers
-
-Write-Verbose "Processing: VMWare ESXI Virtualization Drivers" -Verbose
-Write-Host
-
-Get-ESXILANDrivers
-
-Write-Verbose "Processing: Hyper-V Virtualization Drivers" -Verbose
-Write-Host
-
-Write-Verbose "Processing: VMWare Workstation Professional Virtualization Drivers" -Verbose
-Write-Host
-
-Write-Verbose "Processing: Proxmox Virtual I/O Virtualization Drivers" -Verbose
-Write-Host
-
-Write-Verbose "Processing: Docker Virtualization Drivers" -Verbose
-Write-Host
 
 Stop-Transcript
 
