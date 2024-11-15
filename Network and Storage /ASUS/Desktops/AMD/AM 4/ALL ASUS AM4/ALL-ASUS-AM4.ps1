@@ -134,9 +134,7 @@ Invoke-Expression $($ProxmoxStorageDrivers.Content)
 }
 }
 
-Function Get-DockerDrivers(){
 
-}
 
 $AM4VirtualDrivers = "C:\Logs\OSDCloud\ASUS\AM4Virtual.log"
 
@@ -172,10 +170,6 @@ Write-Host
 
 Get-ProxmoxStorageDrivers
 
-Write-Verbose "Processing: Docker Virtualization Drivers" -Verbose
-Write-Host
-
-Get-DockerDrivers
 
 Stop-Transcript
 
