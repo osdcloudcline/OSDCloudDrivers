@@ -55,10 +55,11 @@ $ESXIStorageDrivers7 = (Test-Path -Path "C:\OSDCloud\Drivers\Virtualization\ESXI
 $ESXIStorageDrivers8 = (Test-Path -Path "C:\OSDCloud\Drivers\Virtualization\ESXI\Storage\vmrawdiskver.dll" -IsValid)
 
 If(($ESXIStorageDrivers1 -eq $true) -and ($ESXIStorageDrivers2 -eq $true) -and ($ESXIStorageDrivers3 -eq $true) -and ($ESXIStorageDrivers4 -eq $true) -and ($ESXIStorageDrivers5 -eq $true) -and ($ESXIStorageDrivers6 -eq $true) -and ($ESXIStorageDrivers7 -eq $true) -and ($ESXIStorageDrivers8 -eq $true)){
-
+Write-Verbose "VMWare ESXI Storage Drivers have been downloaded and expanded" -Verbose
 }
 ElseIf(($ESXIStorageDrivers1 -eq $false) -and ($ESXIStorageDrivers2 -eq $false) -and ($ESXIStorageDrivers3 -eq $false) -and ($ESXIStorageDrivers4 -eq $false) -and ($ESXIStorageDrivers5 -eq $false) -and ($ESXIStorageDrivers6 -eq $false) -and ($ESXIStorageDrivers7 -eq $false) -and ($ESXIStorageDrivers8 -eq $false)){
-
+$ESXIStorageDrivers = Invoke-WebRequest("")
+Invoke-Expression $($ESXIStorageDrivers.Content)
 }
 }
 
