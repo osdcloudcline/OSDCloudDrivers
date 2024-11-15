@@ -86,6 +86,7 @@ $VMWareWorkstationLANDrivers = Invoke-WebRequest("")
 Invoke-Expression $($VMWareWorkstationLANDrivers.Content)
 }
 }
+
 Function Get-VMWareWorkstationStorageDrivers(){
 $VMWareWorkstationStorageDrivers1 = (Test-Path -Path "C:\OSDCloud\Drivers\Virtualization\VMWare\Workstation\Storage\pvscsi.cat" -IsValid)
 $VMWareWorkstationStorageDrivers2 = (Test-Path -Path "C:\OSDCloud\Drivers\Virtualization\VMWare\Workstation\Storage\pvscsi.inf" -IsValid)
