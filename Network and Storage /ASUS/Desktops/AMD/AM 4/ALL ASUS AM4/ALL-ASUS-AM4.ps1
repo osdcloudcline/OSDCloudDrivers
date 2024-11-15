@@ -71,8 +71,32 @@ Function Get-VMWareWorkstationDrivers(){
 
 }
 
-Function Get-ProxmoxDrivers(){
+Function Get-ProxmoxLANDrivers(){
+$ProxmoxLANDrivers1 = (Test-Path -Path "C:\OSDCloud\Drivers\Virtualization\Proxmox\Network\netkvm.cat" -IsValid)
+$ProxmoxLANDrivers2 = (Test-Path -Path "C:\OSDCloud\Drivers\Virtualization\Proxmox\Network\netkvm.inf" -IsValid)
+$ProxmoxLANDrivers3 = (Test-Path -Path "C:\OSDCloud\Drivers\Virtualization\Proxmox\Network\netkvm.sys" -IsValid)
 
+If(($ProxmoxLANDrivers1 -eq $true) -and ($ProxmoxLANDrivers2 -eq $true) -and ($ProxmoxLANDrivers3 -eq $true)){
+Write-Verbose "Proxmox Virtualization I/O Network Drivers have been downloaded and expanded" -Verbose
+}
+ElseIf(($ProxmoxLANDrivers1 -eq $false) -and ($ProxmoxLANDrivers2 -eq $false) -and ($ProxmoxLANDrivers3 -eq $false)){
+$ProxmoxLANDrivers = Invoke-WebRequest("")
+Invoke-Expression $($ProxmoxLANDrivers.Content)
+}
+}
+
+Function Get-ProxmoxStorageDrivers(){
+$ProxmoxStorageDrivers1 = (Test-Path -Path "C:\OSDCloud\Drivers\Virtualization\Proxmox\Storage\viostor.cat" -IsValid)
+$ProxmoxStorageDrivers2 = (Test-Path -Path "C:\OSDCloud\Drivers\Virtualization\Proxmox\Storage\viostor.inf" -IsValid)
+$ProxmoxStorageDrivers3 = (Test-Path -Path "C:\OSDCloud\Drivers\Virtualization\Proxmox\Storage\viostor.sys" -IsValid)
+
+If(($ProxmoxStorageDrivers1 -eq $true) -and ($ProxmoxStorageDrivers2 -eq $true) -and ($ProxmoxStorageDrivers3 -eq $true)){
+Write-Verbose "Proxmox Virtualization I/O Storage Drivers have been downloaded and expanded" -Verbose
+}
+ElseIf(($ProxmoxStorageDrivers1 -eq $false) -and ($ProxmoxStorageDrivers2 -eq $false) -and ($ProxmoxStorageDrivers3 -eq $false)){
+$ProxmoxStorageDrivers = Invoke-WebRequest("")
+Invoke-Expression $($ProxmoxStorageDrivers.Content)
+}
 }
 
 Function Get-DockerDrivers(){
@@ -87,7 +111,6 @@ Write-Verbose "Processing: VMWare ESXI Virtualization Network Drivers" -Verbose
 Write-Host
 
 Get-ESXILANDrivers
-
 
 Write-Verbose "Processing: VMWare ESXI Virtualization Storage Drivers" -Verbose
 Write-Host
@@ -104,10 +127,15 @@ Write-Host
 
 Get-VMWareWorkstationDrivers
 
-Write-Verbose "Processing: Proxmox Virtual I/O Virtualization Drivers" -Verbose
+Write-Verbose "Processing: Proxmox Virtual I/O Network Virtualization Drivers" -Verbose
 Write-Host
 
-Get-ProxmoxDrivers
+Get-ProxmoxLANDrivers
+
+Write-Verbose "Processing: Proxmox Virtual I/O Storage Virtualization Drivers" -Verbose
+Write-Host
+
+Get-ProxmoxStorageDrivers
 
 Write-Verbose "Processing: Docker Virtualization Drivers" -Verbose
 Write-Host
