@@ -68,7 +68,11 @@ Function Get-HyperVDrivers(){
 
 }
 
-Function Get-VMWareWorkstationDrivers(){
+Function Get-VMWareWorkstationLANDrivers(){
+
+}
+
+Function Get-VMWareWorkstationStorageDrivers(){
 
 }
 
