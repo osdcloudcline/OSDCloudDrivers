@@ -38,13 +38,28 @@ If(($ESXILANDrivers1 -eq $true) -and($ESXILANDrivers2 -eq $true) -and($ESXILANDr
 Write-Verbose "VMWare ESXI LAN Drivers have been downloaded and expanded" -Verbose
 }
 ElseIf(($ESXILANDrivers1 -eq $false) -and($ESXILANDrivers2 -eq $false) -and($ESXILANDrivers3 -eq $false)){
-$ESXILANDrivers = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/VMWare/ESXIDrivers.ps1")
+$ESXILANDrivers = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/VMWare/ESXILANDrivers.ps1")
 Invoke-Expression $(ESXILANDrivers.Content)
 }
 }
 
 Function Get-ESXIStorageDrivers(){
 
+$ESXIStorageDrivers1 = (Test-Path -Path "C:\OSDCloud\Drivers\Virtualization\ESXI\Storage\pvscsi.cat" -IsValid)
+$ESXIStorageDrivers2 = (Test-Path -Path "C:\OSDCloud\Drivers\Virtualization\ESXI\Storage\pvscsi.inf" -IsValid)
+$ESXIStorageDrivers3 = (Test-Path -Path "C:\OSDCloud\Drivers\Virtualization\ESXI\Storage\pvscsi.sys" -IsValid)
+$ESXIStorageDrivers4 = (Test-Path -Path "C:\OSDCloud\Drivers\Virtualization\ESXI\Storage\pvscsiver.dll" -IsValid)
+$ESXIStorageDrivers5 = (Test-Path -Path "C:\OSDCloud\Drivers\Virtualization\ESXI\Storage\vmrawdisk.cat" -IsValid)
+$ESXIStorageDrivers6 = (Test-Path -Path "C:\OSDCloud\Drivers\Virtualization\ESXI\Storage\vmrawdisk.inf" -IsValid)
+$ESXIStorageDrivers7 = (Test-Path -Path "C:\OSDCloud\Drivers\Virtualization\ESXI\Storage\vmrawdisk.sys" -IsValid)
+$ESXIStorageDrivers8 = (Test-Path -Path "C:\OSDCloud\Drivers\Virtualization\ESXI\Storage\vmrawdiskver.dll" -IsValid)
+
+If(($ESXIStorageDrivers1 -eq $true) -and ($ESXIStorageDrivers2 -eq $true) -and ($ESXIStorageDrivers3 -eq $true) -and ($ESXIStorageDrivers4 -eq $true) -and ($ESXIStorageDrivers5 -eq $true) -and ($ESXIStorageDrivers6 -eq $true) -and ($ESXIStorageDrivers7 -eq $true) -and ($ESXIStorageDrivers8 -eq $true)){
+
+}
+ElseIf(($ESXIStorageDrivers1 -eq $false) -and ($ESXIStorageDrivers2 -eq $false) -and ($ESXIStorageDrivers3 -eq $false) -and ($ESXIStorageDrivers4 -eq $false) -and ($ESXIStorageDrivers5 -eq $false) -and ($ESXIStorageDrivers6 -eq $false) -and ($ESXIStorageDrivers7 -eq $false) -and ($ESXIStorageDrivers8 -eq $false)){
+
+}
 }
 
 Function Get-HyperVDrivers(){
