@@ -89,7 +89,6 @@ Write-Host '            This OSDCloud section allows the user to perform:       
 Write-Host '     - Creating ISO images for Desktop motherboards                           ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '       AMD AM4 model lines:                                                   ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '     - ASRock: AMD AM4 Extreme motherboards                                   ' -ForegroundColor DarkBlue -BackgroundColor White
-Write-Host '     - ASRock: AMD AM4 Fatal1ty Gaming motherboards                           ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '     - ASRock: AMD AM4 PRO motherboards                                       ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '     - ASRock: AMD AM4 Phantom Gaming motherboards                            ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '     - ASRock: AMD AM4 Steel Legend motherboards                              ' -ForegroundColor DarkBlue -BackgroundColor White
@@ -101,14 +100,13 @@ Clear-Host
 
 Write-Host "======= $Title ======"
 Write-Host " 1. OSDCloud: AMD AM4 Extremes motherboards"
-Write-Host " 2. OSDCloud: AMD AM4 Fatal1ty Gaming motherboards"
-Write-Host " 3. OSDCloud: AMD AM4 PRO motherboards"
-Write-Host " 4. OSDCloud: AMD AM4 Phantom Gaming motherboards"
-Write-Host " 5. OSDCloud: AMD AM4 Steel Legend motherboards"
-Write-Host " 6. OSDCloud: AMD AM4 Taichi motherboards"
-Write-Host " 7. OSDCloud: Create ISO - ALL AMD AM4 motherboards"
-Write-Host " 8. OSDCloud: Get Help"
-Write-Host " 9. Return to Main Menu"
+Write-Host " 2. OSDCloud: AMD AM4 PRO motherboards"
+Write-Host " 3. OSDCloud: AMD AM4 Phantom Gaming motherboards"
+Write-Host " 4. OSDCloud: AMD AM4 Steel Legend motherboards"
+Write-Host " 5. OSDCloud: AMD AM4 Taichi motherboards"
+Write-Host " 6. OSDCloud: Create ISO - ALL AMD AM4 motherboards"
+Write-Host " 7. OSDCloud: Get Help"
+Write-Host " 8. Return to Main Menu"
 
 do 
 {
@@ -120,42 +118,38 @@ do
     Invoke-Expression $($Extreme.Content)
     }
 '2'{cls
-    $Fatal1tyGaming= Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/Fatal1ty%20Gaming%20Motherboards/Fatal1tyGaming.ps1")
-    Invoke-Expression $($Fatal1tyGaming.Content)
-    }
-'3'{cls
     $PRO = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/PRO%20Motherboards/PRO.ps1")
     Invoke-Expression $($PRO.Content)
     }
-'4'{cls
+'3'{cls
     $PhantomGaming = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/Phantom%20Gaming%20Motherboards/PhantomGaming.ps1")
     Invoke-Expression $($PhantomGaming.Content)
     }
-'5'{cls
+'4'{cls
     $SteelLegend = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/Steel%20Legend%20Motherboards/SteelLegend.ps1")
     Invoke-Expression $($SteelLegend.Content)
     }
-'6'{cls
+'5'{cls
     $Taichi = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/Taichi%20Motherboards/Taichi.ps1")
     Invoke-Expression $($Taichi.Content)
     }
-'7'{cls
+'6'{cls
     $ALLAM4 = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/ALL%20ASRock%20AM4/ALL-ASRock-AM4.ps1")
     Invoke-Expression $($ALLAM4.Content)
     }
-'8'{cls
+'7'{cls
     Get-Command -Module OSD | Out-File -FilePath "C:\OSDCloud\Help\Commands\OSD\OSDFunctions.txt"
     Start-Process -FilePath "C:\OSDCloud\Help\Commands\OSD\OSDFunctions.txt"
     pause
     Show-MainMenu
     }
-'9'{cls
+'8'{cls
     $OSDCloudMain = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloud/raw/refs/heads/main/Scripts/NEW-OSDCloudMain.ps1")
     Invoke-Expression $($OSDCloudMain.Content)
    }
     }
     }
-     until ($selection -eq '9'){Invoke-Expression $($OSDCloudMain.Content)}
+     until ($selection -eq '8'){Invoke-Expression $($OSDCloudMain.Content)}
     }
 
     
