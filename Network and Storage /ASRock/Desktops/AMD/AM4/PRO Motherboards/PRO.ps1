@@ -10,7 +10,7 @@ $GHURL = "https://github.com/osdcloudcline/OSDCloudDrivers"
 #                   AM4 Ethernet, WiFi and Storage Driver URLs
 ####################################################################################
 
-$PROEthernetURL1 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/Extreme%20Motherboards/Ethernet%20and%20WiFi/ASRock-Extreme-Intel-NetworkDrivers.zip"
+$PROEthernetURL1 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/PRO%20Motherboards/Ethernet%20and%20WiFi/ASRock-PRO-Intel-LANDrivers.zip"
 $PROEthernetURL2 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/Extreme%20Motherboards/Ethernet%20and%20WiFi/ASRock-Extreme-Intel-NetworkDrivers.zip"
 $PROEthernetURL3 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/Extreme%20Motherboards/Ethernet%20and%20WiFi/ASRock-Extreme-Intel-NetworkDrivers.zip"
 $PROEthernetURL4 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/Extreme%20Motherboards/Ethernet%20and%20WiFi/ASRock-Extreme-Intel-NetworkDrivers.zip"
@@ -62,7 +62,7 @@ Write-Host
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-Extreme-Intel-NetworkDrivers.zip" -TargetPath $PROEthernet1  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-PRO-Intel-LANDrivers.zip -TargetPath $PROEthernet1  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-Extreme-Intel-NetworkDrivers.zip" -TargetPath $PROEthernet2  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-Extreme-Intel-NetworkDrivers.zip" -TargetPath $PROEthernet3  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-Extreme-Intel-NetworkDrivers.zip" -TargetPath $PROEthernet4  -ErrorAction SilentlyContinue 
