@@ -11,7 +11,7 @@ $GHURL = "https://github.com/osdcloudcline/OSDCloudDrivers"
 ####################################################################################
 
 $PROEthernetURL1 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/PRO%20Motherboards/Ethernet%20and%20WiFi/ASRock-PRO-Intel-LANDrivers.zip"
-$PROEthernetURL2 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/Extreme%20Motherboards/Ethernet%20and%20WiFi/ASRock-Extreme-Intel-NetworkDrivers.zip"
+$PROEthernetURL2 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/PRO%20Motherboards/Ethernet%20and%20WiFi/ASRock-PRO-Realtek-LANDrivers1.zip"
 $PROEthernetURL3 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/Extreme%20Motherboards/Ethernet%20and%20WiFi/ASRock-Extreme-Intel-NetworkDrivers.zip"
 $PROEthernetURL4 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/Extreme%20Motherboards/Ethernet%20and%20WiFi/ASRock-Extreme-Intel-NetworkDrivers.zip"
 $PROEthernetURL5 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/Extreme%20Motherboards/Ethernet%20and%20WiFi/ASRock-Extreme-Intel-NetworkDrivers.zip"
@@ -63,10 +63,10 @@ Write-Verbose "Processing: ZIP File extraction" -Verbose
 Write-Host
 
 Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-PRO-Intel-LANDrivers.zip -TargetPath $PROEthernet1  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-Extreme-Intel-NetworkDrivers.zip" -TargetPath $PROEthernet2  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-Extreme-Intel-NetworkDrivers.zip" -TargetPath $PROEthernet3  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-Extreme-Intel-NetworkDrivers.zip" -TargetPath $PROEthernet4  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-Extreme-Intel-NetworkDrivers.zip" -TargetPath $PROEthernet5  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-PRO-Realtek-LANDrivers1.zip" -TargetPath $PROEthernet2  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-PRO-Realtek-LANDrivers2.zip" -TargetPath $PROEthernet3  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-PRO-Realtek-LANDrivers3.zip" -TargetPath $PROEthernet4  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-PRO-Realtek-LANDrivers4.zip" -TargetPath $PROEthernet5  -ErrorAction SilentlyContinue 
 
 Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-Extreme-NVMe-StorageDriver.zip" -TargetPath $PROStorage  -ErrorAction SilentlyContinue 
 
