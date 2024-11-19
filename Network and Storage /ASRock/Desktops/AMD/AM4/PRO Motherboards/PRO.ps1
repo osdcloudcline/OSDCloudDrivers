@@ -16,7 +16,7 @@ $PROEthernetURL3 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/he
 $PROEthernetURL4 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/PRO%20Motherboards/Ethernet%20and%20WiFi/ASRock-PRO-Realtek-LANDrivers3.zip"
 $PROEthernetURL5 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/PRO%20Motherboards/Ethernet%20and%20WiFi/ASRock-PRO-Realtek-LANDrivers4.zip"
 
-$PROStorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/Extreme%20Motherboards/Storage/ASRock-Extreme-NVMe-StorageDriver.zip"
+$PROStorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/PRO%20Motherboards/Storage/ASRock-PRO-NVMe-StorageDrivers.zip"
 
 
 ####################################################################################
@@ -68,7 +68,7 @@ Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-PRO-Realtek-LANDrivers2.zip
 Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-PRO-Realtek-LANDrivers3.zip" -TargetPath $PROEthernet4  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-PRO-Realtek-LANDrivers4.zip" -TargetPath $PROEthernet5  -ErrorAction SilentlyContinue 
 
-Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-Extreme-NVMe-StorageDriver.zip" -TargetPath $PROStorage  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-PRO-NVMe-StorageDrivers.zip" -TargetPath $PROStorage  -ErrorAction SilentlyContinue 
 
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
