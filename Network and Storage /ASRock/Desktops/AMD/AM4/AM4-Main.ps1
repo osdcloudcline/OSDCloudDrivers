@@ -89,6 +89,7 @@ Write-Host '            This OSDCloud section allows the user to perform:       
 Write-Host '     - Creating ISO images for Desktop motherboards                           ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '       AMD AM4 model lines:                                                   ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '     - ASRock: AMD AM4 Extreme motherboards                                   ' -ForegroundColor DarkBlue -BackgroundColor White
+Write-Host '     - ASRock: AMD AM4 Fatal1ty Gaming motherboards                           ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '     - ASRock: AMD AM4 PRO motherboards                                       ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '     - ASRock: AMD AM4 Phantom Gaming motherboards                            ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '     - ASRock: AMD AM4 Steel Legend motherboards                              ' -ForegroundColor DarkBlue -BackgroundColor White
@@ -119,7 +120,7 @@ do
     Invoke-Expression $($Extreme.Content)
     }
 '2'{cls
-    $Fatal1tyGaming = Invoke-WebRequest("")
+    $Fatal1tyGaming = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/Fatal1ty%20Gaming/Fatal1tyGaming.ps1")
     Invoke-Expression $($Fatal1tyGaming.Content)
     }
 '3'{cls
