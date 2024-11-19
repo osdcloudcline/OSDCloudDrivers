@@ -21,7 +21,7 @@ $PhantomGamingBluetoothURL = "https://github.com/osdcloudcline/OSDCloudDrivers/r
 $PhantomGamingWiFiURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/Phantom%20Gaming%20Motherboards/Ethernet%20and%20WiFi/ASRock-PhantomGaming-Intel-WLANDrivers.zip"
 
 $PhantomGamingStorageURL1 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/Phantom%20Gaming%20Motherboards/Storage/ASRock-PhantomGaming-NVMe-StorageDrivers.zip"
-$PhantomGamingStorageURL2 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/PRO%20Motherboards/Storage/ASRock-PRO-NVMe-StorageDrivers.zip"
+$PhantomGamingStorageURL2 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/Phantom%20Gaming%20Motherboards/Storage/ASRock-PhantomGaming-SATA-NVMe-StorageDrivers.zip"
 
 ####################################################################################
 #             AM4 Ethernet, WiFi and Storage Driver Download Destination
@@ -81,18 +81,18 @@ Write-Host
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$PhantomGamingDestination\ASRock-PRO-Intel-LANDrivers.zip -TargetPath $PhantomGamingEthernet1  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PhantomGamingDestination\ASRock-PRO-Realtek-LANDrivers1.zip" -TargetPath $PhantomGamingEthernet2  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PhantomGamingDestination\ASRock-PRO-Realtek-LANDrivers2.zip" -TargetPath $PhantomGamingEthernet3  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PhantomGamingDestinationn\ASRock-PRO-Realtek-LANDrivers3.zip" -TargetPath $PhantomGamingEthernet4  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PhantomGamingDestination\ASRock-PRO-Realtek-LANDrivers4.zip" -TargetPath $PhantomGamingEthernet5  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$PhantomGamingDestination\ASRock-PhantomGaming-Intel-LANDrivers1.zip" -TargetPath $PhantomGamingEthernet1  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$PhantomGamingDestination\ASRock-PhantomGaming-Intel-LANDrivers2.zip" -TargetPath $PhantomGamingEthernet2  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$PhantomGamingDestination\ASRock-PhantomGaming-Realtek-LANDriver1.zip" -TargetPath $PhantomGamingEthernet3  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$PhantomGamingDestinationn\ASRock-PhantomGaming-Realtek-LANDriver2.zip" -TargetPath $PhantomGamingEthernet4  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$PhantomGamingDestination\ASRock-PhantomGaming-Realtek-LANDrivers3.zip" -TargetPath $PhantomGamingEthernet5  -ErrorAction SilentlyContinue 
 
-Expand-7Zip -ArchiveFileName "$PhantomGamingDestinationn\ASRock-PRO-Realtek-LANDrivers3.zip" -TargetPath $PhantomGamingWiFi  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$PhantomGamingDestinationn\ASRock-PhantomGaming-Intel-WLANDrivers.zip" -TargetPath $PhantomGamingWiFi  -ErrorAction SilentlyContinue 
 
-Expand-7Zip -ArchiveFileName "$PhantomGamingDestination\ASRock-PRO-Realtek-LANDrivers4.zip" -TargetPath $PhantomGamingBluetooth  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$PhantomGamingDestination\ASRock-PhantomGaming-Killer-BluetoothDriver.zip" -TargetPath $PhantomGamingBluetooth  -ErrorAction SilentlyContinue 
 
-Expand-7Zip -ArchiveFileName "$PhantomGamingDestination\ASRock-PRO-NVMe-StorageDrivers.zip" -TargetPath $PhantomGamingStorage1  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PhantomGamingDestination\ASRock-PRO-NVMe-StorageDrivers.zip" -TargetPath $PhantomGamingStorage2  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$PhantomGamingDestination\ASRock-PhantomGaming-NVMe-StorageDrivers.zip" -TargetPath $PhantomGamingStorage1  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$PhantomGamingDestination\ASRock-PhantomGaming-SATA-NVMe-StorageDrivers.zip" -TargetPath $PhantomGamingStorage2  -ErrorAction SilentlyContinue 
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
 Write-Host
