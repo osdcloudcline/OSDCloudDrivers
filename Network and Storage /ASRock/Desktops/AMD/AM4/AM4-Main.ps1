@@ -120,7 +120,7 @@ do
     Invoke-Expression $($Extreme.Content)
     }
 '2'{cls
-    $Fatal1tyGaming = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/Fatal1ty%20Gaming/Fatal1tyGaming.ps1")
+    $Fatal1tyGaming = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/Fatal1ty%20Gaming%20Motherboards/Fatal1tyGaming.ps1")
     Invoke-Expression $($Fatal1tyGaming.Content)
     }
 '3'{cls
