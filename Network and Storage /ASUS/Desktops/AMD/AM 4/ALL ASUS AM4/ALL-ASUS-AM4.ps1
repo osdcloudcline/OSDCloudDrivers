@@ -228,7 +228,7 @@ Invoke-Expression $($ProxmoxStorageDrivers.Content)
 
 
 
-$AM4VirtualDrivers = "C:\Logs\OSDCloud\ASUS\AM4Virtual.log"
+$AM4VirtualDrivers = "C:\Logs\OSDCloud\ASUS\AM4\Virtual.log"
 
 Start-Transcript -Path $AM4VirtualDrivers
 
@@ -270,7 +270,7 @@ Get-ProxmoxStorageDrivers
 
 Stop-Transcript
 
-$AM4Storage = "C:\Logs\OSDCloud\ASUS\AM4Storage.log"
+$AM4Storage = "C:\Logs\OSDCloud\ASUS\AM4\Storage.log"
 
 Start-Transcript -Path $AM4Storage
 
@@ -283,7 +283,7 @@ Get-AM4Storage
 
 Stop-Transcript
 
-$AM4 = "C:\Logs\OSDCloud\ASUS\AM4.log"
+$AM4 = "C:\Logs\OSDCloud\ASUS\AM4\AM4.log"
 
 Start-Transcript -Path $AM4
 
