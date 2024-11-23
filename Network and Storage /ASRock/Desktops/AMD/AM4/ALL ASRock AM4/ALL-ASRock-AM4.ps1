@@ -267,3 +267,16 @@ Get-ProxmoxStorageDrivers
 
 
 Stop-Transcript
+
+$AM4Storage = "C:\Logs\OSDCloud\ASUS\AM4\Storage.log"
+
+Start-Transcript -Path $AM4Storage
+
+Get-Date
+
+Write-Verbose "Processing: ASRock AMD Socket AM4 Motherboard Storage Drivers" -Verbose
+Write-Host
+
+Get-AM4Storage
+
+Stop-Transcript
