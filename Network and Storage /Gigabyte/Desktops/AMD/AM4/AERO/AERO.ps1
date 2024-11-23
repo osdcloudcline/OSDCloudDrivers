@@ -34,7 +34,8 @@ $AEROEthernet = "$AERODestination\Ethernet"
 
 $AEROBluetooth = "$AERODestination\Bluetooth"
 
-$AEROWiFi = "$AERODestination\WiFi"
+$AEROWiFi1 = "$AERODestination\WiFi1"
+$AEROWiFi2 = "$AERODestination\WiFi2"
 
 $AEROStorage1 = "$AERODestination\Storage1"
 $AEROStorage2 = "$AERODestination\Storage2"
@@ -54,13 +55,15 @@ Save-WebFile -SourceUrl  $AEROBluetoothURL -DestinationDirectory $AERODestinatio
 Write-Verbose "Acquiring Gigabyte AM4 AERO Motherboard WiFi Drivers from $GHURL" -Verbose
 Write-Host
 
-Save-WebFile -SourceUrl  $AEROWiFiURL -DestinationDirectory $AERODestination
+Save-WebFile -SourceUrl  $AEROWiFi1URL -DestinationDirectory $AERODestination
+Save-WebFile -SourceUrl  $AEROWiFi2URL -DestinationDirectory $AERODestination
+
 
 Write-Verbose "Acquiring Gigabyte AM4 AERO Motherboard Storage Drivers from $GHURL" -Verbose
 Write-Host
 
 Save-WebFile -SourceUrl $AEROStorage1URL -DestinationDirectory $AERODestination
-Save-WebFile -SourceUrl $AEROStorage2URL-DestinationDirectory $AERODestination
+Save-WebFile -SourceUrl $AEROStorage2URL -DestinationDirectory $AERODestination
 
 Write-Verbose "Gigabyte AM4 AERO Motherboard Drivers downloaded" -Verbose
 Write-Host
@@ -68,9 +71,12 @@ Write-Host
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$ExtremeDestination\ASRock-Extreme-Intel-NetworkDrivers.zip" -TargetPath $ExtremeEthernet1  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$ExtremeDestination\ASRock-Extreme-NVMe-StorageDriver.zip" -TargetPath $ExtremeStorage1  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$ExtremeDestination\ASRock-Extreme-NVMe2-StorageDrivers.zip" -TargetPath $ExtremeStorage2  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$AERODestination\Gigabyte-AERO-LANDrivers.zip" -TargetPath $AEROEthernet  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$AERODestination\Gigabyte-AERO-BluetoothDrivers.zip" -TargetPath $AEROBluetooth  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$AERODestination\Gigabyte-AERO-WLANDrivers1.zip" -TargetPath $AEROWiFi1  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$AERODestination\Gigabyte-AERO-WLANDrivers2.zip" -TargetPath $AEROWiFi2  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$AERODestination\ASRock-Extreme-NVMe-StorageDriver.zip" -TargetPath $ExtremeStorage1  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$AERODestination\ASRock-Extreme-NVMe2-StorageDrivers.zip" -TargetPath $ExtremeStorage2  -ErrorAction SilentlyContinue 
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
 Write-Host
