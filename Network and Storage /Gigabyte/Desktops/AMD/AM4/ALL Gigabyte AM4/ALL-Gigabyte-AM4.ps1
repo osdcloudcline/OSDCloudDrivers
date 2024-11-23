@@ -1,5 +1,4 @@
 Function Get-AM4Storage(){
-
 $AM4Storage1 = (Test-Path -Path "C:\OSDCloud\Drivers\Motherboards\Gigabyte\AM4\Storage\NVMe\rcbottom.cat" -IsValid)
 $AM4Storage2 = (Test-Path -Path "C:\OSDCloud\Drivers\Motherboards\Gigabyte\AM4\Storage\NVMe\rcbottom.inf" -IsValid)
 $AM4Storage3 = (Test-Path -Path "C:\OSDCloud\Drivers\Motherboards\Gigabyte\AM4\Storage\NVMe\rcbottom.sys" -IsValid)
@@ -29,7 +28,6 @@ Invoke-Expression $($AM4Storage.Content)
 }
 
 Function Get-ESXILANDrivers(){
-
 $ESXILANDrivers1 = (Test-Path -Path "C:\OSDCloud\Drivers\Virtualization\ESXI\Network\vmxnet3.cat" -IsValid)
 $ESXILANDrivers2 = (Test-Path -Path "C:\OSDCloud\Drivers\Virtualization\ESXI\Network\vmxnet3.inf" -IsValid)
 $ESXILANDrivers3 = (Test-Path -Path "C:\OSDCloud\Drivers\Virtualization\ESXI\Network\vmxnet3.sys" -IsValid)
@@ -45,7 +43,6 @@ Invoke-Expression $(ESXILANDrivers.Content)
 }
 
 Function Get-ESXIStorageDrivers(){
-
 $ESXIStorageDrivers1 = (Test-Path -Path "C:\OSDCloud\Drivers\Virtualization\ESXI\Storage\pvscsi.cat" -IsValid)
 $ESXIStorageDrivers2 = (Test-Path -Path "C:\OSDCloud\Drivers\Virtualization\ESXI\Storage\pvscsi.inf" -IsValid)
 $ESXIStorageDrivers3 = (Test-Path -Path "C:\OSDCloud\Drivers\Virtualization\ESXI\Storage\pvscsi.sys" -IsValid)
