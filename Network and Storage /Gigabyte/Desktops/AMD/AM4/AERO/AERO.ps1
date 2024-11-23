@@ -18,7 +18,7 @@ $AEROWiFi1URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads
 $AEROWiFi2URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM4/AERO/Ethernet%20and%20WiFi/Gigabyte-AERO-WLANDrivers2.zip"
 
 $AEROStorage1URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM4/AERO/Storage/Gigabyte-AERO-RAID-NVMe-StorageDrivers.zip"
-$AEROStorage2URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/Extreme%20Motherboards/Storage/ASRock-Extreme-NVMe2-StorageDrivers.zip"
+$AEROStorage2URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM4/AERO/Storage/Gigabyte-AERO-RAID-SATA-StorageDrivers.zip"
 
 ####################################################################################
 #             AM4 Ethernet, WiFi and Storage Driver Download Destination
@@ -75,8 +75,8 @@ Expand-7Zip -ArchiveFileName "$AERODestination\Gigabyte-AERO-LANDrivers.zip" -Ta
 Expand-7Zip -ArchiveFileName "$AERODestination\Gigabyte-AERO-BluetoothDrivers.zip" -TargetPath $AEROBluetooth  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$AERODestination\Gigabyte-AERO-WLANDrivers1.zip" -TargetPath $AEROWiFi1  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$AERODestination\Gigabyte-AERO-WLANDrivers2.zip" -TargetPath $AEROWiFi2  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$AERODestination\ASRock-Extreme-NVMe-StorageDriver.zip" -TargetPath $ExtremeStorage1  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$AERODestination\ASRock-Extreme-NVMe2-StorageDrivers.zip" -TargetPath $ExtremeStorage2  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$AERODestination\Gigabyte-AERO-RAID-NVMe-StorageDrivers.zip" -TargetPath $AEROStorage1  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$AERODestination\Gigabyte-AERO-RAID-SATA-StorageDrivers.zip" -TargetPath $AEROStorage2  -ErrorAction SilentlyContinue 
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
 Write-Host
