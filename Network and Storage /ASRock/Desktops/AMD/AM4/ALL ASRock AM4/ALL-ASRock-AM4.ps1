@@ -280,3 +280,11 @@ Write-Host
 Get-AM4Storage
 
 Stop-Transcript
+
+Write-Verbose "Processing: ASRock AM4 Extreme Motherboards" -Verbose
+Write-Host
+
+$ExtremeAM4 = Invoke-WebRequest("")
+Invoke-Expression $($ExtremeAM4.Content)
+
+Get-AM4Storage
