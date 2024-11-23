@@ -161,3 +161,41 @@ Invoke-Expression $($HyperVLANDrivers.Content)
 }
 }
 
+Function Get-VMWareWorkstationLANDrivers(){
+$VMWareWorkstationLANDrivers1 = (Test-Path -Path "C:\OSDCloud\Drivers\Virtualization\VMWare\Workstation\Network\vmnet3.cat" -IsValid)
+$VMWareWorkstationLANDrivers2 = (Test-Path -Path "C:\OSDCloud\Drivers\Virtualization\VMWare\Workstation\Network\vmnet3.inf" -IsValid)
+$VMWareWorkstationLANDrivers3 = (Test-Path -Path "C:\OSDCloud\Drivers\Virtualization\VMWare\Workstation\Network\vmnet3.sys" -IsValid)
+$VMWareWorkstationLANDrivers4 = (Test-Path -Path "C:\OSDCloud\Drivers\Virtualization\VMWare\Workstation\Network\vmnet3ver.dll" -IsValid)
+$VMWareWorkstationLANDrivers5 = (Test-Path -Path "C:\OSDCloud\Drivers\Virtualization\VMWare\Workstation\Network\vnetWFP.cat" -IsValid)
+$VMWareWorkstationLANDrivers6 = (Test-Path -Path "C:\OSDCloud\Drivers\Virtualization\VMWare\Workstation\Network\vnetWFP.inf" -IsValid)
+$VMWareWorkstationLANDrivers7 = (Test-Path -Path "C:\OSDCloud\Drivers\Virtualization\VMWare\Workstation\Network\vnetWFP.sys" -IsValid)
+$VMWareWorkstationLANDrivers8 = (Test-Path -Path "C:\OSDCloud\Drivers\Virtualization\VMWare\Workstation\Network\vnetWFPver.dll" -IsValid)
+
+If(($VMWareWorkstationLANDrivers1 -eq $true) -and ($VMWareWorkstationLANDrivers2 -eq $true) -and ($VMWareWorkstationLANDrivers3 -eq $true) -and ($VMWareWorkstationLANDrivers4 -eq $true) -and ($VMWareWorkstationLANDrivers5 -eq $true) -and ($VMWareWorkstationLANDrivers6 -eq $true) -and ($VMWareWorkstationLANDrivers7 -eq $true) -and ($VMWareWorkstationLANDrivers8 -eq $true)){
+Write-Verbose "VMWare Workstation Network Drivers have been downloaded and expanded" -Verbose
+}
+ElseIf(($VMWareWorkstationLANDrivers1 -eq $false) -and ($VMWareWorkstationLANDrivers2 -eq $false) -and ($VMWareWorkstationLANDrivers3 -eq $false) -and ($VMWareWorkstationLANDrivers4 -eq $false) -and ($VMWareWorkstationLANDrivers5 -eq $false) -and ($VMWareWorkstationLANDrivers6 -eq $false) -and ($VMWareWorkstationLANDrivers7 -eq $false) -and ($VMWareWorkstationLANDrivers8 -eq $false)){
+$VMWareWorkstationLANDrivers = Invoke-WebRequest("")
+Invoke-Expression $($VMWareWorkstationLANDrivers.Content)
+}
+}
+
+Function Get-VMWareWorkstationStorageDrivers(){
+$VMWareWorkstationStorageDrivers1 = (Test-Path -Path "C:\OSDCloud\Drivers\Virtualization\VMWare\Workstation\Storage\pvscsi.cat" -IsValid)
+$VMWareWorkstationStorageDrivers2 = (Test-Path -Path "C:\OSDCloud\Drivers\Virtualization\VMWare\Workstation\Storage\pvscsi.inf" -IsValid)
+$VMWareWorkstationStorageDrivers3 = (Test-Path -Path "C:\OSDCloud\Drivers\Virtualization\VMWare\Workstation\Storage\pvscsi.sys" -IsValid)
+$VMWareWorkstationStorageDrivers4 = (Test-Path -Path "C:\OSDCloud\Drivers\Virtualization\VMWare\Workstation\Storage\pvscsiver.dll" -IsValid)
+$VMWareWorkstationStorageDrivers5 = (Test-Path -Path "C:\OSDCloud\Drivers\Virtualization\VMWare\Workstation\Storage\vmrawdisk.cat" -IsValid)
+$VMWareWorkstationStorageDrivers6 = (Test-Path -Path "C:\OSDCloud\Drivers\Virtualization\VMWare\Workstation\Storage\vmrawdisk.inf" -IsValid)
+$VMWareWorkstationStorageDrivers7 = (Test-Path -Path "C:\OSDCloud\Drivers\Virtualization\VMWare\Workstation\Storage\vmrawdisk.sys" -IsValid)
+$VMWareWorkstationStorageDrivers8 = (Test-Path -Path "C:\OSDCloud\Drivers\Virtualization\VMWare\Workstation\Storage\vmrawdiskver.dll" -IsValid)
+
+If(($VMWareWorkstationStorageDrivers1 -eq $true) -and ($VMWareWorkstationStorageDrivers2 -eq $true) -and ($VMWareWorkstationStorageDrivers3 -eq $true) -and ($VMWareWorkstationStorageDrivers4 -eq $true) -and ($VMWareWorkstationStorageDrivers5 -eq $true) -and ($VMWareWorkstationStorageDrivers6 -eq $true) -and ($VMWareWorkstationStorageDrivers7 -eq $true) -and ($VMWareWorkstationStorageDrivers8 -eq $true)){
+Write-Verbose "VMWare Workstation Storage Drivers have been downloaded and expanded" -Verbose
+}
+ElseIf(($VMWareWorkstationStorageDrivers1 -eq $false) -and ($VMWareWorkstationStorageDrivers2 -eq $false) -and ($VMWareWorkstationStorageDrivers3 -eq $false) -and ($VMWareWorkstationStorageDrivers4 -eq $false) -and ($VMWareWorkstationStorageDrivers5 -eq $false) -and ($VMWareWorkstationStorageDrivers6 -eq $false) -and ($VMWareWorkstationStorageDrivers7 -eq $false) -and ($VMWareWorkstationStorageDrivers8 -eq $false)){
+$VMWareWorkstationStorageDrivers = Invoke-WebRequest("")
+Invoke-Expression $($VMWareWorkstationStorageDrivers.Content)
+}
+}
+
