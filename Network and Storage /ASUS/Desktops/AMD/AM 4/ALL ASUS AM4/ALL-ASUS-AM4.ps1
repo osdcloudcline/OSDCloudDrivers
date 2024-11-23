@@ -193,7 +193,7 @@ If(($VMWareWorkstationStorageDrivers1 -eq $true) -and ($VMWareWorkstationStorage
 Write-Verbose "VMWare Workstation Storage Drivers have been downloaded and expanded" -Verbose
 }
 ElseIf(($VMWareWorkstationStorageDrivers1 -eq $false) -and ($VMWareWorkstationStorageDrivers2 -eq $false) -and ($VMWareWorkstationStorageDrivers3 -eq $false) -and ($VMWareWorkstationStorageDrivers4 -eq $false) -and ($VMWareWorkstationStorageDrivers5 -eq $false) -and ($VMWareWorkstationStorageDrivers6 -eq $false) -and ($VMWareWorkstationStorageDrivers7 -eq $false) -and ($VMWareWorkstationStorageDrivers8 -eq $false)){
-$VMWareWorkstationStorageDrivers = Invoke-WebRequest("")
+$VMWareWorkstationStorageDrivers = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/VMWare%20Workstation/VMWareWorkstation-StorageDrivers.ps1")
 Invoke-Expression $($VMWareWorkstationStorageDrivers.Content)
 }
 }
