@@ -172,7 +172,7 @@ If(($VMWareWorkstationLANDrivers1 -eq $true) -and ($VMWareWorkstationLANDrivers2
 Write-Verbose "VMWare Workstation Network Drivers have been downloaded and expanded" -Verbose
 }
 ElseIf(($VMWareWorkstationLANDrivers1 -eq $false) -and ($VMWareWorkstationLANDrivers2 -eq $false) -and ($VMWareWorkstationLANDrivers3 -eq $false) -and ($VMWareWorkstationLANDrivers4 -eq $false) -and ($VMWareWorkstationLANDrivers5 -eq $false) -and ($VMWareWorkstationLANDrivers6 -eq $false) -and ($VMWareWorkstationLANDrivers7 -eq $false) -and ($VMWareWorkstationLANDrivers8 -eq $false)){
-$VMWareWorkstationLANDrivers = Invoke-WebRequest("")
+$VMWareWorkstationLANDrivers = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/VMWare%20Workstation/VMWareWorkstation-NetworkDrivers.ps1")
 Invoke-Expression $($VMWareWorkstationLANDrivers.Content)
 }
 }
