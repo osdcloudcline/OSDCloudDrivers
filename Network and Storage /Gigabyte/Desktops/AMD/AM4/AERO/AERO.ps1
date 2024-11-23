@@ -10,7 +10,7 @@ $GHURL = "https://github.com/osdcloudcline/OSDCloudDrivers"
 #                   AM4 Ethernet, WiFi and Storage Driver URLs
 ####################################################################################
 
-$AEROEthernetURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/Extreme%20Motherboards/Ethernet%20and%20WiFi/ASRock-Extreme-Intel-NetworkDrivers.zip"
+$AEROEthernetURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM4/AERO/Ethernet%20and%20WiFi/Gigabyte-AERO-LANDrivers.zip"
 
 $AEROBluetoothURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/Extreme%20Motherboards/Ethernet%20and%20WiFi/ASRock-Extreme-Intel-NetworkDrivers.zip"
 
