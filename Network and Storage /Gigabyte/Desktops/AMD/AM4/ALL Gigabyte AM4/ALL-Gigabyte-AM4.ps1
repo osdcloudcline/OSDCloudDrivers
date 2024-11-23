@@ -56,7 +56,7 @@ If(($ESXIStorageDrivers1 -eq $true) -and ($ESXIStorageDrivers2 -eq $true) -and (
 Write-Verbose "VMWare ESXI Storage Drivers have been downloaded and expanded" -Verbose
 }
 ElseIf(($ESXIStorageDrivers1 -eq $false) -and ($ESXIStorageDrivers2 -eq $false) -and ($ESXIStorageDrivers3 -eq $false) -and ($ESXIStorageDrivers4 -eq $false) -and ($ESXIStorageDrivers5 -eq $false) -and ($ESXIStorageDrivers6 -eq $false) -and ($ESXIStorageDrivers7 -eq $false) -and ($ESXIStorageDrivers8 -eq $false)){
-$ESXIStorageDrivers = Invoke-WebRequest("")
+$ESXIStorageDrivers = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/VMWare%20ESXI/ESXI-StorageDrivers.ps1")
 Invoke-Expression $($ESXIStorageDrivers.Content)
 }
 }
