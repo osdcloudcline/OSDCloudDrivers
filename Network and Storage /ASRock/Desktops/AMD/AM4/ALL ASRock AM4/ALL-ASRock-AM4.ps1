@@ -284,7 +284,7 @@ Stop-Transcript
 Write-Verbose "Processing: ASRock AM4 Extreme Motherboards" -Verbose
 Write-Host
 
-$ExtremeAM4 = Invoke-WebRequest("")
+$ExtremeAM4 = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/Extreme%20Motherboards/Extreme.ps1")
 Invoke-Expression $($ExtremeAM4.Content)
 
 Get-AM4Storage
