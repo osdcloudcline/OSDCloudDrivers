@@ -1,4 +1,5 @@
-$HyperVLog = ""
+$HyperVLog = "C:\Logs\OSDCloud\Hyper-V\NetworkDrivers.log"
+
 Start-Transcript -Path $HyperVLog
 
 Get-Date
@@ -21,7 +22,5 @@ Expand-7zip -ArchiveName "$HyperVDownloadPath\HyperV-NetworkDrivers.zip" -Target
 Write-Host
 Write-Verbose "Completed: Microsoft Hyper-V Network Drivers..." -Verbose
 Write-Host
-
-
 
 Stop-Transcript
