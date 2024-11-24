@@ -126,10 +126,16 @@ do
     $Proxmox = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Proxmox/Proxmox.ps1")
     Invoke-Expression $($Proxmox.Content)
 
-    $ESXI = Invoke-WebRequest("")
-    Invoke-Expression $($ESXI.Content)
+    $ESXINetwork = Invoke-WebRequest("")
+    Invoke-Expression $($ESXINetwork.Content)
 
-    $VMWorkstationPro = Invoke-WebRequest("")
+    $ESXIStorage = Invoke-WebRequest("")
+    Invoke-Expression $($ESXIStorage.Content)
+
+    $VMWorkstationProNetwork = Invoke-WebRequest("")
+    Invoke-Expression $($VMWorkstationProNetwork.Content)
+
+    $VMWorkstationProStorage = Invoke-WebRequest("")
     Invoke-Expression $($VMWorkstationPro.Content)
     }
 '2'{cls
@@ -142,10 +148,16 @@ do
     $Proxmox = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Proxmox/Proxmox.ps1")
     Invoke-Expression $($Proxmox.Content)
 
-    $ESXI = Invoke-WebRequest("")
-    Invoke-Expression $($ESXI.Content)
+    $ESXINetwork = Invoke-WebRequest("")
+    Invoke-Expression $($ESXINetwork.Content)
 
-    $VMWorkstationPro = Invoke-WebRequest("")
+    $ESXIStorage = Invoke-WebRequest("")
+    Invoke-Expression $($ESXIStorage.Content)
+
+    $VMWorkstationProNetwork = Invoke-WebRequest("")
+    Invoke-Expression $($VMWorkstationProNetwork.Content)
+
+    $VMWorkstationProStorage = Invoke-WebRequest("")
     Invoke-Expression $($VMWorkstationPro.Content)
     }
 '3'{cls
@@ -158,10 +170,16 @@ do
     $Proxmox = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Proxmox/Proxmox.ps1")
     Invoke-Expression $($Proxmox.Content)
 
-    $ESXI = Invoke-WebRequest("")
-    Invoke-Expression $($ESXI.Content)
+    $ESXINetwork = Invoke-WebRequest("")
+    Invoke-Expression $($ESXINetwork.Content)
 
-    $VMWorkstationPro = Invoke-WebRequest("")
+    $ESXIStorage = Invoke-WebRequest("")
+    Invoke-Expression $($ESXIStorage.Content)
+
+    $VMWorkstationProNetwork = Invoke-WebRequest("")
+    Invoke-Expression $($VMWorkstationProNetwork.Content)
+
+    $VMWorkstationProStorage = Invoke-WebRequest("")
     Invoke-Expression $($VMWorkstationPro.Content)
     }
 '4'{cls
@@ -174,10 +192,16 @@ do
     $Proxmox = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Proxmox/Proxmox.ps1")
     Invoke-Expression $($Proxmox.Content)
 
-    $ESXI = Invoke-WebRequest("")
-    Invoke-Expression $($ESXI.Content)
+    $ESXINetwork = Invoke-WebRequest("")
+    Invoke-Expression $($ESXINetwork.Content)
 
-    $VMWorkstationPro = Invoke-WebRequest("")
+    $ESXIStorage = Invoke-WebRequest("")
+    Invoke-Expression $($ESXIStorage.Content)
+
+    $VMWorkstationProNetwork = Invoke-WebRequest("")
+    Invoke-Expression $($VMWorkstationProNetwork.Content)
+
+    $VMWorkstationProStorage = Invoke-WebRequest("")
     Invoke-Expression $($VMWorkstationPro.Content)
     }
 '5'{cls
@@ -190,10 +214,16 @@ do
     $Proxmox = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Proxmox/Proxmox.ps1")
     Invoke-Expression $($Proxmox.Content)
 
-    $ESXI = Invoke-WebRequest("")
-    Invoke-Expression $($ESXI.Content)
+    $ESXINetwork = Invoke-WebRequest("")
+    Invoke-Expression $($ESXINetwork.Content)
 
-    $VMWorkstationPro = Invoke-WebRequest("")
+    $ESXIStorage = Invoke-WebRequest("")
+    Invoke-Expression $($ESXIStorage.Content)
+
+    $VMWorkstationProNetwork = Invoke-WebRequest("")
+    Invoke-Expression $($VMWorkstationProNetwork.Content)
+
+    $VMWorkstationProStorage = Invoke-WebRequest("")
     Invoke-Expression $($VMWorkstationPro.Content)
     }
 '6'{cls
@@ -206,10 +236,16 @@ do
     $Proxmox = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Proxmox/Proxmox.ps1")
     Invoke-Expression $($Proxmox.Content)
 
-    $ESXI = Invoke-WebRequest("")
-    Invoke-Expression $($ESXI.Content)
+    $ESXINetwork = Invoke-WebRequest("")
+    Invoke-Expression $($ESXINetwork.Content)
 
-    $VMWorkstationPro = Invoke-WebRequest("")
+    $ESXIStorage = Invoke-WebRequest("")
+    Invoke-Expression $($ESXIStorage.Content)
+
+    $VMWorkstationProNetwork = Invoke-WebRequest("")
+    Invoke-Expression $($VMWorkstationProNetwork.Content)
+
+    $VMWorkstationProStorage = Invoke-WebRequest("")
     Invoke-Expression $($VMWorkstationPro.Content)
     }
 '7'{cls
