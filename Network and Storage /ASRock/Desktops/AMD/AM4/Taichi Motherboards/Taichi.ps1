@@ -73,9 +73,6 @@ Write-Host
 Expand-7Zip -ArchiveFileName "$TaichiDestination\ASRock-Taichi-Intel-LANDrivers.zip" -TargetPath $TaichiEthernet  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$TaichiDestination\ASRock-Taichi-BluetoothDrivers.zip" -TargetPath $TaichiBluetooth  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$TaichiDestinationn\ASRock-Taichi-Intel-WLANDrivers.zip" -TargetPath $TaichiWiFi  -ErrorAction SilentlyContinue 
-
-
-
 Expand-7Zip -ArchiveFileName "$TaichiDestination\ASRock-Taichi-NVMe-StorageDrivers.zip" -TargetPath $TaichiStorage1  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$TaichiDestination\ASRock-Taichi-SATA-StorageDrivers.zip" -TargetPath $TaichiStorage2  -ErrorAction SilentlyContinue 
 
