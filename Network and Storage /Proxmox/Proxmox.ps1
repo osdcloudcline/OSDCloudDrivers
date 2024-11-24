@@ -1,6 +1,6 @@
 $ProxmoxNetLog = "C:\Logs\OSDCloud\Proxmox\NetworkDrivers.log"
 
-Start-Transcript -Path $HyperVLog
+Start-Transcript -Path $ProxmoxNetLog
 
 Get-Date
 
@@ -32,7 +32,7 @@ Stop-Transcript
 
 $ProxmoxStorageLog = "C:\Logs\OSDCloud\Proxmox\StorageDrivers.log"
 
-Start-Transcript -Path $HyperVLog
+Start-Transcript -Path $ProxmoxStorageLog
 
 Get-Date
 
@@ -53,7 +53,7 @@ Write-Verbose "Processing: Proxmox Storage Drivers..." -Verbose
 Save-WebFile -SourceUrl $ProxmoxStorageDriversURL1 -DestinationDirectory $ProxmoxDownloadPath
 Expand-7zip -ArchiveName "$ProxmoxDownloadPath\Proxmox-Win11-StorageDrivers.zip" -TargetPath $ProxmoxPath1 -ErrorAction SilentlyContinue
 
-Save-WebFile -SourceUrl $ProxmoxStorageDriversURL1 -DestinationDirectory $ProxmoxDownloadPath
+Save-WebFile -SourceUrl $ProxmoxStorageDriversURL2 -DestinationDirectory $ProxmoxDownloadPath
 Expand-7zip -ArchiveName "$ProxmoxDownloadPath\Proxmox-WinServer2025-StorageDrivers.zip" -TargetPath $ProxmoxPath2 -ErrorAction SilentlyContinue
 
 Write-Host
