@@ -288,3 +288,47 @@ $ExtremeAM4 = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDriver
 Invoke-Expression $($ExtremeAM4.Content)
 
 Get-AM4Storage
+
+Write-Host
+Write-Verbose "Processing: ASRock AM4 Fatal1ty Gaming Motherboards" -Verbose
+Write-Host
+
+$Fatal1tyGamingAM4 = Invoke-WebRequest("")
+Invoke-Expression $($Fatal1tyGamingAM4.Content)
+
+Get-AM4Storage
+
+Write-Host
+Write-Verbose "Processing: ASRock AM4 PRO Motherboards" -Verbose
+Write-Host
+
+$PROAM4 = Invoke-WebRequest("")
+Invoke-Expression $($PROAM4.Content)
+
+Get-AM4Storage
+
+Write-Host
+Write-Verbose "Processing: ASRock AM4 Phantom Gaming Motherboards" -Verbose
+Write-Host
+
+$PhantomGamingAM4 = Invoke-WebRequest("")
+Invoke-Expression $($PhantomGamingAM4.Content)
+
+Get-AM4Storage
+
+Write-Host
+Write-Verbose "Processing: ASRock AM4 Steel Legend Motherboards" -Verbose
+Write-Host
+
+$SteelLegendAM4 = Invoke-WebRequest("")
+Invoke-Expression $($SteelLegendAM4.Content)
+
+Get-AM4Storage
+
+Write-Host
+Write-Verbose "Processing: ASRock AM4 Taichi Motherboards" -Verbose
+Write-Host
+
+$TaichiAM4 = Invoke-WebRequest("")
+Invoke-Expression $($TaichiAM4.Content)
+
