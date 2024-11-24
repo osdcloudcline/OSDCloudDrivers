@@ -268,7 +268,7 @@ Get-ProxmoxStorageDrivers
 
 Stop-Transcript
 
-$AM4Storage = "C:\Logs\OSDCloud\ASUS\AM4\Storage.log"
+$AM4Storage = "C:\Logs\OSDCloud\ASRock\AM4\Storage.log"
 
 Start-Transcript -Path $AM4Storage
 
@@ -280,6 +280,12 @@ Write-Host
 Get-AM4Storage
 
 Stop-Transcript
+
+$ASRockAM4Motherboards = "C:\Logs\OSDCloud\ASRock\AM4\Motherboards.log"
+
+Start-Transcript -Path $ASRockAM4Motherboards
+
+Get-Date
 
 Write-Verbose "Processing: ASRock AM4 Extreme Motherboards" -Verbose
 Write-Host
@@ -329,6 +335,7 @@ Write-Host
 Write-Verbose "Processing: ASRock AM4 Taichi Motherboards" -Verbose
 Write-Host
 
-$TaichiAM4 = Invoke-WebRequest("")
+$TaichiAM4 = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/Taichi%20Motherboards/Taichi.ps1")
 Invoke-Expression $($TaichiAM4.Content)
 
+Stop-Transcript
