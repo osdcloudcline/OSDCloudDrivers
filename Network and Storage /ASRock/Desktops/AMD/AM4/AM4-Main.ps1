@@ -86,8 +86,9 @@ Write-Host
 Write-Host 
 Write-Host '                                                                              ' -BackgroundColor White                                                              
 Write-Host '            This OSDCloud section allows the user to perform:                 ' -ForegroundColor DarkBlue -BackgroundColor White
-Write-Host '     - Creating ISO images for Desktop motherboards                           ' -ForegroundColor DarkBlue -BackgroundColor White
-Write-Host '       AMD AM4 model lines:                                                   ' -ForegroundColor DarkBlue -BackgroundColor White
+Write-Host '     - Downloads Ethernet/WiFi/Bluetooth/Storage drivers for                  ' -ForegroundColor DarkBlue -BackgroundColor White
+Write-Host '        desktop motherboards for the following AMD AM4 model lines:           ' -ForegroundColor DarkBlue -BackgroundColor White
+Write-Host '                                                                              ' -BackgroundColor White
 Write-Host '     - ASRock: AMD AM4 Extreme motherboards                                   ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '     - ASRock: AMD AM4 Fatal1ty Gaming motherboards                           ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '     - ASRock: AMD AM4 PRO motherboards                                       ' -ForegroundColor DarkBlue -BackgroundColor White
@@ -106,7 +107,7 @@ Write-Host " 3. OSDCloud: AMD AM4 PRO motherboards"
 Write-Host " 4. OSDCloud: AMD AM4 Phantom Gaming motherboards"
 Write-Host " 5. OSDCloud: AMD AM4 Steel Legend motherboards"
 Write-Host " 6. OSDCloud: AMD AM4 Taichi motherboards"
-Write-Host " 7. OSDCloud: Create ISO - ALL AMD AM4 motherboards"
+Write-Host " 7. OSDCloud: ALL AMD AM4 motherboards"
 Write-Host " 8. OSDCloud: Get Help"
 Write-Host " 9. Return to Main Menu"
 
@@ -118,26 +119,98 @@ do
 '1'{cls
     $Extreme = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/Extreme%20Motherboards/Extreme.ps1")
     Invoke-Expression $($Extreme.Content)
+
+    $HyperV = Invoke-WebRequest("")
+    Invoke-Expression $($HyperV.Content)
+
+    $Proxmox = Invoke-WebRequest("")
+    Invoke-Expression $($Proxmox.Content)
+
+    $ESXI = Invoke-WebRequest("")
+    Invoke-Expression $($ESXI.Content)
+
+    $VMWorkstationPro = Invoke-WebRequest("")
+    Invoke-Expression $($VMWorkstationPro.Content)
     }
 '2'{cls
     $Fatal1tyGaming = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/Fatal1ty%20Gaming%20Motherboards/Fatal1tyGaming.ps1")
     Invoke-Expression $($Fatal1tyGaming.Content)
+
+    $HyperV = Invoke-WebRequest("")
+    Invoke-Expression $($HyperV.Content)
+
+    $Proxmox = Invoke-WebRequest("")
+    Invoke-Expression $($Proxmox.Content)
+
+    $ESXI = Invoke-WebRequest("")
+    Invoke-Expression $($ESXI.Content)
+
+    $VMWorkstationPro = Invoke-WebRequest("")
+    Invoke-Expression $($VMWorkstationPro.Content)
     }
 '3'{cls
     $PRO = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/PRO%20Motherboards/PRO.ps1")
     Invoke-Expression $($PRO.Content)
+
+    $HyperV = Invoke-WebRequest("")
+    Invoke-Expression $($HyperV.Content)
+
+    $Proxmox = Invoke-WebRequest("")
+    Invoke-Expression $($Proxmox.Content)
+
+    $ESXI = Invoke-WebRequest("")
+    Invoke-Expression $($ESXI.Content)
+
+    $VMWorkstationPro = Invoke-WebRequest("")
+    Invoke-Expression $($VMWorkstationPro.Content)
     }
 '4'{cls
     $PhantomGaming = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/Phantom%20Gaming%20Motherboards/PhantomGaming.ps1")
     Invoke-Expression $($PhantomGaming.Content)
+
+    $HyperV = Invoke-WebRequest("")
+    Invoke-Expression $($HyperV.Content)
+
+    $Proxmox = Invoke-WebRequest("")
+    Invoke-Expression $($Proxmox.Content)
+
+    $ESXI = Invoke-WebRequest("")
+    Invoke-Expression $($ESXI.Content)
+
+    $VMWorkstationPro = Invoke-WebRequest("")
+    Invoke-Expression $($VMWorkstationPro.Content)
     }
 '5'{cls
     $SteelLegend = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/Steel%20Legend%20Motherboards/SteelLegend.ps1")
     Invoke-Expression $($SteelLegend.Content)
+
+    $HyperV = Invoke-WebRequest("")
+    Invoke-Expression $($HyperV.Content)
+
+    $Proxmox = Invoke-WebRequest("")
+    Invoke-Expression $($Proxmox.Content)
+
+    $ESXI = Invoke-WebRequest("")
+    Invoke-Expression $($ESXI.Content)
+
+    $VMWorkstationPro = Invoke-WebRequest("")
+    Invoke-Expression $($VMWorkstationPro.Content)
     }
 '6'{cls
     $Taichi = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/Taichi%20Motherboards/Taichi.ps1")
     Invoke-Expression $($Taichi.Content)
+
+    $HyperV = Invoke-WebRequest("")
+    Invoke-Expression $($HyperV.Content)
+
+    $Proxmox = Invoke-WebRequest("")
+    Invoke-Expression $($Proxmox.Content)
+
+    $ESXI = Invoke-WebRequest("")
+    Invoke-Expression $($ESXI.Content)
+
+    $VMWorkstationPro = Invoke-WebRequest("")
+    Invoke-Expression $($VMWorkstationPro.Content)
     }
 '7'{cls
     $ALLAM4 = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/ALL%20ASRock%20AM4/ALL-ASRock-AM4.ps1")
