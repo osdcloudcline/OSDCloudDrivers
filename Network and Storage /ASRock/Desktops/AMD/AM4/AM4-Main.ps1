@@ -123,7 +123,7 @@ do
     $HyperV = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Hyper-V/Hyper-V-NetworkDrivers.ps1")
     Invoke-Expression $($HyperV.Content)
 
-    $Proxmox = Invoke-WebRequest("")
+    $Proxmox = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Proxmox/Proxmox.ps1")
     Invoke-Expression $($Proxmox.Content)
 
     $ESXI = Invoke-WebRequest("")
@@ -139,7 +139,7 @@ do
     $HyperV = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Hyper-V/Hyper-V-NetworkDrivers.ps1")
     Invoke-Expression $($HyperV.Content)
 
-    $Proxmox = Invoke-WebRequest("")
+    $Proxmox = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Proxmox/Proxmox.ps1")
     Invoke-Expression $($Proxmox.Content)
 
     $ESXI = Invoke-WebRequest("")
@@ -155,7 +155,7 @@ do
     $HyperV = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Hyper-V/Hyper-V-NetworkDrivers.ps1")
     Invoke-Expression $($HyperV.Content)
 
-    $Proxmox = Invoke-WebRequest("")
+    $Proxmox = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Proxmox/Proxmox.ps1")
     Invoke-Expression $($Proxmox.Content)
 
     $ESXI = Invoke-WebRequest("")
@@ -171,7 +171,7 @@ do
     $HyperV = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Hyper-V/Hyper-V-NetworkDrivers.ps1")
     Invoke-Expression $($HyperV.Content)
 
-    $Proxmox = Invoke-WebRequest("")
+    $Proxmox = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Proxmox/Proxmox.ps1")
     Invoke-Expression $($Proxmox.Content)
 
     $ESXI = Invoke-WebRequest("")
@@ -187,7 +187,7 @@ do
     $HyperV = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Hyper-V/Hyper-V-NetworkDrivers.ps1")
     Invoke-Expression $($HyperV.Content)
 
-    $Proxmox = Invoke-WebRequest("")
+    $Proxmox = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Proxmox/Proxmox.ps1")
     Invoke-Expression $($Proxmox.Content)
 
     $ESXI = Invoke-WebRequest("")
@@ -203,7 +203,7 @@ do
     $HyperV = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Hyper-V/Hyper-V-NetworkDrivers.ps1")
     Invoke-Expression $($HyperV.Content)
 
-    $Proxmox = Invoke-WebRequest("")
+    $Proxmox = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Proxmox/Proxmox.ps1")
     Invoke-Expression $($Proxmox.Content)
 
     $ESXI = Invoke-WebRequest("")
