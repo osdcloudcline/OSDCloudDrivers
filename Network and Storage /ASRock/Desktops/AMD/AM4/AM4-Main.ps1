@@ -129,7 +129,7 @@ do
     $ESXINetwork = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/VMWare%20ESXI/ESXILANDrivers.ps1")
     Invoke-Expression $($ESXINetwork.Content)
 
-    $ESXIStorage = Invoke-WebRequest("")
+    $ESXIStorage = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/VMWare%20ESXI/ESXI-StorageDrivers.ps1")
     Invoke-Expression $($ESXIStorage.Content)
 
     $VMWorkstationProNetwork = Invoke-WebRequest("")
@@ -151,7 +151,7 @@ do
     $ESXINetwork = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/VMWare%20ESXI/ESXILANDrivers.ps1")
     Invoke-Expression $($ESXINetwork.Content)
 
-    $ESXIStorage = Invoke-WebRequest("")
+    $ESXIStorage = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/VMWare%20ESXI/ESXI-StorageDrivers.ps1")
     Invoke-Expression $($ESXIStorage.Content)
 
     $VMWorkstationProNetwork = Invoke-WebRequest("")
@@ -173,7 +173,7 @@ do
     $ESXINetwork = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/VMWare%20ESXI/ESXILANDrivers.ps1")
     Invoke-Expression $($ESXINetwork.Content)
 
-    $ESXIStorage = Invoke-WebRequest("")
+    $ESXIStorage = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/VMWare%20ESXI/ESXI-StorageDrivers.ps1")
     Invoke-Expression $($ESXIStorage.Content)
 
     $VMWorkstationProNetwork = Invoke-WebRequest("")
@@ -195,7 +195,7 @@ do
     $ESXINetwork = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/VMWare%20ESXI/ESXILANDrivers.ps1")
     Invoke-Expression $($ESXINetwork.Content)
 
-    $ESXIStorage = Invoke-WebRequest("")
+    $ESXIStorage = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/VMWare%20ESXI/ESXI-StorageDrivers.ps1")
     Invoke-Expression $($ESXIStorage.Content)
 
     $VMWorkstationProNetwork = Invoke-WebRequest("")
@@ -217,7 +217,7 @@ do
     $ESXINetwork = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/VMWare%20ESXI/ESXILANDrivers.ps1")
     Invoke-Expression $($ESXINetwork.Content)
 
-    $ESXIStorage = Invoke-WebRequest("")
+    $ESXIStorage = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/VMWare%20ESXI/ESXI-StorageDrivers.ps1")
     Invoke-Expression $($ESXIStorage.Content)
 
     $VMWorkstationProNetwork = Invoke-WebRequest("")
@@ -239,7 +239,7 @@ do
     $ESXINetwork = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/VMWare%20ESXI/ESXILANDrivers.ps1")
     Invoke-Expression $($ESXINetwork.Content)
 
-    $ESXIStorage = Invoke-WebRequest("")
+    $ESXIStorage = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/VMWare%20ESXI/ESXI-StorageDrivers.ps1")
     Invoke-Expression $($ESXIStorage.Content)
 
     $VMWorkstationProNetwork = Invoke-WebRequest("")
