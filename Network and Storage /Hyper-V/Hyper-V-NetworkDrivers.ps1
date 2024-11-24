@@ -8,7 +8,7 @@ Get-Date
 ##########################
 
 $AM4NVMePath = "C:\OSDCloud\Drivers\Motherboards\ASRock\AM4\Storage\NVMe"
-$HyperVNetworkDriversURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Hyper-V/Hyper-V%20-%20NetworkDrivers.zip"
+$HyperVNetworkDriversURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Hyper-V/HyperV-NetworkDrivers.zip"
 $HyperVDownloadPath = "C:\OSDCloud\Drivers\Motherboards\ASRock\AM4\Storage"
 
 Import-Module -Name OSD -Force
