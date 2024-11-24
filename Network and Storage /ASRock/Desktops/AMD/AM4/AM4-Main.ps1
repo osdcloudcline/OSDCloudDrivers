@@ -86,7 +86,7 @@ Write-Host
 Write-Host 
 Write-Host '                                                                              ' -BackgroundColor White                                                              
 Write-Host '            This OSDCloud section allows the user to perform:                 ' -ForegroundColor DarkBlue -BackgroundColor White
-Write-Host '     - Downloads Ethernet/WiFi/Bluetooth/Storage drivers for                  ' -ForegroundColor DarkBlue -BackgroundColor White
+Write-Host '     - Downloads Ethernet/WiFi/Bluetooth/Storage/Virtualization drivers for   ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '        desktop motherboards for the following AMD AM4 model lines:           ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '                                                                              ' -BackgroundColor White
 Write-Host '     - ASRock: AMD AM4 Extreme motherboards                                   ' -ForegroundColor DarkBlue -BackgroundColor White
