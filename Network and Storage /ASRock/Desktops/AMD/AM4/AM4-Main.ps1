@@ -126,7 +126,7 @@ do
     $Proxmox = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Proxmox/Proxmox.ps1")
     Invoke-Expression $($Proxmox.Content)
 
-    $ESXINetwork = Invoke-WebRequest("")
+    $ESXINetwork = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/VMWare%20ESXI/ESXILANDrivers.ps1")
     Invoke-Expression $($ESXINetwork.Content)
 
     $ESXIStorage = Invoke-WebRequest("")
@@ -148,7 +148,7 @@ do
     $Proxmox = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Proxmox/Proxmox.ps1")
     Invoke-Expression $($Proxmox.Content)
 
-    $ESXINetwork = Invoke-WebRequest("")
+    $ESXINetwork = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/VMWare%20ESXI/ESXILANDrivers.ps1")
     Invoke-Expression $($ESXINetwork.Content)
 
     $ESXIStorage = Invoke-WebRequest("")
@@ -170,7 +170,7 @@ do
     $Proxmox = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Proxmox/Proxmox.ps1")
     Invoke-Expression $($Proxmox.Content)
 
-    $ESXINetwork = Invoke-WebRequest("")
+    $ESXINetwork = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/VMWare%20ESXI/ESXILANDrivers.ps1")
     Invoke-Expression $($ESXINetwork.Content)
 
     $ESXIStorage = Invoke-WebRequest("")
@@ -192,7 +192,7 @@ do
     $Proxmox = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Proxmox/Proxmox.ps1")
     Invoke-Expression $($Proxmox.Content)
 
-    $ESXINetwork = Invoke-WebRequest("")
+    $ESXINetwork = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/VMWare%20ESXI/ESXILANDrivers.ps1")
     Invoke-Expression $($ESXINetwork.Content)
 
     $ESXIStorage = Invoke-WebRequest("")
@@ -214,7 +214,7 @@ do
     $Proxmox = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Proxmox/Proxmox.ps1")
     Invoke-Expression $($Proxmox.Content)
 
-    $ESXINetwork = Invoke-WebRequest("")
+    $ESXINetwork = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/VMWare%20ESXI/ESXILANDrivers.ps1")
     Invoke-Expression $($ESXINetwork.Content)
 
     $ESXIStorage = Invoke-WebRequest("")
@@ -236,7 +236,7 @@ do
     $Proxmox = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Proxmox/Proxmox.ps1")
     Invoke-Expression $($Proxmox.Content)
 
-    $ESXINetwork = Invoke-WebRequest("")
+    $ESXINetwork = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/VMWare%20ESXI/ESXILANDrivers.ps1")
     Invoke-Expression $($ESXINetwork.Content)
 
     $ESXIStorage = Invoke-WebRequest("")
