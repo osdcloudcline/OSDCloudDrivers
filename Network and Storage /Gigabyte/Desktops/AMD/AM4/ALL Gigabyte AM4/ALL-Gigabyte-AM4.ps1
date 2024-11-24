@@ -205,7 +205,7 @@ If(($ProxmoxLANDrivers1 -eq $true) -and ($ProxmoxLANDrivers2 -eq $true) -and ($P
 Write-Verbose "Proxmox Virtualization I/O Network Drivers have been downloaded and expanded" -Verbose
 }
 ElseIf(($ProxmoxLANDrivers1 -eq $false) -and ($ProxmoxLANDrivers2 -eq $false) -and ($ProxmoxLANDrivers3 -eq $false)){
-$ProxmoxLANDrivers = Invoke-WebRequest("")
+$ProxmoxLANDrivers = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Proxmox/ProxmoxNetwork.ps1")
 Invoke-Expression $($ProxmoxLANDrivers.Content)
 }
 }
