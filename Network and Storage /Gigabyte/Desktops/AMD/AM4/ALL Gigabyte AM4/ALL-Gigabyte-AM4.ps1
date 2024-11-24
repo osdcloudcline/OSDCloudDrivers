@@ -278,3 +278,44 @@ Write-Host
 Get-AM4Storage
 
 Stop-Transcript
+
+$GigabyteAM4Motherboards = "C:\Logs\OSDCloud\Gigabyte\AM4\Motherboards.log"
+
+Start-Transcript -Path $GigabyteAM4Motherboards
+
+Get-Date
+
+Write-Verbose "Processing: Gigabyte AM4 AERO Motherboards" -Verbose
+Write-Host
+
+$AEROAM4 = Invoke-WebRequest("")
+Invoke-Expression $($AEROAM4.Content)
+
+Get-AM4Storage
+
+Write-Host
+Write-Verbose "Processing: Gigabyte AM4 AORUS Motherboards" -Verbose
+Write-Host
+
+$AORUSAM4 = Invoke-WebRequest("")
+Invoke-Expression $($AORUSAM4.Content)
+
+Get-AM4Storage
+
+Write-Host
+Write-Verbose "Processing: Gigabyte AM4 Gaming Motherboards" -Verbose
+Write-Host
+
+$GamingAM4 = Invoke-WebRequest("")
+Invoke-Expression $($GamingAM4.Content)
+
+Get-AM4Storage
+
+Write-Host
+Write-Verbose "Processing: Gigabyte AM4 Ultra Durable Motherboards" -Verbose
+Write-Host
+
+$UltraDurableAM4 = Invoke-WebRequest("")
+Invoke-Expression $($UltraDurableAM4.Content)
+
+Get-AM4Storage
