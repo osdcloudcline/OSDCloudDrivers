@@ -320,7 +320,7 @@ Write-Host
 Write-Verbose "Processing: ASRock AM4 Steel Legend Motherboards" -Verbose
 Write-Host
 
-$SteelLegendAM4 = Invoke-WebRequest("")
+$SteelLegendAM4 = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/Steel%20Legend%20Motherboards/SteelLegend.ps1")
 Invoke-Expression $($SteelLegendAM4.Content)
 
 Get-AM4Storage
