@@ -288,7 +288,7 @@ Get-Date
 Write-Verbose "Processing: Gigabyte AM4 AERO Motherboards" -Verbose
 Write-Host
 
-$AEROAM4 = Invoke-WebRequest("")
+$AEROAM4 = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM4/AERO/AERO.ps1")
 Invoke-Expression $($AEROAM4.Content)
 
 Get-AM4Storage
