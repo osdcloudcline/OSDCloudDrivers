@@ -24,7 +24,7 @@ Import-Module -Name OSD -Force
 Write-Verbose "Processing: ASRock AM4 NVMe Storage Drivers..." -Verbose
 
 Save-WebFile -SourceUrl $NVMeURL -DestinationDirectory $NVMEDownloadPath
-Extract-7zip 
+Expand-7zip 
 
 Write-Host
 Write-Verbose "Completed: ASRock AM4 NVMe Storage Drivers..." -Verbose
@@ -33,4 +33,4 @@ Write-Host
 Write-Verbose "Processing: ASRock AM4 SATA Storage Drivers..." -Verbose
 
 Save-WebFile -SourceUrl $SATAURL -DestinationDirectory $SATADownloadPath
-Extract-7zip 
+Expand-7zip 
