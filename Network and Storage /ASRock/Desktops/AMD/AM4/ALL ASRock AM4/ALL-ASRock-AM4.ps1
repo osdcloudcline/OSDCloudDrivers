@@ -293,7 +293,7 @@ Write-Host
 Write-Verbose "Processing: ASRock AM4 Fatal1ty Gaming Motherboards" -Verbose
 Write-Host
 
-$Fatal1tyGamingAM4 = Invoke-WebRequest("")
+$Fatal1tyGamingAM4 = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/Fatal1ty%20Gaming%20Motherboards/Fatal1tyGaming.ps1")
 Invoke-Expression $($Fatal1tyGamingAM4.Content)
 
 Get-AM4Storage
