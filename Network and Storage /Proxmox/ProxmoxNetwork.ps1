@@ -1,6 +1,6 @@
 $ProxmoxNetLog = "C:\Logs\OSDCloud\Proxmox\NetworkDrivers.log"
 
-Start-Transcript -Path $HyperVLog
+Start-Transcript -Path $ProxmoxNetLog
 
 Get-Date
 
