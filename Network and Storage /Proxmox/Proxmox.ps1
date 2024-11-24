@@ -42,7 +42,7 @@ Get-Date
 
 $ProxmoxPath1 = "C:\OSDCloud\Drivers\Virtualization\Proxmox\Storage\Windows11"
 $ProxmoxPath2 = "C:\OSDCloud\Drivers\Virtualization\Proxmox\Storage\WindowsServer2025"
-$ProxmoxStorageDriversURL1 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Proxmox/Proxmox-Wi11-Ethernet.zip"
+$ProxmoxStorageDriversURL1 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Proxmox/Proxmox-Win11-StorageDrivers.zip"
 $ProxmoxStorageDriversURL2 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Proxmox/Proxmox-WinServer2025-Ethernet.zip"
 $ProxmoxDownloadPath = "C:\OSDCloud\Drivers\Virtualization\Proxmox"
 
