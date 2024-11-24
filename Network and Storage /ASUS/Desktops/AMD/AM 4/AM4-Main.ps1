@@ -85,8 +85,9 @@ Write-Host
 Write-Host 
 Write-Host '                                                                              ' -BackgroundColor White                                                              
 Write-Host '            This OSDCloud section allows the user to perform:                 ' -ForegroundColor DarkBlue -BackgroundColor White
-Write-Host '     - Creating ISO images for Desktop motherboards                           ' -ForegroundColor DarkBlue -BackgroundColor White
-Write-Host '       AMD AM4 model lines:                                                   ' -ForegroundColor DarkBlue -BackgroundColor White
+Write-Host '     - Downloads Ethernet/WiFi/Bluetooth/Storage/Virtualization drivers for   ' -ForegroundColor DarkBlue -BackgroundColor White
+Write-Host '        desktop motherboards for the following ASUS AMD AM4 model lines:      ' -ForegroundColor DarkBlue -BackgroundColor White
+Write-Host '                                                                              ' -BackgroundColor White
 Write-Host '     - ASUS: AMD AM4 Business motherboards                                    ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '     - ASUS: AMD AM4 CSM motherboards                                         ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '     - ASUS: AMD AM4 Other motherboards                                       ' -ForegroundColor DarkBlue -BackgroundColor White
@@ -101,15 +102,15 @@ pause
 Clear-Host
 
 Write-Host "======= $Title ======"
-Write-Host " 1. OSDCloud: Create ISO - AMD AM4 Business motherboards"
-Write-Host " 2. OSDCloud: Create ISO - AMD AM4 CSM motherboards"
-Write-Host " 3. OSDCloud: Create ISO - AMD AM4 Other motherboards"
-Write-Host " 4. OSDCloud: Create ISO - AMD AM4 PRIME motherboards"
-Write-Host " 5. OSDCloud: Create ISO - AMD AM4 ProArt motherboards"
-Write-Host " 6. OSDCloud: Create ISO - AMD AM4 ROG - Republic of Gamers motherboards"
-Write-Host " 7. OSDCloud: Create ISO - AMD AM4 TUF Gaming motherboards"
-Write-Host " 8. OSDCloud: Create ISO - AMD AM4 Workstation motherboards"
-Write-Host " 9. OSDCloud: Create ISO - ALL AMD AM4 motherboards"
+Write-Host " 1. OSDCloud: AMD AM4 Business motherboards"
+Write-Host " 2. OSDCloud: AMD AM4 CSM motherboards"
+Write-Host " 3. OSDCloud: AMD AM4 Other motherboards"
+Write-Host " 4. OSDCloud: AMD AM4 PRIME motherboards"
+Write-Host " 5. OSDCloud: AMD AM4 ProArt motherboards"
+Write-Host " 6. OSDCloud: AMD AM4 ROG - Republic of Gamers motherboards"
+Write-Host " 7. OSDCloud: AMD AM4 TUF Gaming motherboards"
+Write-Host " 8. OSDCloud: AMD AM4 Workstation motherboards"
+Write-Host " 9. OSDCloud: ALL AMD AM4 motherboards"
 Write-Host " 10. OSDCloud: Get Help"
 Write-Host " 11. Return to Main Menu"
 
