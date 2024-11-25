@@ -134,7 +134,7 @@ do
     Invoke-Expression $($VMWorkstationProStorage.Content)
     }
 '2'{cls
-    $AORUS = Invoke-WebRequest("")
+    $AORUS = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM4/AORUS/AORUS.ps1")
     Invoke-Expression $($AORUS.Content)
 
     $HyperV = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Hyper-V/Hyper-V-NetworkDrivers.ps1")
