@@ -297,7 +297,7 @@ Write-Host
 Write-Verbose "Processing: Gigabyte AM4 AORUS Motherboards" -Verbose
 Write-Host
 
-$AORUSAM4 = Invoke-WebRequest("")
+$AORUSAM4 = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM4/AORUS/AORUS.ps1")
 Invoke-Expression $($AORUSAM4.Content)
 
 Get-AM4Storage
