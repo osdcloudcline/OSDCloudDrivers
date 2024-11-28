@@ -306,7 +306,7 @@ Write-Host
 Write-Verbose "Processing: Gigabyte AM4 Gaming Motherboards" -Verbose
 Write-Host
 
-$GamingAM4 = Invoke-WebRequest("")
+$GamingAM4 = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM4/Gaming/Gaming.ps1")
 Invoke-Expression $($GamingAM4.Content)
 
 Get-AM4Storage
