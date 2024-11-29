@@ -140,8 +140,8 @@ $UDDestination =  "C:\OSDCloud\Drivers\Motherboards\Gigabyte\Ultra Durable"
 # Bluetooth
 
 $UDBluetooth1 = "$UDDestination\B550\Bluetooth1"
-$UDBluetooth2 = "$UDDestination\A520\Bluetooth1"
-$UDBluetooth3 = "$UDDestination\B450\Bluetooth1"
+$UDBluetooth2 = "$UDDestination\A520\Bluetooth2"
+$UDBluetooth3 = "$UDDestination\B450\Bluetooth3"
 
 # Ethernet
 
@@ -166,7 +166,7 @@ $UDEthernet13 = "$UDDestination\B550\Ethernet8"
 $UDEthernet14 = "$UDDestination\X370\Ethernet"
 
 $UDEthernet15 = "$UDDestination\X570\Ethernet1"
-$UDEthernet16 = "$UDDestination\X570\Ethernet1"
+$UDEthernet16 = "$UDDestination\X570\Ethernet2"
 
 
 # Storage
