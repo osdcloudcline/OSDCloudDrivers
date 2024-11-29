@@ -439,9 +439,9 @@ Write-Verbose "Processing: Gigabyte Ultra Durable AM4 motherboard drivers file e
 Write-Host
 Write-Verbose "Processing: Extracting Bluetooth drivers..." -Verbose
 Write-Host
-Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-BluetoothDrivers-B550.zip"  -TargetPath $UDBluetooth1  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-Realtek-BluetoothDrivers-A520.zip"  -TargetPath $UDBluetooth2  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-Realtek-BluetoothDrivers-B450.zip"  -TargetPath $UDBluetooth3  -ErrorAction SilentlyContine
 Write-Host
 Write-Verbose "Completed: Extraction of ALL Gigabyte Ultra Durable AM4 Bluetooth Drivers..." -Verbose
 Write-Host
