@@ -357,22 +357,22 @@ Write-Host
 Write-Verbose "Processing: Gigabyte Ultra Durable AM4 motherboard drivers file extraction..." -Verbose
 Write-Host
 Write-Verbose "Processing: Extracting Ethernet drivers..." -Verbose
-Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-EthernetDrivers-A520-Win10.zip"  -TargetPath $UDEthernet1  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-EthernetDrivers-A520-Win11.zip"  -TargetPath $UDEthernet2  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-EthernetDrivers-B350.zip"  -TargetPath $UDEthernet3  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-EthernetDrivers-B450-Win10.zip"  -TargetPath $UDEthernet4  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-EthernetDrivers-B450-Win11.zip"  -TargetPath $UDEthernet5  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-EthernetDrivers-B550-Intel-1.zip"  -TargetPath $UDEthernet6  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-EthernetDrivers-B550-Intel-2.zip"  -TargetPath $UDEthernet7  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-EthernetDrivers-B550-Intel-3-Win10.zip"  -TargetPath $UDEthernet8  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-EthernetDrivers-B550-Intel-4-Win11.zip"  -TargetPath $UDEthernet9  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-EthernetDrivers-B550-Intel-i225-Win10.zip"  -TargetPath $UDEthernet10  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-EthernetDrivers-B550-Intel-i225-Win11.zip"  -TargetPath $UDEthernet11  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-EthernetDrivers-B550-Realtek-Win10.zip"  -TargetPath $UDEthernet12  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-EthernetDrivers-B550-Realtek-Win11.zip"  -TargetPath $UDEthernet13  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-EthernetDrivers-X370-Realtek-Win10.zip"  -TargetPath $UDEthernet14  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-EthernetDrivers-X570-Realtek-Win10.zip"  -TargetPath $UDEthernet15  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-EthernetDrivers-X570-Realtek-Win11.zip"  -TargetPath $UDEthernet16  -ErrorAction SilentlyContine
 Write-Host
 Write-Verbose "Completed: Extraction of ALL Gigabyte Ultra Durable AM4 Ethernet Drivers..." -Verbose
 Write-Host
@@ -384,12 +384,12 @@ Write-Verbose "Processing: Gigabyte Ultra Durable AM4 motherboard drivers file e
 Write-Host
 Write-Verbose "Processing: Extracting WiFi drivers..." -Verbose
 Write-Host
-Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-A320-WiFiDrivers-Intel.zip"  -TargetPath $UDWiFi1  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-A320-WiFiDrivers-Realtek.zip"  -TargetPath $UDWiFi2  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-B450-WiFiDrivers-Intel.zip"  -TargetPath $UDWiFi3  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-B450-WiFiDrivers-Realtek.zip"  -TargetPath $UDWiFi4  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-B550-WiFiDrivers-Intel.zip"  -TargetPath $UDWiFi5  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-B550-WiFiDrivers-Realtek.zip"  -TargetPath $UDWiFi6  -ErrorAction SilentlyContine
 Write-Host
 Write-Verbose "Completed: Extraction of ALL Gigabyte Ultra Durable AM4 WiFi Drivers..." -Verbose
 Write-Host
