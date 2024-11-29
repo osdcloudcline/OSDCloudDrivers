@@ -198,7 +198,7 @@ $UDStorage18 = "$UDDestination\X370\RAID\SATA"
 
 $UDStorage19 = "$UDDestination\X570\RAID\NVMe1"
 $UDStorage20 = "$UDDestination\X570\RAID\NVMe2"
-$UDStorage21 = "$UDDestination\Storage\X570\RAID\SATA"
+$UDStorage21 = "$UDDestination\X570\RAID\SATA"
 
 
 # WiFi 
