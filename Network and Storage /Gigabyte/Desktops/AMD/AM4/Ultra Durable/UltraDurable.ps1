@@ -352,3 +352,96 @@ Write-Host
 Write-Verbose "Completed: Download of ALL Gigabyte Ultra Durable AM4 Storage Drivers..." -Verbose
 
 
+Write-Host
+Write-Host
+Write-Verbose "Processing: Gigabyte Ultra Durable AM4 motherboard drivers file extraction..." -Verbose
+Write-Host
+Write-Verbose "Processing: Extracting Ethernet drivers..." -Verbose
+Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Write-Host
+Write-Verbose "Completed: Extraction of ALL Gigabyte Ultra Durable AM4 Ethernet Drivers..." -Verbose
+Write-Host
+
+
+Write-Host
+Write-Host
+Write-Verbose "Processing: Gigabyte Ultra Durable AM4 motherboard drivers file extraction..." -Verbose
+Write-Host
+Write-Verbose "Processing: Extracting WiFi drivers..." -Verbose
+Write-Host
+Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Write-Host
+Write-Verbose "Completed: Extraction of ALL Gigabyte Ultra Durable AM4 WiFi Drivers..." -Verbose
+Write-Host
+
+
+Write-Host
+Write-Host
+Write-Verbose "Processing: Gigabyte Ultra Durable AM4 motherboard drivers file extraction..." -Verbose
+Write-Host
+Write-Verbose "Processing: Extracting NVMe Storage drivers..." -Verbose
+Write-Host
+Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Write-Host
+Write-Verbose "Processing: Extracting SATA Storage drivers..." -Verbose
+Write-Host
+Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Write-Host
+Write-Verbose "Processing: Extracting Thunderbolt Storage drivers..." -Verbose
+Write-Host
+Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Write-Verbose "Completed: Extraction of ALL Gigabyte Ultra Durable AM4 Storage Drivers..." -Verbose
+Write-Host
+
+
+
+Write-Host
+Write-Host
+Write-Verbose "Processing: Gigabyte Ultra Durable AM4 motherboard drivers file extraction..." -Verbose
+Write-Host
+Write-Verbose "Processing: Extracting Bluetooth drivers..." -Verbose
+Write-Host
+Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Write-Host
+Write-Verbose "Completed: Extraction of ALL Gigabyte Ultra Durable AM4 Bluetooth Drivers..." -Verbose
+Write-Host
