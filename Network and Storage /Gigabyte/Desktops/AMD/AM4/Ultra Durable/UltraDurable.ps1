@@ -262,3 +262,93 @@ Write-Verbose "Completed: Download of Gigabyte Ultra Durable AM4 X570 Ethernet D
 Write-Host
 Write-Verbose "Completed: Download of ALL Gigabyte Ultra Durable AM4 motherboard Ethernet Drivers..." -Verbose
 
+
+Write-Host
+Write-Host
+Write-Verbose "Processing: Acquiring Gigabyte Ultra Durable AM4 B550 Bluetooth Drivers..." -Verbose
+Write-Host
+Save-WebFile -SourceUrl $UDBluetoothURL1 -DestinationDirectory $UDDestination
+Write-Host
+Write-Verbose "Completed: Download of Gigabyte Ultra Durable AM4 B550 Bluetooth Drivers..." -Verbose
+Write-Host
+Write-Host
+Write-Verbose "Processing: Acquiring Gigabyte Ultra Durable AM4 A520 Bluetooth Drivers..." -Verbose
+Write-Host
+Save-WebFile -SourceUrl $UDBluetoothURL2 -DestinationDirectory $UDDestination
+Write-Host
+Write-Host
+Write-Verbose "Processing: Acquiring Gigabyte Ultra Durable AM4 B450 Bluetooth Drivers..." -Verbose
+Write-Host
+Save-WebFile -SourceUrl $UDBluetoothURL3 -DestinationDirectory $UDDestination
+Write-Host
+Write-Verbose "Completed: Download of Gigabyte Ultra Durable AM4 B450 Bluetooth Drivers..." -Verbose
+Write-Host
+Write-Verbose "Completed: Download of ALL Gigabyte Ultra Durable AM4 motherboard Bluetooth Drivers..." -Verbose
+Write-Host
+
+
+Write-Host
+Write-Host
+Write-Verbose "Processing: Acquiring Gigabyte Ultra Durable AM4 A320 WiFi Drivers..." -Verbose
+Write-Host
+Save-WebFile -SourceUrl $UDWiFiURL1 -DestinationDirectory $UDDestination
+Save-WebFile -SourceUrl $UDWiFiURL2 -DestinationDirectory $UDDestination
+Write-Host
+Write-Verbose "Completed: Download of Gigabyte Ultra Durable AM4 A320 WiFi Drivers..." -Verbose
+Write-Host
+Write-Host
+Write-Host
+Write-Verbose "Processing: Acquiring Gigabyte Ultra Durable AM4 B450 WiFi Drivers..." -Verbose
+Write-Host
+Save-WebFile -SourceUrl $UDWiFiURL3 -DestinationDirectory $UDDestination
+Save-WebFile -SourceUrl $UDWiFiURL4 -DestinationDirectory $UDDestination
+Write-Host
+Write-Verbose "Completed: Download of Gigabyte Ultra Durable AM4 B450 WiFi Drivers..." -Verbose
+Write-Host
+Write-Verbose "Processing: Acquiring Gigabyte Ultra Durable AM4 B550 WiFi Drivers..." -Verbose
+Write-Host
+Save-WebFile -SourceUrl $UDWiFiURL5 -DestinationDirectory $UDDestination
+Save-WebFile -SourceUrl $UDWiFiURL6 -DestinationDirectory $UDDestination
+Write-Host
+Write-Verbose "Completed: Download of Gigabyte Ultra Durable AM4 B550 WiFi Drivers..." -Verbose
+Write-Host
+Write-Verbose "Completed: Download of ALL Gigabyte Ultra Durable AM4 motherboard WiFi Drivers..." -Verbose
+Write-Host
+
+
+Write-Host
+Write-Host
+Write-Verbose "Processing: Acquiring Gigabyte Ultra Durable AM4 Storage Drivers - RAID NVMe..." -Verbose
+Write-Host
+Save-WebFile -SourceUrl $UDStorageURL1 -DestinationDirectory $UDDestination
+Save-WebFile -SourceUrl $UDStorageURL3 -DestinationDirectory $UDDestination
+Save-WebFile -SourceUrl $UDStorageURL4 -DestinationDirectory $UDDestination
+Save-WebFile -SourceUrl $UDStorageURL5 -DestinationDirectory $UDDestination
+Save-WebFile -SourceUrl $UDStorageURL6 -DestinationDirectory $UDDestination
+Save-WebFile -SourceUrl $UDStorageURL9 -DestinationDirectory $UDDestination
+Save-WebFile -SourceUrl $UDStorageURL11 -DestinationDirectory $UDDestination
+Save-WebFile -SourceUrl $UDStorageURL13 -DestinationDirectory $UDDestination
+Save-WebFile -SourceUrl $UDStorageURL14 -DestinationDirectory $UDDestination
+Save-WebFile -SourceUrl $UDStorageURL17 -DestinationDirectory $UDDestination
+Save-WebFile -SourceUrl $UDStorageURL19 -DestinationDirectory $UDDestination
+Save-WebFile -SourceUrl $UDStorageURL20 -DestinationDirectory $UDDestination
+Write-Host
+Write-Verbose "Processing: Acquiring Gigabyte Ultra Durable AM4 Storage Drivers - RAID SATA..." -Verbose
+Write-Host
+Save-WebFile -SourceUrl $UDStorageURL2 -DestinationDirectory $UDDestination
+Save-WebFile -SourceUrl $UDStorageURL7 -DestinationDirectory $UDDestination
+Save-WebFile -SourceUrl $UDStorageURL8 -DestinationDirectory $UDDestination
+Save-WebFile -SourceUrl $UDStorageURL10 -DestinationDirectory $UDDestination
+Save-WebFile -SourceUrl $UDStorageURL12 -DestinationDirectory $UDDestination
+Save-WebFile -SourceUrl $UDStorageURL15 -DestinationDirectory $UDDestination
+Save-WebFile -SourceUrl $UDStorageURL18 -DestinationDirectory $UDDestination
+Save-WebFile -SourceUrl $UDStorageURL21 -DestinationDirectory $UDDestination
+Write-Host
+Write-Host
+Write-Verbose "Processing: Acquiring Gigabyte Ultra Durable AM4 Storage Drivers - RAID Thunderbolt..." -Verbose
+Write-Host
+Save-WebFile -SourceUrl $UDStorageURL16 -DestinationDirectory $UDDestination
+Write-Host
+Write-Verbose "Completed: Download of ALL Gigabyte Ultra Durable AM4 Storage Drivers..." -Verbose
+
+
