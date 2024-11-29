@@ -210,3 +210,55 @@ $UDWiFi4 = "$UDDestination\B450\WiFi2"
 $UDWiFi5 = "$UDDestination\B550\WiFi1"
 $UDWiFi6 = "$UDDestination\B550\WiFi2"
 
+
+Write-Host
+Write-Verbose "Processing: Gigabyte Ultra Durable AM4 motherboard drivers..." -Verbose
+Write-Host
+Write-Verbose "Processing: Acquiring Gigabyte Ultra Durable AM4 A520 Ethernet Drivers..." -Verbose
+Write-Host
+Save-WebFile -SourceUrl $UDEthernetURL1 -DestinationDirectory $UDDestination
+Save-WebFile -SourceUrl $UDEthernetURL2 -DestinationDirectory $UDDestination
+Write-Host
+Write-Verbose "Completed: Download of Gigabyte Ultra Durable AM4 A520 Ethernet Drivers..." -Verbose
+Write-Host
+Write-Verbose "Processing: Acquiring Gigabyte Ultra Durable AM4 B350 Ethernet Drivers..." -Verbose
+Write-Host
+Save-WebFile -SourceUrl $UDEthernetURL3 -DestinationDirectory $UDDestination
+Write-Host
+Write-Verbose "Completed: Download of Gigabyte Ultra Durable AM4 B350 Ethernet Drivers..." -Verbose
+Write-Host
+Write-Verbose "Processing: Acquiring Gigabyte Ultra Durable AM4 B450 Ethernet Drivers..." -Verbose
+Write-Host
+Save-WebFile -SourceUrl $UDEthernetURL4 -DestinationDirectory $UDDestination
+Save-WebFile -SourceUrl $UDEthernetURL5 -DestinationDirectory $UDDestination
+Write-Host
+Write-Verbose "Completed: Download of Gigabyte Ultra Durable AM4 B450 Ethernet Drivers..." -Verbose
+Write-Host
+Write-Verbose "Processing: Acquiring Gigabyte Ultra Durable AM4 B550 Ethernet Drivers..." -Verbose
+Write-Host
+Save-WebFile -SourceUrl $UDEthernetURL6 -DestinationDirectory $UDDestination
+Save-WebFile -SourceUrl $UDEthernetURL7 -DestinationDirectory $UDDestination
+Save-WebFile -SourceUrl $UDEthernetURL8 -DestinationDirectory $UDDestination
+Save-WebFile -SourceUrl $UDEthernetURL9 -DestinationDirectory $UDDestination
+Save-WebFile -SourceUrl $UDEthernetURL10 -DestinationDirectory $UDDestination
+Save-WebFile -SourceUrl $UDEthernetURL11 -DestinationDirectory $UDDestination
+Save-WebFile -SourceUrl $UDEthernetURL12 -DestinationDirectory $UDDestination
+Save-WebFile -SourceUrl $UDEthernetURL13 -DestinationDirectory $UDDestination
+Write-Host
+Write-Verbose "Completed: Download of Gigabyte Ultra Durable AM4 B550 Ethernet Drivers..." -Verbose
+Write-Host
+Write-Verbose "Processing: Acquiring Gigabyte Ultra Durable AM4 X370 Ethernet Drivers..." -Verbose
+Write-Host
+Save-WebFile -SourceUrl $UDEthernetURL14 -DestinationDirectory $UDDestination
+Write-Host
+Write-Verbose "Completed: Download of Gigabyte Ultra Durable AM4 X370 Ethernet Drivers..." -Verbose
+Write-Host
+Write-Verbose "Processing: Acquiring Gigabyte Ultra Durable AM4 X570 Ethernet Drivers..." -Verbose
+Write-Host
+Save-WebFile -SourceUrl $UDEthernetURL15 -DestinationDirectory $UDDestination
+Save-WebFile -SourceUrl $UDEthernetURL16 -DestinationDirectory $UDDestination
+Write-Host
+Write-Verbose "Completed: Download of Gigabyte Ultra Durable AM4 X570 Ethernet Drivers..." -Verbose
+Write-Host
+Write-Verbose "Completed: Download of ALL Gigabyte Ultra Durable AM4 motherboard Ethernet Drivers..." -Verbose
+
