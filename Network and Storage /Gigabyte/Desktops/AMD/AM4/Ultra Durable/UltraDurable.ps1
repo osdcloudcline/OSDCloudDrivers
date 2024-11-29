@@ -401,36 +401,35 @@ Write-Verbose "Processing: Gigabyte Ultra Durable AM4 motherboard drivers file e
 Write-Host
 Write-Verbose "Processing: Extracting NVMe Storage drivers..." -Verbose
 Write-Host
-Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-A320-RAID-NVMe-StorageDrivers.zip"  -TargetPath $UDStorage1  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-A520-RAID-NVMe-1-StorageDrivers-Win10.zip"  -TargetPath $UDStorage3  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-A520-RAID-NVMe-1-StorageDrivers-Win11.zip"  -TargetPath $UDStorage4  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-A520-RAID-NVMe-2-StorageDrivers-Win10.zip"  -TargetPath $UDStorage5  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-A520-RAID-NVMe-2-StorageDrivers-Win11.zip"  -TargetPath $UDStorage6  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-B350-RAID-NVMe-StorageDrivers.zip"  -TargetPath $UDStorage9  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-B450-RAID-NVMe-StorageDrivers.zip"  -TargetPath $UDStorage11  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-B550-RAID-NVMe-1-StorageDrivers.zip"  -TargetPath $UDStorage13  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-B550-RAID-NVMe-2-StorageDrivers.zip"  -TargetPath $UDStorage14  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-X370-RAID-NVMe-StorageDrivers.zip"  -TargetPath $UDStorage17  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-X570-RAID-NVMe-1-StorageDrivers.zip"  -TargetPath $UDStorage19  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-X570-RAID-NVMe-2-StorageDrivers.zip"  -TargetPath $UDStorage20  -ErrorAction SilentlyContine
 Write-Host
 Write-Verbose "Processing: Extracting SATA Storage drivers..." -Verbose
 Write-Host
-Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-A320-RAID-SATA-StorageDrivers.zip"  -TargetPath $UDStorage2  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-A520-RAID-SATA-StorageDrivers-Win10.zip"  -TargetPath $UDStorage7  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-A520-RAID-SATA-StorageDrivers-Win11.zip"  -TargetPath $UDStorage8  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-B350-RAID-SATA-StorageDrivers.zip"  -TargetPath $UDStorage10  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-B450-RAID-SATA-StorageDrivers.zip"  -TargetPath $UDStorage12  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-B550-RAID-SATA-StorageDrivers.zip"  -TargetPath $UDStorage15  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-X370-RAID-SATA-StorageDrivers.zip"  -TargetPath $UDStorage18  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-X570-RAID-SATA-StorageDrivers.zip"  -TargetPath $UDStorage21  -ErrorAction SilentlyContine
 Write-Host
 Write-Verbose "Processing: Extracting Thunderbolt Storage drivers..." -Verbose
 Write-Host
-Expand-7zip -ArchiveFileNam "$UDDestination\"  -TargetPath  -ErrorAction SilentlyContine
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-B550-Thunderbolt-StorageDrivers.zip"  -TargetPath $UDStorage16  -ErrorAction SilentlyContine
 Write-Verbose "Completed: Extraction of ALL Gigabyte Ultra Durable AM4 Storage Drivers..." -Verbose
 Write-Host
-
 
 
 Write-Host
@@ -445,3 +444,7 @@ Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-Realtek-Blueto
 Write-Host
 Write-Verbose "Completed: Extraction of ALL Gigabyte Ultra Durable AM4 Bluetooth Drivers..." -Verbose
 Write-Host
+Write-Host
+Write-Verbose "Completed: Extraction of ALL Gigabyte Ultra Durable AM4 motherboard Drivers..." -Verbose
+
+Stop-Transcript
