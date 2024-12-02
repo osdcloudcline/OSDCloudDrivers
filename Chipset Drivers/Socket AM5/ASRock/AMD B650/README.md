@@ -1,1 +1,0 @@
-# B650 Chipset Drivers for ASRock Socket AM5 motherboards
