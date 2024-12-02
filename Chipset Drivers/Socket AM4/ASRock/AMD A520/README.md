@@ -1,1 +1,1 @@
-# Chipset Drivers for ASRock A520 Chipset motherboards
+# A520 Chipset Drivers for ASRock motherboards
