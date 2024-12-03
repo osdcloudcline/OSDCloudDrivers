@@ -10,7 +10,7 @@ $ChipsetSource2 = "https://drivers.amd.com/drivers/amd_raid_software_6.10.09.200
 $ChipsetSource3 = "https://drivers.amd.com/drivers/raid_windows_driver_933_00117.zip"
 $ChipsetSource4 = "https://drivers.amd.com/drivers/amd_npu.exe"
 
-$Destination = "C:\OSDCloud\drivers\Chipsets\AM4\ASRock\B6500"
+$Destination = "C:\OSDCloud\drivers\Chipsets\AM4\ASRock\B650"
 
 Write-Verbose "Processing: $Chipset1..." -Verbose
 Save-WebFile -SourceUrl $ChipsetSource1 -DestinationDirectory $Destination
