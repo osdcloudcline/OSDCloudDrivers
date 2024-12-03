@@ -17,9 +17,11 @@ Save-WebFile -SourceUrl $ChipsetSource1 -DestinationDirectory $Destination
 
 Write-Verbose "Processing: $Chipset2..." -Verbose
 Save-WebFile -SourceUrl $ChipsetSource2 -DestinationDirectory $Destination
+Expand-Archive -Path "$Destination\amd_raid_software_6.10.09.200.zip" -DestinationPath "C:\OSDCloud\drivers\Chipsets\AM5\ASRock\A620\RAID1"
 
 Write-Verbose "Processing: $Chipset3..." -Verbose
 Save-WebFile -SourceUrl $ChipsetSource3 -DestinationDirectory $Destination
+Expand-Archive -Path "$Destination\raid_windows_driver_933_00117.zip" -DestinationPath "C:\OSDCloud\drivers\Chipsets\AM5\ASRock\A620\RAID2"
 
 Write-Verbose "Processing: $Chipset4..." -Verbose
 Save-WebFile -SourceUrl $ChipsetSource4 -DestinationDirectory $Destination
