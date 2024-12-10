@@ -226,9 +226,9 @@ Invoke-Expression $($ProxmoxStorageDrivers.Content)
 }
 }
 
-$AM4VirtualDrivers = "C:\Logs\OSDCloud\ASRock\AM5\Virtual.log"
+$AM5VirtualDrivers = "C:\Logs\OSDCloud\ASRock\AM5\Virtual.log"
 
-Start-Transcript -Path $AM4VirtualDrivers
+Start-Transcript -Path $AM5VirtualDrivers
 
 Write-Verbose "Processing: VMWare ESXI Virtualization Network Drivers" -Verbose
 Write-Host
