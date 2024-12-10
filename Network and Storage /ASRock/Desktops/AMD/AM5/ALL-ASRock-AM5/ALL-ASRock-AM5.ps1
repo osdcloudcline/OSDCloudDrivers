@@ -273,3 +273,13 @@ $AM5Storage = "C:\Logs\OSDCloud\ASRock\AM5\Storage.log"
 Start-Transcript -Path $AM5Storage
 
 Get-Date
+
+Write-Verbose "Processing: ASRock AM4 PRO Motherboards" -Verbose
+Write-Host
+
+$PROAM5 = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/PRO%20Motherboards/PRO.ps1")
+Invoke-Expression $($PROAM5.Content)
+
+Get-AM5Storage
+
+Write-Host
