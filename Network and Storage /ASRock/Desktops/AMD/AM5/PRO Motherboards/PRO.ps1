@@ -52,12 +52,12 @@ Write-Host
 
 Save-WebFile -SourceUrl $PROWiFiURL -DestinationDirectory $PRODestination
 
-Write-Verbose "Acquiring ASRock AM4 PRO Motherboard Storage Drivers from $GHURL" -Verbose
+Write-Verbose "Acquiring ASRock AM5 PRO Motherboard Storage Drivers from $GHURL" -Verbose
 Write-Host
 
 Save-WebFile -SourceUrl $PROStorageURL -DestinationDirectory $PRODestination
 
-Write-Verbose "ASRock AM4 PRO Motherboard Drivers downloaded" -Verbose
+Write-Verbose "ASRock AM5 PRO Motherboard Drivers downloaded" -Verbose
 Write-Host
 
 Write-Verbose "Processing: ZIP File extraction" -Verbose
