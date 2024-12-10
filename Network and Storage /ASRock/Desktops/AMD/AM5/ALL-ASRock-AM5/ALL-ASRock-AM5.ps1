@@ -274,10 +274,10 @@ Start-Transcript -Path $AM5Storage
 
 Get-Date
 
-Write-Verbose "Processing: ASRock AM4 PRO Motherboards" -Verbose
+Write-Verbose "Processing: ASRock AM5 PRO Motherboards" -Verbose
 Write-Host
 
-$PROAM5 = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/PRO%20Motherboards/PRO.ps1")
+$PROAM5 = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM5/PRO%20Motherboards/PRO.ps1")
 Invoke-Expression $($PROAM5.Content)
 
 Get-AM5Storage
