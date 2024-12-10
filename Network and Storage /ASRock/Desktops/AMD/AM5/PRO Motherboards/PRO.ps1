@@ -14,8 +14,7 @@ $PROBluetoothURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/he
 $PROEthernetURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM5/PRO%20Motherboards/Network%20and%20WiFi/ASRock-AM5-PRO-EthernetDrivers.zip"
 $PROWiFiURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM5/PRO%20Motherboards/Network%20and%20WiFi/ASRock-AM5-PRO-WiFiDrivers.zip"
 
-
-$PROStorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/PRO%20Motherboards/Storage/ASRock-PRO-NVMe-StorageDrivers.zip"
+$PROStorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM5/PRO%20Motherboards/Storage/ASRock-AM5-RAID-NVMeStorageDrivers.zip"
 
 
 ####################################################################################
@@ -53,13 +52,10 @@ Write-Host
 
 Save-WebFile -SourceUrl $PROWiFiURL -DestinationDirectory $PRODestination
 
-
-
 Write-Verbose "Acquiring ASRock AM4 PRO Motherboard Storage Drivers from $GHURL" -Verbose
 Write-Host
 
 Save-WebFile -SourceUrl $PROStorageURL -DestinationDirectory $PRODestination
-
 
 Write-Verbose "ASRock AM4 PRO Motherboard Drivers downloaded" -Verbose
 Write-Host
@@ -67,13 +63,10 @@ Write-Host
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-PRO-Intel-LANDrivers.zip" -TargetPath $PROEthernet1  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-PRO-Realtek-LANDrivers1.zip" -TargetPath $PROEthernet2  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-PRO-Realtek-LANDrivers2.zip" -TargetPath $PROEthernet3  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-PRO-Realtek-LANDrivers3.zip" -TargetPath $PROEthernet4  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-PRO-Realtek-LANDrivers4.zip" -TargetPath $PROEthernet5  -ErrorAction SilentlyContinue 
-
-Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-PRO-NVMe-StorageDrivers.zip" -TargetPath $PROStorage  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-AM5-PRO-BluetoothDrivers.zip" -TargetPath $PROBluetooth  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-AM5-PRO-EthernetDrivers.zip" -TargetPath $PROEthernet  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-AM5-PRO-WiFiDrivers.zip" -TargetPath $PROWiFi  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-AM5-RAID-NVMeStorageDrivers.zip" -TargetPath $PROStorage  -ErrorAction SilentlyContinue 
 
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
