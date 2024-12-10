@@ -10,7 +10,7 @@ $GHURL = "https://github.com/osdcloudcline/OSDCloudDrivers"
 #                   AM5 Ethernet, WiFi and Storage Driver URLs
 ####################################################################################
 
-$PROBluetoothURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/PRO%20Motherboards/Ethernet%20and%20WiFi/ASRock-PRO-Intel-LANDrivers.zip"
+$PROBluetoothURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM5/PRO%20Motherboards/Network%20and%20WiFi/ASRock-AM5-PRO-BluetoothDrivers.zip"
 $PROEthernetURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/PRO%20Motherboards/Ethernet%20and%20WiFi/ASRock-PRO-Realtek-LANDrivers1.zip"
 $PROWiFiURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/PRO%20Motherboards/Ethernet%20and%20WiFi/ASRock-PRO-Realtek-LANDrivers2.zip"
 
