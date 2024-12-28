@@ -49,7 +49,6 @@ Write-Host
 
 Save-WebFile -SourceUrl $ProArtStorageURL -DestinationDirectory $ProArtDestination
 
-
 Write-Verbose "ASUS AM4 ProArt Motherboard Drivers downloaded" -Verbose
 Write-Host
 
@@ -66,26 +65,4 @@ Write-Verbose "ZIP Files extracted successfully" -Verbose
 
 Stop-Transcript
 
-$AM4VirtualDrivers = "C:\Logs\OSDCloud\ASUS\AM4Virtual.log"
 
-Start-Transcript -Path $AM4VirtualDrivers
-
-Write-Verbose "Processing: VMWare ESXI Virtualization Drivers" -Verbose
-Write-Host
-
-Write-Verbose "Processing: Hyper-V Virtualization Drivers" -Verbose
-Write-Host
-
-Write-Verbose "Processing: VMWare Workstation Professional Virtualization Drivers" -Verbose
-Write-Host
-
-Write-Verbose "Processing: Proxmox Virtual I/O Virtualization Drivers" -Verbose
-Write-Host
-
-Write-Verbose "Processing: Docker Virtualization Drivers" -Verbose
-Write-Host
-
-Stop-Transcript
-
-$ASUSOSDCloudISOMain = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloud/raw/refs/heads/main/Scripts/ISO%20Files/OEM/ASUS/Motherboards/CreateISO-Main.ps1")
-Invoke-Expression $($ASUSOSDCloudISOMain.Content)
