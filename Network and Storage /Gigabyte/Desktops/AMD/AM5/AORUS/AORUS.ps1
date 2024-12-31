@@ -18,10 +18,10 @@ $AORUSBluetoothB650URL4 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/
 
 # AORUS X670 
 
-$AORUSBluetoothX670URL1 = ""
-$AORUSBluetoothX670URL2 = ""
-$AORUSBluetoothX670URL3 = ""
-$AORUSBluetoothX670URL4 = ""
+$AORUSBluetoothX670URL1 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/AORUS/X670/Bluetooth/Gigabyte-AM5-AORUS-X670-BluetoothDrivers1.zip"
+$AORUSBluetoothX670URL2 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/AORUS/X670/Bluetooth/Gigabyte-AM5-AORUS-X670-BluetoothDrivers2.zip"
+$AORUSBluetoothX670URL3 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/AORUS/X670/Bluetooth/Gigabyte-AM5-AORUS-X670-BluetoothDrivers3.zip"
+
 
 # AORUS X870 
 
@@ -48,12 +48,12 @@ $AORUSEthernetB650URL3 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/r
 
 # AORUS X670
 
-$AORUSEthernetX670URL1 = ""
-$AORUSEthernetX670URL2 = ""
-$AORUSEthernetX670URL3 = ""
-$AORUSEthernetX670URL4 = ""
-$AORUSEthernetX670URL5 = ""
-$AORUSEthernetX670URL6 = ""
+$AORUSEthernetX670URL1 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/AORUS/X670/Ethernet/Gigabyte-AM5-AORUS-X670-EthernetDrivers1.zip"
+$AORUSEthernetX670URL2 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/AORUS/X670/Ethernet/Gigabyte-AM5-AORUS-X670-EthernetDrivers2.zip"
+$AORUSEthernetX670URL3 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/AORUS/X670/Ethernet/Gigabyte-AM5-AORUS-X670-EthernetDrivers3.zip"
+$AORUSEthernetX670URL4 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/AORUS/X670/Ethernet/Gigabyte-AM5-AORUS-X670-EthernetDrivers4.zip"
+$AORUSEthernetX670URL5 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/AORUS/X670/Ethernet/Gigabyte-AM5-AORUS-X670-EthernetDrivers5.zip"
+$AORUSEthernetX670URL6 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/AORUS/X670/Ethernet/Gigabyte-AM5-AORUS-X670-EthernetDrivers6.zip"
 
 # AORUS X870
 
@@ -123,6 +123,7 @@ $AORUSWiFiX870EURL = ""
 
 $AORUSDestination =  "C:\OSDCloud\Drivers\Motherboards\Gigabyte\AM5\AORUS"
 $AORUSDestinationB650 = "C:\OSDCloud\Drivers\Motherboards\Gigabyte\AM5\AORUS\ZIP\B650"
+$AORUSDestinationX670 = "C:\OSDCloud\Drivers\Motherboards\Gigabyte\AM5\AORUS\ZIP\X670"
 
 ###########################################################################################
 #        AORUS Ethernet, Bluetooth, Storage and WiFi Extraction Folders
@@ -140,17 +141,17 @@ $AORUSBluetooth4 = "$AORUSDestination\B650\Bluetooth4"
 $AORUSBluetooth5 = "$AORUSDestination\X670\Bluetooth1"
 $AORUSBluetooth6 = "$AORUSDestination\X670\Bluetooth2"
 $AORUSBluetooth7 = "$AORUSDestination\X670\Bluetooth3"
-$AORUSBluetooth8 = "$AORUSDestination\X670\Bluetooth4"
+
 
 # AORUS X870 - Bluetooth
 
-$AORUSBluetooth9 = "$AORUSDestination\X870\Bluetooth1"
-$AORUSBluetooth10 = "$AORUSDestination\X870\Bluetooth2"
-$AORUSBluetooth11 = "$AORUSDestination\X870\Bluetooth3"
+$AORUSBluetooth8 = "$AORUSDestination\X870\Bluetooth1"
+$AORUSBluetooth9 = "$AORUSDestination\X870\Bluetooth2"
+$AORUSBluetooth10 = "$AORUSDestination\X870\Bluetooth3"
 
 # AORUS X870E - Bluetooth
 
-$AORUSBluetooth12 = "$AORUSDestination\X870E\Bluetooth"
+$AORUSBluetooth11 = "$AORUSDestination\X870E\Bluetooth"
 
 # AORUS B650 - Ethernet
 
@@ -224,6 +225,9 @@ Write-Host
 Write-Verbose "Processing: Acquiring Gigabyte AORUS AM5 X670 Bluetooth Drivers..." -Verbose
 Write-Host
 
+Save-WebFile -SourceUrl $AORUSBluetoothX670URL1 -DestinationDirectory $AORUSDestinationX670
+Save-WebFile -SourceUrl $AORUSBluetoothX670URL2 -DestinationDirectory $AORUSDestinationX670
+Save-WebFile -SourceUrl $AORUSBluetoothX670URL1 -DestinationDirectory $AORUSDestinationX670
 
 Write-Host
 Write-Verbose "Completed: Download of Gigabyte AORUS AM5 X670 Bluetooth Drivers..." -Verbose
@@ -263,6 +267,12 @@ Write-Host
 Write-Verbose "Processing: Acquiring Gigabyte AORUS AM5 X670 Ethernet Drivers..." -Verbose
 Write-Host
 
+Save-WebFile -SourceUrl $AORUSEthernetX670URL1 -DestinationDirectory $AORUSDestinationX670
+Save-WebFile -SourceUrl $AORUSEthernetX670URL2 -DestinationDirectory $AORUSDestinationX670
+Save-WebFile -SourceUrl $AORUSEthernetX670URL3 -DestinationDirectory $AORUSDestinationX670
+Save-WebFile -SourceUrl $AORUSEthernetX670URL4 -DestinationDirectory $AORUSDestinationX670
+Save-WebFile -SourceUrl $AORUSEthernetX670URL5 -DestinationDirectory $AORUSDestinationX670
+Save-WebFile -SourceUrl $AORUSEthernetX670URL6 -DestinationDirectory $AORUSDestinationX670
 
 Write-Host
 Write-Verbose "Completed: Download of Gigabyte AORUS AM5 X670 Ethernet Drivers..." -Verbose
