@@ -97,7 +97,7 @@ $AORUSWiFiURL9 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/head
 #        AORUS Ethernet, Bluetooth, Storage and WiFi Destination Folders
 ###########################################################################################
 
-$AORUSDestination =  "C:\OSDCloud\Drivers\Motherboards\Gigabyte\AORUS"
+$AORUSDestination =  "C:\OSDCloud\Drivers\Motherboards\Gigabyte\AM4\AORUS"
 
 ###########################################################################################
 #        AORUS Ethernet, Bluetooth, Storage and WiFi Extraction Folders
