@@ -201,5 +201,9 @@ $AORUSWiFi7 = "$AORUSDestination\X870\WiFi"
 $AORUSWiFi8 = "$AORUSDestination\X870E\WiFi1"
 
 
-
+Write-Host
+Write-Verbose "Processing: Gigabyte AORUS AM5 B650 motherboard drivers..." -Verbose
+Write-Host
+Write-Verbose "Processing: Acquiring Gigabyte AORUS AM5 B650 Ethernet Drivers..." -Verbose
+Write-Host
 
