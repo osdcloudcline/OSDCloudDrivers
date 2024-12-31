@@ -78,7 +78,7 @@ $AORUSStorageB650URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/ref
 
 # AORUS X670
 
-$AORUSStorageX670URL = ""
+$AORUSStorageX670URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/AORUS/X670/Storage/Gigabyte-AM5-AORUS-X670-NVMe-RAID-StorageDrivers.zip"
 
 
 # AORUS X870
@@ -103,9 +103,9 @@ $AORUSWiFiB650URL3 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/
 
 # AORUS X670
 
-$AORUSWiFiX670URL1 = ""
-$AORUSWiFiX670URL2 = ""
-$AORUSWiFiX670URL3 = ""
+$AORUSWiFiX670URL1 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/AORUS/X670/WiFi/Gigabyte-AM5-AORUS-X670-WLANDrivers1.zip"
+$AORUSWiFiX670URL2 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/AORUS/X670/WiFi/Gigabyte-AM5-AORUS-X670-WLANDrivers2.zip"
+$AORUSWiFiX670URL3 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/AORUS/X670/WiFi/Gigabyte-AM5-AORUS-X670-WLANDrivers3.zip"
 
 
 # AORUS X870
@@ -312,6 +312,9 @@ Write-Host
 Write-Verbose "Processing: Acquiring Gigabyte AORUS AM5 X670 WiFi Drivers..." -Verbose
 Write-Host
 
+Save-WebFile -SourceUrl $AORUSWiFiX670URL1 -DestinationDirectory $AORUSDestinationX670
+Save-WebFile -SourceUrl $AORUSWiFiX670URL2 -DestinationDirectory $AORUSDestinationX670
+Save-WebFile -SourceUrl $AORUSWiFiX670URL3 -DestinationDirectory $AORUSDestinationX670
 
 Write-Host
 Write-Verbose "Completed: Download of Gigabyte AORUS AM5 X670 WiFi Drivers..." -Verbose
@@ -339,7 +342,7 @@ Write-Host
 Write-Verbose "Processing: Acquiring Gigabyte AORUS AM5 B650 Storage Drivers..." -Verbose
 Write-Host
 
-Save-WebFile -SourceUrl $AORUSStorageB650URL -DestinationDirectory $AORUSDestinationB650
+Save-WebFile -SourceUrl $AORUSStorageB650URL -DestinationDirectory $AORUSDestinationX670
 
 Write-Host
 Write-Verbose "Completed: Download of Gigabyte AORUS AM5 B650 Storage Drivers..." -Verbose
@@ -349,6 +352,7 @@ Write-Host
 Write-Verbose "Processing: Acquiring Gigabyte AORUS AM5 X670 Storage Drivers..." -Verbose
 Write-Host
 
+Save-WebFile -SourceUrl $AORUSStorageX670URL -DestinationDirectory $AORUSDestinationB650
 
 Write-Host
 Write-Verbose "Completed: Download of Gigabyte AORUS AM5 X670 Storage Drivers..." -Verbose
