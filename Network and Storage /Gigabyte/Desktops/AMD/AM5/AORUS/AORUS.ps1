@@ -204,6 +204,145 @@ $AORUSWiFi8 = "$AORUSDestination\X870E\WiFi1"
 Write-Host
 Write-Verbose "Processing: Gigabyte AORUS AM5 B650 motherboard drivers..." -Verbose
 Write-Host
+Write-Verbose "Processing: Acquiring Gigabyte AORUS AM5 B650 Bluetooth Drivers..." -Verbose
+Write-Host
+
+
+Write-Host
+Write-Verbose "Completed: Download of Gigabyte AORUS AM5 B650 Bluetooth Drivers..." -Verbose
+Write-Host
+
+Write-Host
+Write-Verbose "Processing: Acquiring Gigabyte AORUS AM5 X670 Bluetooth Drivers..." -Verbose
+Write-Host
+
+
+Write-Host
+Write-Verbose "Completed: Download of Gigabyte AORUS AM5 X670 Bluetooth Drivers..." -Verbose
+Write-Host
+
+Write-Host
+Write-Verbose "Processing: Acquiring Gigabyte AORUS AM5 X870 Bluetooth Drivers..." -Verbose
+Write-Host
+
+
+Write-Host
+Write-Verbose "Completed: Download of Gigabyte AORUS AM5 X870 Bluetooth Drivers..." -Verbose
+Write-Host
+
+Write-Host
+Write-Verbose "Processing: Acquiring Gigabyte AORUS AM5 X870E Bluetooth Drivers..." -Verbose
+Write-Host
+
+
+Write-Host
+Write-Verbose "Completed: Download of Gigabyte AORUS AM5 X870E Bluetooth Drivers..." -Verbose
+Write-Host
+
+Write-Host
 Write-Verbose "Processing: Acquiring Gigabyte AORUS AM5 B650 Ethernet Drivers..." -Verbose
 Write-Host
 
+
+Write-Host
+Write-Verbose "Completed: Download of Gigabyte AORUS AM5 B650 Ethernet Drivers..." -Verbose
+Write-Host
+
+Write-Host
+Write-Verbose "Processing: Acquiring Gigabyte AORUS AM5 X670 Ethernet Drivers..." -Verbose
+Write-Host
+
+
+Write-Host
+Write-Verbose "Completed: Download of Gigabyte AORUS AM5 X670 Ethernet Drivers..." -Verbose
+Write-Host
+
+Write-Host
+Write-Verbose "Processing: Acquiring Gigabyte AORUS AM5 X870 Ethernet Drivers..." -Verbose
+Write-Host
+
+
+Write-Host
+Write-Verbose "Completed: Download of Gigabyte AORUS AM5 X870 Ethernet Drivers..." -Verbose
+Write-Host
+
+Write-Host
+Write-Verbose "Processing: Acquiring Gigabyte AORUS AM5 X870E Ethernet Drivers..." -Verbose
+Write-Host
+
+
+Write-Host
+Write-Verbose "Completed: Download of Gigabyte AORUS AM5 X870E Ethernet Drivers..." -Verbose
+Write-Host
+
+Write-Host
+Write-Verbose "Processing: Acquiring Gigabyte AORUS AM5 B650 WiFi Drivers..." -Verbose
+Write-Host
+
+
+Write-Host
+Write-Verbose "Completed: Download of Gigabyte AORUS AM5 B650 WiFi Drivers..." -Verbose
+Write-Host
+
+Write-Host
+Write-Verbose "Processing: Acquiring Gigabyte AORUS AM5 X670 WiFi Drivers..." -Verbose
+Write-Host
+
+
+Write-Host
+Write-Verbose "Completed: Download of Gigabyte AORUS AM5 X670 WiFi Drivers..." -Verbose
+Write-Host
+
+Write-Host
+Write-Verbose "Processing: Acquiring Gigabyte AORUS AM5 X870 WiFi Drivers..." -Verbose
+Write-Host
+
+
+Write-Host
+Write-Verbose "Completed: Download of Gigabyte AORUS AM5 X870 WiFi Drivers..." -Verbose
+Write-Host
+
+Write-Host
+Write-Verbose "Processing: Acquiring Gigabyte AORUS AM5 X870E WiFi Drivers..." -Verbose
+Write-Host
+
+
+Write-Host
+Write-Verbose "Completed: Download of Gigabyte AORUS AM5 X870E WiFi Drivers..." -Verbose
+Write-Host
+
+Write-Host
+Write-Verbose "Processing: Acquiring Gigabyte AORUS AM5 B650 Storage Drivers..." -Verbose
+Write-Host
+
+
+Write-Host
+Write-Verbose "Completed: Download of Gigabyte AORUS AM5 B650 Storage Drivers..." -Verbose
+Write-Host
+
+Write-Host
+Write-Verbose "Processing: Acquiring Gigabyte AORUS AM5 X670 Storage Drivers..." -Verbose
+Write-Host
+
+
+Write-Host
+Write-Verbose "Completed: Download of Gigabyte AORUS AM5 X670 Storage Drivers..." -Verbose
+Write-Host
+
+Write-Host
+Write-Verbose "Processing: Acquiring Gigabyte AORUS AM5 X870 Storage Drivers..." -Verbose
+Write-Host
+
+
+Write-Host
+Write-Verbose "Completed: Download of Gigabyte AORUS AM5 X870 Storage Drivers..." -Verbose
+Write-Host
+
+Write-Host
+Write-Verbose "Processing: Acquiring Gigabyte AORUS AM5 X870E Storage Drivers..." -Verbose
+Write-Host
+
+
+Write-Host
+Write-Verbose "Completed: Download of Gigabyte AORUS AM5 X870E Storage Drivers..." -Verbose
+Write-Host
