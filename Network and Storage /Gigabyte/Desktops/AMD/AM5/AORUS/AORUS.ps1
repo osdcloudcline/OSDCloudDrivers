@@ -196,7 +196,7 @@ $AORUSWiFi7 = "$AORUSDestination\X870\WiFi"
 
 # AORUS X870E - WiFi
 
-$AORUSWiFi8 = "$AORUSDestination\X870E\WiFi1"
+$AORUSWiFi8 = "$AORUSDestination\X870E\WiFi"
 
 
 Write-Host
@@ -430,11 +430,11 @@ Write-Host
 Write-Verbose "Processing: Gigabyte AORUS AM5 X870E ZIP File Extraction..." -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "$AORUSDestinationX870E\Gigabyte-AM5-AORUS-X870E-BluetoothDrivers.zip" -TargetPath $AORUSBluetooth11 -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "$AORUSDestinationX870E\Gigabyte-AM5-AORUS-X870E-EthernetDrivers1.zip" -TargetPath $AORUSEthernet12 -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "$AORUSDestinationX870E\Gigabyte-AM5-AORUS-X870E-EthernetDrivers2.zip" -TargetPath $AORUSEthernet13 -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "$AORUSDestinationX870E\Gigabyte-AM5-AORUS-X870E-NVMe-RAID-StorageDrivers.zip" -TargetPath $AORUSStorage4 -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "$AORUSDestinationX870E\Gigabyte-AM5-AORUS-X870E-WLANDrivers.zip" -TargetPath $AORUSWiFi8 -ErrorAction SilentlyContinue
 
 Write-Host
 Write-Verbose "Completed: Gigabyte AORUS AM5 AORUS motherboard ZIP File Extraction..." -Verbose
