@@ -22,20 +22,16 @@ $AORUSBluetoothX670URL1 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/
 $AORUSBluetoothX670URL2 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/AORUS/X670/Bluetooth/Gigabyte-AM5-AORUS-X670-BluetoothDrivers2.zip"
 $AORUSBluetoothX670URL3 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/AORUS/X670/Bluetooth/Gigabyte-AM5-AORUS-X670-BluetoothDrivers3.zip"
 
-
 # AORUS X870 
 
 $AORUSBluetoothX870URL1 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/AORUS/X870/Bluetooth/Gigabyte-AM5-AORUS-X870-BluetoothDrivers1.zip"
 $AORUSBluetoothX870URL2 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/AORUS/X870/Bluetooth/Gigabyte-AM5-AORUS-X870-BluetoothDrivers2.zip"
 $AORUSBluetoothX870URL3 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/AORUS/X870/Bluetooth/Gigabyte-AM5-AORUS-X870-BluetoothDrivers3.zip"
 
-
 # AORUS X870E 
 
-$AORUSBluetoothX870EURL1 = ""
-$AORUSBluetoothX870EURL2 = ""
-$AORUSBluetoothX870EURL3 = ""
-$AORUSBluetoothX870EURL4 = ""
+$AORUSBluetoothX870EURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/AORUS/X870E/Bluetooth/Gigabyte-AM5-AORUS-X870E-BluetoothDrivers.zip"
+
 ####################################################################################
 #                   AM5 Ethernet Driver URLs
 ####################################################################################
@@ -62,8 +58,8 @@ $AORUSEthernetX870URL2 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/r
 
 # AORUS X870E
 
-$AORUSEthernetX870EURL1 = ""
-$AORUSEthernetX870EURL2 = ""
+$AORUSEthernetX870EURL1 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/AORUS/X870E/Ethernet/Gigabyte-AM5-AORUS-X870E-EthernetDrivers1.zip"
+$AORUSEthernetX870EURL2 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/AORUS/X870E/Ethernet/Gigabyte-AM5-AORUS-X870E-EthernetDrivers2.zip"
 
 
 
@@ -75,20 +71,17 @@ $AORUSEthernetX870EURL2 = ""
 
 $AORUSStorageB650URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/AORUS/B650/Storage/Gigabyte-AM5-AORUS-B650-NVMe-RAID-StorageDrivers.zip"
 
-
 # AORUS X670
 
 $AORUSStorageX670URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/AORUS/X670/Storage/Gigabyte-AM5-AORUS-X670-NVMe-RAID-StorageDrivers.zip"
-
 
 # AORUS X870
 
 $AORUSStorageX870URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/AORUS/X870/Storage/Gigabyte-AM5-AORUS-X870-NVMe-RAID-StorageDrivers.zip"
 
-
 # AORUS X870E
 
-$AORUSStorageX870EURL = ""
+$AORUSStorageX870EURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/AORUS/X870E/Storage/Gigabyte-AM5-AORUS-X870E-NVMe-RAID-StorageDrivers.zip"
 
 
 ####################################################################################
@@ -107,15 +100,13 @@ $AORUSWiFiX670URL1 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/
 $AORUSWiFiX670URL2 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/AORUS/X670/WiFi/Gigabyte-AM5-AORUS-X670-WLANDrivers2.zip"
 $AORUSWiFiX670URL3 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/AORUS/X670/WiFi/Gigabyte-AM5-AORUS-X670-WLANDrivers3.zip"
 
-
 # AORUS X870
 
 $AORUSWiFiX870URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/AORUS/X870/WiFi/Gigabyte-AM5-AORUS-X870-WLANDrivers.zip"
 
-
 # AORUS X870E
 
-$AORUSWiFiX870EURL = ""
+$AORUSWiFiX870EURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/AORUS/X870E/WiFi/Gigabyte-AM5-AORUS-X870E-WLANDrivers.zip"
 
 ###########################################################################################
 #        AORUS Ethernet, Bluetooth, Storage and WiFi Destination Folders
@@ -251,6 +242,7 @@ Write-Host
 Write-Verbose "Processing: Acquiring Gigabyte AORUS AM5 X870E Bluetooth Drivers..." -Verbose
 Write-Host
 
+Save-WebFile -SourceUrl $AORUSBluetoothX870EURL -DestinationDirectory $AORUSDestinationX870E
 
 Write-Host
 Write-Verbose "Completed: Download of Gigabyte AORUS AM5 X870E Bluetooth Drivers..." -Verbose
@@ -298,6 +290,8 @@ Write-Host
 Write-Verbose "Processing: Acquiring Gigabyte AORUS AM5 X870E Ethernet Drivers..." -Verbose
 Write-Host
 
+Save-WebFile -SourceUrl $AORUSEthernetX870EURL1 -DestinationDirectory $AORUSDestinationX870E
+Save-WebFile -SourceUrl $AORUSEthernetX870EURL2 -DestinationDirectory $AORUSDestinationX870E
 
 Write-Host
 Write-Verbose "Completed: Download of Gigabyte AORUS AM5 X870E Ethernet Drivers..." -Verbose
@@ -341,6 +335,7 @@ Write-Host
 Write-Verbose "Processing: Acquiring Gigabyte AORUS AM5 X870E WiFi Drivers..." -Verbose
 Write-Host
 
+Save-WebFile -SourceUrl $AORUSWiFiX870EURL -DestinationDirectory $AORUSDestinationX870E
 
 Write-Host
 Write-Verbose "Completed: Download of Gigabyte AORUS AM5 X870E WiFi Drivers..." -Verbose
@@ -376,11 +371,34 @@ Write-Host
 Write-Verbose "Completed: Download of Gigabyte AORUS AM5 X870 Storage Drivers..." -Verbose
 Write-Host
 
+Save-WebFile -SourceUrl $AORUSStorageX870EURL -DestinationDirectory $AORUSDestinationX870E
+
 Write-Host
 Write-Verbose "Processing: Acquiring Gigabyte AORUS AM5 X870E Storage Drivers..." -Verbose
 Write-Host
+Write-Verbose "Completed: Download of Gigabyte AORUS AM5 X870E Storage Drivers..." -Verbose
+Write-Host
+
+Write-Host
+Write-Verbose "Processing: Gigabyte AORUS AM5 B650 ZIP File Extraction..." -Verbose
+Write-Host
+
 
 
 Write-Host
-Write-Verbose "Completed: Download of Gigabyte AORUS AM5 X870E Storage Drivers..." -Verbose
+Write-Verbose "Processing: Gigabyte AORUS AM5 X670 ZIP File Extraction..." -Verbose
+Write-Host
+
+
+Write-Host
+Write-Verbose "Processing: Gigabyte AORUS AM5 X870 ZIP File Extraction..." -Verbose
+Write-Host
+
+
+Write-Host
+Write-Verbose "Processing: Gigabyte AORUS AM5 X870E ZIP File Extraction..." -Verbose
+Write-Host
+
+Write-Host
+Write-Verbose "Completed: Gigabyte AORUS AM5 AORUS motherboard ZIP File Extraction..." -Verbose
 Write-Host
