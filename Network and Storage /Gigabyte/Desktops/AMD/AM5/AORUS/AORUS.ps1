@@ -148,7 +148,7 @@ $AORUSBluetooth11 = "$AORUSDestination\X870E\Bluetooth"
 
 # AORUS B650 - Ethernet
 
-$AORUSEthernet1 = "$AORUSDestination\B659\Ethernet1"
+$AORUSEthernet1 = "$AORUSDestination\B650\Ethernet1"
 $AORUSEthernet2 = "$AORUSDestination\B650\Ethernet2"
 $AORUSEthernet3 = "$AORUSDestination\B650\Ethernet3"
 
