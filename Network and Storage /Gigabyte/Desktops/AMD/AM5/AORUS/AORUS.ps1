@@ -383,17 +383,17 @@ Write-Host
 Write-Verbose "Processing: Gigabyte AORUS AM5 B650 ZIP File Extraction..." -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "$AORUSDestinationB650\Gigabyte-AM5-AORUS-B650-BluetoothDrivers1.zip" -TargetPath $AORUSBluetooth1 -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "$AORUSDestinationB650\Gigabyte-AM5-AORUS-B650-BluetoothDrivers2.zip" -TargetPath $AORUSBluetooth2 -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "$AORUSDestinationB650\Gigabyte-AM5-AORUS-B650-BluetoothDrivers3.zip" -TargetPath $AORUSBluetooth3 -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "$AORUSDestinationB650\Gigabyte-AM5-AORUS-B650-BluetoothDrivers4.zip" -TargetPath $AORUSBluetooth4 -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "$AORUSDestinationB650\Gigabyte-AM5-AORUS-B650-EthernetDrivers1.zip" -TargetPath $AORUSEthernet1 -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "$AORUSDestinationB650\Gigabyte-AM5-AORUS-B650-EthernetDrivers2.zip" -TargetPath $AORUSEthernet2 -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "$AORUSDestinationB650\Gigabyte-AM5-AORUS-B650-EthernetDrivers3.zip" -TargetPath $AORUSEthernet3 -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "$AORUSDestinationB650\Gigabyte-AM5-AORUS-B650-NVMe-RAID-StorageDrivers.zip" -TargetPath $AORUSStorage1 -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "$AORUSDestinationB650\Gigabyte-AM5-AORUS-B650-WLANDrivers1.zip" -TargetPath $AORUSWiFi1 -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "$AORUSDestinationB650\Gigabyte-AM5-AORUS-B650-WLANDrivers2.zip" -TargetPath $AORUSWiFi2 -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "$AORUSDestinationB650\Gigabyte-AM5-AORUS-B650-WLANDrivers3.zip" -TargetPath $AORUSWiFi3 -ErrorAction SilentlyContinue
 
 
 Write-Host
