@@ -25,9 +25,9 @@ $AORUSBluetoothX670URL3 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/
 
 # AORUS X870 
 
-$AORUSBluetoothX870URL1 = ""
-$AORUSBluetoothX870URL2 = ""
-$AORUSBluetoothX870URL3 = ""
+$AORUSBluetoothX870URL1 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/AORUS/X870/Bluetooth/Gigabyte-AM5-AORUS-X870-BluetoothDrivers1.zip"
+$AORUSBluetoothX870URL2 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/AORUS/X870/Bluetooth/Gigabyte-AM5-AORUS-X870-BluetoothDrivers2.zip"
+$AORUSBluetoothX870URL3 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/AORUS/X870/Bluetooth/Gigabyte-AM5-AORUS-X870-BluetoothDrivers3.zip"
 
 
 # AORUS X870E 
@@ -124,6 +124,8 @@ $AORUSWiFiX870EURL = ""
 $AORUSDestination =  "C:\OSDCloud\Drivers\Motherboards\Gigabyte\AM5\AORUS"
 $AORUSDestinationB650 = "C:\OSDCloud\Drivers\Motherboards\Gigabyte\AM5\AORUS\ZIP\B650"
 $AORUSDestinationX670 = "C:\OSDCloud\Drivers\Motherboards\Gigabyte\AM5\AORUS\ZIP\X670"
+$AORUSDestinationX870 = "C:\OSDCloud\Drivers\Motherboards\Gigabyte\AM5\AORUS\ZIP\X870"
+$AORUSDestinationX870E = "C:\OSDCloud\Drivers\Motherboards\Gigabyte\AM5\AORUS\ZIP\X870E"
 
 ###########################################################################################
 #        AORUS Ethernet, Bluetooth, Storage and WiFi Extraction Folders
@@ -237,6 +239,9 @@ Write-Host
 Write-Verbose "Processing: Acquiring Gigabyte AORUS AM5 X870 Bluetooth Drivers..." -Verbose
 Write-Host
 
+Save-WebFile -SourceUrl $AORUSBluetoothX870URL1 -DestinationDirectory $AORUSDestinationX870
+Save-WebFile -SourceUrl $AORUSBluetoothX870URL2 -DestinationDirectory $AORUSDestinationX870
+Save-WebFile -SourceUrl $AORUSBluetoothX870URL3 -DestinationDirectory $AORUSDestinationX870
 
 Write-Host
 Write-Verbose "Completed: Download of Gigabyte AORUS AM5 X870 Bluetooth Drivers..." -Verbose
