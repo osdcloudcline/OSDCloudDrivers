@@ -28,7 +28,7 @@ $AORUSBluetoothX670URL3 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/
 $AORUSBluetoothX870URL1 = ""
 $AORUSBluetoothX870URL2 = ""
 $AORUSBluetoothX870URL3 = ""
-$AORUSBluetoothX870URL4 = ""
+
 
 # AORUS X870E 
 
