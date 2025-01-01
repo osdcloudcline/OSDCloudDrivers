@@ -383,22 +383,61 @@ Write-Host
 Write-Verbose "Processing: Gigabyte AORUS AM5 B650 ZIP File Extraction..." -Verbose
 Write-Host
 
+Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
 
 
 Write-Host
 Write-Verbose "Processing: Gigabyte AORUS AM5 X670 ZIP File Extraction..." -Verbose
 Write-Host
 
+Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
 
 Write-Host
 Write-Verbose "Processing: Gigabyte AORUS AM5 X870 ZIP File Extraction..." -Verbose
 Write-Host
 
+Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
 
 Write-Host
 Write-Verbose "Processing: Gigabyte AORUS AM5 X870E ZIP File Extraction..." -Verbose
 Write-Host
 
+Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
+
 Write-Host
 Write-Verbose "Completed: Gigabyte AORUS AM5 AORUS motherboard ZIP File Extraction..." -Verbose
 Write-Host
+
+Stop-Transcript
