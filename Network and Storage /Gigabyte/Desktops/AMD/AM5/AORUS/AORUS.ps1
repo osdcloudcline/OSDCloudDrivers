@@ -418,13 +418,13 @@ Write-Host
 Write-Verbose "Processing: Gigabyte AORUS AM5 X870 ZIP File Extraction..." -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "" -TargetPath -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "$AORUSDestinationX870\Gigabyte-AM5-AORUS-X870-BluetoothDrivers1.zip" -TargetPath $AORUSBluetooth8 -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "$AORUSDestinationX870\Gigabyte-AM5-AORUS-X870-BluetoothDrivers2.zip" -TargetPath $AORUSBluetooth9 -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "$AORUSDestinationX870\Gigabyte-AM5-AORUS-X870-BluetoothDrivers3.zip" -TargetPath $AORUSBluetooth10 -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "$AORUSDestinationX870\Gigabyte-AM5-AORUS-X870-EthernetDrivers1.zip" -TargetPath $AORUSEthernet10 -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "$AORUSDestinationX870\Gigabyte-AM5-AORUS-X870-EthernetDrivers2.zip" -TargetPath $AORUSEthernet11 -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "$AORUSDestinationX870\Gigabyte-AM5-AORUS-X870-NVMe-RAID-StorageDrivers.zip" $AORUSStorage3 -TargetPath -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "$AORUSDestinationX870\Gigabyte-AM5-AORUS-X870-WLANDrivers.zip" -TargetPath $AORUSWiFi7 -ErrorAction SilentlyContinue
 
 Write-Host
 Write-Verbose "Processing: Gigabyte AORUS AM5 X870E ZIP File Extraction..." -Verbose
