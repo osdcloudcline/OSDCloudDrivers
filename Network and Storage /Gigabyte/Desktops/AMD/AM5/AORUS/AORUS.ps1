@@ -57,8 +57,8 @@ $AORUSEthernetX670URL6 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/r
 
 # AORUS X870
 
-$AORUSEthernetX870URL1 = ""
-$AORUSEthernetX870URL2 = ""
+$AORUSEthernetX870URL1 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/AORUS/X870/Ethernet/Gigabyte-AM5-AORUS-X870-EthernetDrivers1.zip"
+$AORUSEthernetX870URL2 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/AORUS/X870/Ethernet/Gigabyte-AM5-AORUS-X870-EthernetDrivers2.zip"
 
 # AORUS X870E
 
@@ -287,6 +287,8 @@ Write-Host
 Write-Verbose "Processing: Acquiring Gigabyte AORUS AM5 X870 Ethernet Drivers..." -Verbose
 Write-Host
 
+Save-WebFile -SourceUrl $AORUSEthernetX870URL1 -DestinationDirectory $AORUSDestinationX870
+Save-WebFile -SourceUrl $AORUSEthernetX870URL2 -DestinationDirectory $AORUSDestinationX870
 
 Write-Host
 Write-Verbose "Completed: Download of Gigabyte AORUS AM5 X870 Ethernet Drivers..." -Verbose
