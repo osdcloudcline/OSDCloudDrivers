@@ -17,9 +17,9 @@ $UDBluetoothURL2 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/he
 
 # Ultra Durable B650 - Bluetooth
 
-$UDBluetoothURL3 = ""
-$UDBluetoothURL4 = ""
-$UDBluetoothURL5 = ""
+$UDBluetoothURL3 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/UD%20-%20Ultra%20Durable/B650/Bluetooth/Gigabyte-AM5-UltraDurable-B650-BluetoothDrivers1.zip"
+$UDBluetoothURL4 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/UD%20-%20Ultra%20Durable/B650/Bluetooth/Gigabyte-AM5-UltraDurable-B650-BluetoothDrivers2.zip"
+$UDBluetoothURL5 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/UD%20-%20Ultra%20Durable/B650/Bluetooth/Gigabyte-AM5-UltraDurable-B650-BluetoothDrivers3.zip"
 
 ####################################################################################
 #                   Ultra Durable AM5 Ethernet Driver URLs
@@ -32,8 +32,8 @@ $UDEthernetURL2 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/hea
 
 # Ultra Durable B650 - Ethernet
 
-$UDEthernetURL3 = ""
-$UDEthernetURL4 = ""
+$UDEthernetURL3 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/UD%20-%20Ultra%20Durable/B650/Ethernet/Gigabyte-AM5-UltraDurable-B650-EthernetDrivers1.zip"
+$UDEthernetURL4 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/UD%20-%20Ultra%20Durable/B650/Ethernet/Gigabyte-AM5-UltraDurable-B650-EthernetDrivers2.zip"
 
 
 ####################################################################################
@@ -47,12 +47,12 @@ $UDWiFiURL2 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/m
 
 # Ultra Durable B650 - WiFi
 
-$UDWiFiURL3 = ""
-$UDWiFiURL4 = ""
-$UDWiFiURL5 = ""
-$UDWiFiURL6 = ""
-$UDWiFiURL7 = ""
-$UDWiFiURL8 = ""
+$UDWiFiURL3 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/UD%20-%20Ultra%20Durable/B650/WiFi/Gigabyte-AM5-UltraDurable-B650-WLANDrivers1.zip"
+$UDWiFiURL4 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/UD%20-%20Ultra%20Durable/B650/WiFi/Gigabyte-AM5-UltraDurable-B650-WLANDrivers2.zip"
+$UDWiFiURL5 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/UD%20-%20Ultra%20Durable/B650/WiFi/Gigabyte-AM5-UltraDurable-B650-WLANDrivers3.zip"
+$UDWiFiURL6 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/UD%20-%20Ultra%20Durable/B650/WiFi/Gigabyte-AM5-UltraDurable-B650-WLANDrivers4.zip"
+$UDWiFiURL7 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/UD%20-%20Ultra%20Durable/B650/WiFi/Gigabyte-AM5-UltraDurable-B650-WLANDrivers5.zip"
+$UDWiFiURL8 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/UD%20-%20Ultra%20Durable/B650/WiFi/Gigabyte-AM5-UltraDurable-B650-WLANDrivers6.zip"
 
 
 ####################################################################################
@@ -65,7 +65,7 @@ $UDStorageURL1 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/head
 
 # Ultra Durable B650 - Storage
 
-$UDStorageURL2 = ""
+$UDStorageURL2 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/UD%20-%20Ultra%20Durable/B650/Storage/Gigabyte-AM5-UltraDurable-B650-NVMe-RAID-StorageDrivers.zip"
 
 ###########################################################################################
 #        Ultra Durable AM5 Ethernet, Bluetooth, Storage and WiFi Destination Folders
