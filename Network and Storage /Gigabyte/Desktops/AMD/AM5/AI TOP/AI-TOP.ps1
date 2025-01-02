@@ -31,7 +31,7 @@ $AITOPDestination = "C:\OSDCloud\Drivers\Motherboards\Gigabyte\AM5\AI-TOP"
 ####################################################################################
 
 $AITOPEthernet1 = "$AITOPDestination\Ethernet1"
-$AITOPEthernet2 = "$AITOPDestination\Ethernet1"
+$AITOPEthernet2 = "$AITOPDestination\Ethernet2"
 
 $AITOPBluetooth = "$AITOPDestination\Bluetooth"
 
