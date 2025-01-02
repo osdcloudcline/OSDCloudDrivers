@@ -19,8 +19,7 @@ $UDBluetoothURL2 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/he
 
 $UDBluetoothURL3 = ""
 $UDBluetoothURL4 = ""
-
-
+$UDBluetoothURL5 = ""
 
 ####################################################################################
 #                   Ultra Durable AM5 Ethernet Driver URLs
@@ -50,6 +49,10 @@ $UDWiFiURL2 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/m
 
 $UDWiFiURL3 = ""
 $UDWiFiURL4 = ""
+$UDWiFiURL5 = ""
+$UDWiFiURL6 = ""
+$UDWiFiURL7 = ""
+$UDWiFiURL8 = ""
 
 
 ####################################################################################
@@ -86,6 +89,7 @@ $UDBluetooth2 = "$UDDestination\A620\Bluetooth2"
 
 $UDBluetooth3 = "$UDDestination\B650\Bluetooth1"
 $UDBluetooth4 = "$UDDestination\B650\Bluetooth2"
+$UDBluetooth5 = "$UDDestination\B650\Bluetooth3"
 
 # Ultra Durable A620 - Ethernet
 
@@ -114,7 +118,10 @@ $UDWiFi2 = "$UDDestination\A620\WiFi2"
 
 $UDWiFi3 = "$UDDestination\B650\WiFi1"
 $UDWiFi4 = "$UDDestination\B650\WiFi2"
-
+$UDWiFi5 = "$UDDestination\B650\WiFi3"
+$UDWiFi6 = "$UDDestination\B650\WiFi4"
+$UDWiFi7 = "$UDDestination\B650\WiFi5"
+$UDWiFi8 = "$UDDestination\B650\WiFi6"
 
 Write-Host
 Write-Verbose "Processing: Gigabyte Ultra Durable AM5 motherboard drivers..." -Verbose
@@ -173,6 +180,10 @@ Write-Verbose "Processing: Acquiring Gigabyte Ultra Durable AM5 B650 WiFi Driver
 
 Save-WebFile -SourceUrl $UDWiFiURL3 -DestinationDirectory $UDDestinationB650
 Save-WebFile -SourceUrl $UDWiFiURL4 -DestinationDirectory $UDDestinationB650
+Save-WebFile -SourceUrl $UDWiFiURL5 -DestinationDirectory $UDDestinationB650
+Save-WebFile -SourceUrl $UDWiFiURL6 -DestinationDirectory $UDDestinationB650
+Save-WebFile -SourceUrl $UDWiFiURL7 -DestinationDirectory $UDDestinationB650
+Save-WebFile -SourceUrl $UDWiFiURL8 -DestinationDirectory $UDDestinationB650
 
 Write-Host
 Write-Verbose "Completed: Download of Gigabyte Ultra Durable AM5 B650 WiFi WLAN Drivers..." -Verbose
@@ -183,7 +194,7 @@ Write-Host
 
 Save-WebFile -SourceUrl $UDBluetoothURL3 -DestinationDirectory $UDDestinationB650
 Save-WebFile -SourceUrl $UDBluetoothURL4 -DestinationDirectory $UDDestinationB650
-
+Save-WebFile -SourceUrl $UDBluetoothURL5 -DestinationDirectory $UDDestinationB650
 Write-Host
 Write-Verbose "Completed: Download of Gigabyte Ultra Durable AM5 B650 Bluetooth Drivers..." -Verbose
 Write-Host
@@ -197,3 +208,62 @@ Save-WebFile -SourceUrl $UDStorageURL2 -DestinationDirectory $UDDestinationB650
 Write-Host
 Write-Verbose "Completed: Download of Gigabyte Ultra Durable AM5 B650 Storage Drivers..." -Verbose
 Write-Host
+
+Write-Host
+Write-Verbose "Processing: Gigabyte Ultra Durable AM5 motherboard drivers file extraction..." -Verbose
+Write-Host
+Write-Verbose "Processing: Extracting Ethernet drivers..." -Verbose
+
+Expand-7zip -ArchiveFileName "$UDDestinationA620\Gigabyte-AM5-UltraDurable-A620-EthernetDrivers1.zip" -TargetPath $UDEthernet1 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$UDDestinationA620\Gigabyte-AM5-UltraDurable-A620-EthernetDrivers2.zip" -TargetPath $UDEthernet2 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$UDDestinationB650\Gigabyte-AM5-UltraDurable-B650-EthernetDrivers1.zip" -TargetPath $UDEthernet3 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$UDDestinationB650\Gigabyte-AM5-UltraDurable-B650-EthernetDrivers2.zip" -TargetPath $UDEthernet4 -ErrorAction SilentlyContinue
+
+Write-Host
+Write-Verbose "Completed: Extraction of ALL Gigabyte Ultra Durable AM5 Ethernet Drivers..." -Verbose
+Write-Host
+
+Write-Host
+Write-Verbose "Processing: Extracting NVMe Storage drivers..." -Verbose
+Write-Host
+
+Expand-7zip -ArchiveFileName "$UDDestinationA620\Gigabyte-AM5-UltraDurable-A620-NVMe-RAID-StorageDrivers.zip" -TargetPath $UDStorage1 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$UDDestinationB650\Gigabyte-AM5-UltraDurable-B650-NVMe-RAID-StorageDrivers.zip" -TargetPath $UDStorage2 -ErrorAction SilentlyContinue
+
+Write-Host
+Write-Verbose "Completed: Extraction of ALL Gigabyte Ultra Durable AM5 Storage Drivers..." -Verbose
+Write-Host
+
+Write-Host
+Write-Verbose "Processing: Extracting Bluetooth drivers..." -Verbose
+Write-Host
+
+Expand-7zip -ArchiveFileName "$UDDestinationA620\Gigabyte-AM5-UltraDurable-A620-BluetoothDrivers1.zip" -TargetPath $UDBluetooth1 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$UDDestinationA620\Gigabyte-AM5-UltraDurable-A620-BluetoothDrivers2.zip" -TargetPath $UDBluetooth2 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$UDDestinationB650\Gigabyte-AM5-UltraDurable-B650-BluetoothDrivers1.zip" -TargetPath $UDBluetooth3 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$UDDestinationB650\Gigabyte-AM5-UltraDurable-B650-BluetoothDrivers2.zip" -TargetPath $UDBluetooth4 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$UDDestinationB650\Gigabyte-AM5-UltraDurable-B650-BluetoothDrivers3.zip" -TargetPath $UDBluetooth5 -ErrorAction SilentlyContinue
+
+Write-Host
+Write-Verbose "Completed: Extraction of ALL Gigabyte Ultra Durable AM5 Bluetooth Drivers..." -Verbose
+Write-Host
+
+Write-Host
+Write-Verbose "Processing: Extracting WiFi drivers..." -Verbose
+Write-Host
+
+Expand-7zip -ArchiveFileName "$UDDestinationA620\Gigabyte-AM5-UltraDurable-A620-WLANDrivers1.zip" -TargetPath $UDWiFi1 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$UDDestinationA620\Gigabyte-AM5-UltraDurable-A620-WLANDrivers2.zip" -TargetPath $UDWiFi2 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$UDDestinationB650\Gigabyte-AM5-UltraDurable-B650-WLANDrivers1.zip" -TargetPath $UDWiFi3 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$UDDestinationB650\Gigabyte-AM5-UltraDurable-B650-WLANDrivers2.zip" -TargetPath $UDWiFi4 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$UDDestinationB650\Gigabyte-AM5-UltraDurable-B650-WLANDrivers3.zip" -TargetPath $UDWiFi5 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$UDDestinationB650\Gigabyte-AM5-UltraDurable-B650-WLANDrivers4.zip" -TargetPath $UDWiFi6 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$UDDestinationB650\Gigabyte-AM5-UltraDurable-B650-WLANDrivers5.zip" -TargetPath $UDWiFi7 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$UDDestinationB650\Gigabyte-AM5-UltraDurable-B650-WLANDrivers6.zip" -TargetPath $UDWiFi8 -ErrorAction SilentlyContinue
+
+Write-Host
+Write-Verbose "Completed: Extraction of ALL Gigabyte Ultra Durable AM5 WiFi Drivers..." -Verbose
+Write-Host
+
+Write-Verbose "Completed: Extraction of ALL Gigabyte Ultra Durable AM5 motherboard Drivers..." -Verbose
+
