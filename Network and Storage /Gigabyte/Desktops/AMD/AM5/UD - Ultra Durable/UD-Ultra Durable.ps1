@@ -28,11 +28,13 @@ $UDBluetoothURL4 = ""
 
 # Ultra Durable A620 - Ethernet
 
-
+$UDEthernetURL1 = ""
+$UDEthernetURL2 = ""
 
 # Ultra Durable B650 - Ethernet
 
-
+$UDEthernetURL3 = ""
+$UDEthernetURL4 = ""
 
 
 ####################################################################################
@@ -41,11 +43,13 @@ $UDBluetoothURL4 = ""
 
 # Ultra Durable A620 - WiFi
 
-
+$UDWiFiURL1 = ""
+$UDWiFiURL2 = ""
 
 # Ultra Durable B650 - WiFi
 
-
+$UDWiFiURL3 = ""
+$UDWiFiURL4 = ""
 
 
 ####################################################################################
@@ -54,6 +58,9 @@ $UDBluetoothURL4 = ""
 
 # Ultra Durable A620 - Storage
 
-
+$UDStorageURL1 = ""
 
 # Ultra Durable B650 - Storage
+
+$UDStorageURL1 = ""
+
