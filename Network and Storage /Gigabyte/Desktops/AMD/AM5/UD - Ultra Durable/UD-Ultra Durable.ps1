@@ -62,7 +62,7 @@ $UDStorageURL1 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/head
 
 # Ultra Durable B650 - Storage
 
-$UDStorageURL1 = ""
+$UDStorageURL2 = ""
 
 ###########################################################################################
 #        Ultra Durable AM5 Ethernet, Bluetooth, Storage and WiFi Destination Folders
@@ -116,3 +116,84 @@ $UDWiFi3 = "$UDDestination\B650\WiFi1"
 $UDWiFi4 = "$UDDestination\B650\WiFi2"
 
 
+Write-Host
+Write-Verbose "Processing: Gigabyte Ultra Durable AM5 motherboard drivers..." -Verbose
+Write-Host
+
+Write-Verbose "Processing: Acquiring Gigabyte Ultra Durable AM5 A620 Ethernet Drivers..." -Verbose
+Write-Host
+
+Save-WebFile -SourceUrl $UDEthernetURL1 -DestinationDirectory $UDDestinationA620
+Save-WebFile -SourceUrl $UDEthernetURL2 -DestinationDirectory $UDDestinationA620
+
+Write-Host
+Write-Verbose "Completed: Download of Gigabyte Ultra Durable AM5 A620 Ethernet Drivers..." -Verbose
+Write-Host
+
+Write-Verbose "Processing: Acquiring Gigabyte Ultra Durable AM5 A620 WiFi Drivers..." -Verbose
+
+Save-WebFile -SourceUrl $UDWiFiURL1 -DestinationDirectory $UDDestinationA620
+Save-WebFile -SourceUrl $UDWiFiURL2 -DestinationDirectory $UDDestinationA620
+
+Write-Host
+Write-Verbose "Completed: Download of Gigabyte Ultra Durable AM5 A620 WiFi WLAN Drivers..." -Verbose
+Write-Host
+
+Write-Verbose "Processing: Acquiring Gigabyte Ultra Durable AM5 A620 Bluetooth Drivers..." -Verbose
+Write-Host
+
+Save-WebFile -SourceUrl $UDBluetoothURL1 -DestinationDirectory $UDDestinationA620
+Save-WebFile -SourceUrl $UDBluetoothURL2 -DestinationDirectory $UDDestinationA620
+
+Write-Host
+Write-Verbose "Completed: Download of Gigabyte Ultra Durable AM5 A620 Bluetooth Drivers..." -Verbose
+Write-Host
+
+Write-Verbose "Processing: Acquiring Gigabyte Ultra Durable AM5 A620 Storage Drivers..." -Verbose
+Write-Host
+
+Save-WebFile -SourceUrl $UDStorageURL1 -DestinationDirectory $UDDestinationA620
+
+
+Write-Host
+Write-Verbose "Completed: Download of Gigabyte Ultra Durable AM5 A620 Storage Drivers..." -Verbose
+Write-Host
+
+Write-Verbose "Processing: Acquiring Gigabyte Ultra Durable AM5 B650 Ethernet Drivers..." -Verbose
+Write-Host
+
+Save-WebFile -SourceUrl $UDEthernetURL3 -DestinationDirectory $UDDestinationB650
+Save-WebFile -SourceUrl $UDEthernetURL4 -DestinationDirectory $UDDestinationB650
+
+Write-Host
+Write-Verbose "Completed: Download of Gigabyte Ultra Durable AM5 B650 Ethernet Drivers..." -Verbose
+Write-Host
+
+Write-Verbose "Processing: Acquiring Gigabyte Ultra Durable AM5 B650 WiFi Drivers..." -Verbose
+
+Save-WebFile -SourceUrl $UDWiFiURL3 -DestinationDirectory $UDDestinationB650
+Save-WebFile -SourceUrl $UDWiFiURL4 -DestinationDirectory $UDDestinationB650
+
+Write-Host
+Write-Verbose "Completed: Download of Gigabyte Ultra Durable AM5 B650 WiFi WLAN Drivers..." -Verbose
+Write-Host
+
+Write-Verbose "Processing: Acquiring Gigabyte Ultra Durable AM5 B650 Bluetooth Drivers..." -Verbose
+Write-Host
+
+Save-WebFile -SourceUrl $UDBluetoothURL3 -DestinationDirectory $UDDestinationB650
+Save-WebFile -SourceUrl $UDBluetoothURL4 -DestinationDirectory $UDDestinationB650
+
+Write-Host
+Write-Verbose "Completed: Download of Gigabyte Ultra Durable AM5 B650 Bluetooth Drivers..." -Verbose
+Write-Host
+
+Write-Verbose "Processing: Acquiring Gigabyte Ultra Durable AM5 B650 Storage Drivers..." -Verbose
+Write-Host
+
+Save-WebFile -SourceUrl $UDStorageURL2 -DestinationDirectory $UDDestinationB650
+
+
+Write-Host
+Write-Verbose "Completed: Download of Gigabyte Ultra Durable AM5 B650 Storage Drivers..." -Verbose
+Write-Host
