@@ -11,8 +11,8 @@ $GHURL = "https://github.com/osdcloudcline/OSDCloudDrivers"
 
 # Ultra Durable A620 - Bluetooth
 
-$UDBluetoothURL1 = ""
-$UDBluetoothURL2 = ""
+$UDBluetoothURL1 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/UD%20-%20Ultra%20Durable/A620/Bluetooth/Gigabyte-AM5-UltraDurable-A620-BluetoothDrivers1.zip"
+$UDBluetoothURL2 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/UD%20-%20Ultra%20Durable/A620/Bluetooth/Gigabyte-AM5-UltraDurable-A620-BluetoothDrivers2.zip"
 
 
 # Ultra Durable B650 - Bluetooth
@@ -28,8 +28,8 @@ $UDBluetoothURL4 = ""
 
 # Ultra Durable A620 - Ethernet
 
-$UDEthernetURL1 = ""
-$UDEthernetURL2 = ""
+$UDEthernetURL1 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/UD%20-%20Ultra%20Durable/A620/Ethernet/Gigabyte-AM5-UltraDurable-A620-EthernetDrivers1.zip"
+$UDEthernetURL2 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/UD%20-%20Ultra%20Durable/A620/Ethernet/Gigabyte-AM5-UltraDurable-A620-EthernetDrivers2.zip"
 
 # Ultra Durable B650 - Ethernet
 
@@ -43,8 +43,8 @@ $UDEthernetURL4 = ""
 
 # Ultra Durable A620 - WiFi
 
-$UDWiFiURL1 = ""
-$UDWiFiURL2 = ""
+$UDWiFiURL1 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/UD%20-%20Ultra%20Durable/A620/WiFi/Gigabyte-AM5-UltraDurable-A620-WLANDrivers1.zip"
+$UDWiFiURL2 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/UD%20-%20Ultra%20Durable/A620/WiFi/Gigabyte-AM5-UltraDurable-A620-WLANDrivers2.zip"
 
 # Ultra Durable B650 - WiFi
 
@@ -58,7 +58,7 @@ $UDWiFiURL4 = ""
 
 # Ultra Durable A620 - Storage
 
-$UDStorageURL1 = ""
+$UDStorageURL1 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/UD%20-%20Ultra%20Durable/A620/Storage/Gigabyte-AM5-UltraDurable-A620-NVMe-RAID-StorageDrivers.zip"
 
 # Ultra Durable B650 - Storage
 
