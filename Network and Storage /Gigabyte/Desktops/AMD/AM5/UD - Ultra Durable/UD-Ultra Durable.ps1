@@ -6,7 +6,7 @@ Get-Date
 $GHURL = "https://github.com/osdcloudcline/OSDCloudDrivers"
 
 ####################################################################################
-#                   AM5 Bluetooth Driver URLs
+#                   Ultra Durable AM5 Bluetooth Driver URLs
 ####################################################################################
 
 # Ultra Durable A620 - Bluetooth
@@ -23,7 +23,7 @@ $UDBluetoothURL4 = ""
 
 
 ####################################################################################
-#                   AM5 Ethernet Driver URLs
+#                   Ultra Durable AM5 Ethernet Driver URLs
 ####################################################################################
 
 # Ultra Durable A620 - Ethernet
@@ -38,7 +38,7 @@ $UDEthernetURL4 = ""
 
 
 ####################################################################################
-#                   AM5 WiFi Driver URLs
+#                   Ultra Durable AM5 WiFi Driver URLs
 ####################################################################################
 
 # Ultra Durable A620 - WiFi
@@ -53,7 +53,7 @@ $UDWiFiURL4 = ""
 
 
 ####################################################################################
-#                   AM5 Storage Driver URLs
+#                   Ultra Durable AM5 Storage Driver URLs
 ####################################################################################
 
 # Ultra Durable A620 - Storage
@@ -64,3 +64,10 @@ $UDStorageURL1 = ""
 
 $UDStorageURL1 = ""
 
+###########################################################################################
+#        Ultra Durable AM5 Ethernet, Bluetooth, Storage and WiFi Destination Folders
+###########################################################################################
+
+$UDDestination =  "C:\OSDCloud\Drivers\Motherboards\Gigabyte\AM5\UD-UltraDurable"
+$UDDestinationA620 =  "C:\OSDCloud\Drivers\Motherboards\Gigabyte\AM5\UD-UltraDurable\ZIP\A620"
+$UDDestinationB650 =  "C:\OSDCloud\Drivers\Motherboards\Gigabyte\AM5\UD-UltraDurable\ZIP\B650"
