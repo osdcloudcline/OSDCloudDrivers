@@ -1,4 +1,4 @@
-$LGA1851ROG = "C:\Logs\OSDCloud\LGA1851\ROG.log"
+$LGA1851ROG = "C:\Logs\OSDCloud\ASUS\LGA1851\ROG\ROG.log"
 Start-Transcript -Path $LGA1851ROG
 
 Get-Date
