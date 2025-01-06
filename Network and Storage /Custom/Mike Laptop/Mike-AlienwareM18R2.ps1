@@ -42,7 +42,7 @@ Write-Host
 $MikeAWM18R2Storage = "C:\OSDCloud\Drivers\Custom\Mike Laptops\Alienware M18 R2\Storage"
 $MikeAWM18R2StorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Custom/Mike%20Laptop/Storage/AlienwareM18R2-StorageDrivers.zip"
 
-$MikeAWM18R2DownloadPath = "C:\OSDCloud\Drivers\Custom\Mike Laptops\Alienware M18 R2
+$MikeAWM18R2DownloadPath = "C:\OSDCloud\Drivers\Custom\Mike Laptops\Alienware M18 R2"
 
 Import-Module -Name OSD -Force
 
