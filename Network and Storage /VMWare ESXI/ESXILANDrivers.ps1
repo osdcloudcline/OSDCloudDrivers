@@ -4,6 +4,12 @@ Start-Transcript -Path $ESXINetLog
 
 Get-Date
 
+Install-Module -Name OSD -Force -AllowClobber -SkipPublisherCheck -Verbose
+Import-Module -Name OSD -Force
+
+Install-Module -Name 7Zip4Powershell -Force -AllowClobber -SkipPublisherCheck -Verbose
+Import-Module -Name 7Zip4Powershell -Force
+
 #########################
 # ESXI Network Drivers  Path
 ##########################
