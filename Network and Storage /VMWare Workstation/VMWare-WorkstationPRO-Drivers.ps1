@@ -4,6 +4,12 @@ Start-Transcript -Path $VMWareWSPRONetLog
 
 Get-Date
 
+Install-Module -Name OSD -Force -AllowClobber -SkipPublisherCheck -Verbose
+Import-Module -Name OSD -Force
+
+Install-Module -Name 7Zip4Powershell -Force -AllowClobber -SkipPublisherCheck -Verbose
+Import-Module -Name 7Zip4Powershell -Force
+
 #########################
 # VMWareWSPRO Network Drivers  Path
 ##########################
@@ -13,7 +19,8 @@ $VMWareWSPRONetworkDriversURL = "https://github.com/osdcloudcline/OSDCloudDriver
 $VMWareWSPRODownloadPath1 = "C:\OSDCloud\Drivers\Virtualization\VMWareWSPRO\Download\Network"
 
 Import-Module -Name OSD -Force
-
+Install-Module -Name 7Zip4Powershell -Force -AllowClobber -SkipPublisherCheck -Verbose
+Import-Module -Name 7Zip4Powershell -Force
 Write-Verbose "Processing: VMWare Workstation Professional Network Drivers..." -Verbose
 
 Save-WebFile -SourceUrl $VMWareWSPRONetworkDriversURL -DestinationDirectory $VMWareWSPRODownloadPath1
