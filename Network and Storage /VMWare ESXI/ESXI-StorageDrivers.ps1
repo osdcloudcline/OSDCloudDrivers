@@ -23,7 +23,7 @@ Import-Module -Name OSD -Force
 Write-Verbose "Processing: VMWare ESXI Storage Drivers..." -Verbose
 
 Save-WebFile -SourceUrl $ESXIStorageDriversURL -DestinationDirectory $ESXIDownloadPath2
-Expand-7zip -ArchiveName "$ESXIDownloadPath\ESXIDrivers.zip" -TargetPath $ESXIPath2 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$ESXIDownloadPath\ESXIDrivers.zip" -TargetPath $ESXIPath2 -ErrorAction SilentlyContinue
 
 Write-Host
 Write-Verbose "Completed: ESXI Storage Drivers..." -Verbose
