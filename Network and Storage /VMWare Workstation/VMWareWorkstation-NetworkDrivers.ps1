@@ -23,7 +23,7 @@ Import-Module -Name OSD -Force
 Write-Verbose "Processing: VMWare Workstation Professional Network Drivers..." -Verbose
 
 Save-WebFile -SourceUrl $VMWareWSPRONetworkDriversURL -DestinationDirectory $VMWareWSPRODownloadPath1
-Expand-7zip -ArchiveName "$VMWareWSPRODownloadPath1\ESXIDrivers.zip" -TargetPath $VMWareWSPROPath1 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$VMWareWSPRODownloadPath1\ESXIDrivers.zip" -TargetPath $VMWareWSPROPath1 -ErrorAction SilentlyContinue
 
 Write-Host
 Write-Verbose "Completed: VMWare Workstation Professional Network Drivers..." -Verbose
