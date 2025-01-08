@@ -24,7 +24,7 @@ Import-Module -Name 7Zip4Powershell -Force
 Write-Verbose "Processing: VMWare Workstation Professional Network Drivers..." -Verbose
 
 Save-WebFile -SourceUrl $VMWareWSPRONetworkDriversURL -DestinationDirectory $VMWareWSPRODownloadPath1
-Expand-7zip -ArchiveName "$VMWareWSPRODownloadPath1\ESXIDrivers.zip" -TargetPath $VMWareWSPROPath1 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$VMWareWSPRODownloadPath1\ESXIDrivers.zip" -TargetPath $VMWareWSPROPath1 -ErrorAction SilentlyContinue
 
 Write-Host
 Write-Verbose "Completed: VMWare Workstation Professional Network Drivers..." -Verbose
@@ -51,7 +51,7 @@ Import-Module -Name OSD -Force
 Write-Verbose "Processing: VMWare Workstation Professional Storage Drivers..." -Verbose
 
 Save-WebFile -SourceUrl $VMWareWSPROStorageDriversURL -DestinationDirectory $VMWareWSPRODownloadPath2
-Expand-7zip -ArchiveName "$ESXIDownloadPath\ESXIDrivers.zip" -TargetPath $VMWareWSPROPath2 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$ESXIDownloadPath\ESXIDrivers.zip" -TargetPath $VMWareWSPROPath2 -ErrorAction SilentlyContinue
 
 Write-Host
 Write-Verbose "Completed: VMWare Workstation Professional Storage Drivers..." -Verbose
