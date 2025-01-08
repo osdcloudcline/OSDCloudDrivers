@@ -4,6 +4,9 @@ Start-Transcript -Path $MikeAlienwareM18R2Log
 
 Get-Date
 
+Import-Module -Name OSD -Force
+Import-Module -Name 7Zip4Powershell -Force
+
 #########################
 # Mike Alienware M18R2 Network Drivers  Path
 ##########################
@@ -19,18 +22,18 @@ $MikeAWM18R2Ethernet = "C:\OSDCloud\Drivers\Custom\Mike Laptops\Alienware M18 R2
 $MikeAWM18R2Bluetooth = "C:\OSDCloud\Drivers\Custom\Mike Laptops\Alienware M18 R2\Bluetooth"
 $MikeAWM18R2WiFi = "C:\OSDCloud\Drivers\Custom\Mike Laptops\Alienware M18 R2\WiFi"
 
-Import-Module -Name OSD -Force
+
 
 Write-Verbose "Processing: Mike Laptop - Alienware M18 R2 Network, Bluetooth and WiFi Drivers..." -Verbose
 
 Save-WebFile -SourceUrl $MikeAWM18R2EthernetURL -DestinationDirectory $MikeAWM18R2DownloadPath
-Expand-7zip -ArchiveName "$MikeAWM18R2DownloadPath\AlienwareM18R2-EthernetDrivers.zip" -TargetPath $MikeAWM18R2Ethernet -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$MikeAWM18R2DownloadPath\AlienwareM18R2-EthernetDrivers.zip" -TargetPath $MikeAWM18R2Ethernet -ErrorAction SilentlyContinue
 
 Save-WebFile -SourceUrl $MikeAWM18R2BluetoothURL -DestinationDirectory $MikeAWM18R2DownloadPath
-Expand-7zip -ArchiveName "$MikeAWM18R2DownloadPath\AlienwareM18R2-BluetoothDrivers.zip" -TargetPath $MikeAWM18R2Bluetooth -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$MikeAWM18R2DownloadPath\AlienwareM18R2-BluetoothDrivers.zip" -TargetPath $MikeAWM18R2Bluetooth -ErrorAction SilentlyContinue
 
 Save-WebFile -SourceUrl $MikeAWM18R2WiFiURL -DestinationDirectory $MikeAWM18R2DownloadPath
-Expand-7zip -ArchiveName "$MikeAWM18R2DownloadPath\AlienwareM18R2-WiFiDrivers.zip" -TargetPath $MikeAWM18R2WiFi  -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$MikeAWM18R2DownloadPath\AlienwareM18R2-WiFiDrivers.zip" -TargetPath $MikeAWM18R2WiFi  -ErrorAction SilentlyContinue
 Write-Host
 Write-Verbose "Completed: Mike Laptop - Alienware M18 R2 Network, Bluetooth and WiFi Drivers..." -Verbose
 Write-Host
@@ -49,7 +52,7 @@ Import-Module -Name OSD -Force
 Write-Verbose "Processing: Mike Laptop - Alienware M18 R2 Storage Drivers..." -Verbose
 
 Save-WebFile -SourceUrl $MikeAWM18R2StorageURL -DestinationDirectory $MikeAWM18R2DownloadPath
-Expand-7zip -ArchiveName "$MikeAWM18R2DownloadPath\AlienwareM18R2-StorageDrivers.zip" -TargetPath $MikeAWM18R2Storage -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$MikeAWM18R2DownloadPath\AlienwareM18R2-StorageDrivers.zip" -TargetPath $MikeAWM18R2Storage -ErrorAction SilentlyContinue
 
 Write-Host
 Write-Verbose "Completed: Mike Laptop - Alienware M18 R2 Storage Drivers..." -Verbose
