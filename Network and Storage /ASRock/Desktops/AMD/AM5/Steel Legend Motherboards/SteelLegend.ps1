@@ -5,6 +5,8 @@ Get-Date
 
 $GHURL = "https://github.com/osdcloudcline/OSDCloudDrivers"
 
+Import-Module -Name OSD -Force
+Import-Module -Name 7Zip4Powershell -Force
 
 ####################################################################################
 #                   AM5 Ethernet, WiFi and Storage Driver URLs
