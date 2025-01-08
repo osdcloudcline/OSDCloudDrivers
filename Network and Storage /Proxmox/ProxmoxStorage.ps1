@@ -26,10 +26,10 @@ Import-Module -Name OSD -Force
 Write-Verbose "Processing: Proxmox Storage Drivers..." -Verbose
 
 Save-WebFile -SourceUrl $ProxmoxStorageDriversURL1 -DestinationDirectory $ProxmoxDownloadPath
-Expand-7zip -ArchiveName "$ProxmoxDownloadPath\Proxmox-Win11-StorageDrivers.zip" -TargetPath $ProxmoxPath1 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$ProxmoxDownloadPath\Proxmox-Win11-StorageDrivers.zip" -TargetPath $ProxmoxPath1 -ErrorAction SilentlyContinue
 
 Save-WebFile -SourceUrl $ProxmoxStorageDriversURL2 -DestinationDirectory $ProxmoxDownloadPath
-Expand-7zip -ArchiveName "$ProxmoxDownloadPath\Proxmox-WinServer2025-StorageDrivers.zip" -TargetPath $ProxmoxPath2 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$ProxmoxDownloadPath\Proxmox-WinServer2025-StorageDrivers.zip" -TargetPath $ProxmoxPath2 -ErrorAction SilentlyContinue
 
 Write-Host
 Write-Verbose "Completed: Proxmox Storage Drivers..." -Verbose
