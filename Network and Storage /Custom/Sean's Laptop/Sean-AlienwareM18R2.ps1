@@ -4,6 +4,9 @@ Start-Transcript -Path $SeanAlienwareM18R2Log
 
 Get-Date
 
+Import-Module -Name OSD -Force
+Import-Module -Name 7Zip4Powershell -Force
+
 #########################
 # Sean Alienware M18R2 Network Drivers  Path
 ##########################
@@ -24,13 +27,13 @@ Import-Module -Name OSD -Force
 Write-Verbose "Processing: Sean Laptop - Alienware M18 R2 Network, Bluetooth and WiFi Drivers..." -Verbose
 
 Save-WebFile -SourceUrl $SeanAWM18R2EthernetURL -DestinationDirectory $SeanAWM18R2DownloadPath
-Expand-7zip -ArchiveName "$SeanAWM18R2DownloadPath\AlienwareM18R2-EthernetDrivers.zip" -TargetPath $SeanAWM18R2Ethernet -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$SeanAWM18R2DownloadPath\AlienwareM18R2-EthernetDrivers.zip" -TargetPath $SeanAWM18R2Ethernet -ErrorAction SilentlyContinue
 
 Save-WebFile -SourceUrl $SeanAWM18R2BluetoothURL -DestinationDirectory $SeanAWM18R2DownloadPath
-Expand-7zip -ArchiveName "$SeanAWM18R2DownloadPath\AlienwareM18R2-BluetoothDrivers.zip" -TargetPath $SeanAWM18R2Bluetooth -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$SeanAWM18R2DownloadPath\AlienwareM18R2-BluetoothDrivers.zip" -TargetPath $SeanAWM18R2Bluetooth -ErrorAction SilentlyContinue
 
 Save-WebFile -SourceUrl $SeanAWM18R2WiFiURL -DestinationDirectory $SeanAWM18R2DownloadPath
-Expand-7zip -ArchiveName "$SeanAWM18R2DownloadPath\AlienwareM18R2-WiFiDrivers.zip" -TargetPath $SeanAWM18R2WiFi  -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$SeanAWM18R2DownloadPath\AlienwareM18R2-WiFiDrivers.zip" -TargetPath $SeanAWM18R2WiFi  -ErrorAction SilentlyContinue
 Write-Host
 Write-Verbose "Completed: Sean Laptop - Alienware M18 R2 Network, Bluetooth and WiFi Drivers..." -Verbose
 Write-Host
@@ -49,7 +52,7 @@ Import-Module -Name OSD -Force
 Write-Verbose "Processing: Sean Laptop - Alienware M18 R2 Storage Drivers..." -Verbose
 
 Save-WebFile -SourceUrl $SeanAWM18R2StorageURL -DestinationDirectory $SeanAWM18R2DownloadPath
-Expand-7zip -ArchiveName "$SeanAWM18R2DownloadPath\AlienwareM18R2-StorageDrivers.zip" -TargetPath $SeanAWM18R2Storage -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$SeanAWM18R2DownloadPath\AlienwareM18R2-StorageDrivers.zip" -TargetPath $SeanAWM18R2Storage -ErrorAction SilentlyContinue
 
 Write-Host
 Write-Verbose "Completed: Sean Laptop - Alienware M18 R2 Storage Drivers..." -Verbose
