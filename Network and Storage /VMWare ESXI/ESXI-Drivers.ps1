@@ -13,6 +13,8 @@ $ESXINetworkDriversURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/r
 $ESXIDownloadPath1 = "C:\OSDCloud\Drivers\Virtualization\ESXI\Download\Network"
 
 Import-Module -Name OSD -Force
+Install-Module -Name 7Zip4Powershell -Force -AllowClobber -SkipPublisherCheck -Verbose
+Import-Module -Name 7Zip4Powershell -Force
 
 Write-Verbose "Processing: VMWare ESXI Network Drivers..." -Verbose
 
