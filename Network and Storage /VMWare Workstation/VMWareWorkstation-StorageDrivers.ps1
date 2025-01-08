@@ -23,7 +23,7 @@ Import-Module -Name OSD -Force
 Write-Verbose "Processing: VMWare Workstation Professional Storage Drivers..." -Verbose
 
 Save-WebFile -SourceUrl $VMWareWSPROStorageDriversURL -DestinationDirectory $VMWareWSPRODownloadPath2
-Expand-7zip -ArchiveName "$ESXIDownloadPath\ESXIDrivers.zip" -TargetPath $VMWareWSPROPath2 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$ESXIDownloadPath\ESXIDrivers.zip" -TargetPath $VMWareWSPROPath2 -ErrorAction SilentlyContinue
 
 Write-Host
 Write-Verbose "Completed: VMWare Workstation Professional Storage Drivers..." -Verbose
