@@ -25,10 +25,10 @@ Import-Module -Name OSD -Force
 Write-Verbose "Processing: Proxmox Network Drivers..." -Verbose
 
 Save-WebFile -SourceUrl $ProxmoxNetworkDriversURL1 -DestinationDirectory $ProxmoxDownloadPath
-Expand-7zip -ArchiveName "$ProxmoxDownloadPath\Proxmox-Wi11-Ethernet.zip" -TargetPath $ProxmoxPath1 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$ProxmoxDownloadPath\Proxmox-Wi11-Ethernet.zip" -TargetPath $ProxmoxPath1 -ErrorAction SilentlyContinue
 
 Save-WebFile -SourceUrl $ProxmoxNetworkDriversURL2 -DestinationDirectory $ProxmoxDownloadPath
-Expand-7zip -ArchiveName "$ProxmoxDownloadPath\Proxmox-WinServer2025-Ethernet.zip" -TargetPath $ProxmoxPath2 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$ProxmoxDownloadPath\Proxmox-WinServer2025-Ethernet.zip" -TargetPath $ProxmoxPath2 -ErrorAction SilentlyContinue
 
 Write-Host
 Write-Verbose "Completed: Proxmox Network Drivers..." -Verbose
