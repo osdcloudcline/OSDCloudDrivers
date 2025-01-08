@@ -23,7 +23,7 @@ Import-Module -Name OSD -Force
 Write-Verbose "Processing: VMWare ESXI Network Drivers..." -Verbose
 
 Save-WebFile -SourceUrl $ESXINetworkDriversURL -DestinationDirectory $ESXIDownloadPath1
-Expand-7zip -ArchiveName "$ESXIDownloadPath\ESXIDrivers.zip" -TargetPath $ESXIPath1 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$ESXIDownloadPath\ESXIDrivers.zip" -TargetPath $ESXIPath1 -ErrorAction SilentlyContinue
 
 Write-Host
 Write-Verbose "Completed: ESXI Network Drivers..." -Verbose
