@@ -39,23 +39,45 @@ Write-Verbose "Completed: Mike Laptop - Alienware M18 R2 Network, Bluetooth and 
 Write-Host
 
 #########################
-# Mike Alienware M18R2 Storage Drivers  Path
+# Mike Alienware M18R2 ALL Drivers
 ##########################
 
-$MikeAWM18R2Storage = "C:\OSDCloud\Drivers\Custom\Mike Laptops\Alienware M18 R2\Storage"
-$MikeAWM18R2StorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Custom/Mike%20Laptop/Storage/AlienwareM18R2-StorageDrivers.zip"
+$MikeAWM18R2ALL = "C:\OSDCloud\Drivers\Custom\Mike Laptops\Alienware M18 R2\ALL"
+$MikeAWM18R2ALLURL1 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Custom/Mike%20Laptop/ALL/Mike-AlienwareM18R2Drivers.zip.001"
+$MikeAWM18R2ALLURL2 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Custom/Mike%20Laptop/ALL/Mike-AlienwareM18R2Drivers.zip.002"
+$MikeAWM18R2ALLURL3 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Custom/Mike%20Laptop/ALL/Mike-AlienwareM18R2Drivers.zip.003"
+$MikeAWM18R2ALLURL4 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Custom/Mike%20Laptop/ALL/Mike-AlienwareM18R2Drivers.zip.004"
+$MikeAWM18R2ALLURL5 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Custom/Mike%20Laptop/ALL/Mike-AlienwareM18R2Drivers.zip.005"
+$MikeAWM18R2ALLURL6 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Custom/Mike%20Laptop/ALL/Mike-AlienwareM18R2Drivers.zip.006"
+$MikeAWM18R2ALLURL7 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Custom/Mike%20Laptop/ALL/Mike-AlienwareM18R2Drivers.zip.007"
 
 $MikeAWM18R2DownloadPath = "C:\OSDCloud\Drivers\Custom\Mike Laptops\Alienware M18 R2"
 
 Import-Module -Name OSD -Force
 
-Write-Verbose "Processing: Mike Laptop - Alienware M18 R2 Storage Drivers..." -Verbose
 
-Save-WebFile -SourceUrl $MikeAWM18R2StorageURL -DestinationDirectory $MikeAWM18R2DownloadPath
-Expand-7zip -ArchiveFileName "$MikeAWM18R2DownloadPath\AlienwareM18R2-StorageDrivers.zip" -TargetPath $MikeAWM18R2Storage -ErrorAction SilentlyContinue
+Write-Verbose "Processing: Mike Laptop - Alienware M18 R2 ALL Drivers..." -Verbose
+
+Save-WebFile -SourceUrl $MikeAWM18R2ALLURL1  -DestinationDirectory $MikeAWM18R2DownloadPath
+Save-WebFile -SourceUrl $MikeAWM18R2ALLURL2  -DestinationDirectory $MikeAWM18R2DownloadPath
+Save-WebFile -SourceUrl $MikeAWM18R2ALLURL3  -DestinationDirectory $MikeAWM18R2DownloadPath
+Save-WebFile -SourceUrl $MikeAWM18R2ALLURL4  -DestinationDirectory $MikeAWM18R2DownloadPath
+Save-WebFile -SourceUrl $MikeAWM18R2ALLURL5  -DestinationDirectory $MikeAWM18R2DownloadPath
+Save-WebFile -SourceUrl $MikeAWM18R2ALLURL6  -DestinationDirectory $MikeAWM18R2DownloadPath
+Save-WebFile -SourceUrl $MikeAWM18R2ALLURL7  -DestinationDirectory $MikeAWM18R2DownloadPath
+
+Expand-7zip -ArchiveFileName "$MikeAWM18R2DownloadPath\Mike-AlienwareM18R2Drivers.zip.001" -TargetPath $MikeAWM18R2ALL -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$MikeAWM18R2DownloadPath\Mike-AlienwareM18R2Drivers.zip.002" -TargetPath $MikeAWM18R2ALL -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$MikeAWM18R2DownloadPath\Mike-AlienwareM18R2Drivers.zip.003" -TargetPath $MikeAWM18R2ALL -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$MikeAWM18R2DownloadPath\Mike-AlienwareM18R2Drivers.zip.004" -TargetPath $MikeAWM18R2ALL -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$MikeAWM18R2DownloadPath\Mike-AlienwareM18R2Drivers.zip.005" -TargetPath $MikeAWM18R2ALL -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$MikeAWM18R2DownloadPath\Mike-AlienwareM18R2Drivers.zip.006" -TargetPath $MikeAWM18R2ALL -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$MikeAWM18R2DownloadPath\Mike-AlienwareM18R2Drivers.zip.007" -TargetPath $MikeAWM18R2ALL -ErrorAction SilentlyContinue
 
 Write-Host
-Write-Verbose "Completed: Mike Laptop - Alienware M18 R2 Storage Drivers..." -Verbose
+Write-Verbose "Completed: Mike Laptop - Alienware M18 R2 ALL Drivers..." -Verbose
 Write-Host
+
+
 
 Stop-Transcript
