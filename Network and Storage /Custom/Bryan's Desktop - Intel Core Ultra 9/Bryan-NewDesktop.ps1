@@ -55,4 +55,11 @@ Save-WebFile -SourceUrl $BryanWiFiURL -DestinationDirectory $ZIPDownload
 Save-WebFile -SourceUrl $BryanBluetoothURL -DestinationDirectory $ZIPDownload
 Save-WebFile -SourceUrl $BryanStorageURL -DestinationDirectory $ZIPDownload
 
-Expand-7zip -ArchiveFileName "$ZIPDownload\ASUS-ROG-Z890-A-STRIX-EthernetDrivers.zip"
+Expand-7zip -ArchiveFileName "$ZIPDownload\ASUS-ROG-Z890-A-STRIX-EthernetDrivers.zip" -TargetPath $Ethernet -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$ZIPDownload\ASUS-ROG-Z890-A-STRIX-WiFiDrivers.zip" -TargetPath $WiFi -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$ZIPDownload\ASUS-ROG-Z890-A-STRIX-BluetoothDrivers.zip" -TargetPath $Bluetooth -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$ZIPDownload\ASUS-ROG-Z890-A-STRIX-IRST-StorageDrivers.zip" -TargetPath $Storage -ErrorAction SilentlyContinue
+
+Write-Verbose "Completed: Bryan Desktop - Intel Core Ultra 9 285K ASUS Z890-A ROG STRIX LGA1851 Drivers..." -Verbose
+
+Stop-Transcript
