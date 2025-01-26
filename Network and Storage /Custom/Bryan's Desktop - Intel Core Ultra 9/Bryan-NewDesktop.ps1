@@ -31,13 +31,11 @@ $BryanBluetoothURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/
 
 $BryanStorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Custom/Bryan's%20Desktop%20-%20Intel%20Core%20Ultra%209/Storage/ASUS-ROG-Z890-A-STRIX-IRST-StorageDrivers.zip"
 
-
 ################################################
 # Bryan ASUS Z890-A STRIX Download Locations
 ################################################
 
 $ZIPDownload = "C:\OSDCloud\Drivers\Custom\Bryan Desktop\ASUS Z890-A STRIX\LGA1851"
-
 
 ################################################
 # Bryan ASUS Z890-A STRIX Extraction Locations
