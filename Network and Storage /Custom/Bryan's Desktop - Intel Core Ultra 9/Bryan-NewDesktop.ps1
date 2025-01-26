@@ -23,7 +23,7 @@ $BryanWiFiURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads
 # Bryan ASUS Z890-A STRIX Bluetooth Drivers URL
 ################################################
 
-$BryanBluetoothURL = ""
+$BryanBluetoothURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Custom/Bryan's%20Desktop%20-%20Intel%20Core%20Ultra%209/Bluetooth/ASUS%20ROG%20Z890-A%20STRIX-BluetoothDrivers.zip"
 
 ################################################
 # Bryan ASUS Z890-A STRIX Storage Drivers URL
