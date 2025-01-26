@@ -36,15 +36,15 @@ $BryanStorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/he
 # Bryan ASUS Z890-A STRIX Download Locations
 ################################################
 
-$ZIPDownload = ""
+$ZIPDownload = "C:\OSDCloud\Drivers\Custom\Bryan Desktop\ASUS Z890-A STRIX\LGA1851"
 
 
 ################################################
 # Bryan ASUS Z890-A STRIX Extraction Locations
 ################################################
 
-$Ethernet = ""
-$WiFi = ""
-$Bluetooth = ""
-$Storage = ""
+$Ethernet = "C:\OSDCloud\Drivers\Custom\Bryan Desktop\ASUS Z890-A STRIX\LGA1851\Ethernet"
+$WiFi = "C:\OSDCloud\Drivers\Custom\Bryan Desktop\ASUS Z890-A STRIX\LGA1851\WLAN"
+$Bluetooth = "C:\OSDCloud\Drivers\Custom\Bryan Desktop\ASUS Z890-A STRIX\LGA1851\Bluetooth"
+$Storage = "C:\OSDCloud\Drivers\Custom\Bryan Desktop\ASUS Z890-A STRIX\LGA1851\Storage"
 
