@@ -54,3 +54,5 @@ Save-WebFile -SourceUrl $BryanEthernetURL -DestinationDirectory $ZIPDownload
 Save-WebFile -SourceUrl $BryanWiFiURL -DestinationDirectory $ZIPDownload
 Save-WebFile -SourceUrl $BryanBluetoothURL -DestinationDirectory $ZIPDownload
 Save-WebFile -SourceUrl $BryanStorageURL -DestinationDirectory $ZIPDownload
+
+Expand-7zip -ArchiveFileName "$ZIPDownload\"
