@@ -53,7 +53,7 @@ Write-Host
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$ExtremeDestination\ASRock-Extreme-Intel-NetworkDrivers.zip" -TargetPath $ExtremeEthernet1  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$ExtremeDestination\ASRock-Extreme-Intel-NetworkDrivers.zip" -TargetPath $ExtremeEthernet  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$ExtremeDestination\ASRock-Extreme-NVMe-StorageDriver.zip" -TargetPath $ExtremeStorage1  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$ExtremeDestination\ASRock-Extreme-NVMe2-StorageDrivers.zip" -TargetPath $ExtremeStorage2  -ErrorAction SilentlyContinue 
 
