@@ -1,30 +1,27 @@
 Function Get-LGA1700Storage(){
 
-$AM5Storage1 = (Test-Path -Path "C:\OSDCloud\Drivers\Motherboards\ASRock\AM5\Storage\NVMe\rcbottom.cat" -IsValid)
-$AM5Storage2 = (Test-Path -Path "C:\OSDCloud\Drivers\Motherboards\ASRock\AM5\Storage\NVMe\rcbottom.inf" -IsValid)
-$AM5Storage3 = (Test-Path -Path "C:\OSDCloud\Drivers\Motherboards\ASRock\AM5\Storage\NVMe\rcbottom.sys" -IsValid)
-$AM5Storage4 = (Test-Path -Path "C:\OSDCloud\Drivers\Motherboards\ASRock\AM5\Storage\NVMe\rccfg.cat" -IsValid)
-$AM5Storage5 = (Test-Path -Path "C:\OSDCloud\Drivers\Motherboards\ASRock\AM5\Storage\NVMe\rccfg.inf" -IsValid)
-$AM5Storage6 = (Test-Path -Path "C:\OSDCloud\Drivers\Motherboards\ASRock\AM5\Storage\NVMe\rccfg.sys" -IsValid)
-$AM5Storage7 = (Test-Path -Path "C:\OSDCloud\Drivers\Motherboards\ASRock\AM5\Storage\NVMe\rcraid.cat" -IsValid)
-$AM5Storage8 = (Test-Path -Path "C:\OSDCloud\Drivers\Motherboards\ASRock\AM5\Storage\NVMe\rcraid.inf" -IsValid)
-$AM5Storage9 = (Test-Path -Path "C:\OSDCloud\Drivers\Motherboards\ASRock\AM5\Storage\NVMe\rcraid.sys" -IsValid)
-$AM5Storage10 = (Test-Path -Path "C:\OSDCloud\Drivers\Motherboards\ASRock\AM5\Storage\SATA\rcbottom.cat" -IsValid)
-$AM5Storage11 = (Test-Path -Path "C:\OSDCloud\Drivers\Motherboards\ASRock\AM5\Storage\SATA\rcbottom.inf" -IsValid)
-$AM5Storage12 = (Test-Path -Path "C:\OSDCloud\Drivers\Motherboards\ASRock\AM5\Storage\SATA\rcbottom.sys" -IsValid)
-$AM5Storage13 = (Test-Path -Path "C:\OSDCloud\Drivers\Motherboards\ASRock\AM5\Storage\SATA\rccfg.cat" -IsValid)
-$AM5Storage14 = (Test-Path -Path "C:\OSDCloud\Drivers\Motherboards\ASRock\AM5\Storage\SATA\rccfg.inf" -IsValid)
-$AM5Storage15 = (Test-Path -Path "C:\OSDCloud\Drivers\Motherboards\ASRock\AM5\Storage\SATA\rccfg.sys" -IsValid)
-$AM5Storage16 = (Test-Path -Path "C:\OSDCloud\Drivers\Motherboards\ASRock\AM5\Storage\SATA\rcraid.cat" -IsValid)
-$AM5Storage17 = (Test-Path -Path "C:\OSDCloud\Drivers\Motherboards\ASRock\AM5\Storage\SATA\rcraid.inf" -IsValid)
-$AM5Storage18 = (Test-Path -Path "C:\OSDCloud\Drivers\Motherboards\ASRock\AM5\Storage\SATA\rcraid.sys" -IsValid)
+$LGA1700Storage1 = (Test-Path -Path "C:\OSDCloud\Drivers\Motherboards\ASRock\LGA1700\Storage\IRST\iaAHCIC.cat" -IsValid)
+$LGA1700Storage2 = (Test-Path -Path "C:\OSDCloud\Drivers\Motherboards\ASRock\LGA1700\Storage\IRST\iaAHCIC.inf" -IsValid)
+$LGA1700Storage3 = (Test-Path -Path "C:\OSDCloud\Drivers\Motherboards\ASRock\LGA1700\Storage\IRST\iaStorAC.sys" -IsValid)
+$LGA1700Storage4 = (Test-Path -Path "C:\OSDCloud\Drivers\Motherboards\ASRock\LGA1700\Storage\IRST\iaStorHsaComponent.cat" -IsValid)
+$LGA1700Storage5 = (Test-Path -Path "C:\OSDCloud\Drivers\Motherboards\ASRock\LGA1700\Storage\IRST\iaStorHsaComponent.inf" -IsValid)
+$LGA1700Storage6 = (Test-Path -Path "C:\OSDCloud\Drivers\Motherboards\ASRock\LGA1700\Storage\IRST\iaStorPinningComponent.cat" -IsValid)
+$LGA1700Storage7 = (Test-Path -Path "C:\OSDCloud\Drivers\Motherboards\ASRock\LGA1700\Storage\IRST\iaStorPinningComponent.inf" -IsValid)
+$LGA1700Storage8 = (Test-Path -Path "C:\OSDCloud\Drivers\Motherboards\ASRock\LGA1700\Storage\IRST\iaStorAC.cat" -IsValid)
+$LGA1700Storage9 = (Test-Path -Path "C:\OSDCloud\Drivers\Motherboards\ASRock\LGA1700\Storage\IRST\iaStorAC.inf" -IsValid)
+$LGA1700Storage10 = (Test-Path -Path "C:\OSDCloud\Drivers\Motherboards\ASRock\LGA1700\Storage\IRST\iaStorAC.sys" -IsValid)
+$LGA1700Storage11 = (Test-Path -Path "C:\OSDCloud\Drivers\Motherboards\ASRock\LGA1700\Storage\IRST\iaStorAfs.sys" -IsValid)
+$LGA1700Storage12 = (Test-Path -Path "C:\OSDCloud\Drivers\Motherboards\ASRock\LGA1700\Storage\IRST\iaStorVD.cat" -IsValid)
+$LGA1700Storage13 = (Test-Path -Path "C:\OSDCloud\Drivers\Motherboards\ASRock\LGA1700\Storage\IRST\iaStorVD.inf" -IsValid)
+$LGA1700Storage14 = (Test-Path -Path "C:\OSDCloud\Drivers\Motherboards\ASRock\LGA1700\Storage\IRST\iaStorVD.sys" -IsValid)
+$LGA1700Storage15 = (Test-Path -Path "C:\OSDCloud\Drivers\Motherboards\ASRock\LGA1700\Storage\IRST\iaStorAfs.sys" -IsValid)
 
-If(($AM5Storage1 -eq $true) -and ($AM5Storage2 -eq $true) -and ($AM5Storage3 -eq $true) -and ($AM5Storage4 -eq $true) -and ($AM5Storage5 -eq $true) -and ($AM5Storage6 -eq $true) -and ($AM5Storage7 -eq $true) -and ($AM5Storage8 -eq $true) -and ($AM5Storage9 -eq $true) -and ($AM5Storage10 -eq $true) -and ($AM5Storage11 -eq $true) -and ($AM5Storage12 -eq $true) -and ($AM5Storage13 -eq $true) -and ($AM5Storage14 -eq $true) -and ($AM5Storage15 -eq $true) -and ($AM5Storage16 -eq $true) -and ($AM5Storage17 -eq $true) -and ($AM5Storage18 -eq $true)){
-Write-Verbose "ASRock Socket AM5 Storage drivers have been downloaded and expanded" -Verbose
+If(($LGA1700Storage1 -eq $true) -and ($LGA1700Storage2 -eq $true) -and ($LGA1700Storage3 -eq $true) -and ($LGA1700Storage4 -eq $true) -and ($LGA1700Storage5 -eq $true) -and ($LGA1700Storage6 -eq $true) -and ($LGA1700Storage7 -eq $true) -and ($LGA1700Storage8 -eq $true) -and ($LGA1700Storage9 -eq $true) -and ($LGA1700Storage10 -eq $true) -and ($LGA1700Storage11 -eq $true) -and ($LGA1700Storage12 -eq $true) -and ($LGA1700Storage13 -eq $true) -and ($LGA1700Storage14 -eq $true) -and ($LGA1700Storage15 -eq $true)){
+Write-Verbose "ASRock Socket LGA 1700 Storage drivers have been downloaded and expanded" -Verbose
 }
-ElseIf (($AM5Storage1 -eq $false) -and ($AM5Storage2 -eq $false) -and ($AM5Storage3 -eq $false) -and ($AM5Storage4 -eq $false) -and ($AM5Storage5 -eq $false) -and ($AM5Storage6 -eq $false) -and ($AM5Storage7 -eq $false) -and ($AM5Storage8 -eq $false) -and ($AM5Storage9 -eq $false) -and ($AM5Storage10 -eq $false) -and ($AM5Storage11 -eq $false) -and ($AM5Storage12 -eq $false) -and ($AM5Storage13 -eq $false) -and ($AM5Storage14 -eq $false) -and ($AM5Storage15 -eq $false) -and ($AM5Storage16 -eq $false) -and ($AM5Storage17 -eq $false) -and ($AM5Storage18 -eq $false)){
-$AM5Storage = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM5/Storage/AM5-Storage.ps1")
-Invoke-Expression $($AM5Storage.Content)
+ElseIf (($LGA1700Storage1 -eq $false) -and ($LGA1700Storage2 -eq $false) -and ($LGA1700Storage3 -eq $false) -and ($LGA1700Storage4 -eq $false) -and ($LGA1700Storage5 -eq $false) -and ($LGA1700Storage6 -eq $false) -and ($LGA1700Storage7 -eq $false) -and ($LGA1700Storage8 -eq $false) -and ($LGA1700Storage9 -eq $false) -and ($LGA1700Storage10 -eq $false) -and ($LGA1700Storage11 -eq $false) -and ($LGA1700Storage12 -eq $false) -and ($LGA1700Storage13 -eq $false) -and ($LGA1700Storage14 -eq $false) -and ($LGA1700Storage15 -eq $false)){
+$LGA1700Storage = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/LGA1700/Storage/LGA1700-Storage.ps1")
+Invoke-Expression $($LGA1700Storage.Content)
 }
 }
 
@@ -226,9 +223,9 @@ Invoke-Expression $($ProxmoxStorageDrivers.Content)
 }
 }
 
-$AM5VirtualDrivers = "C:\Logs\OSDCloud\ASRock\AM5\Virtual.log"
+$LGA1700VirtualDrivers = "C:\Logs\OSDCloud\ASRock\LGA1700\Virtual.log"
 
-Start-Transcript -Path $AM5VirtualDrivers
+Start-Transcript -Path $LGA1700VirtualDrivers
 
 Write-Verbose "Processing: VMWare ESXI Virtualization Network Drivers" -Verbose
 Write-Host
@@ -264,6 +261,5 @@ Write-Verbose "Processing: Proxmox Virtual I/O Storage Virtualization Drivers" -
 Write-Host
 
 Get-ProxmoxStorageDrivers
-
 
 Stop-Transcript
