@@ -10,8 +10,8 @@ $GHURL = "https://github.com/osdcloudcline/OSDCloudDrivers"
 ##########################
 
 $LGA1700StoragePath = "C:\OSDCloud\Drivers\Motherboards\ASRock\LGA1700\Storage"
-$NVMEURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/Storage/ASRock-AM4-RAID-NVMe-StorageDrivers.zip"
-$NVMEDownloadPath = "C:\OSDCloud\Drivers\Motherboards\ASRock\AM4\Storage"
+$StorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/Intel/LGA%201700/Storage/ASRock-LGA1700-IRST-StorageDrivers.zip"
+$StorageDownloadPath = "C:\OSDCloud\Drivers\Motherboards\ASRock\LGA1700\Storage"
 
 Import-Module -Name OSD -Force
 Import-Module -Name 7Zip4Powershell -Force
