@@ -69,8 +69,6 @@ Save-WebFile -SourceUrl $AQUAWLAN2URL -DestinationDirectory $AQUADestination
 Write-Verbose "Completed: ASRock LGA1700 AQUA Motherboard Drivers downloaded" -Verbose
 Write-Host
 
-Stop-Transcript
-
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 Write-Host
 
@@ -83,3 +81,7 @@ Expand-7Zip -ArchiveFileName "$AQUADestination\ASRock-LGA1700-AQUA-WLANDrivers2.
 
 Write-Verbose "Completed: ZIP Files extracted successfully" -Verbose
 Write-Host
+
+Stop-Transcript
+
+
