@@ -30,22 +30,56 @@ $AQUAWLAN2URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads
 $AQUADestination = "C:\OSDCloud\Drivers\Motherboards\ASRock\LGA1700\AQUA"
 
 
+####################################################################################
+#   LGA 1700 Bluetooth, Ethernet, Storage and WLAN Driver Extraction Destination
+####################################################################################
 
+$AQUABluetooth = "$AQUADestination\Bluetooth"
 
+$AQUAEthernet1 = "$AQUADestination\Ethernet1"
+$AQUAEthernet2 = "$AQUADestination\Ethernet2"
 
+$AQUAStorage = "$AQUADestination\Storage"
 
+$AQUAWLAN1 = "$AQUADestination\WLAN1"
+$AQUAWLAN2 = "$AQUADestination\WLAN2"
 
+Write-Verbose "Processing: Downloading ASRock LGA 1700 Motherboard Bluetooth Drivers from $GHURL" -Verbose
+Write-Host
 
+Save-WebFile -SourceUrl $AQUABluetoothURL -DestinationDirectory $AQUADestination
 
+Write-Verbose "Processing: Downloading ASRock LGA 1700 Motherboard Ethernet Drivers from $GHURL" -Verbose
+Write-Host
 
+Save-WebFile -SourceUrl $AQUAEthernet1URL -DestinationDirectory $AQUADestination
+Save-WebFile -SourceUrl $AQUAEthernet2URL -DestinationDirectory $AQUADestination
 
+Write-Verbose "Processing: Downloading ASRock LGA 1700 Motherboard Storage Drivers from $GHURL" -Verbose
+Write-Host
 
+Save-WebFile -SourceUrl $AQUAStorageURL -DestinationDirectory $AQUADestination
 
+Write-Verbose "Processing: Downloading ASRock LGA 1700 Motherboard WLAN Drivers from $GHURL" -Verbose
+Write-Host
 
+Save-WebFile -SourceUrl $AQUAWLAN1URL -DestinationDirectory $AQUADestination
+Save-WebFile -SourceUrl $AQUAWLAN2URL -DestinationDirectory $AQUADestination
 
-
-
-
-
+Write-Verbose "Completed: ASRock LGA1700 AQUA Motherboard Drivers downloaded" -Verbose
+Write-Host
 
 Stop-Transcript
+
+Write-Verbose "Processing: ZIP File extraction" -Verbose
+Write-Host
+
+Expand-7Zip -ArchiveFileName "$AQUADestination\ASRock-LGA1700-AQUA-BluetoothDrivers.zip" -TargetPath $AQUABluetooth  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$AQUADestination\ASRock-LGA1700-AQUA-EthernetDrivers1.zip" -TargetPath $AQUAEthernet1 -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$AQUADestination\ASRock-LGA1700-AQUA-EthernetDrivers2.zip" -TargetPath $AQUAEthernet2  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$AQUADestination\ASRock-LGA1700-AQUA-IRST-StorageDrivers.zip" -TargetPath $AQUAStorage  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$AQUADestination\ASRock-LGA1700-AQUA-WLANDrivers1.zip" -TargetPath $AQUAWLAN1  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$AQUADestination\ASRock-LGA1700-AQUA-WLANDrivers2.zip" -TargetPath $AQUAWLAN2  -ErrorAction SilentlyContinue 
+
+Write-Verbose "Completed: ZIP Files extracted successfully" -Verbose
+Write-Host
