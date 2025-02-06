@@ -295,7 +295,10 @@ Get-LGA1700Storage
 Write-Verbose "Processing: ASRock Intel LGA1700 PRO Motherboard Drivers" -Verbose
 Write-Host
 
+$PROLGA1700 = Invoke-WEbRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/Intel/LGA%201700/PRO%20Motherboards/PRO.ps1")
+Invoke-Expression $($PROLGA1700.Content)
 
+Get-LGA1700Storage
 
 Write-Verbose "Processing: ASRock Intel LGA1700 Phantom Gaming Motherboard Drivers" -Verbose
 Write-Host
