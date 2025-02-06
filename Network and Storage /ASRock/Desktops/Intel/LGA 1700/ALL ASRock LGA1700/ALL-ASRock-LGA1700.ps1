@@ -279,8 +279,10 @@ Get-LGA1700Storage
 Write-Verbose "Processing: ASRock Intel LGA1700 Extreme Motherboard Drivers" -Verbose
 Write-Host
 
+$ExtremeLGA1700 = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/Intel/LGA%201700/Extreme%20Motherboards/Extreme.ps1")
+Invoke-Expression $($ExtremeLGA1700.Content)
 
-
+Get-LGA1700Storage
 
 Write-Verbose "Processing: ASRock Intel LGA1700 LiveMixer Motherboard Drivers" -Verbose
 Write-Host
