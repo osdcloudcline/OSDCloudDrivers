@@ -271,9 +271,15 @@ Start-Transcript -Path $LGA1700Drivers
 Write-Verbose "Processing: ASRock Intel LGA1700 AQUA Motherboard Drivers" -Verbose
 Write-Host
 
+$AQUALGA1700 = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/Intel/LGA%201700/AQUA%20Motherboards/AQUA.ps1")
+Invoke-Expression $($AQUALGA1700.Content)
+
+Get-LGA1700Storage
 
 Write-Verbose "Processing: ASRock Intel LGA1700 Extreme Motherboard Drivers" -Verbose
 Write-Host
+
+
 
 
 Write-Verbose "Processing: ASRock Intel LGA1700 LiveMixer Motherboard Drivers" -Verbose
