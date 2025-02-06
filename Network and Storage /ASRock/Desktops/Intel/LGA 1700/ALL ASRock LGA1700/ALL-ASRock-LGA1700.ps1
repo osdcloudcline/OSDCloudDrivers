@@ -20,7 +20,7 @@ If(($LGA1700Storage1 -eq $true) -and ($LGA1700Storage2 -eq $true) -and ($LGA1700
 Write-Verbose "ASRock Socket LGA 1700 Storage drivers have been downloaded and expanded" -Verbose
 }
 ElseIf (($LGA1700Storage1 -eq $false) -and ($LGA1700Storage2 -eq $false) -and ($LGA1700Storage3 -eq $false) -and ($LGA1700Storage4 -eq $false) -and ($LGA1700Storage5 -eq $false) -and ($LGA1700Storage6 -eq $false) -and ($LGA1700Storage7 -eq $false) -and ($LGA1700Storage8 -eq $false) -and ($LGA1700Storage9 -eq $false) -and ($LGA1700Storage10 -eq $false) -and ($LGA1700Storage11 -eq $false) -and ($LGA1700Storage12 -eq $false) -and ($LGA1700Storage13 -eq $false) -and ($LGA1700Storage14 -eq $false) -and ($LGA1700Storage15 -eq $false)){
-$LGA1700Storage = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/LGA1700/Storage/LGA1700-Storage.ps1")
+$LGA1700Storage = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/Intel/LGA%201700/Storage/LGA1700-Storage.ps1")
 Invoke-Expression $($LGA1700Storage.Content)
 }
 }
