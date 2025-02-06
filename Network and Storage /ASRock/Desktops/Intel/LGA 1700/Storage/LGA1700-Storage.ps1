@@ -9,9 +9,9 @@ $GHURL = "https://github.com/osdcloudcline/OSDCloudDrivers"
 # LGA 1700 Storage Path
 ##########################
 
-$LGA1700StoragePath = "C:\OSDCloud\Drivers\Motherboards\ASRock\LGA1700\Storage"
+$StorageDownloadPath = "C:\OSDCloud\Drivers\Motherboards\ASRock\LGA1700\Storage"
 $StorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/Intel/LGA%201700/Storage/ASRock-LGA1700-IRST-StorageDrivers.zip"
-$StorageDownloadPath = "C:\OSDCloud\Drivers\Motherboards\ASRock\LGA1700\Storage\IRST"
+$LGA1700StoragePath = "C:\OSDCloud\Drivers\Motherboards\ASRock\LGA1700\Storage\IRST"
 
 Import-Module -Name OSD -Force
 Import-Module -Name 7Zip4Powershell -Force
