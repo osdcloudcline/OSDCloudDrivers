@@ -287,9 +287,15 @@ Get-LGA1700Storage
 Write-Verbose "Processing: ASRock Intel LGA1700 LiveMixer Motherboard Drivers" -Verbose
 Write-Host
 
+$LiveMixerLGA1700 = Invoke-WEbRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/Intel/LGA%201700/Live%20Mixer%20Motherboards/LiveMixer.ps1")
+Invoke-Expression $($LiveMixer.Content)
+
+Get-LGA1700Storage
 
 Write-Verbose "Processing: ASRock Intel LGA1700 PRO Motherboard Drivers" -Verbose
 Write-Host
+
+
 
 Write-Verbose "Processing: ASRock Intel LGA1700 Phantom Gaming Motherboard Drivers" -Verbose
 Write-Host
