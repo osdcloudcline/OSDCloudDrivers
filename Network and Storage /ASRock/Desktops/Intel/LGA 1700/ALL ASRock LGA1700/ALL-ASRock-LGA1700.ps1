@@ -263,3 +263,39 @@ Write-Host
 Get-ProxmoxStorageDrivers
 
 Stop-Transcript
+
+$LGA1700Drivers = "C:\Logs\OSDCloud\ASRock\LGA1700\All-Intel-LGA1700-Motherboards.log"
+
+Start-Transcript -Path $LGA1700Drivers
+
+Write-Verbose "Processing: ASRock Intel LGA1700 AQUA Motherboard Drivers" -Verbose
+Write-Host
+
+
+Write-Verbose "Processing: ASRock Intel LGA1700 Extreme Motherboard Drivers" -Verbose
+Write-Host
+
+
+Write-Verbose "Processing: ASRock Intel LGA1700 LiveMixer Motherboard Drivers" -Verbose
+Write-Host
+
+
+Write-Verbose "Processing: ASRock Intel LGA1700 PRO Motherboard Drivers" -Verbose
+Write-Host
+
+Write-Verbose "Processing: ASRock Intel LGA1700 Phantom Gaming Motherboard Drivers" -Verbose
+Write-Host
+
+
+Write-Verbose "Processing: ASRock Intel LGA1700 SteelLegend Motherboard Drivers" -Verbose
+Write-Host
+
+
+Write-Verbose "Processing: ASRock Intel LGA1700 Taichi Motherboard Drivers" -Verbose
+Write-Host
+
+
+Write-Verbose "Completed: ASRock Intel LGA1700 Motherboard Driver Integration" -Verbose
+Write-Host
+
+Stop-Transcript
