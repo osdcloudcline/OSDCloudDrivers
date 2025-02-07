@@ -24,3 +24,7 @@ $AQUAEthernet6URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/h
 $AQUAEthernet7URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/Intel/LGA%201851/AQUA%20Motherboards/Ethernet/ASRock-LGA1851-AQUA-Realtek-EthernetDrivers7.zip"
 
 $AQUAStorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/Intel/LGA%201851/AQUA%20Motherboards/Storage/ASRock-LGA1851-AQUA-IRST-StorageDrivers.zip"
+
+$AQUAWLAN1URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/Intel/LGA%201851/AQUA%20Motherboards/WLAN/ASRock-LGA1851-AQUA-WLANDrivers.zip"
+
+
