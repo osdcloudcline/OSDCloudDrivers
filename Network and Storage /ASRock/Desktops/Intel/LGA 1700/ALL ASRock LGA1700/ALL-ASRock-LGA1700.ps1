@@ -319,6 +319,10 @@ Get-LGA1700Storage
 Write-Verbose "Processing: ASRock Intel LGA1700 Taichi Motherboard Drivers" -Verbose
 Write-Host
 
+$TaichiLGA1700 = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/Intel/LGA%201700/Taichi%20Motherboards/Taichi.ps1")
+Invoke-Expression $($TaichiLGA1700.Content)
+
+Get-LGA1700Storage
 
 Write-Verbose "Completed: ASRock Intel LGA1700 Motherboard Driver downloads" -Verbose
 Write-Host
