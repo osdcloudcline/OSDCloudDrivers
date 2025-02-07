@@ -311,12 +311,16 @@ Get-LGA1700Storage
 Write-Verbose "Processing: ASRock Intel LGA1700 SteelLegend Motherboard Drivers" -Verbose
 Write-Host
 
+$SteelLegendLGA1700 = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/Intel/LGA%201700/Steel%20Legend%20Motherboards/SteelLegend.ps1")
+Invoke-Expression $($SteelLegendLGA1700.Content)
+
+Get-LGA1700Storage
 
 Write-Verbose "Processing: ASRock Intel LGA1700 Taichi Motherboard Drivers" -Verbose
 Write-Host
 
 
-Write-Verbose "Completed: ASRock Intel LGA1700 Motherboard Driver Integration" -Verbose
+Write-Verbose "Completed: ASRock Intel LGA1700 Motherboard Driver downloads" -Verbose
 Write-Host
 
 Stop-Transcript
