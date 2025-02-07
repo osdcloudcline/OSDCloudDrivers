@@ -213,7 +213,7 @@
        $TaichiLGA1700 = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/Intel/LGA%201700/Taichi%20Motherboards/Taichi.ps1")
        Invoke-Expression $($TaichiLGA1700.Content)
 
-       $AQUALGA1851 = Invoke-WebRequest("")
+       $AQUALGA1851 = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/Intel/LGA%201851/AQUA%20Motherboards/AQUA.ps1")
        Invoke-Expression $($AQUALGA1851.Content)
        
        $ExtremeLGA1851 = Invoke-WebRequest("")
