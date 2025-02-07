@@ -271,7 +271,7 @@ Start-Transcript -Path $LGA1851Drivers
 Write-Verbose "Processing: ASRock Intel LGA1851 AQUA Motherboard Drivers" -Verbose
 Write-Host
 
-$AQUALGA1851 = Invoke-WebRequest("")
+$AQUALGA1851 = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/Intel/LGA%201851/AQUA%20Motherboards/AQUA.ps1")
 Invoke-Expression $($AQUALGA1851.Content)
 
 Get-LGA1851Storage
