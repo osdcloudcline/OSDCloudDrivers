@@ -7,3 +7,10 @@ $GHURL = "https://github.com/osdcloudcline/OSDCloudDrivers"
 
 Import-Module -Name OSD -Force
 Import-Module -Name 7Zip4Powershell -Force
+
+
+####################################################################################
+#          LGA 1851 Bluetooth, Ethernet, Storage and WLAN Driver URLs
+####################################################################################
+
+$AQUABluetoothURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/Intel/LGA%201700/AQUA%20Motherboards/Bluetooth/ASRock-LGA1700-AQUA-BluetoothDrivers.zip"
