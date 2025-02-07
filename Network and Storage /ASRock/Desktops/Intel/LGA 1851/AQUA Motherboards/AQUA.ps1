@@ -28,3 +28,28 @@ $AQUAStorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/hea
 $AQUAWLAN1URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/Intel/LGA%201851/AQUA%20Motherboards/WLAN/ASRock-LGA1851-AQUA-WLANDrivers.zip"
 
 
+####################################################################################
+#    LGA 1851 Bluetooth, Ethernet, Storage and WLAN Driver Download Destination
+####################################################################################
+
+$AQUADestination = "C:\OSDCloud\Drivers\Motherboards\ASRock\LGA1851\AQUA"
+
+
+####################################################################################
+#   LGA 1851 Bluetooth, Ethernet, Storage and WLAN Driver Extraction Destination
+####################################################################################
+
+$AQUABluetooth = "$AQUADestination\Bluetooth"
+
+$AQUAEthernet1 = "$AQUADestination\Ethernet1"
+$AQUAEthernet2 = "$AQUADestination\Ethernet2"
+$AQUAEthernet3 = "$AQUADestination\Ethernet3"
+$AQUAEthernet4 = "$AQUADestination\Ethernet4"
+$AQUAEthernet5 = "$AQUADestination\Ethernet5"
+$AQUAEthernet6 = "$AQUADestination\Ethernet6"
+$AQUAEthernet7 = "$AQUADestination\Ethernet7"
+
+
+$AQUAStorage = "$AQUADestination\Storage"
+
+$AQUAWLAN = "$AQUADestination\WLAN"
