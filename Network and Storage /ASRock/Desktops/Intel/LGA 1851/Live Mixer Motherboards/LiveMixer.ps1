@@ -43,7 +43,6 @@ Write-Host
 
 Save-WebFile -SourceUrl $LiveMixerEthernetURL -DestinationDirectory $LiveMixerDestination
 
-
 Write-Verbose "Processing: Downloading ASRock LGA 1851 Motherboard Storage Drivers from $GHURL" -Verbose
 Write-Host
 
@@ -54,12 +53,10 @@ Write-Host
 
 Save-WebFile -SourceUrl $LiveMixerBluetoothURL -DestinationDirectory $LiveMixerDestination
 
-
 Write-Verbose "Processing: Downloading ASRock LGA 1851 Motherboard WLAN Drivers from $GHURL" -Verbose
 Write-Host
 
 Save-WebFile -SourceUrl $LiveMixerWLANURL -DestinationDirectory $LiveMixerDestination
-
 
 Write-Verbose "Completed: ASRock LGA1851 LiveMixer Motherboard Drivers downloaded" -Verbose
 Write-Host
