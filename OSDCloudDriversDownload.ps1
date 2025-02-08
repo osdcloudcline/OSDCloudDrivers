@@ -216,10 +216,7 @@
        $AQUALGA1851 = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/Intel/LGA%201851/AQUA%20Motherboards/AQUA.ps1")
        Invoke-Expression $($AQUALGA1851.Content)
        
-       $ExtremeLGA1851 = Invoke-WebRequest("")
-       Invoke-Expression $($ExtremeLGA1851.Content)
-
-       $LiveMixerLGA1851 = Invoke-WebRequest("")
+       $LiveMixerLGA1851 = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/Intel/LGA%201851/Live%20Mixer%20Motherboards/LiveMixer.ps1")
        Invoke-Expression $($LiveMixerLGA1851.Content)
 
        $PROLGA1851 = Invoke-WebRequest("")
