@@ -347,8 +347,17 @@
        $VMWareWSPRO = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/VMWare%20Workstation/VMWare-WorkstationPRO-Drivers.ps1")
        Invoke-Expression $($VMWareWSPRO.Content)
 
-       Write-Verbose "Processing: Custom built PC drivers" -Verbose
+       $NameQues = Read-Host -Prompt 'Please enter your name'
+       
+
+       If(($NameQues -eq "Bryan") -or ($NameQues -eq "bryan")){
+       Write-Verbose "Processing: Bryan Intel Core 9 Ultra 285K ASUS Z890-A Desktop" -Verbose
        Write-Host
+
+       $BryanDesktop = Invoke-WebRequest("")
+       Invoke-Expression $($BryanDesktop.Content)
+
+       
 
        Write-Verbose "Completed: ALL Driver downloads" -Verbose
        Write-Host
