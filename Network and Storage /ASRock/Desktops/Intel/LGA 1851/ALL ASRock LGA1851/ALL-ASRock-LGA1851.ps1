@@ -295,7 +295,7 @@ Get-LGA1851Storage
 Write-Verbose "Processing: ASRock Intel LGA1851 SteelLegend Motherboard Drivers" -Verbose
 Write-Host
 
-$SteelLegendLGA1851 = Invoke-WebRequest("")
+$SteelLegendLGA1851 = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/Intel/LGA%201851/Steel%20Legend%20Motherboards/SteelLegend.ps1")
 Invoke-Expression $($SteelLegendLGA1851.Content)
 
 Get-LGA1851Storage
