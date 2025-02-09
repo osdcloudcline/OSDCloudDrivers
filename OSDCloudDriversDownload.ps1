@@ -351,7 +351,7 @@
        
 
        If(($NameQues -eq "Bryan") -or ($NameQues -eq "bryan")){
-       Write-Verbose "Processing: Bryan Intel Core 9 Ultra 285K ASUS Z890-A Desktop" -Verbose
+       Write-Verbose "Processing: Bryan Intel Core 9 Ultra 285K ASUS Republic of Gamers STRIX Z890-A Desktop motherboard drivers" -Verbose
        Write-Host
 
        $BryanDesktop = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Custom/Bryan's%20Desktop%20-%20Intel%20Core%20Ultra%209/Bryan-NewDesktop.ps1")
