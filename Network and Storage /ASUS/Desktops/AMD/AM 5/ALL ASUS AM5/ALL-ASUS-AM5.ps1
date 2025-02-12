@@ -195,3 +195,46 @@ $ProxmoxStorageDrivers = Invoke-WebRequest("https://github.com/osdcloudcline/OSD
 Invoke-Expression $($ProxmoxStorageDrivers.Content)
 }
 }
+
+$AM5VirtualDrivers = "C:\Logs\OSDCloud\ASUS\AM5\Virtual.log"
+
+Start-Transcript -Path $AM5VirtualDrivers
+
+Write-Verbose "Processing: VMWare ESXI Virtualization Network Drivers" -Verbose
+Write-Host
+
+Get-ESXILANDrivers
+
+Write-Verbose "Processing: VMWare ESXI Virtualization Storage Drivers" -Verbose
+Write-Host
+
+Get-ESXIStorageDrivers
+
+Write-Verbose "Processing: Hyper-V Virtualization Network Drivers" -Verbose
+Write-Host
+
+Get-HyperVLANDrivers
+
+Write-Verbose "Processing: VMWare Workstation Professional Virtualization Network Drivers" -Verbose
+Write-Host
+
+Get-VMWareWorkstationLANDrivers
+
+Write-Verbose "Processing: VMWare Workstation Professional Virtualization Storage Drivers" -Verbose
+Write-Host
+
+Get-VMWareWorkstationStorageDrivers
+
+Write-Verbose "Processing: Proxmox Virtual I/O Network Virtualization Drivers" -Verbose
+Write-Host
+
+Get-ProxmoxLANDrivers
+
+Write-Verbose "Processing: Proxmox Virtual I/O Storage Virtualization Drivers" -Verbose
+Write-Host
+
+Get-ProxmoxStorageDrivers
+
+
+Stop-Transcript
+
