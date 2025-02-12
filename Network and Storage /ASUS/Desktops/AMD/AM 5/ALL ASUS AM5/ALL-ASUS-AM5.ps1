@@ -238,3 +238,72 @@ Get-ProxmoxStorageDrivers
 
 Stop-Transcript
 
+$AM5 = "C:\Logs\OSDCloud\ASUS\AM5\AM5.log"
+
+Start-Transcript -Path $AM5
+
+Get-Date
+
+Write-Verbose "Processing: ASUS AM5 Business Motherboards" -Verbose
+Write-Host
+
+$BusinessAM5 = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/AMD/AM%205/Business%20Motherboards/Business.ps1")
+Invoke-Expression $($BusinessAM5.Content)
+
+Get-AM5Storage
+
+Write-Verbose "Processing: ASUS AM5 CSM Motherboards" -Verbose
+Write-Host
+
+$CSMAM5 = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/AMD/AM%205/CSM%20Motherboards/CSM.ps1")
+Invoke-Expression $($CSMAM5.Content)
+
+Get-AM5Storage
+
+Write-Verbose "Processing: ASUS AM5 Expedition Motherboards" -Verbose
+Write-Host
+
+$ExpeditionAM5 = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/AMD/AM%205/Expedition%20Motherboards/Expedition.ps1")
+Invoke-Expression $($ExpeditionAM5.Content)
+
+
+Write-Verbose "Processing: ASUS AM5 Other Motherboards" -Verbose
+Write-Host
+
+$OtherAM5 = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/AMD/AM%205/Other%20Motherboards/Other.ps1")
+Invoke-Expression $($OtherAM5.Content)
+
+Get-AM5Storage
+
+Write-Verbose "Processing: ASUS AM5 PRIME Motherboards" -Verbose
+Write-Host
+
+$PRIMEAM5 = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/AMD/AM%205/PRIME%20Motherboards/PRIME.ps1")
+Invoke-Expression $($PRIMEAM5.Content)
+
+Get-AM5Storage
+
+Write-Verbose "Processing: ASUS AM5 ProArt Motherboards" -Verbose
+Write-Host
+
+$ProArtAM5 = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/AMD/AM%205/ProArt%20Motherboards/ProArt.ps1")
+Invoke-Expression $($ProArtAM5.Content)
+
+Get-AM5Storage
+
+Write-Verbose "Processing: ASUS AM5 ROG - Republic of Gamers Motherboards" -Verbose
+Write-Host
+
+$ROGAM5 = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/AMD/AM%205/ROG%20-%20Republic%20of%20Gamers%20Motherboards/ROG%20-%20Republic%20of%20Gamers.ps1")
+Invoke-Expression $($ROGAM5.Content)
+
+Get-AM5Storage
+
+Write-Verbose "Processing: ASUS AM5 TUF Gaming Motherboards" -Verbose
+Write-Host
+
+$TUFGamingAM5 = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/AMD/AM%205/TUF%20Gaming%20Motherboards/TUFGaming.ps1")
+Invoke-Expression $($TUFGamingAM5.Content)
+
+
+Stop-Transcript
