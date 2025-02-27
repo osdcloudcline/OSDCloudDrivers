@@ -89,7 +89,7 @@
 
        Start-Transcript -Path $DriverDownloadLogs
 
-       $DLQues = Read-Host -Prompt 'Do you Want to download Virtualization, AMD, Intel, OEM or Custom drivers?'
+       $DLQues = Read-Host -Prompt 'Do you Want to download Virtualization, AMD, Intel, OEM, Custom or ALL drivers?'
 
        If(($DLQues -eq "Virtual") -or ($DLQues -eq "virtual") -or ($DLQues -eq "Virtualization") -or ($DLQues -eq "virtualization")){ 
        Write-Verbose "Processing: Virtualization Drivers" -Verbose
@@ -361,6 +361,37 @@
        
        Write-Verbose "Completed: ALL Driver downloads" -Verbose
        Write-Host
+       }
+
+       ElseIf(($DLQues -eq "ALL") -or ($DLQues -eq "All") ($DLQues -eq "all")){
+
+       Write-Verbose "Processing: Virtualization Drivers" -Verbose
+       Write-Host
+
+       $ESXI = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/VMWare%20ESXI/ESXI-Drivers.ps1")
+       Invoke-Expression $($ESXI.Content)
+
+       $HyperV = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Hyper-V/Hyper-V-NetworkDrivers.ps1")
+       Invoke-Expression $($HyperV.Content)
+
+       $Proxmox = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Proxmox/Proxmox.ps1")
+       Invoke-Expression $($Proxmox.Content)
+
+       $VMWareWSPRO = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/VMWare%20Workstation/VMWare-WorkstationPRO-Drivers.ps1")
+       Invoke-Expression $($VMWareWSPRO.Content)
+
+       Write-Verbose "Processing: AMD AM4 and AM5 motherboard drivers" -Verbose
+       Write-Host
+
+       Write-Verbose "Processing: Intel LGA 1700 and LGA 1851 motherboard drivers" -Verbose
+       Write-Host
+
+       Write-Verbose "Processing: OEM drivers" -Verbose
+       Write-Host
+
+       Write-Verbose "Processing: Custom System drivers" -Verbose
+       Write-Host
+
        }
 
        Stop-Transcript
