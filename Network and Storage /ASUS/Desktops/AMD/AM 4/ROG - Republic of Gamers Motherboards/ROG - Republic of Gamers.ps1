@@ -76,7 +76,7 @@ Save-WebFile -SourceUrl $ROGWiFiURL4 -DestinationDirectory $ROGDestination
 Write-Verbose "Acquiring ASUS AM4 ROG - Republic of Gamers Motherboard Bluetooth Drivers from $GHURL" -Verbose
 Write-Host
 
-Save-WebFile -SourceUrl $ROGBluettothURL -DestinationDirectory $ROGDestination
+Save-WebFile -SourceUrl $ROGBluetoothURL -DestinationDirectory $ROGDestination
 
 
 Write-Verbose "Acquiring ASUS AM4 ROG - Republic of Gamers Motherboard Storage Drivers from $GHURL" -Verbose
