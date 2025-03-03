@@ -34,7 +34,8 @@ $ProArtWiFi3 = "$ProArtDestination\WiFi3"
 $ProArtWiFi4 = "$ProArtDestination\WiFi4"
 $ProArtStorage = "$ProArtDestination\Storage"
 
-Import-Module -Name OSD -Force 
+Import-Module -Name OSD -Force
+Import-Module -Name 7Zip4Powershell -Force 
 
 Write-Verbose "Acquiring ASUS LGA 1851 ProArt Motherboard Ethernet Drivers from $GHURL" -Verbose
 
