@@ -28,7 +28,8 @@ $PRIMEEthernet = "$PRIMEDestination\Ethernet"
 $PRIMEWiFi = "$PRIMEDestination\WiFi"
 $PRIMEStorage = "$PRIMEDestination\Storage"
 
-Import-Module -Name OSD -Force 
+Import-Module -Name OSD -Force
+Import-Module -Name 7Zip4Powershell -Force 
 
 Write-Verbose "Acquiring ASUS LGA 1851 PRIME Motherboard Ethernet Drivers from $GHURL" -Verbose
 
