@@ -38,7 +38,8 @@ $CSMWiFi2 = "$CSMDestination\WiFi2"
 $CSMWiFi3 = "$CSMDestination\WiFi3"
 $CSMStorage = "$CSMDestination\Storage"
 
-Import-Module -Name OSD -Force 
+Import-Module -Name OSD -Force
+Import-Module -Name 7Zip4Powershell -Force
 
 Write-Verbose "Acquiring ASUS LGA 1700 CSM Motherboard Ethernet Drivers from $GHURL" -Verbose
 
