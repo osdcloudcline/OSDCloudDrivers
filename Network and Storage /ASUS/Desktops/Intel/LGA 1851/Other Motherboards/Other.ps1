@@ -28,7 +28,8 @@ $OtherEthernet = "$OtherDestination\Ethernet"
 $OtherWiFi = "$OtherDestination\WiFi"
 $OtherStorage = "$OtherDestination\Storage"
 
-Import-Module -Name OSD -Force 
+Import-Module -Name OSD -Force
+Import-Module -Name 7Zip4Powershell -Force
 
 Write-Verbose "Acquiring ASUS LGA 1851 Other Motherboard Ethernet Drivers from $GHURL" -Verbose
 
