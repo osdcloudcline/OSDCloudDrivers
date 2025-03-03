@@ -40,7 +40,8 @@ $ROGWiFi4 = "$ROGDestination\WiFi4"
 $ROGWiFi5 = "$ROGDestination\WiFi5"
 $ROGStorage = "$ROGDestination\Storage"
 
-Import-Module -Name OSD -Force 
+Import-Module -Name OSD -Force
+Import-Module -Name 7Zip4Powershell -Force
 
 Write-Verbose "Acquiring ASUS LGA 1851 ROG Motherboard Ethernet Drivers from $GHURL" -Verbose
 
