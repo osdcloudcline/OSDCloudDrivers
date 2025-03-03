@@ -24,7 +24,8 @@ $LGA1851StorageDestination = "C:\OSDCloud\Drivers\Motherboards\ASUS\LGA1851\GenS
 
 $LGA1851StorageDestination = "C:\OSDCloud\Drivers\Motherboards\ASUS\LGA1851\GenStorage"
 
-Import-Module -Name OSD -Force 
+Import-Module -Name OSD -Force
+Import-Module -Name 7Zip4Powershell -Force 
 
 Write-Verbose "Acquiring ASUS LGA 1851 Motherboard General Storage Drivers from $GHURL" -Verbose
 
