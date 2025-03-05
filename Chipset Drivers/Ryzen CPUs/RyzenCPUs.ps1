@@ -5,7 +5,7 @@ Import-Module -Name OSD -Force
 
 $ChipsetSource1 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Chipset%20Drivers/Ryzen%20CPUs/AMD-AutoDetect-version-24.12.1.zip.001"
 $ChipsetSource2 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Chipset%20Drivers/Ryzen%20CPUs/AMD-AutoDetect-version-24.12.1.zip.002"
-$ChipsetSource3 = "https://drivers.amd.com/drivers/amd-software-adrenalin-edition-25.2.1-win10-win11-feb2025-rdna.exe"
+$ChipsetSource3 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Chipset%20Drivers/Ryzen%20CPUs/AMD-AutoDetect-version-24.12.1.zip.003"
 $ChipsetSource4 = "https://download.amd.com/Desktop/amd-ryzen-master-2-14-1-3286.exe"
 
 $Destination = "C:\OSDCloud\drivers\Chipsets\RyzenCPUs"
