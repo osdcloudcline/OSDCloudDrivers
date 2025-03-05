@@ -2,6 +2,7 @@ $Chipset1 = "AMD Ryzen CPU Chipset version 24.12.1"
 $Chipset2 = "AMD Ryzen Master Software Version 2.14.1.3286"
 
 Import-Module -Name OSD -Force
+Import-Module -Name 7Zip4Powershell -Force
 
 $ChipsetSource1 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Chipset%20Drivers/Ryzen%20CPUs/AMD-AutoDetect-version-24.12.1.zip.001"
 $ChipsetSource2 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Chipset%20Drivers/Ryzen%20CPUs/AMD-AutoDetect-version-24.12.1.zip.002"
