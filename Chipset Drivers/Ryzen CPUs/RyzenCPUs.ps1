@@ -3,7 +3,7 @@ $Chipset2 = "AMD Ryzen Master Software Version 2.14.1.3286"
 
 Import-Module -Name OSD -Force
 
-$ChipsetSource1 = "https://drivers.amd.com/drivers/whql-amd-software-adrenalin-edition-24.10.1-win10-win11-oct-rdna.exe"
+$ChipsetSource1 = "https://drivers.amd.com/drivers/amd-software-adrenalin-edition-25.2.1-win10-win11-feb2025-rdna.exe"
 $ChipsetSource2 = "https://download.amd.com/Desktop/amd-ryzen-master-2-14-1-3286.exe"
 
 $Destination = "C:\OSDCloud\drivers\Chipsets\RyzenCPUs"
