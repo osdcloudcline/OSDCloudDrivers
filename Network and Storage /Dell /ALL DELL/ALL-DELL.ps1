@@ -246,5 +246,11 @@ Get-Date
 Write-Verbose "Processing: DELL Optiplex Micro-Form Factor 3060 computers" -Verbose
 Write-Host
 
-$OptiplexMicro3060 = Invoke-WebRequest("")
+$OptiplexMicro3060 = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Dell%20/Micro-Form%20Factor/Optiplex/3060/Optiplex3060.ps1")
 Invoke-Expression $($OptiplexMicro3060.Content)
+
+Write-Verbose "Processing: DELL Optiplex Micro-Form Factor 7010 computers" -Verbose
+Write-Host
+
+$OptiplexMicro7010 = Invoke-WebRequest("")
+Invoke-Expression $($OptiplexMicro7010.Content)
