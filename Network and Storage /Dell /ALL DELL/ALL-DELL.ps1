@@ -254,3 +254,5 @@ Write-Host
 
 $OptiplexMicro7010 = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Dell%20/Micro-Form%20Factor/Optiplex/7010/Optiplex7010.ps1")
 Invoke-Expression $($OptiplexMicro7010.Content)
+
+Stop-Transcript
