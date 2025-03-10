@@ -196,7 +196,7 @@ Invoke-Expression $($ProxmoxStorageDrivers.Content)
 }
 }
 
-$VirtualDrivers = "C:\Logs\OSDCloud\DELL\Optiplex Micro-Form Factor\3060\\Virtual.log"
+$VirtualDrivers = "C:\Logs\OSDCloud\DELL\Optiplex Micro-Form Factor\3060\Virtual Drivers\Virtual.log"
 
 Start-Transcript -Path $VirtualDrivers
 
@@ -235,5 +235,13 @@ Write-Host
 
 Get-ProxmoxStorageDrivers
 
-
 Stop-Transcript
+
+$OptiplexMFF = "C:\Logs\OSDCloud\DELL\Optiplex Micro-Form Factor\3060\Optiplex Drivers\Optiplex3060.log"
+
+Start-Transcript -Path $OptiplexMFF
+
+Get-Date
+
+Write-Verbose "Processing: DELL Optiplex Micro-Form Factor 3060 computers" -Verbose
+Write-Host
