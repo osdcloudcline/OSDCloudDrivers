@@ -196,4 +196,44 @@ Invoke-Expression $($ProxmoxStorageDrivers.Content)
 }
 }
 
+$VirtualDrivers = "C:\Logs\OSDCloud\DELL\Optiplex Micro-Form Factor\3060\\Virtual.log"
 
+Start-Transcript -Path $VirtualDrivers
+
+Write-Verbose "Processing: VMWare ESXI Virtualization Network Drivers" -Verbose
+Write-Host
+
+Get-ESXILANDrivers
+
+Write-Verbose "Processing: VMWare ESXI Virtualization Storage Drivers" -Verbose
+Write-Host
+
+Get-ESXIStorageDrivers
+
+Write-Verbose "Processing: Hyper-V Virtualization Network Drivers" -Verbose
+Write-Host
+
+Get-HyperVLANDrivers
+
+Write-Verbose "Processing: VMWare Workstation Professional Virtualization Network Drivers" -Verbose
+Write-Host
+
+Get-VMWareWorkstationLANDrivers
+
+Write-Verbose "Processing: VMWare Workstation Professional Virtualization Storage Drivers" -Verbose
+Write-Host
+
+Get-VMWareWorkstationStorageDrivers
+
+Write-Verbose "Processing: Proxmox Virtual I/O Network Virtualization Drivers" -Verbose
+Write-Host
+
+Get-ProxmoxLANDrivers
+
+Write-Verbose "Processing: Proxmox Virtual I/O Storage Virtualization Drivers" -Verbose
+Write-Host
+
+Get-ProxmoxStorageDrivers
+
+
+Stop-Transcript
