@@ -21,6 +21,7 @@ $SATAURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main
 $SATADownloadPath = "C:\OSDCloud\Drivers\Motherboards\ASRock\AM4\Storage"
 
 Import-Module -Name OSD -Force
+Import-Module -Name 7Zip4Powershell -Force
 
 
 Write-Verbose "Processing: ASRock AM4 NVMe Storage Drivers..." -Verbose
