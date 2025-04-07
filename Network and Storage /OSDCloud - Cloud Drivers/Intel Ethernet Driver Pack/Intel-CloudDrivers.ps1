@@ -25,7 +25,7 @@ Save-WebFile -SourceUrl $IntelCloudDriversURL2 -DestinationDirectory "$IntelClou
 Save-WebFile -SourceUrl $IntelCloudDriversURL3 -DestinationDirectory "$IntelCloudDriversDestination\Network\Other"
 Save-WebFile -SourceUrl $IntelCloudDriversURL4 -DestinationDirectory "$IntelCloudDriversDestination\Network\Other"
 
-Write-Host "Comppleted: Intel Network driver downloads..." -ForegroundColor Cyan
+Write-Host "Completed: Intel Network driver downloads..." -ForegroundColor Cyan
 
 Write-Verbose "Processing: OSDCloud Cloud Drivers - Intel ZIP Files..." -Verbose
 Write-Host
@@ -37,6 +37,6 @@ Expand-7Zip -ArchiveFileName "$IntelCloudDriversDestination\Network\Other\Intel-
 
 
 
-Write-Host "Comppleted: ZIP File extraction..." -ForegroundColor Cyan
+Write-Host "Completed: ZIP File extraction..." -ForegroundColor Cyan
 
 Stop-Transcript
