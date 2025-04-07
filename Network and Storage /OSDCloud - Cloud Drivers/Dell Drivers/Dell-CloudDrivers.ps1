@@ -38,7 +38,7 @@ Save-WebFile -SourceUrl $DellCloudDriversURL5 -DestinationDirectory "$DellCloudD
 Save-WebFile -SourceUrl $DellCloudDriversURL6 -DestinationDirectory "$DellCloudDriversDestination\Storage\Windows10"
 Save-WebFile -SourceUrl $DellCloudDriversURL7 -DestinationDirectory "$DellCloudDriversDestination\Storage\Windows11"
 
-Write-Host "Comppleted: Dell Network, Storage and Windows PE driver downloads..." -ForegroundColor Cyan
+Write-Host "Completed: Dell Network, Storage and Windows PE driver downloads..." -ForegroundColor Cyan
 
 Write-Verbose "Processing: OSDCloud Cloud Drivers - Dell ZIP Files..." -Verbose
 Write-Host
@@ -52,6 +52,6 @@ Expand-7Zip -ArchiveFileName "$DellCloudDriversDestination\Storage\Other\Dell-Cl
 Expand-7Zip -ArchiveFileName "$DellCloudDriversDestination\Storage\Windows10\Dell-CloudDrivers-Storage-Windows10.zip" -TargetPath "$DellCloudDriversDestination\Storage\Windows10\Extract" -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$DellCloudDriversDestination\Storage\Windows11\Dell-CloudDrivers-Storage-Windows11.zip" -TargetPath "$DellCloudDriversDestination\Storage\Windows11\Extract" -ErrorAction SilentlyContinue 
 
-Write-Host "Comppleted: ZIP File extraction..." -ForegroundColor Cyan
+Write-Host "Completed: ZIP File extraction..." -ForegroundColor Cyan
 
 Stop-Transcript
