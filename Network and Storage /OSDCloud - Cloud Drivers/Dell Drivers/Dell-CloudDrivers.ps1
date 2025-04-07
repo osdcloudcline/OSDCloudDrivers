@@ -3,6 +3,7 @@ $OSDCloudCloudDriversDELLLog = "C:\Logs\OSDCloud\Drivers\Cloud Drivers\Dell.log"
 Start-Transcript -Path $OSDCloudCloudDriversDELLLog
 
 Import-Module -Name OSD -Force
+Import-Module -Name 7Zip4Powershell -Force
 
 
 $DellCloudDriversURL1 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/OSDCloud%20-%20Cloud%20Drivers/Dell%20Drivers/Dell-CloudDrivers-Network-Windows10-18362.zip"
@@ -35,5 +36,16 @@ Save-WebFile -SourceUrl $DellCloudDriversURL6 -DestinationDirectory "$DellCloudD
 Save-WebFile -SourceUrl $DellCloudDriversURL7 -DestinationDirectory "$DellCloudDriversDestination\Storage\Windows11"
 
 
+Write-Verbose "Processing: OSDCloud Cloud Drivers - Dell ZIP Files..." -Verbose
+
+
+Expand-7Zip -ArchiveFileName "$DellCloudDriversDestination\Network\Windows10\Dell-CloudDrivers-Network-Windows10-18362.zip" -TargetPath "$DellCloudDriversDestination\Network\Windows10\18362" -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$DellCloudDriversDestination\Network\Windows10\Dell-CloudDrivers-Network-Windows10-22000.zip" -TargetPath "$DellCloudDriversDestination\Network\Windows10\22000" -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$DellCloudDriversDestination\Network\Windows11\Dell-CloudDrivers-Network-Windows11.zip" -TargetPath "$DellCloudDriversDestination\Network\Windows11\Extract" -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$DellCloudDriversDestination\Windows PE\Dell-CloudDrivers-PEDriverPack.zip" -TargetPath "$DellCloudDriversDestination\Windows PE\Extract" -ErrorAction SilentlyContinue 
+
+Expand-7Zip -ArchiveFileName "$DellCloudDriversDestination\Storage\Other\Dell-CloudDrivers-Storage-Other.zip" -TargetPath "$DellCloudDriversDestination\Storage\Other\Extract" -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$DellCloudDriversDestination\Storage\Windows10\Dell-CloudDrivers-Storage-Windows10.zip" -TargetPath "$DellCloudDriversDestination\Storage\Windows10\Extract" -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$DellCloudDriversDestination\Storage\Windows11\Dell-CloudDrivers-Storage-Windows11.zip" -TargetPath "$DellCloudDriversDestination\Storage\Windows11\Extract" -ErrorAction SilentlyContinue 
 
 Stop-Transcript
