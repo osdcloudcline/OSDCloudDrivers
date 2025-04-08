@@ -16,7 +16,7 @@ $USBCloudDriversDestination = "C:\Drivers\Cloud Drivers\USB"
 
 Get-Date
 
-Write-Verbose "Processing: OSDCloud Cloud Drivers - Downloading USB Network Drivers..." -Verbose
+Write-Verbose "Processing: OSDCloud Cloud Drivers - Downloading USB Drivers..." -Verbose
 Write-Host
 
 Save-WebFile -SourceUrl $USBCloudDriversURL1 -DestinationDirectory "$USBCloudDriversDestination"
