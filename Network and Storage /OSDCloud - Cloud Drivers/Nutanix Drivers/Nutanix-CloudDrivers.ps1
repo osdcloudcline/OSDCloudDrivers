@@ -14,7 +14,7 @@ $NutanixCloudDriversDestination = "C:\Drivers\Cloud Drivers\Nutanix"
 
 Get-Date
 
-Write-Verbose "Processing: OSDCloud Cloud Drivers - Downloading Nutanix Network Drivers..." -Verbose
+Write-Verbose "Processing: OSDCloud Cloud Drivers - Downloading Nutanix Drivers..." -Verbose
 Write-Host
 
 Save-WebFile -SourceUrl $NutanixCloudDriversURL1 -DestinationDirectory "$NutanixCloudDriversDestination"
