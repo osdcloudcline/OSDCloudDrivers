@@ -23,7 +23,7 @@ Write-Host "Completed: WLAN driver downloads..." -ForegroundColor Cyan
 Write-Verbose "Processing: OSDCloud Cloud Drivers - WLAN ZIP Files..." -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$WLANCloudDriversDestination\WLAN-CloudDrivers1.zip" -TargetPath "$WLANCloudDriversDestination\Extract" -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$WLANCloudDriversDestination\WLAN-CloudDrivers.zip" -TargetPath "$WLANCloudDriversDestination\Extract" -ErrorAction SilentlyContinue 
 
 
 Write-Host "Completed: ZIP File extraction..." -ForegroundColor Cyan
