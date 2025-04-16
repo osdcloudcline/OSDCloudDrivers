@@ -14,9 +14,9 @@ Import-Module -Name 7Zip4Powershell -Force
 # VMWareWSPRO Network Drivers  Path
 ##########################
 
-$VMWareWSPROPath1 = "C:\OSDCloud\Drivers\Virtualization\VMWareWSPRO\Network"
+$VMWareWSPROPath1 = "C:\Drivers\Virtualization\VMWareWSPRO\Network"
 $VMWareWSPRONetworkDriversURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/VMWare%20ESXI/ESXIDrivers.zip"
-$VMWareWSPRODownloadPath1 = "C:\OSDCloud\Drivers\Virtualization\VMWareWSPRO\Download\Network"
+$VMWareWSPRODownloadPath1 = "C:\Drivers\Virtualization\VMWareWSPRO\Download\Network"
 
 Import-Module -Name OSD -Force
 Install-Module -Name 7Zip4Powershell -Force -AllowClobber -SkipPublisherCheck -Verbose
@@ -42,9 +42,9 @@ Get-Date
 # VMWareWSPRO Storage Drivers Path
 ##########################
 
-$VMWareWSPROPath2 = "C:\OSDCloud\Drivers\Virtualization\VMWareWSPRO\Storage"
+$VMWareWSPROPath2 = "C:\Drivers\Virtualization\VMWareWSPRO\Storage"
 $VMWareWSPROStorageDriversURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/VMWare%20ESXI/ESXIDrivers.zip"
-$VMWareWSPRODownloadPath2 = "C:\OSDCloud\Drivers\Virtualization\ESXI\Download\Storage"
+$VMWareWSPRODownloadPath2 = "C:\Drivers\Virtualization\VMWareWSPRO\Download\Storage"
 
 Import-Module -Name OSD -Force
 
