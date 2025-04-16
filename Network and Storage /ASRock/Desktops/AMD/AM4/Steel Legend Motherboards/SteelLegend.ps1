@@ -28,7 +28,7 @@ $SteelLegendStorageURL2 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/
 #             AM4 Ethernet, WiFi and Storage Driver Download Destination
 ####################################################################################
 
-$SteelLegendDestination = "C:\OSDCloud\Drivers\Motherboards\ASRock\AM4\SteelLegend"
+$SteelLegendDestination = "C:\Drivers\Motherboards\ASRock\AM4\SteelLegend"
 
 ####################################################################################
 #             AM4 Ethernet, WiFi and Storage Driver Extraction Destination
