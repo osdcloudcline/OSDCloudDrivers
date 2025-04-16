@@ -22,7 +22,7 @@ $ExtremeStorage2URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs
 #             AM4 Ethernet, WiFi and Storage Driver Download Destination
 ####################################################################################
 
-$ExtremeDestination = "C:\OSDCloud\Drivers\Motherboards\ASRock\AM4\Extreme"
+$ExtremeDestination = "C:\Drivers\Motherboards\ASRock\AM4\Extreme"
 
 ####################################################################################
 #             AM4 Ethernet, WiFi and Storage Driver Extraction Destination
