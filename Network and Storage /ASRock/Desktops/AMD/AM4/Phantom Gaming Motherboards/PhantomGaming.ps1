@@ -18,8 +18,6 @@ $PhantomGamingEthernetURL3 = "https://github.com/osdcloudcline/OSDCloudDrivers/r
 $PhantomGamingEthernetURL4 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/Phantom%20Gaming%20Motherboards/Ethernet%20and%20WiFi/ASRock-PhantomGaming-Realtek-LANDriver2.zip"
 $PhantomGamingEthernetURL5 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/Phantom%20Gaming%20Motherboards/Ethernet%20and%20WiFi/ASRock-PhantomGaming-Realtek-LANDrivers3.zip"
 
-$PhantomGamingBluetoothURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/Phantom%20Gaming%20Motherboards/Ethernet%20and%20WiFi/ASRock-PhantomGaming-Killer-BluetoothDriver.zip"
-
 $PhantomGamingWiFiURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/Phantom%20Gaming%20Motherboards/Ethernet%20and%20WiFi/ASRock-PhantomGaming-Intel-WLANDrivers.zip"
 
 $PhantomGamingStorageURL1 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/Phantom%20Gaming%20Motherboards/Storage/ASRock-PhantomGaming-NVMe-StorageDrivers.zip"
@@ -29,7 +27,7 @@ $PhantomGamingStorageURL2 = "https://github.com/osdcloudcline/OSDCloudDrivers/ra
 #             AM4 Ethernet, WiFi and Storage Driver Download Destination
 ####################################################################################
 
-$PhantomGamingDestination = "C:\OSDCloud\Drivers\Motherboards\ASRock\AM4\PhantomGaming"
+$PhantomGamingDestination = "C:\Drivers\Motherboards\ASRock\AM4\PhantomGaming"
 
 ####################################################################################
 #             AM4 Ethernet, WiFi and Storage Driver Extraction Destination
@@ -40,8 +38,6 @@ $PhantomGamingEthernet2 = "$PhantomGamingDestination\Ethernet2"
 $PhantomGamingEthernet3 = "$PhantomGamingDestination\Ethernet3"
 $PhantomGamingEthernet4 = "$PhantomGamingDestination\Ethernet4"
 $PhantomGamingEthernet5 = "$PhantomGamingDestination\Ethernet5"
-
-$PhantomGamingBluetooth = "$PhantomGamingDestination\Bluetooth"
 
 $PhantomGamingWiFi = "$PhantomGamingDestination\WiFi"
 
@@ -65,12 +61,6 @@ Write-Host
 
 Save-WebFile -SourceUrl $PhantomGamingWiFiURL -DestinationDirectory $PhantomGamingDestination
 
-Write-Host
-Write-Verbose "Acquiring ASRock AM4 Phantom Gaming Motherboard Bluetooth Drivers from $GHURL" -Verbose
-Write-Host
-
-Save-WebFile -SourceUrl $PhantomGamingBluetoothURL -DestinationDirectory $PhantomGamingDestination
-
 Write-Verbose "Acquiring ASRock AM4 Phantom Gaming Motherboard Storage Drivers from $GHURL" -Verbose
 Write-Host
 
@@ -89,7 +79,6 @@ Expand-7Zip -ArchiveFileName "$PhantomGamingDestination\ASRock-PhantomGaming-Rea
 Expand-7Zip -ArchiveFileName "$PhantomGamingDestinationn\ASRock-PhantomGaming-Realtek-LANDriver2.zip" -TargetPath $PhantomGamingEthernet4  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$PhantomGamingDestination\ASRock-PhantomGaming-Realtek-LANDrivers3.zip" -TargetPath $PhantomGamingEthernet5  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$PhantomGamingDestinationn\ASRock-PhantomGaming-Intel-WLANDrivers.zip" -TargetPath $PhantomGamingWiFi  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PhantomGamingDestination\ASRock-PhantomGaming-Killer-BluetoothDriver.zip" -TargetPath $PhantomGamingBluetooth  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$PhantomGamingDestination\ASRock-PhantomGaming-NVMe-StorageDrivers.zip" -TargetPath $PhantomGamingStorage1  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$PhantomGamingDestination\ASRock-PhantomGaming-SATA-NVMe-StorageDrivers.zip" -TargetPath $PhantomGamingStorage2  -ErrorAction SilentlyContinue 
 
