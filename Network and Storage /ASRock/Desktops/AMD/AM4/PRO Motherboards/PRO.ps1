@@ -25,7 +25,7 @@ $PROStorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/head
 #             AM4 Ethernet, WiFi and Storage Driver Download Destination
 ####################################################################################
 
-$PRODestination = "C:\OSDCloud\Drivers\Motherboards\ASRock\AM4\PRO"
+$PRODestination = "C:\Drivers\Motherboards\ASRock\AM4\PRO"
 
 ####################################################################################
 #             AM4 Ethernet, WiFi and Storage Driver Extraction Destination
