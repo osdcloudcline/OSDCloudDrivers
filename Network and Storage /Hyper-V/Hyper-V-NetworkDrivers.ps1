@@ -14,9 +14,9 @@ Import-Module -Name 7Zip4Powershell -Force
 # Hyper-V Network Drivers  Path
 #################################
 
-$HyperVPath = "C:\OSDCloud\Drivers\Virtualization\HyperV\Network"
+$HyperVPath = "C:\Drivers\Virtualization\HyperV\Network"
 $HyperVNetworkDriversURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Hyper-V/HyperV-NetworkDrivers.zip"
-$HyperVDownloadPath = "C:\OSDCloud\Drivers\Virtualization\HyperV"
+$HyperVDownloadPath = "C:\Drivers\Virtualization\HyperV"
 
 Import-Module -Name OSD -Force
 
