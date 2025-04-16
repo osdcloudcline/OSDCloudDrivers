@@ -14,11 +14,11 @@ Import-Module -Name 7Zip4Powershell -Force
 # Proxmox Network Drivers  Path
 ##########################
 
-$ProxmoxPath1 = "C:\OSDCloud\Drivers\Virtualization\Proxmox\Network\Windows11"
-$ProxmoxPath2 = "C:\OSDCloud\Drivers\Virtualization\Proxmox\Network\WindowsServer2025"
+$ProxmoxPath1 = "C:\Drivers\Virtualization\Proxmox\Network\Windows11"
+$ProxmoxPath2 = "C:\Drivers\Virtualization\Proxmox\Network\WindowsServer2025"
 $ProxmoxNetworkDriversURL1 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Proxmox/Proxmox-Wi11-Ethernet.zip"
 $ProxmoxNetworkDriversURL2 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Proxmox/Proxmox-WinServer2025-Ethernet.zip"
-$ProxmoxDownloadPath = "C:\OSDCloud\Drivers\Virtualization\Proxmox"
+$ProxmoxDownloadPath = "C:\Drivers\Virtualization\Proxmox"
 
 Import-Module -Name OSD -Force
 
@@ -46,11 +46,11 @@ Get-Date
 # Proxmox Storage Drivers  Path
 ##########################
 
-$ProxmoxPath3 = "C:\OSDCloud\Drivers\Virtualization\Proxmox\Storage\Windows11"
-$ProxmoxPath4 = "C:\OSDCloud\Drivers\Virtualization\Proxmox\Storage\WindowsServer2025"
+$ProxmoxPath3 = "C:\Drivers\Virtualization\Proxmox\Storage\Windows11"
+$ProxmoxPath4 = "C:\Drivers\Virtualization\Proxmox\Storage\WindowsServer2025"
 $ProxmoxStorageDriversURL3 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Proxmox/Proxmox-Win11-StorageDrivers.zip"
 $ProxmoxStorageDriversURL4 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Proxmox/Proxmox-WinServer2025-StorageDrivers.zip"
-$ProxmoxDownloadPath = "C:\OSDCloud\Drivers\Virtualization\Proxmox"
+$ProxmoxDownloadPath = "C:\Drivers\Virtualization\Proxmox"
 
 Import-Module -Name OSD -Force
 
