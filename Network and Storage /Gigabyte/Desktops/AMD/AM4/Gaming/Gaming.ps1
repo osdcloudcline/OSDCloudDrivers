@@ -9,11 +9,7 @@ $GHURL = "https://github.com/osdcloudcline/OSDCloudDrivers"
 Import-Module -Name OSD -Force
 Import-Module -Name 7Zip4Powershell -Force
 
-####################################################################################
-#                   AM4 Bluetooth Driver URLs
-####################################################################################
 
-$GamingBluetoothURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM4/Gaming/Bluetooth/Gigabyte-Gaming-BluetoothDrivers-B350.zip"
 
 
 ####################################################################################
@@ -72,14 +68,11 @@ $GamingStorageURL15 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs
 #        Gaming Ethernet, Bluetooth, Storage and WiFi Destination Folders
 ###########################################################################################
 
-$GamingDestination =  "C:\OSDCloud\Drivers\Motherboards\Gigabyte\Gaming"
+$GamingDestination =  "C:\Drivers\Motherboards\Gigabyte\Gaming"
 
 ###########################################################################################
 #        Gaming Ethernet, Bluetooth, Storage and WiFi Extraction Folders
 ###########################################################################################
-
-$GamingBluetooth = "$GamingDestination\B350\Bluetooth"
-
 
 $GamingEthernet1 = "$GamingDestination\B350\Ethernet"
 
@@ -96,7 +89,6 @@ $GamingEthernet7 = "$GamingDestination\X370\Ethernet2"
 $GamingEthernet8 = "$GamingDestination\X570\Ethernet1"
 $GamingEthernet9 = "$GamingDestination\X570\Ethernet2"
 
-
 $GamingStorage1 = "$GamingDestination\Storage\B350\RAID\NVMe"
 $GamingStorage2 = "$GamingDestination\Storage\B350\RAID\SATA"
 
@@ -109,7 +101,6 @@ $GamingStorage7 = "$GamingDestination\Storage\B550\RAID\SATA"
 
 $GamingStorage8 = "$GamingDestination\Storage\X370\RAID\NVMe"
 $GamingStorage9 = "$GamingDestination\Storage\X370\RAID\SATA"
-
 
 $GamingStorage10 = "$GamingDestination\Storage\X570\RAID\NVMe1"
 $GamingStorage11 = "$GamingDestination\Storage\X570\RAID\NVMe2"
@@ -159,19 +150,6 @@ Write-Host
 Write-Host
 Write-Verbose "Completed: Download of ALL Gigabyte Gaming AM4 motherboard Ethernet Drivers..." -Verbose
 
-
-
-Write-Host
-Write-Host
-Write-Verbose "Processing: Acquiring Gigabyte Gaming AM4 B350 Bluetooth Drivers..." -Verbose
-Write-Host
-Save-WebFile -SourceUrl $GamingBluetoothURL -DestinationDirectory $GamingDestination
-Write-Host
-Write-Verbose "Completed: Download of Gigabyte Gaming AM4 B350 Bluetooth Drivers..." -Verbose
-Write-Host
-Write-Host
-Write-Verbose "Completed: Download of ALL Gigabyte Gaming AM4 motherboard Bluetooth Drivers..." -Verbose
-
 Write-Host
 Write-Host
 Write-Verbose "Processing: Acquiring Gigabyte Gaming AM4 Storage Drivers -RAID NVMe..." -Verbose
@@ -213,9 +191,6 @@ Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-EthernetDrivers
 Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-EthernetDrivers-X370-Win10.zip" -TargetPath $GamingEthernet7 -ErrorAction SilentlyContinue
 Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-EthernetDrivers-X570-Win10.zip" -TargetPath $GamingEthernet8 -ErrorAction SilentlyContinue
 Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-EthernetDrivers-X570-Win11.zip" -TargetPath $GamingEthernet9 -ErrorAction SilentlyContinue
-Write-Host
-Write-Verbose "Completed: Extraction of ALL Gigabyte Gaming AM4 Ethernet Drivers..." -Verbose
-Write-Host
 
 Write-Host
 Write-Host
@@ -241,22 +216,8 @@ Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-B550-RAID-SATA-
 Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-X370-RAID-SATA-StorageDrivers.zip" -TargetPath $GamingStorage9 -ErrorAction SilentlyContinue
 Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-X570-RAID-SATA-StorageDrivers-Win10.zip" -TargetPath $GamingStorage14 -ErrorAction SilentlyContinue
 Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-X570-RAID-SATA-StorageDrivers-Win11.zip" -TargetPath $GamingStorage15 -ErrorAction SilentlyContinue
-Write-Host
-Write-Verbose "Completed: Extraction of ALL Gigabyte Gaming AM4 Storage Drivers..." -Verbose
-Write-Host
-Write-Host
 
 
-Write-Host
-Write-Host
-Write-Verbose "Processing: Gigabyte Gaming AM4 motherboard drivers file extraction..." -Verbose
-Write-Host
-Write-Verbose "Processing: Extracting Bluetooth drivers..." -Verbose
-
-Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-BluetoothDrivers-B350.zip" -TargetPath $GamingBluetooth -ErrorAction SilentlyContinue
-Write-Host
-Write-Verbose "Completed: Extraction of ALL Gigabyte Gaming AM4 Bluetooth Drivers..." -Verbose
-Write-Host
 Write-Host
 Write-Verbose "Completed: Extraction of ALL Gigabyte Gaming AM4 motherboard Drivers..." -Verbose
 
