@@ -23,7 +23,7 @@ $BusinessStorage2URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/ref
 #             AM4 Ethernet, WiFi and Storage Driver Download Destination
 ####################################################################################
 
-$BusinessDestination = "C:\OSDCloud\Drivers\Motherboards\ASUS\AM4\Business"
+$BusinessDestination = "C:\Drivers\Motherboards\ASUS\AM4\Business"
 
 ####################################################################################
 #             AM4 Ethernet, WiFi and Storage Driver Extraction Destination
