@@ -68,7 +68,7 @@ $GamingStorageURL15 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs
 #        Gaming Ethernet, Bluetooth, Storage and WiFi Destination Folders
 ###########################################################################################
 
-$GamingDestination =  "C:\Drivers\Motherboards\Gigabyte\Gaming"
+$GamingDestination =  "C:\Drivers\Motherboards\Gigabyte\AM4\Gaming"
 
 ###########################################################################################
 #        Gaming Ethernet, Bluetooth, Storage and WiFi Extraction Folders
