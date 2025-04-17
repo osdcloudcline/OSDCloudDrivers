@@ -22,7 +22,7 @@ $WorkstationStorageURL2 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/
 #             AM4 Ethernet, WiFi and Storage Driver Download Destination
 ####################################################################################
 
-$WorkstationDestination = "C:\OSDCloud\Drivers\Motherboards\ASUS\AM4\Workstation"
+$WorkstationDestination = "C:\Drivers\Motherboards\ASUS\AM4\Workstation"
 
 ####################################################################################
 #             AM4 Ethernet, WiFi and Storage Driver Extraction Destination
