@@ -14,8 +14,6 @@ Import-Module -Name 7Zip4Powershell -Force
 
 $AEROEthernetURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM4/AERO/Ethernet%20and%20WiFi/Gigabyte-AERO-LANDrivers.zip"
 
-$AEROBluetoothURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM4/AERO/Ethernet%20and%20WiFi/Gigabyte-AERO-BluetoothDrivers.zip"
-
 $AEROWiFi1URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM4/AERO/Ethernet%20and%20WiFi/Gigabyte-AERO-WLANDrivers1.zip"
 $AEROWiFi2URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM4/AERO/Ethernet%20and%20WiFi/Gigabyte-AERO-WLANDrivers2.zip"
 
@@ -26,15 +24,13 @@ $AEROStorage2URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/he
 #             AM4 Ethernet, WiFi and Storage Driver Download Destination
 ####################################################################################
 
-$AERODestination = "C:\OSDCloud\Drivers\Motherboards\Gigabyte\AM4\AERO"
+$AERODestination = "C:\Drivers\Motherboards\Gigabyte\AM4\AERO"
 
 ####################################################################################
 #             AM4 Ethernet, WiFi and Storage Driver Extraction Destination
 ####################################################################################
 
 $AEROEthernet = "$AERODestination\Ethernet"
-
-$AEROBluetooth = "$AERODestination\Bluetooth"
 
 $AEROWiFi1 = "$AERODestination\WiFi1"
 $AEROWiFi2 = "$AERODestination\WiFi2"
@@ -49,17 +45,11 @@ Write-Host
 
 Save-WebFile -SourceUrl  $AEROEthernetURL -DestinationDirectory $AERODestination
 
-Write-Verbose "Acquiring Gigabyte AM4 AERO Motherboard Bluetooth Drivers from $GHURL" -Verbose
-Write-Host
-
-Save-WebFile -SourceUrl  $AEROBluetoothURL -DestinationDirectory $AERODestination
-
 Write-Verbose "Acquiring Gigabyte AM4 AERO Motherboard WiFi Drivers from $GHURL" -Verbose
 Write-Host
 
 Save-WebFile -SourceUrl  $AEROWiFi1URL -DestinationDirectory $AERODestination
 Save-WebFile -SourceUrl  $AEROWiFi2URL -DestinationDirectory $AERODestination
-
 
 Write-Verbose "Acquiring Gigabyte AM4 AERO Motherboard Storage Drivers from $GHURL" -Verbose
 Write-Host
@@ -74,7 +64,6 @@ Write-Verbose "Processing: ZIP File extraction" -Verbose
 Write-Host
 
 Expand-7Zip -ArchiveFileName "$AERODestination\Gigabyte-AERO-LANDrivers.zip" -TargetPath $AEROEthernet  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$AERODestination\Gigabyte-AERO-BluetoothDrivers.zip" -TargetPath $AEROBluetooth  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$AERODestination\Gigabyte-AERO-WLANDrivers1.zip" -TargetPath $AEROWiFi1  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$AERODestination\Gigabyte-AERO-WLANDrivers2.zip" -TargetPath $AEROWiFi2  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$AERODestination\Gigabyte-AERO-RAID-NVMe-StorageDrivers.zip" -TargetPath $AEROStorage1  -ErrorAction SilentlyContinue 
