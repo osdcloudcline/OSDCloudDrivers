@@ -31,8 +31,7 @@ $PRODestination = "C:\Drivers\Motherboards\ASRock\AM5\PRO"
 
 $PROEthernet = "$PRODestination\Ethernet"
 
-$PROWiFi = "$PRODestination\WiFi"
-
+$PROWiFi = "$PRODestination\WLAN"
 
 $PROStorage = "$PRODestination\Storage"
 
