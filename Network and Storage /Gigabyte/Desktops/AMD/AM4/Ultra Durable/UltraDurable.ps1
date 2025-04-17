@@ -117,7 +117,7 @@ $UDStorageURL21 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/hea
 #        Ultra Durable Ethernet, Bluetooth, Storage and WiFi Destination Folders
 ###########################################################################################
 
-$UDDestination =  "C:\Drivers\Motherboards\Gigabyte\Ultra Durable"
+$UDDestination =  "C:\Drivers\Motherboards\Gigabyte\AM4\Ultra Durable"
 
 ###########################################################################################
 #        Ultra Durable Ethernet, Bluetooth, Storage and WiFi Extraction Folders
