@@ -23,7 +23,7 @@ $OtherStorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/he
 #             AM4 Ethernet, WiFi and Storage Driver Download Destination
 ####################################################################################
 
-$OtherDestination = "C:\OSDCloud\Drivers\Motherboards\ASUS\AM4\Other"
+$OtherDestination = "C:\Drivers\Motherboards\ASUS\AM4\Other"
 
 ####################################################################################
 #             AM4 Ethernet, WiFi and Storage Driver Extraction Destination
