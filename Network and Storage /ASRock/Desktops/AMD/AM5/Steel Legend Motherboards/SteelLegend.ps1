@@ -12,7 +12,7 @@ Import-Module -Name 7Zip4Powershell -Force
 #                   AM5 Ethernet, WiFi and Storage Driver URLs
 ####################################################################################
 
-$SteelLegendBluetoothURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM5/Steel%20Legend%20Motherboards/Network%20and%20WiFi/ASRock-AM5-SteelLegend-BluetoothDrivers.zip"
+
 $SteelLegendEthernetURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM5/Steel%20Legend%20Motherboards/Network%20and%20WiFi/ASRock-AM5-SteelLegend-EthernetDrivers.zip"
 $SteelLegendWiFiURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM5/Steel%20Legend%20Motherboards/Network%20and%20WiFi/ASRock-AM5-SteelLegend-WiFiDrivers.zip"
 
@@ -23,7 +23,7 @@ $SteelLegendStorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/r
 #             AM5 Ethernet, WiFi and Storage Driver Download Destination
 ####################################################################################
 
-$SteelLegendDestination = "C:\OSDCloud\Drivers\Motherboards\ASRock\AM5\SteelLegend"
+$SteelLegendDestination = "C:\Drivers\Motherboards\ASRock\AM5\SteelLegend"
 
 ####################################################################################
 #             AM5 Ethernet,Bluetooth  WiFi and Storage Driver Extraction Destination
@@ -44,11 +44,6 @@ Write-Host
 
 Save-WebFile -SourceUrl $SteelLegendEthernetURL -DestinationDirectory $SteelLegendDestination
 
-Write-Verbose "Acquiring ASRock AM5 Steel Legend Motherboard Bluetooth Drivers from $GHURL" -Verbose
-Write-Host
-
-Save-WebFile -SourceUrl $SteelLegendBluetoothURL -DestinationDirectory $SteelLegendDestination
-
 Write-Verbose "Acquiring ASRock AM5 Steel Legend Motherboard WiFi Drivers from $GHURL" -Verbose
 Write-Host
 
@@ -65,7 +60,6 @@ Write-Host
 Write-Verbose "SteelLegendcessing: ZIP File extraction" -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$SteelLegendDestination\ASRock-AM5-SteelLegend-BluetoothDrivers.zip" -TargetPath $SteelLegendBluetooth  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$SteelLegendDestination\ASRock-AM5-SteelLegend-EthernetDrivers.zip" -TargetPath $SteelLegendEthernet  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$SteelLegendDestination\ASRock-AM5-SteelLegend-WiFiDrivers.zip" -TargetPath $SteelLegendWiFi  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$SteelLegendDestination\ASRock-AM5-SteelLengend-RAID-NVMe-StorageDrivers.zip" -TargetPath $SteelLegendStorage  -ErrorAction SilentlyContinue 
