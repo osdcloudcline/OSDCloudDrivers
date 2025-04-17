@@ -21,7 +21,7 @@ $CSMStorage2URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/hea
 #             AM4 Ethernet, WiFi and Storage Driver Download Destination
 ####################################################################################
 
-$CSMDestination = "C:\OSDCloud\Drivers\Motherboards\ASUS\AM4\CSM"
+$CSMDestination = "C:\Drivers\Motherboards\ASUS\AM4\CSM"
 
 ####################################################################################
 #             AM4 Ethernet, WiFi and Storage Driver Extraction Destination
