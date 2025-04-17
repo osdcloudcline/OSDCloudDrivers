@@ -27,7 +27,7 @@ $PRIMEStorageURL4 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/h
 #             AM4 Ethernet, WiFi and Storage Driver Download Destination
 ####################################################################################
 
-$PRIMEDestination = "C:\OSDCloud\Drivers\Motherboards\ASUS\AM4\PRIME"
+$PRIMEDestination = "C:\Drivers\Motherboards\ASUS\AM4\PRIME"
 
 ####################################################################################
 #             AM4 Ethernet, WiFi and Storage Driver Extraction Destination
