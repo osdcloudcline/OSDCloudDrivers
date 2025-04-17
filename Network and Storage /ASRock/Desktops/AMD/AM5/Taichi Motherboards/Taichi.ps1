@@ -31,7 +31,7 @@ $TaichiDestination = "C:\Drivers\Motherboards\ASRock\AM5\Taichi"
 
 $TaichiEthernet = "$TaichiDestination\Ethernet"
 
-$TaichiWiFi = "$TaichiDestination\WiFi"
+$TaichiWiFi = "$TaichiDestination\WLAN"
 
 $TaichiStorage = "$TaichiDestination\Storage"
 
