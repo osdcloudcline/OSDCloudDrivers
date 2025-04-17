@@ -24,8 +24,6 @@ $TUFGamingWiFiURL4 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/
 $TUFGamingWiFiURL5 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/AMD/AM%204/TUF%20Gaming%20Motherboards/Ethernet%20and%20WiFi/TUFGaming-Realtek1-WiFiDrivers.zip"
 $TUFGamingWiFiURL6 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/AMD/AM%204/TUF%20Gaming%20Motherboards/Ethernet%20and%20WiFi/TUFGaming-Realtek2-WiFiDrivers.zip"
 
-$TUFGamingBluetoothURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/AMD/AM%204/TUF%20Gaming%20Motherboards/Ethernet%20and%20WiFi/TUFGaming-BluetoothDrivers.zip"
-
 $TUFGamingStorageURL1 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/AMD/AM%204/TUF%20Gaming%20Motherboards/Storage/TUFGaming-NVMe-StorageDrivers.zip"
 $TUFGamingStorageURL2 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/AMD/AM%204/TUF%20Gaming%20Motherboards/Storage/TUFGaming-RAID-SATA-StorageDrivers.zip"
 
@@ -33,7 +31,7 @@ $TUFGamingStorageURL2 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/re
 #             AM4 Ethernet, WiFi and Storage Driver Download Destination
 ####################################################################################
 
-$TUFGamingDestination = "C:\OSDCloud\Drivers\Motherboards\ASUS\AM4\TUFGaming"
+$TUFGamingDestination = "C:\Drivers\Motherboards\ASUS\AM4\TUFGaming"
 
 ####################################################################################
 #             AM4 Ethernet, WiFi and Storage Driver Extraction Destination
@@ -52,14 +50,12 @@ $TUFGamingWiFi4 = "$TUFGamingDestination\WiFi4"
 $TUFGamingWiFi5 = "$TUFGamingDestination\WiFi5"
 $TUFGamingWiFi6 = "$TUFGamingDestination\WiFi6"
 
-$TUFGamingBluetooth = "$TUFGamingDestination\Bluetooth"
-
 $TUFGamingStorage1 = "$TUFGamingDestination\Storage1"
 $TUFGamingStorage2 = "$TUFGamingDestination\Storage2"
 
 Import-Module -Name OSD -Force 
 
-Write-Verbose "Acquiring ASUS AM4 ROG - Republic of Gamers Motherboard Ethernet Drivers from $GHURL" -Verbose
+Write-Verbose "Acquiring ASUS AM4 TUF Gaming Motherboard Ethernet Drivers from $GHURL" -Verbose
 Write-Host
 
 Save-WebFile -SourceUrl $TUFGamingEthernetURL1 -DestinationDirectory $TUFGamingDestination
@@ -68,7 +64,7 @@ Save-WebFile -SourceUrl $TUFGamingEthernetURL3 -DestinationDirectory $TUFGamingD
 Save-WebFile -SourceUrl $TUFGamingEthernetURL4 -DestinationDirectory $TUFGamingDestination
 
 
-Write-Verbose "Acquiring ASUS AM4 ROG - Republic of Gamers Motherboard WiFi Drivers from $GHURL" -Verbose
+Write-Verbose "Acquiring ASUS AM4 TUF Gaming Motherboard WiFi Drivers from $GHURL" -Verbose
 Write-Host
 
 Save-WebFile -SourceUrl $TUFGamingWiFiURL1 -DestinationDirectory $TUFGamingDestination
@@ -78,19 +74,13 @@ Save-WebFile -SourceUrl $TUFGamingWiFiURL4 -DestinationDirectory $TUFGamingDesti
 Save-WebFile -SourceUrl $TUFGamingWiFiURL5 -DestinationDirectory $TUFGamingDestination
 Save-WebFile -SourceUrl $TUFGamingWiFiURL6 -DestinationDirectory $TUFGamingDestination
 
-Write-Verbose "Acquiring ASUS AM4 ROG - Republic of Gamers Motherboard Bluetooth Drivers from $GHURL" -Verbose
-Write-Host
-
-Save-WebFile -SourceUrl $TUFGamingBluetoothURL -DestinationDirectory $TUFGamingDestination
-
-
-Write-Verbose "Acquiring ASUS AM4 ROG - Republic of Gamers Motherboard Storage Drivers from $GHURL" -Verbose
+Write-Verbose "Acquiring ASUS AM4 TUF Gaming Motherboard Storage Drivers from $GHURL" -Verbose
 Write-Host
 
 Save-WebFile -SourceUrl $TUFGamingStorageURL1 -DestinationDirectory $TUFGamingDestination
 Save-WebFile -SourceUrl $TUFGamingStorageURL2 -DestinationDirectory $TUFGamingDestination
 
-Write-Verbose "ASUS AM4 ROG - Republic of Gamers Motherboard Drivers downloaded" -Verbose
+Write-Verbose "ASUS AM4 TUF Gaming Motherboard Drivers downloaded" -Verbose
 Write-Host
 
 Write-Verbose "Processing: ZIP File extraction" -Verbose
@@ -108,8 +98,6 @@ Expand-7Zip -ArchiveFileName "$TUFGamingDestination\TUFGaming-Intel2P2-WiFiDrive
 Expand-7Zip -ArchiveFileName "$TUFGamingDestination\TUFGaming-MediaTech-WiFiDrivers.zip" -TargetPath $TUFGamingWiFi4  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$TUFGamingDestination\TUFGaming-Realtek1-WiFiDrivers.zip" -TargetPath $TUFGamingWiFi5  -ErrorAction SilentlyContinue
 Expand-7Zip -ArchiveFileName "$TUFGamingDestination\TUFGaming-Realtek2-WiFiDrivers.zip" -TargetPath $TUFGamingWiFi6  -ErrorAction SilentlyContinue 
-
-Expand-7Zip -ArchiveFileName "$TUFGamingDestination\TUFGaming-BluetoothDrivers.zip" -TargetPath $TUFGamingBluetooth  -ErrorAction SilentlyContinue
 
 Expand-7Zip -ArchiveFileName "$TUFGamingDestination\TUFGaming-NVMe-StorageDrivers.zip" -TargetPath $TUFGamingStorage1  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$TUFGamingDestination\TUFGaming-RAID-SATA-StorageDrivers.zip" -TargetPath $TUFGamingStorage2  -ErrorAction SilentlyContinue 
