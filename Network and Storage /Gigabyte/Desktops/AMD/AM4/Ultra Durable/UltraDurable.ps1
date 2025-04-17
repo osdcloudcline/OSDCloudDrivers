@@ -9,23 +9,6 @@ Import-Module -Name OSD -Force
 Import-Module -Name 7Zip4Powershell -Force
 
 ####################################################################################
-#                   AM4 Bluetooth Driver URLs
-####################################################################################
-
-# Ultra Durable Bluetooth - B550 
-
-$UDBluetoothURL1 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM4/Ultra%20Durable/Bluetooth/Gigabyte-UltraDurable-BluetoothDrivers-B550.zip"
-
-
-# Ultra Durable Bluetooth - A520
-
-$UDBluetoothURL2 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM4/Ultra%20Durable/Bluetooth/Gigabyte-UltraDurable-Realtek-BluetoothDrivers-A520.zip"
-
-# Ultra Durable Bluetooth - B450
-
-$UDBluetoothURL3 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM4/Ultra%20Durable/Bluetooth/Gigabyte-UltraDurable-Realtek-BluetoothDrivers-B450.zip"
-
-####################################################################################
 #                   AM4 Ethernet Driver URLs
 ####################################################################################
 
@@ -134,17 +117,11 @@ $UDStorageURL21 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/hea
 #        Ultra Durable Ethernet, Bluetooth, Storage and WiFi Destination Folders
 ###########################################################################################
 
-$UDDestination =  "C:\OSDCloud\Drivers\Motherboards\Gigabyte\Ultra Durable"
+$UDDestination =  "C:\Drivers\Motherboards\Gigabyte\Ultra Durable"
 
 ###########################################################################################
 #        Ultra Durable Ethernet, Bluetooth, Storage and WiFi Extraction Folders
 ###########################################################################################
-
-# Bluetooth
-
-$UDBluetooth1 = "$UDDestination\B550\Bluetooth1"
-$UDBluetooth2 = "$UDDestination\A520\Bluetooth2"
-$UDBluetooth3 = "$UDDestination\B450\Bluetooth3"
 
 # Ethernet
 
@@ -265,31 +242,6 @@ Write-Verbose "Completed: Download of Gigabyte Ultra Durable AM4 X570 Ethernet D
 Write-Host
 Write-Verbose "Completed: Download of ALL Gigabyte Ultra Durable AM4 motherboard Ethernet Drivers..." -Verbose
 
-
-Write-Host
-Write-Host
-Write-Verbose "Processing: Acquiring Gigabyte Ultra Durable AM4 B550 Bluetooth Drivers..." -Verbose
-Write-Host
-Save-WebFile -SourceUrl $UDBluetoothURL1 -DestinationDirectory $UDDestination
-Write-Host
-Write-Verbose "Completed: Download of Gigabyte Ultra Durable AM4 B550 Bluetooth Drivers..." -Verbose
-Write-Host
-Write-Host
-Write-Verbose "Processing: Acquiring Gigabyte Ultra Durable AM4 A520 Bluetooth Drivers..." -Verbose
-Write-Host
-Save-WebFile -SourceUrl $UDBluetoothURL2 -DestinationDirectory $UDDestination
-Write-Host
-Write-Host
-Write-Verbose "Processing: Acquiring Gigabyte Ultra Durable AM4 B450 Bluetooth Drivers..." -Verbose
-Write-Host
-Save-WebFile -SourceUrl $UDBluetoothURL3 -DestinationDirectory $UDDestination
-Write-Host
-Write-Verbose "Completed: Download of Gigabyte Ultra Durable AM4 B450 Bluetooth Drivers..." -Verbose
-Write-Host
-Write-Verbose "Completed: Download of ALL Gigabyte Ultra Durable AM4 motherboard Bluetooth Drivers..." -Verbose
-Write-Host
-
-
 Write-Host
 Write-Host
 Write-Verbose "Processing: Acquiring Gigabyte Ultra Durable AM4 A320 WiFi Drivers..." -Verbose
@@ -317,7 +269,6 @@ Write-Verbose "Completed: Download of Gigabyte Ultra Durable AM4 B550 WiFi Drive
 Write-Host
 Write-Verbose "Completed: Download of ALL Gigabyte Ultra Durable AM4 motherboard WiFi Drivers..." -Verbose
 Write-Host
-
 
 Write-Host
 Write-Host
@@ -434,19 +385,6 @@ Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-B550-Thunderbo
 Write-Verbose "Completed: Extraction of ALL Gigabyte Ultra Durable AM4 Storage Drivers..." -Verbose
 Write-Host
 
-
-Write-Host
-Write-Host
-Write-Verbose "Processing: Gigabyte Ultra Durable AM4 motherboard drivers file extraction..." -Verbose
-Write-Host
-Write-Verbose "Processing: Extracting Bluetooth drivers..." -Verbose
-Write-Host
-Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-BluetoothDrivers-B550.zip"  -TargetPath $UDBluetooth1  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-Realtek-BluetoothDrivers-A520.zip"  -TargetPath $UDBluetooth2  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-Realtek-BluetoothDrivers-B450.zip"  -TargetPath $UDBluetooth3  -ErrorAction SilentlyContine
-Write-Host
-Write-Verbose "Completed: Extraction of ALL Gigabyte Ultra Durable AM4 Bluetooth Drivers..." -Verbose
-Write-Host
 Write-Host
 Write-Verbose "Completed: Extraction of ALL Gigabyte Ultra Durable AM4 motherboard Drivers..." -Verbose
 
