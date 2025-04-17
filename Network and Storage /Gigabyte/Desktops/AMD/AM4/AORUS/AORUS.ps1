@@ -9,13 +9,6 @@ Import-Module -Name OSD -Force
 Import-Module -Name 7Zip4Powershell -Force
 
 ####################################################################################
-#                   AM4 Bluetooth Driver URLs
-####################################################################################
-
-$AORUSBluetoothURL1 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM4/AORUS/Bluetooth/Gigabyte-AORUS-Bluetooth-B550Drivers.zip"
-$AORUSBluetoothURL2 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM4/AORUS/Bluetooth/Gigabyte-AORUS-Bluetooth-X570Drivers.zip"
-
-####################################################################################
 #                   AM4 Ethernet Driver URLs
 ####################################################################################
 
@@ -100,7 +93,7 @@ $AORUSWiFiURL9 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/head
 #        AORUS Ethernet, Bluetooth, Storage and WiFi Destination Folders
 ###########################################################################################
 
-$AORUSDestination =  "C:\OSDCloud\Drivers\Motherboards\Gigabyte\AM4\AORUS"
+$AORUSDestination =  "C:\Drivers\Motherboards\Gigabyte\AM4\AORUS"
 
 ###########################################################################################
 #        AORUS Ethernet, Bluetooth, Storage and WiFi Extraction Folders
@@ -259,23 +252,6 @@ Write-Verbose "Completed: Download of ALL Gigabyte AORUS AM4 motherboard WiFi Dr
 
 Write-Host
 Write-Host
-Write-Verbose "Processing: Acquiring Gigabyte AORUS AM4 B550 Bluetooth Drivers..." -Verbose
-Write-Host
-Save-WebFile -SourceUrl $AORUSBluetoothURL1 -DestinationDirectory $AORUSDestination
-Write-Host
-Write-Verbose "Completed: Download of Gigabyte AORUS AM4 B550 Bluetooth Drivers..." -Verbose
-Write-Host
-Write-Verbose "Processing: Acquiring Gigabyte AORUS AM4 X5700 Bluetooth Drivers..." -Verbose
-Write-Host
-Save-WebFile -SourceUrl $AORUSBluetoothURL2 -DestinationDirectory $AORUSDestination
-Write-Host
-Write-Verbose "Completed: Download of Gigabyte AORUS AM4 X570 Bluetooth Drivers..." -Verbose
-Write-Host
-Write-Host
-Write-Verbose "Completed: Download of ALL Gigabyte AORUS AM4 motherboard Bluetooth Drivers..." -Verbose
-
-Write-Host
-Write-Host
 Write-Verbose "Processing: Acquiring Gigabyte AORUS AM4 Storage Drivers -RAID NVMe..." -Verbose
 Write-Host
 Save-WebFile -SourceUrl $AORUSStorageURL1 -DestinationDirectory $AORUSDestination
@@ -287,9 +263,7 @@ Write-Host
 Write-Verbose "Completed: Download of ALL Gigabyte AORUS AM4 Storage Drivers..." -Verbose
 
 
-Write-Host
-Write-Host
-Write-Verbose "Processing: Gigabyte AORUS AM4 motherboard drivers file extraction..." -Verbose
+
 Write-Host
 Write-Verbose "Processing: Extracting Ethernet drivers..." -Verbose
 
@@ -320,25 +294,14 @@ Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-X570Driv
 Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-X570Drivers-Intel-i225-2-Win11.zip" -TargetPath $AORUSEthernet25 -ErrorAction SilentlyContinue
 Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-X570Drivers-Intel-i225-Win10.zip" -TargetPath $AORUSEthernet26 -ErrorAction SilentlyContinue
 Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-X570Drivers-Intel-i225-Win11.zip" -TargetPath $AORUSEthernet27 -ErrorAction SilentlyContinue
-Write-Host
-Write-Verbose "Completed: Extraction of ALL Gigabyte AORUS AM4 Ethernet Drivers..." -Verbose
-Write-Host
 
-Write-Host
-Write-Host
-Write-Verbose "Processing: Gigabyte AORUS AM4 motherboard drivers file extraction..." -Verbose
 Write-Host
 Write-Verbose "Processing: Extracting Storage drivers..." -Verbose
 
 Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-NVMe-RAID-StorageDrivers.zip" -TargetPath $AORUSStorage1 -ErrorAction SilentlyContinue
 Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-SATA-RAID-StorageDrivers.zip" -TargetPath $AORUSStorage2 -ErrorAction SilentlyContinue
 Write-Host
-Write-Verbose "Completed: Extraction of ALL Gigabyte AORUS AM4 Storage Drivers..." -Verbose
-Write-Host
-Write-Host
 
-Write-Host
-Write-Verbose "Processing: Gigabyte AORUS AM4 motherboard drivers file extraction..." -Verbose
 Write-Host
 Write-Verbose "Processing: Extracting WiFi drivers..." -Verbose
 
@@ -352,21 +315,9 @@ Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-WiFi-X470Drivers.
 Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-WiFi-X570Drivers-1.zip" -TargetPath $AORUSWiFi8 -ErrorAction SilentlyContinue
 Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-WiFi-X570Drivers.zip" -TargetPath $AORUSWiFi9 -ErrorAction SilentlyContinue
 Write-Host
-Write-Verbose "Completed: Extraction of ALL Gigabyte AORUS AM4 WiFi Drivers..." -Verbose
-Write-Host
 
-Write-Host
-Write-Host
-Write-Verbose "Processing: Gigabyte AORUS AM4 motherboard drivers file extraction..." -Verbose
-Write-Host
-Write-Verbose "Processing: Extracting Bluetooth drivers..." -Verbose
 
-Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Bluetooth-B550Drivers.zip" -TargetPath $AORUSBluetooth1 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Bluetooth-X570Drivers.zip" -TargetPath $AORUSBluetooth2 -ErrorAction SilentlyContinue
+Write-Verbose "Completed: Extraction of ALL Gigabyte AORUS AM4 Drivers..." -Verbose
 Write-Host
-Write-Verbose "Completed: Extraction of ALL Gigabyte AORUS AM4 Bluetooth Drivers..." -Verbose
-Write-Host
-Write-Host
-Write-Verbose "Completed: Extraction of ALL Gigabyte AORUS AM4 motherboard Drivers..." -Verbose
 
 Stop-Transcript
