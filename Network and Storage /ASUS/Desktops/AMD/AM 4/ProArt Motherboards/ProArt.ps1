@@ -22,7 +22,7 @@ $ProArtStorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/h
 #             AM4 Ethernet, WiFi and Storage Driver Download Destination
 ####################################################################################
 
-$ProArtDestination = "C:\OSDCloud\Drivers\Motherboards\ASUS\AM4\ProArt"
+$ProArtDestination = "C:\Drivers\Motherboards\ASUS\AM4\ProArt"
 
 ####################################################################################
 #             AM4 Ethernet, WiFi and Storage Driver Extraction Destination
