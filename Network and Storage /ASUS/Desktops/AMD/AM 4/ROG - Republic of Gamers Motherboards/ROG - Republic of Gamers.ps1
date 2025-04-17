@@ -23,8 +23,6 @@ $ROGWiFiURL2 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/
 $ROGWiFiURL3 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/AMD/AM%204/ROG%20-%20Republic%20of%20Gamers%20Motherboards/Ethernet%20and%20WiFi/ROG-Intel3-WiFiDrivers.zip"
 $ROGWiFiURL4 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/AMD/AM%204/ROG%20-%20Republic%20of%20Gamers%20Motherboards/Ethernet%20and%20WiFi/ROG-MediaTech-WiFiDrivers.zip"
 
-$ROGBluetoothURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/AMD/AM%204/ROG%20-%20Republic%20of%20Gamers%20Motherboards/Ethernet%20and%20WiFi/ROG-BluetoothDrivers.zip"
-
 $ROGStorageURL1 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/AMD/AM%204/ROG%20-%20Republic%20of%20Gamers%20Motherboards/Storage/ROG-NVMe-StorageDrivers.zip"
 $ROGStorageURL2 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/AMD/AM%204/ROG%20-%20Republic%20of%20Gamers%20Motherboards/Storage/ROG-RAID-SATA-StorageDrivers.zip"
 
@@ -32,7 +30,7 @@ $ROGStorageURL2 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/hea
 #             AM4 Ethernet, WiFi and Storage Driver Download Destination
 ####################################################################################
 
-$ROGDestination = "C:\OSDCloud\Drivers\Motherboards\ASUS\AM4\ROG"
+$ROGDestination = "C:\Drivers\Motherboards\ASUS\AM4\ROG"
 
 ####################################################################################
 #             AM4 Ethernet, WiFi and Storage Driver Extraction Destination
@@ -48,8 +46,6 @@ $ROGWiFi1 = "$ROGDestination\WiFi1"
 $ROGWiFi2 = "$ROGDestination\WiFi2"
 $ROGWiFi3 = "$ROGDestination\WiFi3"
 $ROGWiFi4 = "$ROGDestination\WiFi4"
-
-$ROGBluetooth = "$ROGDestination\Bluetooth"
 
 $ROGStorage1 = "$ROGDestination\Storage1"
 $ROGStorage2 = "$ROGDestination\Storage2"
@@ -73,12 +69,6 @@ Save-WebFile -SourceUrl $ROGWiFiURL2 -DestinationDirectory $ROGDestination
 Save-WebFile -SourceUrl $ROGWiFiURL3 -DestinationDirectory $ROGDestination
 Save-WebFile -SourceUrl $ROGWiFiURL4 -DestinationDirectory $ROGDestination
 
-Write-Verbose "Acquiring ASUS AM4 ROG - Republic of Gamers Motherboard Bluetooth Drivers from $GHURL" -Verbose
-Write-Host
-
-Save-WebFile -SourceUrl $ROGBluetoothURL -DestinationDirectory $ROGDestination
-
-
 Write-Verbose "Acquiring ASUS AM4 ROG - Republic of Gamers Motherboard Storage Drivers from $GHURL" -Verbose
 Write-Host
 
@@ -101,8 +91,6 @@ Expand-7Zip -ArchiveFileName "$ROGDestination\ROG-Intel1-WiFiDrivers.zip" -Targe
 Expand-7Zip -ArchiveFileName "$ROGDestination\ROG-Intel2-WiFiDrivers.zip" -TargetPath $ROGWiFi2  -ErrorAction SilentlyContinue
 Expand-7Zip -ArchiveFileName "$ROGDestination\ROG-Intel3-WiFiDrivers.zip" -TargetPath $ROGWiFi3  -ErrorAction SilentlyContinue
 Expand-7Zip -ArchiveFileName "$ROGDestination\ROG-MediaTech-WiFiDrivers.zip" -TargetPath $ROGWiFi4  -ErrorAction SilentlyContinue 
-
-Expand-7Zip -ArchiveFileName "$ROGDestination\ROG-BluetoothDrivers.zip" -TargetPath $ROGBluetooth  -ErrorAction SilentlyContinue
 
 Expand-7Zip -ArchiveFileName "$ROGDestination\ROG-NVMe-StorageDrivers.zip" -TargetPath $ROGStorage1  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$ROGDestination\ROG-RAID-SATA-StorageDrivers.zip" -TargetPath $ROGStorage2  -ErrorAction SilentlyContinue 
