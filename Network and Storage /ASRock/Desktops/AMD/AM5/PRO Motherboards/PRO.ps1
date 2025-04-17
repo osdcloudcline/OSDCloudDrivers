@@ -12,7 +12,7 @@ Import-Module -Name 7Zip4Powershell -Force
 #                   AM5 Ethernet, WiFi and Storage Driver URLs
 ####################################################################################
 
-$PROBluetoothURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM5/PRO%20Motherboards/Network%20and%20WiFi/ASRock-AM5-PRO-BluetoothDrivers.zip"
+
 $PROEthernetURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM5/PRO%20Motherboards/Network%20and%20WiFi/ASRock-AM5-PRO-EthernetDrivers.zip"
 $PROWiFiURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM5/PRO%20Motherboards/Network%20and%20WiFi/ASRock-AM5-PRO-WiFiDrivers.zip"
 
@@ -23,14 +23,14 @@ $PROStorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/head
 #             AM5 Ethernet, WiFi and Storage Driver Download Destination
 ####################################################################################
 
-$PRODestination = "C:\OSDCloud\Drivers\Motherboards\ASRock\AM5\PRO"
+$PRODestination = "C:\Drivers\Motherboards\ASRock\AM5\PRO"
 
 ####################################################################################
 #             AM5 Ethernet,Bluetooth  WiFi and Storage Driver Extraction Destination
 ####################################################################################
 
 $PROEthernet = "$PRODestination\Ethernet"
-$PROBluetooth = "$PRODestination\Bluetooth"
+
 $PROWiFi = "$PRODestination\WiFi"
 
 
@@ -43,11 +43,6 @@ Write-Verbose "Acquiring ASRock AM5 PRO Motherboard Ethernet Drivers from $GHURL
 Write-Host
 
 Save-WebFile -SourceUrl $PROEthernetURL -DestinationDirectory $PRODestination
-
-Write-Verbose "Acquiring ASRock AM5 PRO Motherboard Bluetooth Drivers from $GHURL" -Verbose
-Write-Host
-
-Save-WebFile -SourceUrl $PROBluetoothURL -DestinationDirectory $PRODestination
 
 Write-Verbose "Acquiring ASRock AM5 PRO Motherboard WiFi Drivers from $GHURL" -Verbose
 Write-Host
@@ -65,7 +60,6 @@ Write-Host
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-AM5-PRO-BluetoothDrivers.zip" -TargetPath $PROBluetooth  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-AM5-PRO-EthernetDrivers.zip" -TargetPath $PROEthernet  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-AM5-PRO-WiFiDrivers.zip" -TargetPath $PROWiFi  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-AM5-RAID-NVMeStorageDrivers.zip" -TargetPath $PROStorage  -ErrorAction SilentlyContinue 
