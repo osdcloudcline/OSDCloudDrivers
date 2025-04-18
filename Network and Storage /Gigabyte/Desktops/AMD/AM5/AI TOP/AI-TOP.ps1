@@ -5,6 +5,8 @@ Get-Date
 
 $GHURL = "https://github.com/osdcloudcline/OSDCloudDrivers"
 
+Import-Module -Name OSD -Force
+Import-Module -Name 7Zip4Powershell -Force
 
 ####################################################################################
 #                   AM5 Ethernet, WiFi and Storage Driver URLs
@@ -33,9 +35,6 @@ $AITOPEthernet2 = "$AITOPDestination\Ethernet2"
 $AITOPWiFi = "$AITOPDestination\WLAN"
 
 $AITOPStorage = "$AITOPDestination\Storage"
-
-
-Import-Module -Name OSD -Force 
 
 Write-Verbose "Acquiring Gigabyte AM5 AI TOP Motherboard Ethernet Drivers from $GHURL" -Verbose
 Write-Host
