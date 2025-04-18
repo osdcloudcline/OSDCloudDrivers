@@ -85,13 +85,13 @@ Write-Verbose "Processing: MSI MAG AM5 motherboard drivers file extraction..." -
 Write-Host
 Write-Verbose "Processing: Extracting Ethernet drivers..." -Verbose
 
-Expand-7zip -ArchiveFileName "$MAGDestination\MSI-MAGSeries-AM5-Realtek-EthernetDrivers.zip" -TargetPath $MAGEthernet1 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$MAGDestination\MSI-MAGSeries-AM5-Realtek-EthernetDrivers.zip" -TargetPath $MAGEthernet -ErrorAction SilentlyContinue
 
 Write-Host
 Write-Verbose "Processing: Extracting NVMe Storage drivers..." -Verbose
 Write-Host
 
-Expand-7zip -ArchiveFileName "$MAGDestination\MSI-MAGSeries-RAID-StorageDrivers.zip" -TargetPath $MAGStorage1 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$MAGDestination\MSI-MAGSeries-RAID-StorageDrivers.zip" -TargetPath $MAGStorage -ErrorAction SilentlyContinue
 
 
 Write-Host
