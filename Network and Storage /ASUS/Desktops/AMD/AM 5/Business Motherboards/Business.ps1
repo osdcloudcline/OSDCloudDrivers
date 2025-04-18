@@ -19,9 +19,6 @@ $BusinessEthernet4URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/re
 
 $BusinessWiFiURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/AMD/AM%205/Business%20Motherboards/Ethernet%20and%20WiFi/ASUS-AM5-Business-MediaTek-WirelessDriver.zip"
 
-$BusinessBluetooth1URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/AMD/AM%205/Business%20Motherboards/Ethernet%20and%20WiFi/ASUS-AM5-Business-BluetoothDrivers1.zip"
-$BusinessBluetooth2URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/AMD/AM%205/Business%20Motherboards/Ethernet%20and%20WiFi/ASUS-AM5-Business-BluetoothDrivers2.zip"
-
 $BusinessStorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/AMD/AM%205/Business%20Motherboards/Storage/ASUS-AM5-Business-RAID-NVMe-StorageDriver.zip"
 
 
@@ -29,7 +26,7 @@ $BusinessStorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs
 #             AM5 Ethernet, WiFi and Storage Driver Download Destination
 ####################################################################################
 
-$BusinessDestination = "C:\OSDCloud\Drivers\Motherboards\ASUS\AM5\Business"
+$BusinessDestination = "C:\Drivers\Motherboards\ASUS\AM5\Business"
 
 ####################################################################################
 #             AM5 Ethernet, WiFi and Storage Driver Extraction Destination
@@ -40,10 +37,7 @@ $BusinessEthernet2 = "$BusinessDestination\Ethernet2"
 $BusinessEthernet3 = "$BusinessDestination\Ethernet3"
 $BusinessEthernet4 = "$BusinessDestination\Ethernet4"
 
-$BusinessWiFi = "$BusinessDestination\WiFi"
-
-$BusinessBluetooth1 = "$BusinessDestination\Bluetooth1"
-$BusinessBluetooth2 = "$BusinessDestination\Bluetooth2"
+$BusinessWiFi = "$BusinessDestination\WLAN"
 
 $BusinessStorage = "$BusinessDestination\Storage"
 
@@ -64,20 +58,10 @@ Write-Host
 
 Save-WebFile -SourceUrl $BusinessWiFiURL -DestinationDirectory $BusinessDestination
 
-
-
-Write-Verbose "Acquiring ASUS AM5 Business Motherboard Bluetooth Drivers from $GHURL" -Verbose
-Write-Host
-
-Save-WebFile -SourceUrl $BusinessBluetooth1URL -DestinationDirectory $BusinessDestination
-Save-WebFile -SourceUrl $BusinessBluetooth2URL -DestinationDirectory $BusinessDestination
-
-
 Write-Verbose "Acquiring ASUS AM5 Business Motherboard Storage Drivers from $GHURL" -Verbose
 Write-Host
 
 Save-WebFile -SourceUrl $BusinessStorageURL -DestinationDirectory $BusinessDestination
-
 
 Write-Verbose "ASUS AM4 Business Motherboard Drivers downloaded" -Verbose
 Write-Host
@@ -92,9 +76,6 @@ Expand-7Zip -ArchiveFileName "$BusinessDestination\ASUS-AM5-Business-EthernetDri
 
 Expand-7Zip -ArchiveFileName "$BusinessDestination\ASUS-AM5-Business-MediaTek-WirelessDriver.zip" -TargetPath $BusinessWiFi  -ErrorAction SilentlyContinue 
 
-Expand-7Zip -ArchiveFileName "$BusinessDestination\ASUS-AM5-Business-BluetoothDrivers1.zip" -TargetPath $BusinessBluetooth1  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$BusinessDestination\ASUS-AM5-Business-BluetoothDrivers2.zip" -TargetPath $BusinessBluetooth2  -ErrorAction SilentlyContinue 
-
 Expand-7Zip -ArchiveFileName "$BusinessDestination\ASUS-AM5-Business-RAID-NVMe-StorageDriver.zip" -TargetPath $BusinessStorage1  -ErrorAction SilentlyContinue 
 
 
@@ -103,21 +84,6 @@ Write-Host
 
 Stop-Transcript
 
-$AM5VirtualDrivers = "C:\Logs\OSDCloud\ASUS\AM5Virtual.log"
-
-Start-Transcript -Path $AM5VirtualDrivers
-
-Write-Verbose "Processing: VMWare ESXI Virtualization Drivers" -Verbose
-Write-Host
-
-Write-Verbose "Processing: Hyper-V Virtualization Drivers" -Verbose
-Write-Host
-
-Write-Verbose "Processing: VMWare Workstation Professional Virtualization Drivers" -Verbose
-Write-Host
-
-Write-Verbose "Processing: Proxmox Virtual I/O Virtualization Drivers" -Verbose
-Write-Host
 
 
-Stop-Transcript
+
