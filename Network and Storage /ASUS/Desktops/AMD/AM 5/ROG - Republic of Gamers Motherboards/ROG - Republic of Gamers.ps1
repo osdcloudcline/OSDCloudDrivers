@@ -26,8 +26,6 @@ $ROGWiFiURL2 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/
 $ROGWiFiURL3 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/AMD/AM%205/ROG%20-%20Republic%20of%20Gamers%20Motherboards/WLAN/ASUS-AM5-ROG-WLANDrivers3.zip"
 $ROGWiFiURL4 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/AMD/AM%205/ROG%20-%20Republic%20of%20Gamers%20Motherboards/WLAN/ASUS-AM5-ROG-WLANDrivers4.zip"
 
-$ROGBluetoothURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/AMD/AM%205/ROG%20-%20Republic%20of%20Gamers%20Motherboards/Bluetooth/ASUS-AM5-ROG-BluetoothDrivers.zip"
-
 $ROGStorageURL1 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/AMD/AM%205/ROG%20-%20Republic%20of%20Gamers%20Motherboards/Storage/ASUS-AM5-ROG-RAID-StorageDrivers.zip"
 
 
@@ -35,7 +33,7 @@ $ROGStorageURL1 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/hea
 #             AM5 Ethernet, WiFi and Storage Driver Download Destination
 ####################################################################################
 
-$ROGDestination = "C:\OSDCloud\Drivers\Motherboards\ASUS\AM5\ROG"
+$ROGDestination = "C:\Drivers\Motherboards\ASUS\AM5\ROG"
 
 ####################################################################################
 #             AM5 Ethernet, WiFi and Storage Driver Extraction Destination
@@ -49,17 +47,12 @@ $ROGEthernet5 = "$ROGDestination\Ethernet5"
 $ROGEthernet6 = "$ROGDestination\Ethernet6"
 $ROGEthernet7 = "$ROGDestination\Ethernet7"
 
-$ROGWiFi1 = "$ROGDestination\WiFi1"
-$ROGWiFi2 = "$ROGDestination\WiFi2"
-$ROGWiFi3 = "$ROGDestination\WiFi3"
-$ROGWiFi4 = "$ROGDestination\WiFi4"
-
-$ROGBluetooth = "$ROGDestination\Bluetooth"
+$ROGWiFi1 = "$ROGDestination\WLAN1"
+$ROGWiFi2 = "$ROGDestination\WLAN2"
+$ROGWiFi3 = "$ROGDestination\WLAN3"
+$ROGWiFi4 = "$ROGDestination\WLAN4"
 
 $ROGStorage1 = "$ROGDestination\Storage"
-
-
-Import-Module -Name OSD -Force 
 
 Write-Verbose "Acquiring ASUS AM5 ROG - Republic of Gamers Motherboard Ethernet Drivers from $GHURL" -Verbose
 Write-Host
@@ -80,17 +73,10 @@ Save-WebFile -SourceUrl $ROGWiFiURL2 -DestinationDirectory $ROGDestination
 Save-WebFile -SourceUrl $ROGWiFiURL3 -DestinationDirectory $ROGDestination
 Save-WebFile -SourceUrl $ROGWiFiURL4 -DestinationDirectory $ROGDestination
 
-Write-Verbose "Acquiring ASUS AM5 ROG - Republic of Gamers Motherboard Bluetooth Drivers from $GHURL" -Verbose
-Write-Host
-
-Save-WebFile -SourceUrl $ROGBluetoothURL -DestinationDirectory $ROGDestination
-
-
 Write-Verbose "Acquiring ASUS AM5 ROG - Republic of Gamers Motherboard Storage Drivers from $GHURL" -Verbose
 Write-Host
 
 Save-WebFile -SourceUrl $ROGStorageURL1 -DestinationDirectory $ROGDestination
-
 
 Write-Verbose "ASUS AM5 ROG - Republic of Gamers Motherboard Drivers downloaded" -Verbose
 Write-Host
@@ -109,9 +95,7 @@ Expand-7Zip -ArchiveFileName "$ROGDestination\ASUS-AM5-ROG-WLANDrivers1.zip" -Ta
 Expand-7Zip -ArchiveFileName "$ROGDestination\ASUS-AM5-ROG-WLANDrivers2.zip" -TargetPath $ROGWiFi2  -ErrorAction SilentlyContinue
 Expand-7Zip -ArchiveFileName "$ROGDestination\ASUS-AM5-ROG-WLANDrivers3.zip" -TargetPath $ROGWiFi3  -ErrorAction SilentlyContinue
 Expand-7Zip -ArchiveFileName "$ROGDestination\ASUS-AM5-ROG-WLANDrivers4.zip" -TargetPath $ROGWiFi4  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$ROGDestination\ASUS-AM5-ROG-BluetoothDrivers.zip" -TargetPath $ROGBluetooth  -ErrorAction SilentlyContinue
 Expand-7Zip -ArchiveFileName "$ROGDestination\ASUS-AM5-ROG-RAID-StorageDrivers.zip" -TargetPath $ROGStorage1  -ErrorAction SilentlyContinue 
-
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
 
