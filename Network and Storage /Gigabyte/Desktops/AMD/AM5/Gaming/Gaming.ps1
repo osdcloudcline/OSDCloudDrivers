@@ -156,6 +156,8 @@ $GamingWLAN10 = "$GamingDestination\X870\WLAN4"
 $GamingWLAN11 = "$GamingDestination\X870\WLAN5"
 $GamingWLAN12 = "$GamingDestination\X870\WLAN6"
 
+Import-Module -Name OSD -Force
+Import-Module -Name 7Zip4Powershell -Force
 
 Write-Host
 Write-Verbose "Processing: Gigabyte Gaming AM5 motherboard drivers..." -Verbose
