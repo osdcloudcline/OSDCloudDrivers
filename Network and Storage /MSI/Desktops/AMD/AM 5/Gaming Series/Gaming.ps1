@@ -85,13 +85,13 @@ Write-Verbose "Processing: MSI Gaming AM5 motherboard drivers file extraction...
 Write-Host
 Write-Verbose "Processing: Extracting Ethernet drivers..." -Verbose
 
-Expand-7zip -ArchiveFileName "$GamingDestination\MSI-GamingSeries-AM5-Realtek-EthernetDrivers.zip" -TargetPath $GamingEthernet1 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$GamingDestination\MSI-GamingSeries-AM5-Realtek-EthernetDrivers.zip" -TargetPath $GamingEthernet -ErrorAction SilentlyContinue
 
 Write-Host
 Write-Verbose "Processing: Extracting NVMe Storage drivers..." -Verbose
 Write-Host
 
-Expand-7zip -ArchiveFileName "$GamingDestination\MSI-GamingSeries-RAID-StorageDrivers.zip" -TargetPath $GamingStorage1 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$GamingDestination\MSI-GamingSeries-RAID-StorageDrivers.zip" -TargetPath $GamingStorage -ErrorAction SilentlyContinue
 
 
 Write-Host
