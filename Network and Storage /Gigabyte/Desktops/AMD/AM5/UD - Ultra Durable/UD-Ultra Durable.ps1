@@ -6,22 +6,6 @@ Get-Date
 $GHURL = "https://github.com/osdcloudcline/OSDCloudDrivers"
 
 ####################################################################################
-#                   Ultra Durable AM5 Bluetooth Driver URLs
-####################################################################################
-
-# Ultra Durable A620 - Bluetooth
-
-$UDBluetoothURL1 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/UD%20-%20Ultra%20Durable/A620/Bluetooth/Gigabyte-AM5-UltraDurable-A620-BluetoothDrivers1.zip"
-$UDBluetoothURL2 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/UD%20-%20Ultra%20Durable/A620/Bluetooth/Gigabyte-AM5-UltraDurable-A620-BluetoothDrivers2.zip"
-
-
-# Ultra Durable B650 - Bluetooth
-
-$UDBluetoothURL3 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/UD%20-%20Ultra%20Durable/B650/Bluetooth/Gigabyte-AM5-UltraDurable-B650-BluetoothDrivers1.zip"
-$UDBluetoothURL4 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/UD%20-%20Ultra%20Durable/B650/Bluetooth/Gigabyte-AM5-UltraDurable-B650-BluetoothDrivers2.zip"
-$UDBluetoothURL5 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/UD%20-%20Ultra%20Durable/B650/Bluetooth/Gigabyte-AM5-UltraDurable-B650-BluetoothDrivers3.zip"
-
-####################################################################################
 #                   Ultra Durable AM5 Ethernet Driver URLs
 ####################################################################################
 
@@ -71,25 +55,14 @@ $UDStorageURL2 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/head
 #        Ultra Durable AM5 Ethernet, Bluetooth, Storage and WiFi Destination Folders
 ###########################################################################################
 
-$UDDestination =  "C:\OSDCloud\Drivers\Motherboards\Gigabyte\AM5\UD-UltraDurable"
-$UDDestinationA620 =  "C:\OSDCloud\Drivers\Motherboards\Gigabyte\AM5\UD-UltraDurable\ZIP\A620"
-$UDDestinationB650 =  "C:\OSDCloud\Drivers\Motherboards\Gigabyte\AM5\UD-UltraDurable\ZIP\B650"
+$UDDestination =  "C:\Drivers\Motherboards\Gigabyte\AM5\UD-UltraDurable"
+$UDDestinationA620 =  "C:\Drivers\Motherboards\Gigabyte\AM5\UD-UltraDurable\ZIP\A620"
+$UDDestinationB650 =  "C:\Drivers\Motherboards\Gigabyte\AM5\UD-UltraDurable\ZIP\B650"
 
 
 ###########################################################################################
 #        Ultra Durable Ethernet, Bluetooth, Storage and WiFi Extraction Folders
 ###########################################################################################
-
-# Ultra Durable A620 - Bluetooth
-
-$UDBluetooth1 = "$UDDestination\A620\Bluetooth1"
-$UDBluetooth2 = "$UDDestination\A620\Bluetooth2"
-
-# Ultra Durable B650 - Bluetooth
-
-$UDBluetooth3 = "$UDDestination\B650\Bluetooth1"
-$UDBluetooth4 = "$UDDestination\B650\Bluetooth2"
-$UDBluetooth5 = "$UDDestination\B650\Bluetooth3"
 
 # Ultra Durable A620 - Ethernet
 
@@ -109,19 +82,19 @@ $UDStorage1 = "$UDDestination\A620\Storage\RAID\NVMe"
 
 $UDStorage2 = "$UDDestination\B650\Storage\RAID\NVMe"
 
-# Ultra Durable A620 - WiFi
+# Ultra Durable A620 - WLAN
 
-$UDWiFi1 = "$UDDestination\A620\WiFi1"
-$UDWiFi2 = "$UDDestination\A620\WiFi2"
+$UDWLAN1 = "$UDDestination\A620\WLAN1"
+$UDWLAN2 = "$UDDestination\A620\WLAN2"
 
-# Ultra Durable B650 - WiFi
+# Ultra Durable B650 - WLAN
 
-$UDWiFi3 = "$UDDestination\B650\WiFi1"
-$UDWiFi4 = "$UDDestination\B650\WiFi2"
-$UDWiFi5 = "$UDDestination\B650\WiFi3"
-$UDWiFi6 = "$UDDestination\B650\WiFi4"
-$UDWiFi7 = "$UDDestination\B650\WiFi5"
-$UDWiFi8 = "$UDDestination\B650\WiFi6"
+$UDWLAN3 = "$UDDestination\B650\WLAN1"
+$UDWLAN4 = "$UDDestination\B650\WLAN2"
+$UDWLAN5 = "$UDDestination\B650\WLAN3"
+$UDWLAN6 = "$UDDestination\B650\WLAN4"
+$UDWLAN7 = "$UDDestination\B650\WLAN5"
+$UDWLAN8 = "$UDDestination\B650\WLAN6"
 
 Write-Host
 Write-Verbose "Processing: Gigabyte Ultra Durable AM5 motherboard drivers..." -Verbose
@@ -235,31 +208,17 @@ Write-Verbose "Completed: Extraction of ALL Gigabyte Ultra Durable AM5 Storage D
 Write-Host
 
 Write-Host
-Write-Verbose "Processing: Extracting Bluetooth drivers..." -Verbose
-Write-Host
-
-Expand-7zip -ArchiveFileName "$UDDestinationA620\Gigabyte-AM5-UltraDurable-A620-BluetoothDrivers1.zip" -TargetPath $UDBluetooth1 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$UDDestinationA620\Gigabyte-AM5-UltraDurable-A620-BluetoothDrivers2.zip" -TargetPath $UDBluetooth2 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$UDDestinationB650\Gigabyte-AM5-UltraDurable-B650-BluetoothDrivers1.zip" -TargetPath $UDBluetooth3 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$UDDestinationB650\Gigabyte-AM5-UltraDurable-B650-BluetoothDrivers2.zip" -TargetPath $UDBluetooth4 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$UDDestinationB650\Gigabyte-AM5-UltraDurable-B650-BluetoothDrivers3.zip" -TargetPath $UDBluetooth5 -ErrorAction SilentlyContinue
-
-Write-Host
-Write-Verbose "Completed: Extraction of ALL Gigabyte Ultra Durable AM5 Bluetooth Drivers..." -Verbose
-Write-Host
-
-Write-Host
 Write-Verbose "Processing: Extracting WiFi drivers..." -Verbose
 Write-Host
 
-Expand-7zip -ArchiveFileName "$UDDestinationA620\Gigabyte-AM5-UltraDurable-A620-WLANDrivers1.zip" -TargetPath $UDWiFi1 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$UDDestinationA620\Gigabyte-AM5-UltraDurable-A620-WLANDrivers2.zip" -TargetPath $UDWiFi2 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$UDDestinationB650\Gigabyte-AM5-UltraDurable-B650-WLANDrivers1.zip" -TargetPath $UDWiFi3 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$UDDestinationB650\Gigabyte-AM5-UltraDurable-B650-WLANDrivers2.zip" -TargetPath $UDWiFi4 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$UDDestinationB650\Gigabyte-AM5-UltraDurable-B650-WLANDrivers3.zip" -TargetPath $UDWiFi5 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$UDDestinationB650\Gigabyte-AM5-UltraDurable-B650-WLANDrivers4.zip" -TargetPath $UDWiFi6 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$UDDestinationB650\Gigabyte-AM5-UltraDurable-B650-WLANDrivers5.zip" -TargetPath $UDWiFi7 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$UDDestinationB650\Gigabyte-AM5-UltraDurable-B650-WLANDrivers6.zip" -TargetPath $UDWiFi8 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$UDDestinationA620\Gigabyte-AM5-UltraDurable-A620-WLANDrivers1.zip" -TargetPath $UDWLAN1 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$UDDestinationA620\Gigabyte-AM5-UltraDurable-A620-WLANDrivers2.zip" -TargetPath $UDWLAN2 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$UDDestinationB650\Gigabyte-AM5-UltraDurable-B650-WLANDrivers1.zip" -TargetPath $UDWLAN3 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$UDDestinationB650\Gigabyte-AM5-UltraDurable-B650-WLANDrivers2.zip" -TargetPath $UDWLAN4 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$UDDestinationB650\Gigabyte-AM5-UltraDurable-B650-WLANDrivers3.zip" -TargetPath $UDWLAN5 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$UDDestinationB650\Gigabyte-AM5-UltraDurable-B650-WLANDrivers4.zip" -TargetPath $UDWLAN6 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$UDDestinationB650\Gigabyte-AM5-UltraDurable-B650-WLANDrivers5.zip" -TargetPath $UDWLAN7 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$UDDestinationB650\Gigabyte-AM5-UltraDurable-B650-WLANDrivers6.zip" -TargetPath $UDWLAN8 -ErrorAction SilentlyContinue
 
 Write-Host
 Write-Verbose "Completed: Extraction of ALL Gigabyte Ultra Durable AM5 WiFi Drivers..." -Verbose
