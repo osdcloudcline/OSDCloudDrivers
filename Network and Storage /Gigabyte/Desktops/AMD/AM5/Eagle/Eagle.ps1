@@ -83,6 +83,9 @@ $EagleWLAN2 = "$EagleDestination\B650\WLAN2"
 $EagleWLAN3 = "$EagleDestination\X870\WLAN1"
 $EagleWLAN4 = "$EagleDestination\X870\WLAN2"
 
+Import-Module -Name OSD -Force
+Import-Module -Name 7Zip4Powershell -Force
+
 Write-Host
 Write-Verbose "Processing: Gigabyte Eagle AM5 B650 motherboard drivers..." -Verbose
 Write-Host
