@@ -147,6 +147,8 @@ $AORUSWLAN7 = "$AORUSDestination\X870\WLAN"
 
 $AORUSWLAN8 = "$AORUSDestination\X870E\WLAN"
 
+Import-Module -Name OSD -Force
+Import-Module -Name 7Zip4Powershell -Force
 
 Write-Host
 Write-Verbose "Processing: Gigabyte AORUS AM5 motherboard drivers..." -Verbose
