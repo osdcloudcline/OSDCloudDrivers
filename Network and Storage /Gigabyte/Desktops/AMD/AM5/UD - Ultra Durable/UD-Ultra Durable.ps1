@@ -96,6 +96,9 @@ $UDWLAN6 = "$UDDestination\B650\WLAN4"
 $UDWLAN7 = "$UDDestination\B650\WLAN5"
 $UDWLAN8 = "$UDDestination\B650\WLAN6"
 
+Import-Module -Name OSD -Force
+Import-Module -Name 7Zip4Powershell -Force
+
 Write-Host
 Write-Verbose "Processing: Gigabyte Ultra Durable AM5 motherboard drivers..." -Verbose
 Write-Host
