@@ -12,11 +12,6 @@ Import-Module -Name 7Zip4Powershell -Force
 #                   AM5 Ethernet and Storage Driver URLs
 ####################################################################################
 
-$PRIMEBluetooth1URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/AMD/AM%205/PRIME%20Motherboards/Bluetooth/ASUS-AM5-PRIME-BluetoothDrivers1.zip"
-$PRIMEBluetooth2URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/AMD/AM%205/PRIME%20Motherboards/Bluetooth/ASUS-AM5-PRIME-BluetoothDrivers2.zip"
-$PRIMEBluetooth3URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/AMD/AM%205/PRIME%20Motherboards/Bluetooth/ASUS-AM5-PRIME-BluetoothDrivers3.zip"
-$PRIMEBluetooth4URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/AMD/AM%205/PRIME%20Motherboards/Bluetooth/ASUS-AM5-PRIME-BluetoothDrivers4.zip"
-
 $PRIMEEthernet1URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/AMD/AM%205/PRIME%20Motherboards/Ethernet/ASUS-AM5-PRIME-EthernetDrivers1.zip"
 $PRIMEEthernet2URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/AMD/AM%205/PRIME%20Motherboards/Ethernet/ASUS-AM5-PRIME-EthernetDrivers2.zip"
 $PRIMEEthernet3URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/AMD/AM%205/PRIME%20Motherboards/Ethernet/ASUS-AM5-PRIME-EthernetDrivers3.zip"
@@ -36,7 +31,7 @@ $PRIMEWLAN4URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/head
 #             AM5 Ethernet and Storage Driver Download Destination
 ####################################################################################
 
-$PRIMEDestination = "C:\OSDCloud\Drivers\Motherboards\ASUS\AM5\PRIME"
+$PRIMEDestination = "C:\Drivers\Motherboards\ASUS\AM5\PRIME"
 
 ####################################################################################
 #             AM5 Ethernet and Storage Driver Extraction Destination
@@ -49,11 +44,6 @@ $PRIMEEthernet4 = "$PRIMEDestination\Ethernet4"
 $PRIMEEthernet5 = "$PRIMEDestination\Ethernet5"
 $PRIMEEthernet6 = "$PRIMEDestination\Ethernet6"
 
-$PRIMEBluetooth1 = "$PRIMEDestination\Bluetooth1"
-$PRIMEBluetooth2 = "$PRIMEDestination\Bluetooth2"
-$PRIMEBluetooth3 = "$PRIMEDestination\Bluetooth3"
-$PRIMEBluetooth4 = "$PRIMEDestination\Bluetooth4"
-
 $PRIMEStorage1 = "$PRIMEDestination\Storage1"
 $PRIMEStorage2 = "$PRIMEDestination\Storage2"
 
@@ -63,14 +53,6 @@ $PRIMEWLAN3 = "$PRIMEDestination\WLAN3"
 $PRIMEWLAN4 = "$PRIMEDestination\WLAN4"
 
 Import-Module -Name OSD -Force 
-
-Write-Verbose "Acquiring ASUS AM5 PRIME Motherboard Bluetooth Drivers from $GHURL" -Verbose
-Write-Host
-
-Save-WebFile -SourceUrl $PRIMEBluetooth1URL -DestinationDirectory $PRIMEDestination
-Save-WebFile -SourceUrl $PRIMEBluetooth2URL -DestinationDirectory $PRIMEDestination
-Save-WebFile -SourceUrl $PRIMEBluetooth3URL -DestinationDirectory $PRIMEDestination
-Save-WebFile -SourceUrl $PRIMEBluetooth4URL -DestinationDirectory $PRIMEDestination
 
 Write-Verbose "Acquiring ASUS AM5 PRIME Motherboard Ethernet Drivers from $GHURL" -Verbose
 Write-Host
@@ -102,10 +84,6 @@ Write-Host
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$PRIMEDestination\ASUS-AM5-PRIME-BluetoothDrivers1.zip" -TargetPath $PRIMEBluetooth1  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PRIMEDestination\ASUS-AM5-PRIME-BluetoothDrivers2.zip" -TargetPath $PRIMEBluetooth2  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PRIMEDestination\ASUS-AM5-PRIME-BluetoothDrivers3.zip" -TargetPath $PRIMEBluetooth3  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PRIMEDestination\ASUS-AM5-PRIME-BluetoothDrivers4.zip" -TargetPath $PRIMEBluetooth4  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$PRIMEDestination\ASUS-AM5-PRIME-EthernetDrivers1.zip" -TargetPath $PRIMEEthernet1  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$PRIMEDestination\ASUS-AM5-PRIME-EthernetDrivers2.zip" -TargetPath $PRIMEEthernet2  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$PRIMEDestination\ASUS-AM5-PRIME-EthernetDrivers3.zip" -TargetPath $PRIMEEthernet3  -ErrorAction SilentlyContinue 
@@ -118,7 +96,6 @@ Expand-7Zip -ArchiveFileName "$PRIMEDestination\ASUS-AM5-PRIME-WLANDrivers3.zip"
 Expand-7Zip -ArchiveFileName "$PRIMEDestination\ASUS-AM5-PRIME-WLANDrivers4.zip" -TargetPath $PRIMEWLAN2  -ErrorAction SilentlyContinue
 Expand-7Zip -ArchiveFileName "$PRIMEDestination\ASUS-AM5-PRIME-RAID-StorageDrivers1.zip" -TargetPath $PRIMEStorage1  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$PRIMEDestination\ASUS-AM5-PRIME-RAID-StorageDrivers2.zip" -TargetPath $PRIMEStorage1  -ErrorAction SilentlyContinue 
-
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
 Write-Host
