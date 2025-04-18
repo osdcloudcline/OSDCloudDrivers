@@ -12,8 +12,6 @@ $GHURL = "https://github.com/osdcloudcline/OSDCloudDrivers"
 
 $AEROEthernetURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/AERO/Ethernet,%20WiFi%20and%20Bluetooth/Gigabyte-AM5-AERO-EthernetDriver.zip"
 
-$AEROBluetoothURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/AERO/Ethernet,%20WiFi%20and%20Bluetooth/Gigabyte-AM5-AERO-BluetoothDriver.zip"
-
 $AEROWiFiURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/AERO/Ethernet,%20WiFi%20and%20Bluetooth/Gigabyte-AM5-AERO-WLANDrivers.zip"
 
 $AEROStorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Gigabyte/Desktops/AMD/AM5/AERO/Storage/Gigabyte-AM5-AERO-NVME-RAID-StorageDrivers.zip"
@@ -23,7 +21,7 @@ $AEROStorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/hea
 #             AM5 Ethernet, WiFi and Storage Driver Download Destination
 ####################################################################################
 
-$AERODestination = "C:\OSDCloud\Drivers\Motherboards\Gigabyte\AM5\AERO"
+$AERODestination = "C:\Drivers\Motherboards\Gigabyte\AM5\AERO"
 
 ####################################################################################
 #             AM5 Ethernet, WiFi and Storage Driver Extraction Destination
@@ -31,9 +29,7 @@ $AERODestination = "C:\OSDCloud\Drivers\Motherboards\Gigabyte\AM5\AERO"
 
 $AEROEthernet = "$AERODestination\Ethernet"
 
-$AEROBluetooth = "$AERODestination\Bluetooth"
-
-$AEROWiFi = "$AERODestination\WiFi1"
+$AEROWiFi = "$AERODestination\WLAN"
 
 $AEROStorage = "$AERODestination\Storage"
 
@@ -45,23 +41,15 @@ Write-Host
 
 Save-WebFile -SourceUrl  $AEROEthernetURL -DestinationDirectory $AERODestination
 
-Write-Verbose "Acquiring Gigabyte AM5 AERO Motherboard Bluetooth Drivers from $GHURL" -Verbose
-Write-Host
-
-Save-WebFile -SourceUrl  $AEROBluetoothURL -DestinationDirectory $AERODestination
-
 Write-Verbose "Acquiring Gigabyte AM5 AERO Motherboard WiFi Drivers from $GHURL" -Verbose
 Write-Host
 
 Save-WebFile -SourceUrl  $AEROWiFiURL -DestinationDirectory $AERODestination
 
-
-
 Write-Verbose "Acquiring Gigabyte AM5 AERO Motherboard Storage Drivers from $GHURL" -Verbose
 Write-Host
 
 Save-WebFile -SourceUrl $AEROStorageURL -DestinationDirectory $AERODestination
-
 
 Write-Verbose "Gigabyte AM5 AERO Motherboard Drivers downloaded" -Verbose
 Write-Host
@@ -70,7 +58,6 @@ Write-Verbose "Processing: ZIP File extraction" -Verbose
 Write-Host
 
 Expand-7Zip -ArchiveFileName "$AERODestination\Gigabyte-AM5-AERO-EthernetDriver.zip" -TargetPath $AEROEthernet  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$AERODestination\Gigabyte-AM5-AERO-BluetoothDriver.zip" -TargetPath $AEROBluetooth  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$AERODestination\Gigabyte-AM5-AERO-WLANDrivers.zip" -TargetPath $AEROWiFi  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$AERODestination\Gigabyte-AM5-AERO-NVME-RAID-StorageDrivers.zip" -TargetPath $AEROStorage  -ErrorAction SilentlyContinue 
 
