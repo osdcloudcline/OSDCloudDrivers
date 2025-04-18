@@ -30,7 +30,7 @@ $AITOPDestination = "C:\Drivers\Motherboards\Gigabyte\AM5\AI-TOP"
 $AITOPEthernet1 = "$AITOPDestination\Ethernet1"
 $AITOPEthernet2 = "$AITOPDestination\Ethernet2"
 
-$AITOPWiFi = "$AITOPDestination\WiFi1"
+$AITOPWiFi = "$AITOPDestination\WLAN"
 
 $AITOPStorage = "$AITOPDestination\Storage"
 
