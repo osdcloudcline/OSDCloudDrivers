@@ -35,9 +35,6 @@ $AEROWiFi = "$AERODestination\WLAN"
 
 $AEROStorage = "$AERODestination\Storage"
 
-
-Import-Module -Name OSD -Force 
-
 Write-Verbose "Acquiring Gigabyte AM5 AERO Motherboard Ethernet Drivers from $GHURL" -Verbose
 Write-Host
 
