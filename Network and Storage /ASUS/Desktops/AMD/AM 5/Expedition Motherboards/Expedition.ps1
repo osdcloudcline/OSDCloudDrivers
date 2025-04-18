@@ -22,7 +22,7 @@ $ExpeditionStorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/re
 #             AM5 Ethernet and Storage Driver Download Destination
 ####################################################################################
 
-$ExpeditionDestination = "C:\OSDCloud\Drivers\Motherboards\ASUS\AM5\Expedition"
+$ExpeditionDestination = "C:\Drivers\Motherboards\ASUS\AM5\Expedition"
 
 ####################################################################################
 #             AM5 Ethernet and Storage Driver Extraction Destination
