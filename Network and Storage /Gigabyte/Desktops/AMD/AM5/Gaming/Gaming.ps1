@@ -301,18 +301,18 @@ Write-Host
 Write-Verbose "Processing: Extracting WiFi drivers..." -Verbose
 Write-Host
 
-Expand-7zip -ArchiveFileName "$GamingDestinationA620\Gigabyte-AM5-Gaming-A620-WLANDrivers.zip" -TargetPath $GamingWiFi1 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$GamingDestinationB650\Gigabyte-AM5-Gaming-B650-WLANDrivers1.zip" -TargetPath $GamingWiFi2 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$GamingDestinationB650\Gigabyte-AM5-Gaming-B650-WLANDrivers2.zip" -TargetPath $GamingWiFi3 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$GamingDestinationB650\Gigabyte-AM5-Gaming-B650-WLANDrivers3.zip" -TargetPath $GamingWiFi4 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$GamingDestinationX670\Gigabyte-AM5-Gaming-X670-WLANDrivers1.zip" -TargetPath $GamingWiFi5 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$GamingDestinationX670\Gigabyte-AM5-Gaming-X670-WLANDrivers2.zip" -TargetPath $GamingWiFi6 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$GamingDestinationX870\Gigabyte-AM5-Gaming-X870-WLANDrivers1.zip" -TargetPath $GamingWiFi7 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$GamingDestinationX870\Gigabyte-AM5-Gaming-X870-WLANDrivers2.zip" -TargetPath $GamingWiFi8 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$GamingDestinationX870\Gigabyte-AM5-Gaming-X870-WLANDrivers3.zip" -TargetPath $GamingWiFi9 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$GamingDestinationX870\Gigabyte-AM5-Gaming-X870-WLANDrivers4.zip" -TargetPath $GamingWiFi10 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$GamingDestinationX870\Gigabyte-AM5-Gaming-X870-WLANDrivers5.zip" -TargetPath $GamingWiFi11 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$GamingDestinationX870\Gigabyte-AM5-Gaming-X870-WLANDrivers6.zip" -TargetPath $GamingWiFi12 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$GamingDestinationA620\Gigabyte-AM5-Gaming-A620-WLANDrivers.zip" -TargetPath $GamingWLAN1 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$GamingDestinationB650\Gigabyte-AM5-Gaming-B650-WLANDrivers1.zip" -TargetPath $GamingWLAN2 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$GamingDestinationB650\Gigabyte-AM5-Gaming-B650-WLANDrivers2.zip" -TargetPath $GamingWLAN3 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$GamingDestinationB650\Gigabyte-AM5-Gaming-B650-WLANDrivers3.zip" -TargetPath $GamingWLAN4 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$GamingDestinationX670\Gigabyte-AM5-Gaming-X670-WLANDrivers1.zip" -TargetPath $GamingWLAN5 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$GamingDestinationX670\Gigabyte-AM5-Gaming-X670-WLANDrivers2.zip" -TargetPath $GamingWLAN6 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$GamingDestinationX870\Gigabyte-AM5-Gaming-X870-WLANDrivers1.zip" -TargetPath $GamingWLAN7 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$GamingDestinationX870\Gigabyte-AM5-Gaming-X870-WLANDrivers2.zip" -TargetPath $GamingWLAN8 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$GamingDestinationX870\Gigabyte-AM5-Gaming-X870-WLANDrivers3.zip" -TargetPath $GamingWLAN9 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$GamingDestinationX870\Gigabyte-AM5-Gaming-X870-WLANDrivers4.zip" -TargetPath $GamingWLAN10 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$GamingDestinationX870\Gigabyte-AM5-Gaming-X870-WLANDrivers5.zip" -TargetPath $GamingWLAN11 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$GamingDestinationX870\Gigabyte-AM5-Gaming-X870-WLANDrivers6.zip" -TargetPath $GamingWLAN12 -ErrorAction SilentlyContinue
 
 Write-Host
 Write-Verbose "Completed: Extraction of ALL Gigabyte Gaming AM5 WiFi Drivers..." -Verbose
