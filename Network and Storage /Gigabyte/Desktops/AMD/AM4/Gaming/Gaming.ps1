@@ -182,15 +182,15 @@ Write-Verbose "Processing: Gigabyte Gaming AM4 motherboard drivers file extracti
 Write-Host
 Write-Verbose "Processing: Extracting Ethernet drivers..." -Verbose
 
-Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-EthernetDrivers-B350-Win10.zip" -TargetPath $GamingEthernet1 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-EthernetDrivers-B450-Win10.zip" -TargetPath $GamingEthernet2 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-EthernetDrivers-B450-Win11.zip" -TargetPath $GamingEthernet3 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-EthernetDrivers-B550-Win10.zip" -TargetPath $GamingEthernet4 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-EthernetDrivers-B550-Win11.zip" -TargetPath $GamingEthernet5 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-EthernetDrivers-X370-Win10-Killer.zip" -TargetPath $GamingEthernet6 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-EthernetDrivers-X370-Win10.zip" -TargetPath $GamingEthernet7 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-EthernetDrivers-X570-Win10.zip" -TargetPath $GamingEthernet8 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-EthernetDrivers-X570-Win11.zip" -TargetPath $GamingEthernet9 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-EthernetDrivers-B350-Win10.zip" -TargetPath $GamingEthernet1 
+Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-EthernetDrivers-B450-Win10.zip" -TargetPath $GamingEthernet2 
+Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-EthernetDrivers-B450-Win11.zip" -TargetPath $GamingEthernet3 
+Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-EthernetDrivers-B550-Win10.zip" -TargetPath $GamingEthernet4 
+Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-EthernetDrivers-B550-Win11.zip" -TargetPath $GamingEthernet5 
+Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-EthernetDrivers-X370-Win10-Killer.zip" -TargetPath $GamingEthernet6 
+Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-EthernetDrivers-X370-Win10.zip" -TargetPath $GamingEthernet7 
+Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-EthernetDrivers-X570-Win10.zip" -TargetPath $GamingEthernet8 
+Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-EthernetDrivers-X570-Win11.zip" -TargetPath $GamingEthernet9      
 
 Write-Host
 Write-Host
@@ -198,24 +198,27 @@ Write-Verbose "Processing: Gigabyte Gaming AM4 motherboard drivers file extracti
 Write-Host
 Write-Verbose "Processing: Extracting NVMe Storage drivers..." -Verbose
 Write-Host
-Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-B350-RAID-NVMe-StorageDrivers.zip" -TargetPath $GamingStorage1 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-B450-RAID-NVMe-StorageDrivers.zip" -TargetPath $GamingStorage3 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-B550-RAID-NVMe-StorageDrivers-1.zip" -TargetPath $GamingStorage5 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-B550-RAID-NVMe-StorageDrivers-2.zip" -TargetPath $GamingStorage6 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-X370-RAID-NVMe-StorageDrivers.zip" -TargetPath $GamingStorage8 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-X570-RAID-NVMe-StorageDrivers-1-Win10-.zip" -TargetPath $GamingStorage10 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-X570-RAID-NVMe-StorageDrivers-1-Win11.zip" -TargetPath $GamingStorage11 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-X570-RAID-NVMe-StorageDrivers-2-Win10-.zip" -TargetPath $GamingStorage12 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-X570-RAID-NVMe-StorageDrivers-2-Win11.zip" -TargetPath $GamingStorage13 -ErrorAction SilentlyContinue
+
+Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-B350-RAID-NVMe-StorageDrivers.zip" -TargetPath $GamingStorage1 
+Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-B450-RAID-NVMe-StorageDrivers.zip" -TargetPath $GamingStorage3 
+Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-B550-RAID-NVMe-StorageDrivers-1.zip" -TargetPath $GamingStorage5 
+Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-B550-RAID-NVMe-StorageDrivers-2.zip" -TargetPath $GamingStorage6 
+Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-X370-RAID-NVMe-StorageDrivers.zip" -TargetPath $GamingStorage8 
+Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-X570-RAID-NVMe-StorageDrivers-1-Win10-.zip" -TargetPath $GamingStorage10 
+Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-X570-RAID-NVMe-StorageDrivers-1-Win11.zip" -TargetPath $GamingStorage11 
+Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-X570-RAID-NVMe-StorageDrivers-2-Win10-.zip" -TargetPath $GamingStorage12 
+Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-X570-RAID-NVMe-StorageDrivers-2-Win11.zip" -TargetPath $GamingStorage13 
+
 Write-Host
 Write-Verbose "Processing: Extracting SATA Storage drivers..." -Verbose
 Write-Host
-Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-B350-RAID-SATA-StorageDrivers.zip" -TargetPath $GamingStorage2 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-B450-RAID-SATA-StorageDrivers.zip" -TargetPath $GamingStorage4 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-B550-RAID-SATA-StorageDrivers.zip" -TargetPath $GamingStorage7 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-X370-RAID-SATA-StorageDrivers.zip" -TargetPath $GamingStorage9 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-X570-RAID-SATA-StorageDrivers-Win10.zip" -TargetPath $GamingStorage14 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-X570-RAID-SATA-StorageDrivers-Win11.zip" -TargetPath $GamingStorage15 -ErrorAction SilentlyContinue
+
+Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-B350-RAID-SATA-StorageDrivers.zip" -TargetPath $GamingStorage2 
+Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-B450-RAID-SATA-StorageDrivers.zip" -TargetPath $GamingStorage4 
+Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-B550-RAID-SATA-StorageDrivers.zip" -TargetPath $GamingStorage7 
+Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-X370-RAID-SATA-StorageDrivers.zip" -TargetPath $GamingStorage9 
+Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-X570-RAID-SATA-StorageDrivers-Win10.zip" -TargetPath $GamingStorage14 
+Expand-7zip -ArchiveFileName "$GamingDestination\Gigabyte-Gaming-X570-RAID-SATA-StorageDrivers-Win11.zip" -TargetPath $GamingStorage15  
 
 
 Write-Host
