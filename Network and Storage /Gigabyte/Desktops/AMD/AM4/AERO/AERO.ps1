@@ -63,11 +63,11 @@ Write-Host
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$AERODestination\Gigabyte-AERO-LANDrivers.zip" -TargetPath $AEROEthernet  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$AERODestination\Gigabyte-AERO-WLANDrivers1.zip" -TargetPath $AEROWiFi1  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$AERODestination\Gigabyte-AERO-WLANDrivers2.zip" -TargetPath $AEROWiFi2  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$AERODestination\Gigabyte-AERO-RAID-NVMe-StorageDrivers.zip" -TargetPath $AEROStorage1  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$AERODestination\Gigabyte-AERO-RAID-SATA-StorageDrivers.zip" -TargetPath $AEROStorage2  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$AERODestination\Gigabyte-AERO-LANDrivers.zip" -TargetPath $AEROEthernet   
+Expand-7Zip -ArchiveFileName "$AERODestination\Gigabyte-AERO-WLANDrivers1.zip" -TargetPath $AEROWiFi1   
+Expand-7Zip -ArchiveFileName "$AERODestination\Gigabyte-AERO-WLANDrivers2.zip" -TargetPath $AEROWiFi2   
+Expand-7Zip -ArchiveFileName "$AERODestination\Gigabyte-AERO-RAID-NVMe-StorageDrivers.zip" -TargetPath $AEROStorage1   
+Expand-7Zip -ArchiveFileName "$AERODestination\Gigabyte-AERO-RAID-SATA-StorageDrivers.zip" -TargetPath $AEROStorage2  
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
 Write-Host
