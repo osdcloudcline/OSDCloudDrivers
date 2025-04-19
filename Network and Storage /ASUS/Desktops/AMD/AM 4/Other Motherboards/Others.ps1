@@ -51,9 +51,8 @@ Write-Host
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$OtherDestination\Realtek-LANDrivers.zip" -TargetPath $OtherEthernet  -ErrorAction SilentlyContinue 
-
-Expand-7Zip -ArchiveFileName "$OtherDestination\RAID-StorageDrivers-NVMe.zip" -TargetPath $OtherStorage  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$OtherDestination\Realtek-LANDrivers.zip" -TargetPath $OtherEthernet   
+Expand-7Zip -ArchiveFileName "$OtherDestination\RAID-StorageDrivers-NVMe.zip" -TargetPath $OtherStorage   
 
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
