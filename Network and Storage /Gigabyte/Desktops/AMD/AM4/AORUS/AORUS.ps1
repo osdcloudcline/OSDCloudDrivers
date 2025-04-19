@@ -267,53 +267,53 @@ Write-Verbose "Completed: Download of ALL Gigabyte AORUS AM4 Storage Drivers..."
 Write-Host
 Write-Verbose "Processing: Extracting Ethernet drivers..." -Verbose
 
-Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-A520Drivers-Win10.zip" -TargetPath $AORUSEthernet1 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-A520Drivers-Win11.zip" -TargetPath $AORUSEthernet2 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-B450Drivers-Intel.zip" -TargetPath $AORUSEthernet3 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-B450Drivers-Win10.zip" -TargetPath $AORUSEthernet4 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-B450Drivers-Win11.zip" -TargetPath $AORUSEthernet5 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-B550Drivers-Win10.zip" -TargetPath $AORUSEthernet6 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-B550Drivers-Win11.zip" -TargetPath $AORUSEthernet7 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-X370Drivers-Intel-PRO100.zip" -TargetPath $AORUSEthernet8 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-X370Drivers-Intel-PRO1000-2.zip" -TargetPath $AORUSEthernet9 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-X370Drivers-Intel-PRO1000.zip" -TargetPath $AORUSEthernet10 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-X370Drivers-Intel-PROXGB.zip" -TargetPath $AORUSEthernet11 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-X370Drivers-Killer.zip" -TargetPath $AORUSEthernet12 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-X470Drivers-Intel-PRO100.zip" -TargetPath $AORUSEthernet13 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-X470Drivers-Intel-PRO1000.zip" -TargetPath $AORUSEthernet14 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-X470Drivers-Intel-PRO40GB.zip" -TargetPath $AORUSEthernet15 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-X470Drivers-Intel-PROXGB.zip" -TargetPath $AORUSEthernet16 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-X570Drivers-AQNIC.zip" -TargetPath $AORUSEthernet17 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-X570Drivers-Intel-PRO1000.zip" -TargetPath $AORUSEthernet18 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-X570Drivers-Intel-PRO2500.zip" -TargetPath $AORUSEthernet19 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-X570Drivers-Intel-PRO40GB.zip" -TargetPath $AORUSEthernet20 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-X570Drivers-Intel-PROAVF.zip" -TargetPath $AORUSEthernet21 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-X570Drivers-Intel-PROCGB.zip" -TargetPath $AORUSEthernet22 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-X570Drivers-Intel-PROXGB.zip" -TargetPath $AORUSEthernet23 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-X570Drivers-Intel-i225-2-Win10.zip" -TargetPath $AORUSEthernet24 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-X570Drivers-Intel-i225-2-Win11.zip" -TargetPath $AORUSEthernet25 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-X570Drivers-Intel-i225-Win10.zip" -TargetPath $AORUSEthernet26 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-X570Drivers-Intel-i225-Win11.zip" -TargetPath $AORUSEthernet27 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-A520Drivers-Win10.zip" -TargetPath $AORUSEthernet1 
+Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-A520Drivers-Win11.zip" -TargetPath $AORUSEthernet2 
+Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-B450Drivers-Intel.zip" -TargetPath $AORUSEthernet3 
+Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-B450Drivers-Win10.zip" -TargetPath $AORUSEthernet4 
+Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-B450Drivers-Win11.zip" -TargetPath $AORUSEthernet5 
+Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-B550Drivers-Win10.zip" -TargetPath $AORUSEthernet6 
+Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-B550Drivers-Win11.zip" -TargetPath $AORUSEthernet7 
+Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-X370Drivers-Intel-PRO100.zip" -TargetPath $AORUSEthernet8 
+Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-X370Drivers-Intel-PRO1000-2.zip" -TargetPath $AORUSEthernet9 
+Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-X370Drivers-Intel-PRO1000.zip" -TargetPath $AORUSEthernet10 
+Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-X370Drivers-Intel-PROXGB.zip" -TargetPath $AORUSEthernet11 
+Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-X370Drivers-Killer.zip" -TargetPath $AORUSEthernet12 
+Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-X470Drivers-Intel-PRO100.zip" -TargetPath $AORUSEthernet13 
+Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-X470Drivers-Intel-PRO1000.zip" -TargetPath $AORUSEthernet14 
+Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-X470Drivers-Intel-PRO40GB.zip" -TargetPath $AORUSEthernet15 
+Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-X470Drivers-Intel-PROXGB.zip" -TargetPath $AORUSEthernet16 
+Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-X570Drivers-AQNIC.zip" -TargetPath $AORUSEthernet17 
+Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-X570Drivers-Intel-PRO1000.zip" -TargetPath $AORUSEthernet18 
+Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-X570Drivers-Intel-PRO2500.zip" -TargetPath $AORUSEthernet19 
+Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-X570Drivers-Intel-PRO40GB.zip" -TargetPath $AORUSEthernet20 
+Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-X570Drivers-Intel-PROAVF.zip" -TargetPath $AORUSEthernet21 
+Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-X570Drivers-Intel-PROCGB.zip" -TargetPath $AORUSEthernet22 
+Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-X570Drivers-Intel-PROXGB.zip" -TargetPath $AORUSEthernet23 
+Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-X570Drivers-Intel-i225-2-Win10.zip" -TargetPath $AORUSEthernet24 
+Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-X570Drivers-Intel-i225-2-Win11.zip" -TargetPath $AORUSEthernet25 
+Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-X570Drivers-Intel-i225-Win10.zip" -TargetPath $AORUSEthernet26 
+Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-Ethernet-X570Drivers-Intel-i225-Win11.zip" -TargetPath $AORUSEthernet27  
 
 Write-Host
 Write-Verbose "Processing: Extracting Storage drivers..." -Verbose
 
-Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-NVMe-RAID-StorageDrivers.zip" -TargetPath $AORUSStorage1 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-SATA-RAID-StorageDrivers.zip" -TargetPath $AORUSStorage2 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-NVMe-RAID-StorageDrivers.zip" -TargetPath $AORUSStorage1 
+Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-SATA-RAID-StorageDrivers.zip" -TargetPath $AORUSStorage2  
 Write-Host
 
 Write-Host
 Write-Verbose "Processing: Extracting WiFi drivers..." -Verbose
 
-Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-WiFi-B450Drivers.zip" -TargetPath $AORUSWiFi1 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-WiFi-B550Drivers-Win10-2.zip" -TargetPath $AORUSWiFi2 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-WiFi-B550Drivers-Win10.zip" -TargetPath $AORUSWiFi3 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-WiFi-B550Drivers-Win11-2.zip" -TargetPath $AORUSWiFi4 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-WiFi-B550Drivers-Win11.zip" -TargetPath $AORUSWiFi5 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-WiFi-B550Drivers.zip" -TargetPath $AORUSWiFi6 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-WiFi-X470Drivers.zip" -TargetPath $AORUSWiFi7 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-WiFi-X570Drivers-1.zip" -TargetPath $AORUSWiFi8 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-WiFi-X570Drivers.zip" -TargetPath $AORUSWiFi9 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-WiFi-B450Drivers.zip" -TargetPath $AORUSWiFi1 
+Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-WiFi-B550Drivers-Win10-2.zip" -TargetPath $AORUSWiFi2 
+Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-WiFi-B550Drivers-Win10.zip" -TargetPath $AORUSWiFi3 
+Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-WiFi-B550Drivers-Win11-2.zip" -TargetPath $AORUSWiFi4 
+Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-WiFi-B550Drivers-Win11.zip" -TargetPath $AORUSWiFi5 
+Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-WiFi-B550Drivers.zip" -TargetPath $AORUSWiFi6 
+Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-WiFi-X470Drivers.zip" -TargetPath $AORUSWiFi7 
+Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-WiFi-X570Drivers-1.zip" -TargetPath $AORUSWiFi8 
+Expand-7zip -ArchiveFileName "$AORUSDestination\Gigabyte-AORUS-WiFi-X570Drivers.zip" -TargetPath $AORUSWiFi9     
 Write-Host
 
 
