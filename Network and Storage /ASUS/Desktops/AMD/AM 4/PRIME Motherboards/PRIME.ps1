@@ -73,16 +73,14 @@ Write-Host
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$PRIMEDestination\PRIME-Intel-i211-LANDrivers.zip" -TargetPath $PRIMEEthernet  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PRIMEDestination\PRIME-Realtek-LANDrivers.zip" -TargetPath $PRIMEEthernet  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PRIMEDestination\PRIME-Realtek-LANDrivers2.zip" -TargetPath $PRIMEEthernet  -ErrorAction SilentlyContinue 
-
-Expand-7Zip -ArchiveFileName "$PRIMEDestination\PRIME-WiFiDrivers.zip" -TargetPath $PRIMEWiFi  -ErrorAction SilentlyContinue 
-
-Expand-7Zip -ArchiveFileName "$PRIMEDestination\PRIME-NVMeStorageDrivers.zip" -TargetPath $PRIMEStorage  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PRIMEDestination\PRIME-NVMeStorageDrivers2.zip" -TargetPath $PRIMEStorage  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PRIMEDestination\PRIME-SATAStorageDrivers.zip" -TargetPath $PRIMEStorage  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PRIMEDestination\PRIME-SATAStorageDrivers2.zip" -TargetPath $PRIMEStorage  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$PRIMEDestination\PRIME-Intel-i211-LANDrivers.zip" -TargetPath $PRIMEEthernet1  
+Expand-7Zip -ArchiveFileName "$PRIMEDestination\PRIME-Realtek-LANDrivers.zip" -TargetPath $PRIMEEthernet2   
+Expand-7Zip -ArchiveFileName "$PRIMEDestination\PRIME-Realtek-LANDrivers2.zip" -TargetPath $PRIMEEthernet3   
+Expand-7Zip -ArchiveFileName "$PRIMEDestination\PRIME-WiFiDrivers.zip" -TargetPath $PRIMEWiFi   
+Expand-7Zip -ArchiveFileName "$PRIMEDestination\PRIME-NVMeStorageDrivers.zip" -TargetPath $PRIMEStorage1   
+Expand-7Zip -ArchiveFileName "$PRIMEDestination\PRIME-NVMeStorageDrivers2.zip" -TargetPath $PRIMEStorage2   
+Expand-7Zip -ArchiveFileName "$PRIMEDestination\PRIME-SATAStorageDrivers.zip" -TargetPath $PRIMEStorage3   
+Expand-7Zip -ArchiveFileName "$PRIMEDestination\PRIME-SATAStorageDrivers2.zip" -TargetPath $PRIMEStorage4  
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
 Write-Host
