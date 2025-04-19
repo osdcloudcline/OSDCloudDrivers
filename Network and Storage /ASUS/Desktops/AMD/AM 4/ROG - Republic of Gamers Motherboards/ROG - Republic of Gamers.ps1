@@ -81,19 +81,17 @@ Write-Host
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$ROGDestination\ROG-Intel-i211-LANDrivers.zip" -TargetPath $ROGEthernet1  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$ROGDestination\ROG-Intel-i225-LANDrivers.zip" -TargetPath $ROGEthernet2  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$ROGDestination\ROG-Intel-i225-i226-LANDrivers.zip" -TargetPath $ROGEthernet3  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$ROGDestination\ROG-Realtek1-LANDrivers.zip" -TargetPath $ROGEthernet4  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$ROGDestination\ROG-Realtek2-LANDrivers.zip" -TargetPath $ROGEthernet5  -ErrorAction SilentlyContinue 
-
-Expand-7Zip -ArchiveFileName "$ROGDestination\ROG-Intel1-WiFiDrivers.zip" -TargetPath $ROGWiFi1  -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "$ROGDestination\ROG-Intel2-WiFiDrivers.zip" -TargetPath $ROGWiFi2  -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "$ROGDestination\ROG-Intel3-WiFiDrivers.zip" -TargetPath $ROGWiFi3  -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "$ROGDestination\ROG-MediaTech-WiFiDrivers.zip" -TargetPath $ROGWiFi4  -ErrorAction SilentlyContinue 
-
-Expand-7Zip -ArchiveFileName "$ROGDestination\ROG-NVMe-StorageDrivers.zip" -TargetPath $ROGStorage1  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$ROGDestination\ROG-RAID-SATA-StorageDrivers.zip" -TargetPath $ROGStorage2  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$ROGDestination\ROG-Intel-i211-LANDrivers.zip" -TargetPath $ROGEthernet1   
+Expand-7Zip -ArchiveFileName "$ROGDestination\ROG-Intel-i225-LANDrivers.zip" -TargetPath $ROGEthernet2   
+Expand-7Zip -ArchiveFileName "$ROGDestination\ROG-Intel-i225-i226-LANDrivers.zip" -TargetPath $ROGEthernet3   
+Expand-7Zip -ArchiveFileName "$ROGDestination\ROG-Realtek1-LANDrivers.zip" -TargetPath $ROGEthernet4   
+Expand-7Zip -ArchiveFileName "$ROGDestination\ROG-Realtek2-LANDrivers.zip" -TargetPath $ROGEthernet5   
+Expand-7Zip -ArchiveFileName "$ROGDestination\ROG-Intel1-WiFiDrivers.zip" -TargetPath $ROGWiFi1  
+Expand-7Zip -ArchiveFileName "$ROGDestination\ROG-Intel2-WiFiDrivers.zip" -TargetPath $ROGWiFi2  
+Expand-7Zip -ArchiveFileName "$ROGDestination\ROG-Intel3-WiFiDrivers.zip" -TargetPath $ROGWiFi3  
+Expand-7Zip -ArchiveFileName "$ROGDestination\ROG-MediaTech-WiFiDrivers.zip" -TargetPath $ROGWiFi4   
+Expand-7Zip -ArchiveFileName "$ROGDestination\ROG-NVMe-StorageDrivers.zip" -TargetPath $ROGStorage1   
+Expand-7Zip -ArchiveFileName "$ROGDestination\ROG-RAID-SATA-StorageDrivers.zip" -TargetPath $ROGStorage2 
 
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
