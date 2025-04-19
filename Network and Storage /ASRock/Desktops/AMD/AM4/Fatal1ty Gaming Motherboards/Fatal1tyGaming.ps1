@@ -67,14 +67,14 @@ Write-Host
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$Fatal1tyGamingDestination\ASRock-Fatal1tyGaming-Realtek-LANDrivers1.zip" -TargetPath $Fatal1tyGamingEthernet1  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$Fatal1tyGamingDestination\ASRock-Fatal1tyGaming-Realtek-LANDrivers2.zip" -TargetPath $Fatal1tyGamingEthernet2  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$Fatal1tyGamingDestination\ASRock-Fatal1tyGaming-Realtek-LANDrivers1.zip" -TargetPath $Fatal1tyGamingEthernet1   
+Expand-7Zip -ArchiveFileName "$Fatal1tyGamingDestination\ASRock-Fatal1tyGaming-Realtek-LANDrivers2.zip" -TargetPath $Fatal1tyGamingEthernet2   
 
-Expand-7Zip -ArchiveFileName "$Fatal1tyGamingDestination\ASRock-Fatal1tyGaming-Intel-WLANDrivers.zip" -TargetPath $Fatal1tyGamingWiFi1  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$Fatal1tyGamingDestination\ASRock-Fatal1tyGaming-Intel-WLANDrivers2.zip" -TargetPath $Fatal1tyGamingWiFi2  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$Fatal1tyGamingDestination\ASRock-Fatal1tyGaming-Intel-WLANDrivers.zip" -TargetPath $Fatal1tyGamingWiFi1   
+Expand-7Zip -ArchiveFileName "$Fatal1tyGamingDestination\ASRock-Fatal1tyGaming-Intel-WLANDrivers2.zip" -TargetPath $Fatal1tyGamingWiFi2   
 
-Expand-7Zip -ArchiveFileName "$Fatal1tyGamingDestination\ASRock-Fatal1tyGaming-NVMe-StorageDrivers.zip" -TargetPath $Fatal1tyGamingStorage1  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$Fatal1tyGamingDestination\ASRock-Fatal1tyGaming-SATA-StorageDrivers.zip" -TargetPath $Fatal1tyGamingStorage2  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$Fatal1tyGamingDestination\ASRock-Fatal1tyGaming-NVMe-StorageDrivers.zip" -TargetPath $Fatal1tyGamingStorage1   
+Expand-7Zip -ArchiveFileName "$Fatal1tyGamingDestination\ASRock-Fatal1tyGaming-SATA-StorageDrivers.zip" -TargetPath $Fatal1tyGamingStorage2 
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
 Write-Host
