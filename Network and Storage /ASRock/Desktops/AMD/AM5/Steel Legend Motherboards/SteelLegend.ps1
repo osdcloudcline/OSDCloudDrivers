@@ -60,9 +60,9 @@ Write-Host
 Write-Verbose "SteelLegendcessing: ZIP File extraction" -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$SteelLegendDestination\ASRock-AM5-SteelLegend-EthernetDrivers.zip" -TargetPath $SteelLegendEthernet  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$SteelLegendDestination\ASRock-AM5-SteelLegend-WiFiDrivers.zip" -TargetPath $SteelLegendWiFi  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$SteelLegendDestination\ASRock-AM5-SteelLengend-RAID-NVMe-StorageDrivers.zip" -TargetPath $SteelLegendStorage  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$SteelLegendDestination\ASRock-AM5-SteelLegend-EthernetDrivers.zip" -TargetPath $SteelLegendEthernet   
+Expand-7Zip -ArchiveFileName "$SteelLegendDestination\ASRock-AM5-SteelLegend-WiFiDrivers.zip" -TargetPath $SteelLegendWiFi   
+Expand-7Zip -ArchiveFileName "$SteelLegendDestination\ASRock-AM5-SteelLengend-RAID-NVMe-StorageDrivers.zip" -TargetPath $SteelLegendStorage   
 
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
