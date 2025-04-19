@@ -311,22 +311,24 @@ Write-Host
 Write-Verbose "Processing: Gigabyte Ultra Durable AM4 motherboard drivers file extraction..." -Verbose
 Write-Host
 Write-Verbose "Processing: Extracting Ethernet drivers..." -Verbose
-Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-EthernetDrivers-A520-Win10.zip"  -TargetPath $UDEthernet1  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-EthernetDrivers-A520-Win11.zip"  -TargetPath $UDEthernet2  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-EthernetDrivers-B350.zip"  -TargetPath $UDEthernet3  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-EthernetDrivers-B450-Win10.zip"  -TargetPath $UDEthernet4  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-EthernetDrivers-B450-Win11.zip"  -TargetPath $UDEthernet5  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-EthernetDrivers-B550-Intel-1.zip"  -TargetPath $UDEthernet6  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-EthernetDrivers-B550-Intel-2.zip"  -TargetPath $UDEthernet7  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-EthernetDrivers-B550-Intel-3-Win10.zip"  -TargetPath $UDEthernet8  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-EthernetDrivers-B550-Intel-4-Win11.zip"  -TargetPath $UDEthernet9  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-EthernetDrivers-B550-Intel-i225-Win10.zip"  -TargetPath $UDEthernet10  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-EthernetDrivers-B550-Intel-i225-Win11.zip"  -TargetPath $UDEthernet11  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-EthernetDrivers-B550-Realtek-Win10.zip"  -TargetPath $UDEthernet12  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-EthernetDrivers-B550-Realtek-Win11.zip"  -TargetPath $UDEthernet13  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-EthernetDrivers-X370-Realtek-Win10.zip"  -TargetPath $UDEthernet14  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-EthernetDrivers-X570-Realtek-Win10.zip"  -TargetPath $UDEthernet15  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-EthernetDrivers-X570-Realtek-Win11.zip"  -TargetPath $UDEthernet16  -ErrorAction SilentlyContine
+
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-EthernetDrivers-A520-Win10.zip"  -TargetPath $UDEthernet1  
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-EthernetDrivers-A520-Win11.zip"  -TargetPath $UDEthernet2  
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-EthernetDrivers-B350.zip"  -TargetPath $UDEthernet3  
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-EthernetDrivers-B450-Win10.zip"  -TargetPath $UDEthernet4  
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-EthernetDrivers-B450-Win11.zip"  -TargetPath $UDEthernet5  
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-EthernetDrivers-B550-Intel-1.zip"  -TargetPath $UDEthernet6  
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-EthernetDrivers-B550-Intel-2.zip"  -TargetPath $UDEthernet7  
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-EthernetDrivers-B550-Intel-3-Win10.zip"  -TargetPath $UDEthernet8  
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-EthernetDrivers-B550-Intel-4-Win11.zip"  -TargetPath $UDEthernet9  
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-EthernetDrivers-B550-Intel-i225-Win10.zip"  -TargetPath $UDEthernet10  
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-EthernetDrivers-B550-Intel-i225-Win11.zip"  -TargetPath $UDEthernet11  
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-EthernetDrivers-B550-Realtek-Win10.zip"  -TargetPath $UDEthernet12  
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-EthernetDrivers-B550-Realtek-Win11.zip"  -TargetPath $UDEthernet13  
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-EthernetDrivers-X370-Realtek-Win10.zip"  -TargetPath $UDEthernet14  
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-EthernetDrivers-X570-Realtek-Win10.zip"  -TargetPath $UDEthernet15  
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-EthernetDrivers-X570-Realtek-Win11.zip"  -TargetPath $UDEthernet16  
+
 Write-Host
 Write-Verbose "Completed: Extraction of ALL Gigabyte Ultra Durable AM4 Ethernet Drivers..." -Verbose
 Write-Host
@@ -338,12 +340,14 @@ Write-Verbose "Processing: Gigabyte Ultra Durable AM4 motherboard drivers file e
 Write-Host
 Write-Verbose "Processing: Extracting WiFi drivers..." -Verbose
 Write-Host
-Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-A320-WiFiDrivers-Intel.zip"  -TargetPath $UDWiFi1  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-A320-WiFiDrivers-Realtek.zip"  -TargetPath $UDWiFi2  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-B450-WiFiDrivers-Intel.zip"  -TargetPath $UDWiFi3  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-B450-WiFiDrivers-Realtek.zip"  -TargetPath $UDWiFi4  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-B550-WiFiDrivers-Intel.zip"  -TargetPath $UDWiFi5  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-B550-WiFiDrivers-Realtek.zip"  -TargetPath $UDWiFi6  -ErrorAction SilentlyContine
+
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-A320-WiFiDrivers-Intel.zip"  -TargetPath $UDWiFi1  
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-A320-WiFiDrivers-Realtek.zip"  -TargetPath $UDWiFi2  
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-B450-WiFiDrivers-Intel.zip"  -TargetPath $UDWiFi3  
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-B450-WiFiDrivers-Realtek.zip"  -TargetPath $UDWiFi4  
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-B550-WiFiDrivers-Intel.zip"  -TargetPath $UDWiFi5  
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-B550-WiFiDrivers-Realtek.zip"  -TargetPath $UDWiFi6  
+
 Write-Host
 Write-Verbose "Completed: Extraction of ALL Gigabyte Ultra Durable AM4 WiFi Drivers..." -Verbose
 Write-Host
@@ -355,33 +359,39 @@ Write-Verbose "Processing: Gigabyte Ultra Durable AM4 motherboard drivers file e
 Write-Host
 Write-Verbose "Processing: Extracting NVMe Storage drivers..." -Verbose
 Write-Host
-Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-A320-RAID-NVMe-StorageDrivers.zip"  -TargetPath $UDStorage1  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-A520-RAID-NVMe-1-StorageDrivers-Win10.zip"  -TargetPath $UDStorage3  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-A520-RAID-NVMe-1-StorageDrivers-Win11.zip"  -TargetPath $UDStorage4  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-A520-RAID-NVMe-2-StorageDrivers-Win10.zip"  -TargetPath $UDStorage5  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-A520-RAID-NVMe-2-StorageDrivers-Win11.zip"  -TargetPath $UDStorage6  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-B350-RAID-NVMe-StorageDrivers.zip"  -TargetPath $UDStorage9  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-B450-RAID-NVMe-StorageDrivers.zip"  -TargetPath $UDStorage11  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-B550-RAID-NVMe-1-StorageDrivers.zip"  -TargetPath $UDStorage13  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-B550-RAID-NVMe-2-StorageDrivers.zip"  -TargetPath $UDStorage14  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-X370-RAID-NVMe-StorageDrivers.zip"  -TargetPath $UDStorage17  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-X570-RAID-NVMe-1-StorageDrivers.zip"  -TargetPath $UDStorage19  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-X570-RAID-NVMe-2-StorageDrivers.zip"  -TargetPath $UDStorage20  -ErrorAction SilentlyContine
+
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-A320-RAID-NVMe-StorageDrivers.zip"  -TargetPath $UDStorage1  
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-A520-RAID-NVMe-1-StorageDrivers-Win10.zip"  -TargetPath $UDStorage3  
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-A520-RAID-NVMe-1-StorageDrivers-Win11.zip"  -TargetPath $UDStorage4  
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-A520-RAID-NVMe-2-StorageDrivers-Win10.zip"  -TargetPath $UDStorage5  
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-A520-RAID-NVMe-2-StorageDrivers-Win11.zip"  -TargetPath $UDStorage6  
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-B350-RAID-NVMe-StorageDrivers.zip"  -TargetPath $UDStorage9  
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-B450-RAID-NVMe-StorageDrivers.zip"  -TargetPath $UDStorage11  
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-B550-RAID-NVMe-1-StorageDrivers.zip"  -TargetPath $UDStorage13  
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-B550-RAID-NVMe-2-StorageDrivers.zip"  -TargetPath $UDStorage14  
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-X370-RAID-NVMe-StorageDrivers.zip"  -TargetPath $UDStorage17  
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-X570-RAID-NVMe-1-StorageDrivers.zip"  -TargetPath $UDStorage19  
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-X570-RAID-NVMe-2-StorageDrivers.zip"  -TargetPath $UDStorage20  
+
 Write-Host
 Write-Verbose "Processing: Extracting SATA Storage drivers..." -Verbose
 Write-Host
-Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-A320-RAID-SATA-StorageDrivers.zip"  -TargetPath $UDStorage2  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-A520-RAID-SATA-StorageDrivers-Win10.zip"  -TargetPath $UDStorage7  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-A520-RAID-SATA-StorageDrivers-Win11.zip"  -TargetPath $UDStorage8  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-B350-RAID-SATA-StorageDrivers.zip"  -TargetPath $UDStorage10  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-B450-RAID-SATA-StorageDrivers.zip"  -TargetPath $UDStorage12  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-B550-RAID-SATA-StorageDrivers.zip"  -TargetPath $UDStorage15  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-X370-RAID-SATA-StorageDrivers.zip"  -TargetPath $UDStorage18  -ErrorAction SilentlyContine
-Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-X570-RAID-SATA-StorageDrivers.zip"  -TargetPath $UDStorage21  -ErrorAction SilentlyContine
+
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-A320-RAID-SATA-StorageDrivers.zip"  -TargetPath $UDStorage2  
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-A520-RAID-SATA-StorageDrivers-Win10.zip"  -TargetPath $UDStorage7  
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-A520-RAID-SATA-StorageDrivers-Win11.zip"  -TargetPath $UDStorage8  
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-B350-RAID-SATA-StorageDrivers.zip"  -TargetPath $UDStorage10  
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-B450-RAID-SATA-StorageDrivers.zip"  -TargetPath $UDStorage12  
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-B550-RAID-SATA-StorageDrivers.zip"  -TargetPath $UDStorage15  
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-X370-RAID-SATA-StorageDrivers.zip"  -TargetPath $UDStorage18  
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-X570-RAID-SATA-StorageDrivers.zip"  -TargetPath $UDStorage21 
+
 Write-Host
 Write-Verbose "Processing: Extracting Thunderbolt Storage drivers..." -Verbose
 Write-Host
-Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-B550-Thunderbolt-StorageDrivers.zip"  -TargetPath $UDStorage16  -ErrorAction SilentlyContine
+
+Expand-7zip -ArchiveFileNam "$UDDestination\Gigabyte-UltraDurable-B550-Thunderbolt-StorageDrivers.zip"  -TargetPath $UDStorage16  
+
 Write-Verbose "Completed: Extraction of ALL Gigabyte Ultra Durable AM4 Storage Drivers..." -Verbose
 Write-Host
 
