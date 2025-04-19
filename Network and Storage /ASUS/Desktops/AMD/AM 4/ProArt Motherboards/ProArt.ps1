@@ -58,11 +58,9 @@ Write-Host
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$ProArtDestination\ProArt-LANDriver.zip" -TargetPath $ProArtEthernet  -ErrorAction SilentlyContinue 
-
-Expand-7Zip -ArchiveFileName "$ProArtDestination\ProArt-WiFiDrivers.zip" -TargetPath $ProArtWiFi  -ErrorAction SilentlyContinue 
-
-Expand-7Zip -ArchiveFileName "$ProArtDestination\ProArt-NVMe-RAIDStorageDrivers.zip" -TargetPath $ProArtStorage  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$ProArtDestination\ProArt-LANDriver.zip" -TargetPath $ProArtEthernet   
+Expand-7Zip -ArchiveFileName "$ProArtDestination\ProArt-WiFiDrivers.zip" -TargetPath $ProArtWiFi   
+Expand-7Zip -ArchiveFileName "$ProArtDestination\ProArt-NVMe-RAIDStorageDrivers.zip" -TargetPath $ProArtStorage 
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
 
