@@ -63,10 +63,10 @@ Write-Host
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$TaichiDestination\ASRock-Taichi-Intel-LANDrivers.zip" -TargetPath $TaichiEthernet  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$TaichiDestinationn\ASRock-Taichi-Intel-WLANDrivers.zip" -TargetPath $TaichiWiFi  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$TaichiDestination\ASRock-Taichi-NVMe-StorageDrivers.zip" -TargetPath $TaichiStorage1  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$TaichiDestination\ASRock-Taichi-SATA-StorageDrivers.zip" -TargetPath $TaichiStorage2  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$TaichiDestination\ASRock-Taichi-Intel-LANDrivers.zip" -TargetPath $TaichiEthernet   
+Expand-7Zip -ArchiveFileName "$TaichiDestinationn\ASRock-Taichi-Intel-WLANDrivers.zip" -TargetPath $TaichiWiFi   
+Expand-7Zip -ArchiveFileName "$TaichiDestination\ASRock-Taichi-NVMe-StorageDrivers.zip" -TargetPath $TaichiStorage1   
+Expand-7Zip -ArchiveFileName "$TaichiDestination\ASRock-Taichi-SATA-StorageDrivers.zip" -TargetPath $TaichiStorage2     
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
 Write-Host
