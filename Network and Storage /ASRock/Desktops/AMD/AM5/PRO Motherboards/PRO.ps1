@@ -59,10 +59,9 @@ Write-Host
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-AM5-PRO-EthernetDrivers.zip" -TargetPath $PROEthernet  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-AM5-PRO-WiFiDrivers.zip" -TargetPath $PROWiFi  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-AM5-RAID-NVMeStorageDrivers.zip" -TargetPath $PROStorage  -ErrorAction SilentlyContinue 
-
+Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-AM5-PRO-EthernetDrivers.zip" -TargetPath $PROEthernet   
+Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-AM5-PRO-WiFiDrivers.zip" -TargetPath $PROWiFi   
+Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-AM5-RAID-NVMeStorageDrivers.zip" -TargetPath $PROStorage   
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
 Write-Host
