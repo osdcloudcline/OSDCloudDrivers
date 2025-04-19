@@ -50,9 +50,9 @@ Write-Host
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$CSMDestination\Intel-I211-LANDrivers.zip" -TargetPath $CSMEthernet  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$CSMDestination\RAID-StorageDrivers-NVMe.zip" -TargetPath $CSMStorage1  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$CSMDestination\RAID-StorageDrivers-SATA.zip" -TargetPath $CSMStorage2  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$CSMDestination\Intel-I211-LANDrivers.zip" -TargetPath $CSMEthernet   
+Expand-7Zip -ArchiveFileName "$CSMDestination\RAID-StorageDrivers-NVMe.zip" -TargetPath $CSMStorage1   
+Expand-7Zip -ArchiveFileName "$CSMDestination\RAID-StorageDrivers-SATA.zip" -TargetPath $CSMStorage2
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
 Write-Host
