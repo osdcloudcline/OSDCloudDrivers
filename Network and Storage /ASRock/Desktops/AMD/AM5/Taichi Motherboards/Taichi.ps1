@@ -59,10 +59,9 @@ Write-Host
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$TaichiDestination\ASRock-AM5-Taichi-Realtek-EthernetDrivers.zip" -TargetPath $TaichiEthernet  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$TaichiDestination\ASRock-AM5-Taichi-MediaTek-WiFiDrivers.zip" -TargetPath $TaichiWiFi  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$TaichiDestination\ASRock-AM5-Taichi-RAID-NVMe-StorageDrivers.zip" -TargetPath $TaichiStorage  -ErrorAction SilentlyContinue 
-
+Expand-7Zip -ArchiveFileName "$TaichiDestination\ASRock-AM5-Taichi-Realtek-EthernetDrivers.zip" -TargetPath $TaichiEthernet   
+Expand-7Zip -ArchiveFileName "$TaichiDestination\ASRock-AM5-Taichi-MediaTek-WiFiDrivers.zip" -TargetPath $TaichiWiFi   
+Expand-7Zip -ArchiveFileName "$TaichiDestination\ASRock-AM5-Taichi-RAID-NVMe-StorageDrivers.zip" -TargetPath $TaichiStorage  
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
 Write-Host
