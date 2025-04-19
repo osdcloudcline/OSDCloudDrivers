@@ -86,21 +86,18 @@ Write-Host
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$TUFGamingDestination\TUFGaming-Intel-I255-I226-LANDrivers.zip" -TargetPath $TUFGamingEthernet1  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$TUFGamingDestination\TUFGaming-Realtek1-LANDrivers.zip" -TargetPath $TUFGamingEthernet2  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$TUFGamingDestination\TUFGaming-Realtek2-LANDrivers.zip" -TargetPath $TUFGamingEthernet3  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$TUFGamingDestination\TUFGaming-Realtek3-LANDrivers.zip" -TargetPath $TUFGamingEthernet4  -ErrorAction SilentlyContinue 
-
-
-Expand-7Zip -ArchiveFileName "$TUFGamingDestination\TUFGaming-Intel1-WiFiDrivers.zip" -TargetPath $TUFGamingWiFi1  -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "$TUFGamingDestination\TUFGaming-Intel2P1-WiFiDrivers.zip" -TargetPath $TUFGamingWiFi2  -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "$TUFGamingDestination\TUFGaming-Intel2P2-WiFiDrivers.zip" -TargetPath $TUFGamingWiFi3  -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "$TUFGamingDestination\TUFGaming-MediaTech-WiFiDrivers.zip" -TargetPath $TUFGamingWiFi4  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$TUFGamingDestination\TUFGaming-Realtek1-WiFiDrivers.zip" -TargetPath $TUFGamingWiFi5  -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "$TUFGamingDestination\TUFGaming-Realtek2-WiFiDrivers.zip" -TargetPath $TUFGamingWiFi6  -ErrorAction SilentlyContinue 
-
-Expand-7Zip -ArchiveFileName "$TUFGamingDestination\TUFGaming-NVMe-StorageDrivers.zip" -TargetPath $TUFGamingStorage1  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$TUFGamingDestination\TUFGaming-RAID-SATA-StorageDrivers.zip" -TargetPath $TUFGamingStorage2  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$TUFGamingDestination\TUFGaming-Intel-I255-I226-LANDrivers.zip" -TargetPath $TUFGamingEthernet1   
+Expand-7Zip -ArchiveFileName "$TUFGamingDestination\TUFGaming-Realtek1-LANDrivers.zip" -TargetPath $TUFGamingEthernet2   
+Expand-7Zip -ArchiveFileName "$TUFGamingDestination\TUFGaming-Realtek2-LANDrivers.zip" -TargetPath $TUFGamingEthernet3   
+Expand-7Zip -ArchiveFileName "$TUFGamingDestination\TUFGaming-Realtek3-LANDrivers.zip" -TargetPath $TUFGamingEthernet4   
+Expand-7Zip -ArchiveFileName "$TUFGamingDestination\TUFGaming-Intel1-WiFiDrivers.zip" -TargetPath $TUFGamingWiFi1  
+Expand-7Zip -ArchiveFileName "$TUFGamingDestination\TUFGaming-Intel2P1-WiFiDrivers.zip" -TargetPath $TUFGamingWiFi2  
+Expand-7Zip -ArchiveFileName "$TUFGamingDestination\TUFGaming-Intel2P2-WiFiDrivers.zip" -TargetPath $TUFGamingWiFi3  
+Expand-7Zip -ArchiveFileName "$TUFGamingDestination\TUFGaming-MediaTech-WiFiDrivers.zip" -TargetPath $TUFGamingWiFi4   
+Expand-7Zip -ArchiveFileName "$TUFGamingDestination\TUFGaming-Realtek1-WiFiDrivers.zip" -TargetPath $TUFGamingWiFi5  
+Expand-7Zip -ArchiveFileName "$TUFGamingDestination\TUFGaming-Realtek2-WiFiDrivers.zip" -TargetPath $TUFGamingWiFi6   
+Expand-7Zip -ArchiveFileName "$TUFGamingDestination\TUFGaming-NVMe-StorageDrivers.zip" -TargetPath $TUFGamingStorage1   
+Expand-7Zip -ArchiveFileName "$TUFGamingDestination\TUFGaming-RAID-SATA-StorageDrivers.zip" -TargetPath $TUFGamingStorage2 
 
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
