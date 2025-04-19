@@ -76,18 +76,13 @@ Write-Host
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$SteelLegendDestination\ASRock-SteelLegend-Intel-LANDrivers.zip" -TargetPath $SteelLegendEthernet1  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$SteelLegendDestination\ASRock-SteelLegend-Realtek-LANDrivers1.zip" -TargetPath $SteelLegendEthernet2  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$SteelLegendDestination\ASRock-SteelLegend-Realtek-LANDrivers2.zip" -TargetPath $SteelLegendEthernet3  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$SteelLegendDestinationn\ASRock-SteelLegend-Realtek-LANDrivers3.zip" -TargetPath $SteelLegendEthernet4  -ErrorAction SilentlyContinue 
-
-
-Expand-7Zip -ArchiveFileName "$SteelLegendDestinationn\ASRock-SteelLegend-Intel-WLANDrivers.zip" -TargetPath $SteelLegendWiFi  -ErrorAction SilentlyContinue 
-
-
-
-Expand-7Zip -ArchiveFileName "$SteelLegendDestination\ASRock-SteelLegend-NVMe-StorageDrivers.zip" -TargetPath $SteelLegendStorage1  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$SteelLegendDestination\ASRock-SteelLegend-SATA-NVMe-StorageDrivers.zip" -TargetPath $SteelLegendStorage2  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$SteelLegendDestination\ASRock-SteelLegend-Intel-LANDrivers.zip" -TargetPath $SteelLegendEthernet1   
+Expand-7Zip -ArchiveFileName "$SteelLegendDestination\ASRock-SteelLegend-Realtek-LANDrivers1.zip" -TargetPath $SteelLegendEthernet2   
+Expand-7Zip -ArchiveFileName "$SteelLegendDestination\ASRock-SteelLegend-Realtek-LANDrivers2.zip" -TargetPath $SteelLegendEthernet3   
+Expand-7Zip -ArchiveFileName "$SteelLegendDestinationn\ASRock-SteelLegend-Realtek-LANDrivers3.zip" -TargetPath $SteelLegendEthernet4   
+Expand-7Zip -ArchiveFileName "$SteelLegendDestinationn\ASRock-SteelLegend-Intel-WLANDrivers.zip" -TargetPath $SteelLegendWiFi   
+Expand-7Zip -ArchiveFileName "$SteelLegendDestination\ASRock-SteelLegend-NVMe-StorageDrivers.zip" -TargetPath $SteelLegendStorage1   
+Expand-7Zip -ArchiveFileName "$SteelLegendDestination\ASRock-SteelLegend-SATA-NVMe-StorageDrivers.zip" -TargetPath $SteelLegendStorage2 
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
 Write-Host
