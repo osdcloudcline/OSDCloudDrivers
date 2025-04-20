@@ -20,7 +20,7 @@ $LiveMixerStorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/ref
 #    LGA 1700 Ethernet and Storage Driver Download Destination
 ####################################################################################
 
-$LiveMixerDestination = "C:\OSDCloud\Drivers\Motherboards\ASRock\LGA1700\LiveMixer"
+$LiveMixerDestination = "C:\Drivers\Motherboards\ASRock\LGA1700\LiveMixer"
 
 ####################################################################################
 #   LGA 1700 Ethernet and Storage Driver Extraction Destination
@@ -30,18 +30,15 @@ $LiveMixerEthernet = "$LiveMixerDestination\Ethernet"
 
 $LiveMixerStorage = "$LiveMixerDestination\Storage"
 
-
 Write-Verbose "Processing: Downloading ASRock LGA 1700 Motherboard Ethernet Drivers from $GHURL" -Verbose
 Write-Host
 
 Save-WebFile -SourceUrl $LiveMixerEthernetURL -DestinationDirectory $LiveMixerDestination
 
-
 Write-Verbose "Processing: Downloading ASRock LGA 1700 Motherboard Storage Drivers from $GHURL" -Verbose
 Write-Host
 
 Save-WebFile -SourceUrl $LiveMixerStorageURL -DestinationDirectory $LiveMixerDestination
-
 
 Write-Verbose "Completed: ASRock LGA1700 LiveMixer Motherboard Drivers downloaded" -Verbose
 Write-Host
@@ -51,7 +48,6 @@ Write-Host
 
 Expand-7Zip -ArchiveFileName "$LiveMixerDestination\ASRock-LGA1700-LiveMixer-EthernetDrivers.zip" -TargetPath $LiveMixerEthernet1 -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$LiveMixerDestination\ASRock-LGA1700-LiveMixer-IRST-StorageDrivers.zip" -TargetPath $LiveMixerStorage  -ErrorAction SilentlyContinue 
-
 
 Write-Verbose "Completed: ZIP Files extracted successfully" -Verbose
 Write-Host
