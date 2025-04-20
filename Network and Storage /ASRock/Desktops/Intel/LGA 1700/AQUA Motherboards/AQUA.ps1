@@ -12,8 +12,6 @@ Import-Module -Name 7Zip4Powershell -Force
 #          LGA 1700 Bluetooth, Ethernet, Storage and WLAN Driver URLs
 ####################################################################################
 
-$AQUABluetoothURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/Intel/LGA%201700/AQUA%20Motherboards/Bluetooth/ASRock-LGA1700-AQUA-BluetoothDrivers.zip"
-
 $AQUAEthernet1URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/Intel/LGA%201700/AQUA%20Motherboards/Ethernet/ASRock-LGA1700-AQUA-EthernetDrivers1.zip"
 $AQUAEthernet2URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/Intel/LGA%201700/AQUA%20Motherboards/Ethernet/ASRock-LGA1700-AQUA-EthernetDrivers2.zip"
 
@@ -27,14 +25,12 @@ $AQUAWLAN2URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads
 #    LGA 1700 Bluetooth, Ethernet, Storage and WLAN Driver Download Destination
 ####################################################################################
 
-$AQUADestination = "C:\OSDCloud\Drivers\Motherboards\ASRock\LGA1700\AQUA"
+$AQUADestination = "C:\Drivers\Motherboards\ASRock\LGA1700\AQUA"
 
 
 ####################################################################################
 #   LGA 1700 Bluetooth, Ethernet, Storage and WLAN Driver Extraction Destination
 ####################################################################################
-
-$AQUABluetooth = "$AQUADestination\Bluetooth"
 
 $AQUAEthernet1 = "$AQUADestination\Ethernet1"
 $AQUAEthernet2 = "$AQUADestination\Ethernet2"
@@ -43,11 +39,6 @@ $AQUAStorage = "$AQUADestination\Storage"
 
 $AQUAWLAN1 = "$AQUADestination\WLAN1"
 $AQUAWLAN2 = "$AQUADestination\WLAN2"
-
-Write-Verbose "Processing: Downloading ASRock LGA 1700 Motherboard Bluetooth Drivers from $GHURL" -Verbose
-Write-Host
-
-Save-WebFile -SourceUrl $AQUABluetoothURL -DestinationDirectory $AQUADestination
 
 Write-Verbose "Processing: Downloading ASRock LGA 1700 Motherboard Ethernet Drivers from $GHURL" -Verbose
 Write-Host
@@ -72,7 +63,6 @@ Write-Host
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$AQUADestination\ASRock-LGA1700-AQUA-BluetoothDrivers.zip" -TargetPath $AQUABluetooth  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$AQUADestination\ASRock-LGA1700-AQUA-EthernetDrivers1.zip" -TargetPath $AQUAEthernet1 -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$AQUADestination\ASRock-LGA1700-AQUA-EthernetDrivers2.zip" -TargetPath $AQUAEthernet2  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$AQUADestination\ASRock-LGA1700-AQUA-IRST-StorageDrivers.zip" -TargetPath $AQUAStorage  -ErrorAction SilentlyContinue 
