@@ -25,7 +25,7 @@ $PROStorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/head
 #    LGA 1700 Ethernet and Storage Driver Download Destination
 ####################################################################################
 
-$PRODestination = "C:\OSDCloud\Drivers\Motherboards\ASRock\LGA1700\PRO"
+$PRODestination = "C:\Drivers\Motherboards\ASRock\LGA1700\PRO"
 
 ####################################################################################
 #   LGA 1700 Ethernet and Storage Driver Extraction Destination
@@ -56,7 +56,6 @@ Write-Host
 
 Save-WebFile -SourceUrl $PROStorageURL -DestinationDirectory $PRODestination
 
-
 Write-Verbose "Completed: ASRock LGA1700 PRO Motherboard Drivers downloaded" -Verbose
 Write-Host
 
@@ -69,9 +68,7 @@ Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-LGA1700-PRO-Killer-Ethernet
 Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-LGA1700-PRO-Killer-EthernetDrivers4.zip" -TargetPath $PROEthernet4 -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-LGA1700-PRO-Killer-EthernetDrivers5.zip" -TargetPath $PROEthernet5 -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-LGA1700-PRO-Realtek-EthernetDrivers.zip" -TargetPath $PROEthernet6 -ErrorAction SilentlyContinue 
-
 Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-LGA1700-PRO-IRST-StorageDrivers.zip" -TargetPath $PROStorage  -ErrorAction SilentlyContinue 
-
 
 Write-Verbose "Completed: ZIP Files extracted successfully" -Verbose
 Write-Host
