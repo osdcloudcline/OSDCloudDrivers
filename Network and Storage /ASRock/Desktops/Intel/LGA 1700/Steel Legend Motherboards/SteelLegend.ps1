@@ -28,7 +28,7 @@ $SteelLegendWLANURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs
 #    LGA 1700 Bluetooth, Ethernet, Storage and WLAN Driver Download Destination
 ####################################################################################
 
-$SteelLegendDestination = "C:\OSDCloud\Drivers\Motherboards\ASRock\LGA1700\SteelLegend"
+$SteelLegendDestination = "C:\Drivers\Motherboards\ASRock\LGA1700\SteelLegend"
 
 ####################################################################################
 #   LGA 1700 Bluetooth, Ethernet, Storage and WLAN Driver Extraction Destination
