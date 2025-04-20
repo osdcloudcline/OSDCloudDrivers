@@ -26,7 +26,7 @@ $ExtremeWLANURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/hea
 #    LGA 1700 Bluetooth, Ethernet, Storage and WLAN Driver Download Destination
 ####################################################################################
 
-$ExtremeDestination = "C:\OSDCloud\Drivers\Motherboards\ASRock\LGA1700\Extreme"
+$ExtremeDestination = "C:\Drivers\Motherboards\ASRock\LGA1700\Extreme"
 
 ####################################################################################
 #   LGA 1700 Bluetooth, Ethernet, Storage and WLAN Driver Extraction Destination
@@ -72,9 +72,7 @@ Expand-7Zip -ArchiveFileName "$ExtremeDestination\ASRock-LGA1700-Extreme-Intel-E
 Expand-7Zip -ArchiveFileName "$ExtremeDestination\ASRock-LGA1700-Extreme-Intel-EthernetDrivers3.zip" -TargetPath $ExtremeEthernet3 -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$ExtremeDestination\ASRock-LGA1700-Extreme-Intel-EthernetDrivers4.zip" -TargetPath $ExtremeEthernet4  -ErrorAction SilentlyContinue 
 Expand-7Zip -ArchiveFileName "$ExtremeDestination\ASRock-LGA1700-Extreme-Intel-EthernetDrivers5.zip" -TargetPath $ExtremeEthernet5 -ErrorAction SilentlyContinue 
-
 Expand-7Zip -ArchiveFileName "$ExtremeDestination\ASRock-LGA1700-Extreme-IRST-StorageDrivers.zip" -TargetPath $ExtremeStorage  -ErrorAction SilentlyContinue 
-
 Expand-7Zip -ArchiveFileName "$ExtremeDestination\ASRock-LGA1700-Extreme-Intel-Killer-WLANDrivers.zip" -TargetPath $ExtremeWLAN1  -ErrorAction SilentlyContinue 
 
 Write-Verbose "Completed: ZIP Files extracted successfully" -Verbose
