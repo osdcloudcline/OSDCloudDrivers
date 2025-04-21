@@ -22,7 +22,7 @@ $PROWLANURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/m
 #    LGA 1851 Ethernet and Storage Driver Download Destination
 ####################################################################################
 
-$PRODestination = "C:\OSDCloud\Drivers\Motherboards\ASRock\LGA1851\PRO"
+$PRODestination = "C:\Drivers\Motherboards\ASRock\LGA1851\PRO"
 
 ####################################################################################
 #   LGA 1851 Ethernet, Bluetooth, WLAN and Storage Driver Extraction Destination
