@@ -62,13 +62,13 @@ Write-Host
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-LGA1700-PRO-Killer-EthernetDrivers1.zip" -TargetPath $PROEthernet1 -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-LGA1700-PRO-Killer-EthernetDrivers2.zip" -TargetPath $PROEthernet2 -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-LGA1700-PRO-Killer-EthernetDrivers3.zip" -TargetPath $PROEthernet3 -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-LGA1700-PRO-Killer-EthernetDrivers4.zip" -TargetPath $PROEthernet4 -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-LGA1700-PRO-Killer-EthernetDrivers5.zip" -TargetPath $PROEthernet5 -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-LGA1700-PRO-Realtek-EthernetDrivers.zip" -TargetPath $PROEthernet6 -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-LGA1700-PRO-IRST-StorageDrivers.zip" -TargetPath $PROStorage  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-LGA1700-PRO-Killer-EthernetDrivers1.zip" -TargetPath $PROEthernet1  
+Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-LGA1700-PRO-Killer-EthernetDrivers2.zip" -TargetPath $PROEthernet2  
+Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-LGA1700-PRO-Killer-EthernetDrivers3.zip" -TargetPath $PROEthernet3  
+Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-LGA1700-PRO-Killer-EthernetDrivers4.zip" -TargetPath $PROEthernet4  
+Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-LGA1700-PRO-Killer-EthernetDrivers5.zip" -TargetPath $PROEthernet5  
+Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-LGA1700-PRO-Realtek-EthernetDrivers.zip" -TargetPath $PROEthernet6  
+Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-LGA1700-PRO-IRST-StorageDrivers.zip" -TargetPath $PROStorage  
 
 Write-Verbose "Completed: ZIP Files extracted successfully" -Verbose
 Write-Host
