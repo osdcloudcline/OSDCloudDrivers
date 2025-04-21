@@ -63,11 +63,11 @@ Write-Host
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$AQUADestination\ASRock-LGA1700-AQUA-EthernetDrivers1.zip" -TargetPath $AQUAEthernet1 -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$AQUADestination\ASRock-LGA1700-AQUA-EthernetDrivers2.zip" -TargetPath $AQUAEthernet2  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$AQUADestination\ASRock-LGA1700-AQUA-IRST-StorageDrivers.zip" -TargetPath $AQUAStorage  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$AQUADestination\ASRock-LGA1700-AQUA-WLANDrivers1.zip" -TargetPath $AQUAWLAN1  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$AQUADestination\ASRock-LGA1700-AQUA-WLANDrivers2.zip" -TargetPath $AQUAWLAN2  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$AQUADestination\ASRock-LGA1700-AQUA-EthernetDrivers1.zip" -TargetPath $AQUAEthernet1  
+Expand-7Zip -ArchiveFileName "$AQUADestination\ASRock-LGA1700-AQUA-EthernetDrivers2.zip" -TargetPath $AQUAEthernet2   
+Expand-7Zip -ArchiveFileName "$AQUADestination\ASRock-LGA1700-AQUA-IRST-StorageDrivers.zip" -TargetPath $AQUAStorage   
+Expand-7Zip -ArchiveFileName "$AQUADestination\ASRock-LGA1700-AQUA-WLANDrivers1.zip" -TargetPath $AQUAWLAN1   
+Expand-7Zip -ArchiveFileName "$AQUADestination\ASRock-LGA1700-AQUA-WLANDrivers2.zip" -TargetPath $AQUAWLAN2  
 
 Write-Verbose "Completed: ZIP Files extracted successfully" -Verbose
 Write-Host
