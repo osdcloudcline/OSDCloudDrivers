@@ -70,14 +70,14 @@ Write-Host
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$PhantomGamingDestination\ASRock-LGA1700-PhantomGaming-Intel-EthernetDrivers1.zip" -TargetPath $PhantomGamingEthernet1  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PhantomGamingDestination\ASRock-LGA1700-PhantomGaming-Intel-EthernetDrivers2.zip" -TargetPath $PhantomGamingEthernet2 -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PhantomGamingDestination\ASRock-LGA1700-PhantomGaming-Intel-EthernetDrivers3.zip" -TargetPath $PhantomGamingEthernet3  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PhantomGamingDestination\ASRock-LGA1700-PhantomGaming-Intel-EthernetDrivers4.zip" -TargetPath $PhantomGamingEthernet4 -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PhantomGamingDestination\ASRock-LGA1700-PhantomGaming-Realtek-EthernetDrivers5.zip" -TargetPath $PhantomGamingEthernet5 -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PhantomGamingDestination\ASRock-LGA1700-PhantomGaming-IRST-StorageDrivers.zip" -TargetPath $PhantomGamingStorage  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PhantomGamingDestination\ASRock-LGA1700-PhantomGaming-Intel-Killer-WLANDrivers.zip" -TargetPath $PhantomGamingWLAN1  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PhantomGamingDestination\ASRock-LGA1700-PhantomGaming-Mediatek-WLANDrivers.zip" -TargetPath $PhantomGamingWLAN2  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$PhantomGamingDestination\ASRock-LGA1700-PhantomGaming-Intel-EthernetDrivers1.zip" -TargetPath $PhantomGamingEthernet1   
+Expand-7Zip -ArchiveFileName "$PhantomGamingDestination\ASRock-LGA1700-PhantomGaming-Intel-EthernetDrivers2.zip" -TargetPath $PhantomGamingEthernet2  
+Expand-7Zip -ArchiveFileName "$PhantomGamingDestination\ASRock-LGA1700-PhantomGaming-Intel-EthernetDrivers3.zip" -TargetPath $PhantomGamingEthernet3   
+Expand-7Zip -ArchiveFileName "$PhantomGamingDestination\ASRock-LGA1700-PhantomGaming-Intel-EthernetDrivers4.zip" -TargetPath $PhantomGamingEthernet4  
+Expand-7Zip -ArchiveFileName "$PhantomGamingDestination\ASRock-LGA1700-PhantomGaming-Realtek-EthernetDrivers5.zip" -TargetPath $PhantomGamingEthernet5  
+Expand-7Zip -ArchiveFileName "$PhantomGamingDestination\ASRock-LGA1700-PhantomGaming-IRST-StorageDrivers.zip" -TargetPath $PhantomGamingStorage   
+Expand-7Zip -ArchiveFileName "$PhantomGamingDestination\ASRock-LGA1700-PhantomGaming-Intel-Killer-WLANDrivers.zip" -TargetPath $PhantomGamingWLAN1   
+Expand-7Zip -ArchiveFileName "$PhantomGamingDestination\ASRock-LGA1700-PhantomGaming-Mediatek-WLANDrivers.zip" -TargetPath $PhantomGamingWLAN2   
 
 Write-Verbose "Completed: ZIP Files extracted successfully" -Verbose
 Write-Host
