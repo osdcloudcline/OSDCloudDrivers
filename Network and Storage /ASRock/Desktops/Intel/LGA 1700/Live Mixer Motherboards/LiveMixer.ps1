@@ -46,8 +46,8 @@ Write-Host
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$LiveMixerDestination\ASRock-LGA1700-LiveMixer-EthernetDrivers.zip" -TargetPath $LiveMixerEthernet1 -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$LiveMixerDestination\ASRock-LGA1700-LiveMixer-IRST-StorageDrivers.zip" -TargetPath $LiveMixerStorage  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$LiveMixerDestination\ASRock-LGA1700-LiveMixer-EthernetDrivers.zip" -TargetPath $LiveMixerEthernet  
+Expand-7Zip -ArchiveFileName "$LiveMixerDestination\ASRock-LGA1700-LiveMixer-IRST-StorageDrivers.zip" -TargetPath $LiveMixerStorage 
 
 Write-Verbose "Completed: ZIP Files extracted successfully" -Verbose
 Write-Host
