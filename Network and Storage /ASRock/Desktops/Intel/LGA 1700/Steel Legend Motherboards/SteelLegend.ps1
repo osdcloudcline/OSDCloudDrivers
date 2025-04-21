@@ -71,14 +71,14 @@ Write-Host
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$SteelLegendDestination\ASRock-LGA1700-SteelLegend-Killer-EthernetDrivers1.zip" -TargetPath $SteelLegendEthernet1 -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$SteelLegendDestination\ASRock-LGA1700-SteelLegend-Killer-EthernetDrivers2.zip" -TargetPath $SteelLegendEthernet2  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$SteelLegendDestination\ASRock-LGA1700-SteelLegend-Killer-EthernetDrivers3.zip" -TargetPath $SteelLegendEthernet3 -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$SteelLegendDestination\ASRock-LGA1700-SteelLegend-Killer-EthernetDrivers4.zip" -TargetPath $SteelLegendEthernet4  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$SteelLegendDestination\ASRock-LGA1700-SteelLegend-Killer-EthernetDrivers5.zip" -TargetPath $SteelLegendEthernet5 -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$SteelLegendDestination\ASRock-LGA1700-SteelLegend-Realtek-EthernetDrivers.zip" -TargetPath $SteelLegendEthernet6 -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$SteelLegendDestination\ASRock-LGA1700-SteelLegend-IRST-StorageDrivers.zip" -TargetPath $SteelLegendStorage  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$SteelLegendDestination\ASRock-LGA1700-SteelLegend-Intel-Killer-WLANDrivers.zip" -TargetPath $SteelLegendWLAN  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$SteelLegendDestination\ASRock-LGA1700-SteelLegend-Killer-EthernetDrivers1.zip" -TargetPath $SteelLegendEthernet1  
+Expand-7Zip -ArchiveFileName "$SteelLegendDestination\ASRock-LGA1700-SteelLegend-Killer-EthernetDrivers2.zip" -TargetPath $SteelLegendEthernet2   
+Expand-7Zip -ArchiveFileName "$SteelLegendDestination\ASRock-LGA1700-SteelLegend-Killer-EthernetDrivers3.zip" -TargetPath $SteelLegendEthernet3  
+Expand-7Zip -ArchiveFileName "$SteelLegendDestination\ASRock-LGA1700-SteelLegend-Killer-EthernetDrivers4.zip" -TargetPath $SteelLegendEthernet4   
+Expand-7Zip -ArchiveFileName "$SteelLegendDestination\ASRock-LGA1700-SteelLegend-Killer-EthernetDrivers5.zip" -TargetPath $SteelLegendEthernet5  
+Expand-7Zip -ArchiveFileName "$SteelLegendDestination\ASRock-LGA1700-SteelLegend-Realtek-EthernetDrivers.zip" -TargetPath $SteelLegendEthernet6  
+Expand-7Zip -ArchiveFileName "$SteelLegendDestination\ASRock-LGA1700-SteelLegend-IRST-StorageDrivers.zip" -TargetPath $SteelLegendStorage   
+Expand-7Zip -ArchiveFileName "$SteelLegendDestination\ASRock-LGA1700-SteelLegend-Intel-Killer-WLANDrivers.zip" -TargetPath $SteelLegendWLAN  
 
 Write-Verbose "Completed: ZIP Files extracted successfully" -Verbose
 Write-Host
