@@ -56,9 +56,9 @@ Write-Host
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$TaichiDestination\ASRock-LGA1700-Taichi-Intel-EthernetDrivers.zip" -TargetPath $TaichiEthernet  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$TaichiDestination\ASRock-LGA1700-Taichi-IRST-StorageDrivers.zip" -TargetPath $TaichiStorage  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$TaichiDestination\ASRock-LGA1700-Taichi-Intel-Killer-WLANDrivers.zip" -TargetPath $TaichiWLAN  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$TaichiDestination\ASRock-LGA1700-Taichi-Intel-EthernetDrivers.zip" -TargetPath $TaichiEthernet   
+Expand-7Zip -ArchiveFileName "$TaichiDestination\ASRock-LGA1700-Taichi-IRST-StorageDrivers.zip" -TargetPath $TaichiStorage   
+Expand-7Zip -ArchiveFileName "$TaichiDestination\ASRock-LGA1700-Taichi-Intel-Killer-WLANDrivers.zip" -TargetPath $TaichiWLAN   
 
 Write-Verbose "Completed: ZIP Files extracted successfully" -Verbose
 Write-Host
