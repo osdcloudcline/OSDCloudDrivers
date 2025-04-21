@@ -12,8 +12,6 @@ Import-Module -Name 7Zip4Powershell -Force
 #          LGA 1851 Ethernet and Storage Driver URLs
 ####################################################################################
 
-$LiveMixerBluetoothURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/Intel/LGA%201851/Live%20Mixer%20Motherboards/Bluetooth/ASRock-LGA1851-LiveMixer-BluetoothDrivers.zip"
-
 $LiveMixerEthernetURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/Intel/LGA%201851/Live%20Mixer%20Motherboards/Ethernet/ASRock-LGA1851-LiveMixer-Realtek-EthernetDrivers.zip"
 
 $LiveMixerStorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/Intel/LGA%201851/Live%20Mixer%20Motherboards/Storage/ASRock-LGA1851-LiveMixer-IRST-StorageDrivers.zip"
@@ -32,8 +30,6 @@ $LiveMixerDestination = "C:\OSDCloud\Drivers\Motherboards\ASRock\LGA1851\LiveMix
 
 $LiveMixerEthernet = "$LiveMixerDestination\Ethernet"
 
-$LiveMixerBluetooth = "$LiveMixerDestination\Bluetooth"
-
 $LiveMixerWLAN = "$LiveMixerDestination\WLAN"
 
 $LiveMixerStorage = "$LiveMixerDestination\Storage"
@@ -48,11 +44,6 @@ Write-Host
 
 Save-WebFile -SourceUrl $LiveMixerStorageURL -DestinationDirectory $LiveMixerDestination
 
-Write-Verbose "Processing: Downloading ASRock LGA 1851 Motherboard Bluetooth Drivers from $GHURL" -Verbose
-Write-Host
-
-Save-WebFile -SourceUrl $LiveMixerBluetoothURL -DestinationDirectory $LiveMixerDestination
-
 Write-Verbose "Processing: Downloading ASRock LGA 1851 Motherboard WLAN Drivers from $GHURL" -Verbose
 Write-Host
 
@@ -64,10 +55,9 @@ Write-Host
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$LiveMixerDestination\ASRock-LGA1851-LiveMixer-BluetoothDrivers.zip" -TargetPath $LiveMixerBluetooth -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$LiveMixerDestination\ASRock-LGA1851-LiveMixer-IRST-StorageDrivers.zip" -TargetPath $LiveMixerStorage  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$LiveMixerDestination\ASRock-LGA1851-LiveMixer-Realtek-EthernetDrivers.zip" -TargetPath $LiveMixerEthernet -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$LiveMixerDestination\ASRock-LGA1851-LiveMixer-WLANDrivers.zip" -TargetPath $LiveMixerWLAN  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$LiveMixerDestination\ASRock-LGA1851-LiveMixer-IRST-StorageDrivers.zip" -TargetPath $LiveMixerStorage   
+Expand-7Zip -ArchiveFileName "$LiveMixerDestination\ASRock-LGA1851-LiveMixer-Realtek-EthernetDrivers.zip" -TargetPath $LiveMixerEthernet  
+Expand-7Zip -ArchiveFileName "$LiveMixerDestination\ASRock-LGA1851-LiveMixer-WLANDrivers.zip" -TargetPath $LiveMixerWLAN
 
 Write-Verbose "Completed: ZIP Files extracted successfully" -Verbose
 Write-Host
