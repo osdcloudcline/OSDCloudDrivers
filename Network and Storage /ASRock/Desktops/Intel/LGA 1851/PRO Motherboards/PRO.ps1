@@ -18,8 +18,6 @@ $PROStorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/head
 
 $PROWLANURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/Intel/LGA%201851/PRO%20Motherboards/WLAN/ASRock-LGA1851-PRO-WLANDrivers.zip"
 
-$PROBluetoothURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/Intel/LGA%201851/PRO%20Motherboards/Bluetooth/ASRock-LGA1851-PRO-BluetoothDrivers.zip"
-
 ####################################################################################
 #    LGA 1851 Ethernet and Storage Driver Download Destination
 ####################################################################################
@@ -33,8 +31,6 @@ $PRODestination = "C:\OSDCloud\Drivers\Motherboards\ASRock\LGA1851\PRO"
 $PROEthernet = "$PRODestination\Ethernet"
 
 $PROStorage = "$PRODestination\Storage"
-
-$PROBluetooth = "$PRODestination\Bluetooth"
 
 $PROWLAN = "$PRODestination\WLAN"
 
@@ -55,26 +51,15 @@ Write-Host
 
 Save-WebFile -SourceUrl $PROWLANURL -DestinationDirectory $PRODestination
 
-
-Write-Verbose "Processing: Downloading ASRock LGA 1851 Motherboard Bluetooth Drivers from $GHURL" -Verbose
-Write-Host
-
-Save-WebFile -SourceUrl $PROBluetoothURL -DestinationDirectory $PRODestination
-
 Write-Verbose "Completed: ASRock LGA1851 PRO Motherboard Drivers downloaded" -Verbose
 Write-Host
 
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-LGA1851-PRO-Realtek-EthernetDrivers.zip" -TargetPath $PROEthernet -ErrorAction SilentlyContinue 
-
-Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-LGA1851-PRO-IRST-StorageDrivers.zip" -TargetPath $PROStorage  -ErrorAction SilentlyContinue 
-
-Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-LGA1851-PRO-BluetoothDrivers.zip" -TargetPath $PROBluetooth -ErrorAction SilentlyContinue 
-
-Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-LGA1851-PRO-WLANDrivers.zip" -TargetPath $PROWLAN  -ErrorAction SilentlyContinue 
-
+Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-LGA1851-PRO-Realtek-EthernetDrivers.zip" -TargetPath $PROEthernet  
+Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-LGA1851-PRO-IRST-StorageDrivers.zip" -TargetPath $PROStorage   
+Expand-7Zip -ArchiveFileName "$PRODestination\ASRock-LGA1851-PRO-WLANDrivers.zip" -TargetPath $PROWLAN 
 
 Write-Verbose "Completed: ZIP Files extracted successfully" -Verbose
 Write-Host
