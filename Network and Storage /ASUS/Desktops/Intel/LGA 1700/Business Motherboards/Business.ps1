@@ -23,7 +23,7 @@ $BusinessStorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs
 #             LGA 1700 Ethernet, WiFi and Storage Driver Download Destination
 ####################################################################################
 
-$BusinessDestination = "C:\OSDCloud\Drivers\Motherboards\ASUS\LGA1700\Business"
+$BusinessDestination = "C:\Drivers\Motherboards\ASUS\LGA1700\Business"
 
 ####################################################################################
 #             LGA 1700 Ethernet, WiFi and Storage Driver Extraction Destination
@@ -33,9 +33,9 @@ $BusinessEthernet1 = "$BusinessDestination\Ethernet1"
 $BusinessEthernet2 = "$BusinessDestination\Ethernet2"
 $BusinessEthernet3 = "$BusinessDestination\Ethernet3"
 $BusinessEthernet4 = "$BusinessDestination\Ethernet4"
-$BusinessWiFi1 = "$BusinessDestination\WiFi1"
-$BusinessWiFi2 = "$BusinessDestination\WiFi2"
-$BusinessWiFi3 = "$BusinessDestination\WiFi3"
+$BusinessWiFi1 = "$BusinessDestination\WLAN1"
+$BusinessWiFi2 = "$BusinessDestination\WLAN2"
+$BusinessWiFi3 = "$BusinessDestination\WLAN3"
 $BusinessStorage = "$BusinessDestination\Storage"
 
 Import-Module -Name OSD -Force
