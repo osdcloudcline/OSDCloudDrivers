@@ -22,7 +22,7 @@ $SteelLegendWLANURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs
 #    LGA 1851 Ethernet and Storage Driver Download Destination
 ####################################################################################
 
-$SteelLegendDestination = "C:\OSDCloud\Drivers\Motherboards\ASRock\LGA1851\SteelLegend"
+$SteelLegendDestination = "C:\Drivers\Motherboards\ASRock\LGA1851\SteelLegend"
 
 ####################################################################################
 #   LGA 1851 Ethernet, Bluetooth, WLAN and Storage Driver Extraction Destination
