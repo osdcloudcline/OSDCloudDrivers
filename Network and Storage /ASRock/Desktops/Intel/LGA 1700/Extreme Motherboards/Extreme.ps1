@@ -67,13 +67,13 @@ Write-Host
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$ExtremeDestination\ASRock-LGA1700-Extreme-Intel-EthernetDrivers1.zip" -TargetPath $ExtremeEthernet1 -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$ExtremeDestination\ASRock-LGA1700-Extreme-Intel-EthernetDrivers2.zip" -TargetPath $ExtremeEthernet2  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$ExtremeDestination\ASRock-LGA1700-Extreme-Intel-EthernetDrivers3.zip" -TargetPath $ExtremeEthernet3 -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$ExtremeDestination\ASRock-LGA1700-Extreme-Intel-EthernetDrivers4.zip" -TargetPath $ExtremeEthernet4  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$ExtremeDestination\ASRock-LGA1700-Extreme-Intel-EthernetDrivers5.zip" -TargetPath $ExtremeEthernet5 -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$ExtremeDestination\ASRock-LGA1700-Extreme-IRST-StorageDrivers.zip" -TargetPath $ExtremeStorage  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$ExtremeDestination\ASRock-LGA1700-Extreme-Intel-Killer-WLANDrivers.zip" -TargetPath $ExtremeWLAN1  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$ExtremeDestination\ASRock-LGA1700-Extreme-Intel-EthernetDrivers1.zip" -TargetPath $ExtremeEthernet1  
+Expand-7Zip -ArchiveFileName "$ExtremeDestination\ASRock-LGA1700-Extreme-Intel-EthernetDrivers2.zip" -TargetPath $ExtremeEthernet2   
+Expand-7Zip -ArchiveFileName "$ExtremeDestination\ASRock-LGA1700-Extreme-Intel-EthernetDrivers3.zip" -TargetPath $ExtremeEthernet3  
+Expand-7Zip -ArchiveFileName "$ExtremeDestination\ASRock-LGA1700-Extreme-Intel-EthernetDrivers4.zip" -TargetPath $ExtremeEthernet4   
+Expand-7Zip -ArchiveFileName "$ExtremeDestination\ASRock-LGA1700-Extreme-Intel-EthernetDrivers5.zip" -TargetPath $ExtremeEthernet5  
+Expand-7Zip -ArchiveFileName "$ExtremeDestination\ASRock-LGA1700-Extreme-IRST-StorageDrivers.zip" -TargetPath $ExtremeStorage   
+Expand-7Zip -ArchiveFileName "$ExtremeDestination\ASRock-LGA1700-Extreme-Intel-Killer-WLANDrivers.zip" -TargetPath $ExtremeWLAN1 
 
 Write-Verbose "Completed: ZIP Files extracted successfully" -Verbose
 Write-Host
