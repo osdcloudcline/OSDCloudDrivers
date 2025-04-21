@@ -22,7 +22,7 @@ $LiveMixerWLANURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/h
 #    LGA 1851 Ethernet and Storage Driver Download Destination
 ####################################################################################
 
-$LiveMixerDestination = "C:\OSDCloud\Drivers\Motherboards\ASRock\LGA1851\LiveMixer"
+$LiveMixerDestination = "C:\Drivers\Motherboards\ASRock\LGA1851\LiveMixer"
 
 ####################################################################################
 #   LGA 1851 Ethernet and Storage Driver Extraction Destination
