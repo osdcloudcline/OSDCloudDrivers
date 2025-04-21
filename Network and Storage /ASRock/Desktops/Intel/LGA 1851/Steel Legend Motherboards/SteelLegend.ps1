@@ -18,8 +18,6 @@ $SteelLegendStorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/r
 
 $SteelLegendWLANURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/Intel/LGA%201851/Steel%20Legend%20Motherboards/WLAN/ASRock-LGA1851-SteelLegend-WLANDrivers.zip"
 
-$SteelLegendBluetoothURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/Intel/LGA%201851/Steel%20Legend%20Motherboards/Bluetooth/ASRock-LGA1851-SteelLegend-BluetoothDrivers.zip"
-
 ####################################################################################
 #    LGA 1851 Ethernet and Storage Driver Download Destination
 ####################################################################################
@@ -34,46 +32,32 @@ $SteelLegendEthernet = "$SteelLegendDestination\Ethernet"
 
 $SteelLegendStorage = "$SteelLegendDestination\Storage"
 
-$SteelLegendBluetooth = "$SteelLegendDestination\Bluetooth"
-
 $SteelLegendWLAN = "$SteelLegendDestination\WLAN"
 
-Write-Verbose "SteelLegendcessing: Downloading ASRock LGA 1851 Motherboard Ethernet Drivers from $GHURL" -Verbose
+Write-Verbose "Processing: Downloading ASRock LGA 1851 Motherboard Ethernet Drivers from $GHURL" -Verbose
 Write-Host
 
 Save-WebFile -SourceUrl $SteelLegendEthernetURL -DestinationDirectory $SteelLegendDestination
 
-
-Write-Verbose "SteelLegendcessing: Downloading ASRock LGA 1851 Motherboard Storage Drivers from $GHURL" -Verbose
+Write-Verbose "Processing: Downloading ASRock LGA 1851 Motherboard Storage Drivers from $GHURL" -Verbose
 Write-Host
 
 Save-WebFile -SourceUrl $SteelLegendStorageURL -DestinationDirectory $SteelLegendDestination
 
-
-Write-Verbose "SteelLegendcessing: Downloading ASRock LGA 1851 Motherboard WLAN Drivers from $GHURL" -Verbose
+Write-Verbose "Processing: Downloading ASRock LGA 1851 Motherboard WLAN Drivers from $GHURL" -Verbose
 Write-Host
 
 Save-WebFile -SourceUrl $SteelLegendWLANURL -DestinationDirectory $SteelLegendDestination
 
-
-Write-Verbose "SteelLegendcessing: Downloading ASRock LGA 1851 Motherboard Bluetooth Drivers from $GHURL" -Verbose
-Write-Host
-
-Save-WebFile -SourceUrl $SteelLegendBluetoothURL -DestinationDirectory $SteelLegendDestination
-
 Write-Verbose "Completed: ASRock LGA1851 SteelLegend Motherboard Drivers downloaded" -Verbose
 Write-Host
 
-Write-Verbose "SteelLegendcessing: ZIP File extraction" -Verbose
+Write-Verbose "Processing: ZIP File extraction" -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$SteelLegendDestination\ASRock-LGA1851-SteelLegend-Realtek-EthernetDrivers.zip" -TargetPath $SteelLegendEthernet -ErrorAction SilentlyContinue 
-
-Expand-7Zip -ArchiveFileName "$SteelLegendDestination\ASRock-LGA1851-SteelLegend-IRST-StorageDrivers.zip" -TargetPath $SteelLegendStorage  -ErrorAction SilentlyContinue 
-
-Expand-7Zip -ArchiveFileName "$SteelLegendDestination\ASRock-LGA1851-SteelLegend-BluetoothDrivers.zip" -TargetPath $SteelLegendBluetooth -ErrorAction SilentlyContinue 
-
-Expand-7Zip -ArchiveFileName "$SteelLegendDestination\ASRock-LGA1851-SteelLegend-WLANDrivers.zip" -TargetPath $SteelLegendWLAN  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$SteelLegendDestination\ASRock-LGA1851-SteelLegend-Realtek-EthernetDrivers.zip" -TargetPath $SteelLegendEthernet  
+Expand-7Zip -ArchiveFileName "$SteelLegendDestination\ASRock-LGA1851-SteelLegend-IRST-StorageDrivers.zip" -TargetPath $SteelLegendStorage   
+Expand-7Zip -ArchiveFileName "$SteelLegendDestination\ASRock-LGA1851-SteelLegend-WLANDrivers.zip" -TargetPath $SteelLegendWLAN 
 
 
 Write-Verbose "Completed: ZIP Files extracted successfully" -Verbose
