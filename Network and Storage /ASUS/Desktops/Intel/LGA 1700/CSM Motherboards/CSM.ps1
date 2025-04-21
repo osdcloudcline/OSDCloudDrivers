@@ -23,7 +23,7 @@ $CSMStorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/head
 #             LGA 1700 Ethernet, WiFi and Storage Driver Download Destination
 ####################################################################################
 
-$CSMDestination = "C:\OSDCloud\Drivers\Motherboards\ASUS\LGA1700\CSM"
+$CSMDestination = "C:\Drivers\Motherboards\ASUS\LGA1700\CSM"
 
 ####################################################################################
 #             LGA 1700 Ethernet, WiFi and Storage Driver Extraction Destination
@@ -33,9 +33,9 @@ $CSMEthernet1 = "$CSMDestination\Ethernet1"
 $CSMEthernet2 = "$CSMDestination\Ethernet2"
 $CSMEthernet3 = "$CSMDestination\Ethernet3"
 $CSMEthernet4 = "$CSMDestination\Ethernet4"
-$CSMWiFi1 = "$CSMDestination\WiFi1"
-$CSMWiFi2 = "$CSMDestination\WiFi2"
-$CSMWiFi3 = "$CSMDestination\WiFi3"
+$CSMWiFi1 = "$CSMDestination\WLAN1"
+$CSMWiFi2 = "$CSMDestination\WLAN2"
+$CSMWiFi3 = "$CSMDestination\WLAN3"
 $CSMStorage = "$CSMDestination\Storage"
 
 Import-Module -Name OSD -Force
