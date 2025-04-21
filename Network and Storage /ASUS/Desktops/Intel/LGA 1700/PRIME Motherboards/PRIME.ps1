@@ -13,7 +13,7 @@ $PRIMEEthernetURL1 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/
 $PRIMEEthernetURL2 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201700/PRIME%20Motherboards/Ethernet%20and%20WiFi/Realtek-LANDrivers-1.zip"
 $PRIMEEthernetURL3 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201700/PRIME%20Motherboards/Ethernet%20and%20WiFi/Realtek-LANDrivers-2.zip"
 $PRIMEEthernetURL4 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201700/PRIME%20Motherboards/Ethernet%20and%20WiFi/Realtek-LANDrivers-3.zip"
-$PRIMEWiFiURL1 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201700/PRIME%20Motherboards/Ethernet%20and%20WiFi/MediaTek-WiFiDrivers.zipp"
+$PRIMEWiFiURL1 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201700/PRIME%20Motherboards/Ethernet%20and%20WiFi/MediaTek-WiFiDrivers.zip"
 $PRIMEWiFiURL2 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201700/PRIME%20Motherboards/Ethernet%20and%20WiFi/Realtek-WiFiDrivers.zip"
 $PRIMEStorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201700/PRIME%20Motherboards/Storage/IRST-StorageDriver.zip"
 
@@ -69,7 +69,7 @@ Expand-7Zip -ArchiveFileName "$PRIMEDestination\Realtek-LANDrivers-2.zip" -Targe
 Expand-7Zip -ArchiveFileName "$PRIMEDestination\Realtek-LANDrivers-3.zip" -TargetPath $PRIMEEthernet4   
 Expand-7Zip -ArchiveFileName "$PRIMEDestination\MediaTek-WiFiDrivers.zip" -TargetPath $PRIMEWiFi1   
 Expand-7Zip -ArchiveFileName "$PRIMEDestination\Realtek-WiFiDrivers.zip" -TargetPath $PRIMEWiFi2  
-Expand-7Zip -ArchiveFileName "$PRIMEDestination\IRSTDrivers.zip" -TargetPath $PRIMEStorage 
+Expand-7Zip -ArchiveFileName "$PRIMEDestination\IRSTDriver.zip" -TargetPath $PRIMEStorage 
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
 
