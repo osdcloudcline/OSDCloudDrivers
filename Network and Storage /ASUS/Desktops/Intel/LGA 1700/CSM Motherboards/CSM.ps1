@@ -65,9 +65,9 @@ Write-Verbose "ASUS LGA 1700 CSM Motherboard Drivers downloaded" -Verbose
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 
 Expand-7Zip -ArchiveFileName "$CSMDestination\Intel-I219-LANDrivers.zip" -TargetPath $CSMEthernet1   
-Expand-7Zip -ArchiveFileName "$CSMDestination\Realtek-LANDriver-1.zip" -TargetPath $CSMEthernet2   
-Expand-7Zip -ArchiveFileName "$CSMDestination\Realtek-LANDriver-2.zip" -TargetPath $CSMEthernet3   
-Expand-7Zip -ArchiveFileName "$CSMDestination\Realtek-LANDriver-3.zip" -TargetPath $CSMEthernet4   
+Expand-7Zip -ArchiveFileName "$CSMDestination\Realtek-LANDrivers-1.zip" -TargetPath $CSMEthernet2   
+Expand-7Zip -ArchiveFileName "$CSMDestination\Realtek-LANDrivers-2.zip" -TargetPath $CSMEthernet3   
+Expand-7Zip -ArchiveFileName "$CSMDestination\Realtek-LANDrivers-3.zip" -TargetPath $CSMEthernet4   
 Expand-7Zip -ArchiveFileName "$CSMDestination\MediaTek-WiFiDrivers.zip" -TargetPath $CSMWiFi1   
 Expand-7Zip -ArchiveFileName "$CSMDestination\Realtek-WiFiDrivers-1.zip" -TargetPath $CSMWiFi2  
 Expand-7Zip -ArchiveFileName "$CSMDestination\Realtek-WiFiDrivers-2.zip" -TargetPath $CSMWiFi3   
