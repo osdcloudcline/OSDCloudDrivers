@@ -26,7 +26,7 @@ $AEROStorage2URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/he
 #             LGA 1700 Ethernet, WiFi and Storage Driver Download Destination
 ####################################################################################
 
-$AERODestination = "C:\Drivers\Motherboards\Gigabyte\LGA 1700\AERO"
+$AERODestination = "C:\Drivers\Motherboards\Gigabyte\LGA1700\AERO"
 
 ####################################################################################
 #             LGA 1700 Ethernet, WiFi and Storage Driver Extraction Destination
