@@ -22,7 +22,6 @@ $TUFGamingWiFiURL6 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/
 
 $TUFGamingStorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201700/TUF%20Gaming%20Motherboards/Storage/IRST-StorageDrivers.zip"
 
-
 ####################################################################################
 #             LGA 1700 Ethernet, WiFi and Storage Driver Download Destination
 ####################################################################################
@@ -42,7 +41,6 @@ $TUFGamingWiFi3 = "$TUFGamingDestination\WLAN3"
 $TUFGamingWiFi4 = "$TUFGamingDestination\WLAN4"
 $TUFGamingWiFi5 = "$TUFGamingDestination\WLAN5"
 $TUFGamingWiFi6 = "$TUFGamingDestination\WLAN6"
-
 
 $TUFGamingStorage = "$TUFGamingDestination\Storage"
 
