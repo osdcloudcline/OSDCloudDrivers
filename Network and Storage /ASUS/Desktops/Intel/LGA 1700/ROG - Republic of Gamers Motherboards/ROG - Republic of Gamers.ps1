@@ -127,7 +127,7 @@ Expand-7Zip -ArchiveFileName "$ROGDestination\Intel-WiFiDrivers-15.zip" -TargetP
 Expand-7Zip -ArchiveFileName "$ROGDestination\Intel-WiFiDrivers-16.zip" -TargetPath $ROGWiFi16   
 Expand-7Zip -ArchiveFileName "$ROGDestination\Intel-WiFiDrivers-17.zip" -TargetPath $ROGWiFi17 
  
-Expand-7Zip -ArchiveFileName "$ROGDestination\IRSTDriver.zip" -TargetPath $ROGStorage 
+Expand-7Zip -ArchiveFileName "$ROGDestination\IRST-StorageDriver.zip" -TargetPath $ROGStorage 
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
 
