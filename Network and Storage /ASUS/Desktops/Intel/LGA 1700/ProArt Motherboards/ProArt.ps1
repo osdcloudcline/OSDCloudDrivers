@@ -99,7 +99,7 @@ Expand-7Zip -ArchiveFileName "$ProArtDestination\Intel-WiFiDrivers-7.zip" -Targe
 Expand-7Zip -ArchiveFileName "$ProArtDestination\Intel-WiFiDrivers-8.zip" -TargetPath $ProArtWiFi8 
 Expand-7Zip -ArchiveFileName "$ProArtDestination\Intel-WiFiDrivers-9.zip" -TargetPath $ProArtWiFi9   
  
-Expand-7Zip -ArchiveFileName "$ProArtDestination\IRSTDriver.zip" -TargetPath $ProArtStorage 
+Expand-7Zip -ArchiveFileName "$ProArtDestination\IRST-Driver.zip" -TargetPath $ProArtStorage 
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
 
