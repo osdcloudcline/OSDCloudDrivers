@@ -71,7 +71,7 @@ Expand-7Zip -ArchiveFileName "$CSMDestination\Realtek-LANDrivers-3.zip" -TargetP
 Expand-7Zip -ArchiveFileName "$CSMDestination\MediaTek-WiFiDrivers.zip" -TargetPath $CSMWiFi1   
 Expand-7Zip -ArchiveFileName "$CSMDestination\Realtek-WiFiDrivers-1.zip" -TargetPath $CSMWiFi2  
 Expand-7Zip -ArchiveFileName "$CSMDestination\Realtek-WiFiDrivers-2.zip" -TargetPath $CSMWiFi3   
-Expand-7Zip -ArchiveFileName "$CSMDestination\IRSTDrivers.zip" -TargetPath $CSMStorage 
+Expand-7Zip -ArchiveFileName "$CSMDestination\IRST-StorageDrivers.zip" -TargetPath $CSMStorage 
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
 
