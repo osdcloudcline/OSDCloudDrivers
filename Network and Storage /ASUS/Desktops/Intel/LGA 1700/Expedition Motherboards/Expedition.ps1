@@ -48,7 +48,7 @@ Write-Verbose "Processing: ZIP File extraction" -Verbose
 
 Expand-7Zip -ArchiveFileName "$ExpeditionDestination\Realtek-LANDrivers.zip" -TargetPath $ExpeditionEthernet  
 
-Expand-7Zip -ArchiveFileName "$ExpeditionDestination\IRSTDrivers.zip" -TargetPath $ExpeditionStorage  
+Expand-7Zip -ArchiveFileName "$ExpeditionDestination\IRST-StorageDrivers.zip" -TargetPath $ExpeditionStorage  
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
 
