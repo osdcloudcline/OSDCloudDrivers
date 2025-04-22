@@ -47,14 +47,14 @@ $TUFGamingStorage = "$TUFGamingDestination\Storage"
 Import-Module -Name OSD -Force
 Import-Module -Name 7Zip4Powershell -Force
 
-Write-Verbose "Acquiring ASUS LGA 1700 TUFGaming Motherboard Ethernet Drivers from $GHURL" -Verbose
+Write-Verbose "Acquiring ASUS LGA 1700 TUF Gaming Motherboard Ethernet Drivers from $GHURL" -Verbose
 
 Save-WebFile -SourceUrl $TUFGamingEthernetURL1 -DestinationDirectory $TUFGamingDestination
 Save-WebFile -SourceUrl $TUFGamingEthernetURL2 -DestinationDirectory $TUFGamingDestination
 
 Write-Host
 
-Write-Verbose "Acquiring ASUS LGA 1700 TUFGaming Motherboard WiFi Drivers from $GHURL" -Verbose
+Write-Verbose "Acquiring ASUS LGA 1700 TUF Gaming Motherboard WiFi Drivers from $GHURL" -Verbose
 
 Save-WebFile -SourceUrl $TUFGamingWiFiURL1 -DestinationDirectory $TUFGamingDestination
 Save-WebFile -SourceUrl $TUFGamingWiFiURL2 -DestinationDirectory $TUFGamingDestination
@@ -65,11 +65,11 @@ Save-WebFile -SourceUrl $TUFGamingWiFiURL6 -DestinationDirectory $TUFGamingDesti
 
 Write-Host
 
-Write-Verbose "Acquiring ASUS LGA 1700 TUFGaming Motherboard Storage Drivers from $GHURL" -Verbose
+Write-Verbose "Acquiring ASUS LGA 1700 TUF Gaming Motherboard Storage Drivers from $GHURL" -Verbose
 
 Save-WebFile -SourceUrl $TUFGamingStorageURL -DestinationDirectory $TUFGamingDestination
 
-Write-Verbose "ASUS LGA 1700 TUFGaming Motherboard Drivers downloaded" -Verbose
+Write-Verbose "ASUS LGA 1700 TUF Gaming Motherboard Drivers downloaded" -Verbose
 
 Write-Verbose "Processing: ZIP File extraction" -Verbose
  
