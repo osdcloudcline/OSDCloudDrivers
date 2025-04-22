@@ -15,7 +15,6 @@ $WorkstationWiFiURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs
 
 $WorkstationStorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201700/Workstation%20Motherboards/Storage/IRST-StorageDrivers.zip"
 
-
 ####################################################################################
 #             LGA 1700 Ethernet, WiFi and Storage Driver Download Destination
 ####################################################################################
@@ -39,13 +38,11 @@ Write-Verbose "Acquiring ASUS LGA 1700 Workstation Motherboard Ethernet Drivers 
 
 Save-WebFile -SourceUrl $WorkstationEthernetURL -DestinationDirectory $WorkstationDestination
 
-
 Write-Host
 
 Write-Verbose "Acquiring ASUS LGA 1700 Workstation Motherboard WiFi Drivers from $GHURL" -Verbose
 
 Save-WebFile -SourceUrl $WorkstationWiFiURL -DestinationDirectory $WorkstationDestination
-
 
 Write-Host
 
