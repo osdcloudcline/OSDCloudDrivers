@@ -71,7 +71,7 @@ Expand-7Zip -ArchiveFileName "$BusinessDestination\Realtek-LANDriver-3.zip" -Tar
 Expand-7Zip -ArchiveFileName "$BusinessDestination\MediaTek-WiFiDrivers.zip" -TargetPath $BusinessWiFi1   
 Expand-7Zip -ArchiveFileName "$BusinessDestination\Realtek-WiFiDrivers-1.zip" -TargetPath $BusinessWiFi2  
 Expand-7Zip -ArchiveFileName "$BusinessDestination\Realtek-WiFiDrivers-2.zip" -TargetPath $BusinessWiFi3   
-Expand-7Zip -ArchiveFileName "$BusinessDestination\IRSTDrivers.zip" -TargetPath $BusinessStorage 
+Expand-7Zip -ArchiveFileName "$BusinessDestination\IRST-StorageDrivers.zip" -TargetPath $BusinessStorage 
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
 
