@@ -48,7 +48,7 @@ $ProArtWiFi5 = "$ProArtDestination\WLAN5"
 $ProArtWiFi6 = "$ProArtDestination\WLAN6"
 $ProArtWiFi7 = "$ProArtDestination\WLAN7"
 $ProArtWiFi8 = "$ProArtDestination\WLAN8"
-$ProArtWiFi8 = "$ProArtDestination\WLAN9"
+$ProArtWiFi9 = "$ProArtDestination\WLAN9"
 
 $ProArtStorage = "$ProArtDestination\Storage"
 
