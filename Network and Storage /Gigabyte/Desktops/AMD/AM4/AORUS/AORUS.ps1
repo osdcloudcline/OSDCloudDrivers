@@ -98,10 +98,6 @@ $AORUSDestination =  "C:\Drivers\Motherboards\Gigabyte\AM4\AORUS"
 ###########################################################################################
 #        AORUS Ethernet, Bluetooth, Storage and WiFi Extraction Folders
 ###########################################################################################
-
-$AORUSBluetooth1 = "$AORUSDestination\B550\Bluetooth"
-$AORUSBluetooth2 = "$AORUSDestination\X570\Bluetooth"
-
 $AORUSEthernet1 = "$AORUSDestination\A520\Ethernet1"
 $AORUSEthernet2 = "$AORUSDestination\A520\Ethernet2"
 
@@ -135,18 +131,18 @@ $AORUSEthernet25 = "$AORUSDestination\X570\Ethernet9"
 $AORUSEthernet26 = "$AORUSDestination\X570\Ethernet10"
 $AORUSEthernet27 = "$AORUSDestination\X570\Ethernet11"
 
-$AORUSWiFi1 = "$AORUSDestination\B450\WiFi1"
+$AORUSWiFi1 = "$AORUSDestination\B450\WLAN1"
 
-$AORUSWiFi2 = "$AORUSDestination\B550\WiFi1"
-$AORUSWiFi3 = "$AORUSDestination\B550\WiFi2"
-$AORUSWiFi4 = "$AORUSDestination\B550\WiFi3"
-$AORUSWiFi5 = "$AORUSDestination\B550\WiFi4"
-$AORUSWiFi6 = "$AORUSDestination\B550\WiFi5"
+$AORUSWiFi2 = "$AORUSDestination\B550\WLAN1"
+$AORUSWiFi3 = "$AORUSDestination\B550\WLAN2"
+$AORUSWiFi4 = "$AORUSDestination\B550\WLAN3"
+$AORUSWiFi5 = "$AORUSDestination\B550\WLAN4"
+$AORUSWiFi6 = "$AORUSDestination\B550\WLAN5"
 
-$AORUSWiFi7 = "$AORUSDestination\X470\WiFi1"
+$AORUSWiFi7 = "$AORUSDestination\X470\WLAN1"
 
-$AORUSWiFi8 = "$AORUSDestination\X570\WiFi1"
-$AORUSWiFi9 = "$AORUSDestination\X570\WiFi2"
+$AORUSWiFi8 = "$AORUSDestination\X570\WLAN1"
+$AORUSWiFi9 = "$AORUSDestination\X570\WLAN2"
 
 $AORUSStorage1 = "$AORUSDestination\Storage\RAID\NVMe"
 $AORUSStorage2 = "$AORUSDestination\Storage\RAID\SATA"
