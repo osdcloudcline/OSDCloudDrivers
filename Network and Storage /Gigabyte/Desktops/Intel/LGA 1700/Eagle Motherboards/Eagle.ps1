@@ -32,10 +32,8 @@ $EagleDestination = "C:\Drivers\Motherboards\Gigabyte\LGA1700\Eagle"
 
 $EagleEthernet = "$EagleDestination\Ethernet"
 
-
 $EagleWiFi1 = "$EagleDestination\WLAN1"
 $EagleWiFi2 = "$EagleDestination\WLAN2"
-
 
 $EagleStorage = "$EagleDestination\Storage"
 
