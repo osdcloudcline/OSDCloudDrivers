@@ -23,7 +23,7 @@ Import-Module -Name OSD -Force
 Write-Verbose "Processing: Microsoft Hyper-V Network Drivers..." -Verbose
 
 Save-WebFile -SourceUrl $HyperVNetworkDriversURL -DestinationDirectory $HyperVPath
-Expand-7zip -ArchiveFileName "$HyperVDownloadPath\HyperV-NetworkDrivers.zip" -TargetPath $HyperVPath -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$HyperVDownloadPath\HyperV-NetworkDrivers.zip" -TargetPath $HyperVPath 
 
 Write-Host
 Write-Verbose "Completed: Microsoft Hyper-V Network Drivers..." -Verbose
