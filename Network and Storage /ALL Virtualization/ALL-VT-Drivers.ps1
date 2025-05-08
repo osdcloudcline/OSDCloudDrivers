@@ -10,7 +10,7 @@ Invoke-Expression $($ProxmoxDrivers.Content)
 
 Write-Verbose "Processing: VMWare ESXI Virtualization Drivers" -Verbose
 
-$ESXIDrivers = Invoke-WebRequest("")
+$ESXIDrivers = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/VMWare%20ESXI/ESXI-Drivers.ps1")
 Invoke-Expression $($ESXIDrivers.Content)
 
 Write-Verbose "Processing: VMWare Workstation Professional Virtualization Drivers..." -Verbose
