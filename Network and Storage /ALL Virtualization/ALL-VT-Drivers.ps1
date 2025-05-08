@@ -1,6 +1,6 @@
 Write-Verbose "Processing: Microsoft Hyper-V Virtualization Drivers" -Verbose
 
-$HyperVDrivers = Invoke-WebRequest("")
+$HyperVDrivers = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Hyper-V/Hyper-V-NetworkDrivers.ps1")
 Invoke-Expression $($HyperVDrivers.Content)
 
 Write-Verbose "Processing: Proxmox Virtualization Drivers..." -Verbose
