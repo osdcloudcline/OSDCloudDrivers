@@ -15,7 +15,7 @@ Invoke-Expression $($ESXIDrivers.Content)
 
 Write-Verbose "Processing: VMWare Workstation Professional Virtualization Drivers..." -Verbose
 
-$VMWareWSProDrivers = Invoke-WebRequest("")
+$VMWareWSProDrivers = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/VMWare%20Workstation/VMWare-WorkstationPRO-Drivers.ps1")
 Invoke-Expression $($VMWareWSProDrivers.Content)
 
 Write-Verbose "Processing: unRAID NAS Virtualization Drivers..." -Verbose
