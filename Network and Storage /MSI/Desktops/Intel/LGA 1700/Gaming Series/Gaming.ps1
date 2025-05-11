@@ -92,8 +92,8 @@ Write-Host
 Write-Verbose "Processing: Extracting WLAN drivers..." -Verbose
 Write-Host
 
-Expand-7zip -ArchiveFileName "$GamingDestination\MSI-LGA1700-GamingSeries-WLANDrivers1.zip" -TargetPath $GamingWLAN1 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$GamingDestination\MSI-LGA1700-GamingSeries-WLANDrivers2.zip" -TargetPath $GamingWLAN2 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$GamingDestination\MSI-LGA1700-GamingSeries-WLANDrivers1.zip" -TargetPath $GamingWLAN1 
+Expand-7zip -ArchiveFileName "$GamingDestination\MSI-LGA1700-GamingSeries-WLANDrivers2.zip" -TargetPath $GamingWLAN2 
 
 Write-Host
 Write-Verbose "Completed: Extraction of ALL MSI Gaming LGA1700 WLAN Drivers..." -Verbose
