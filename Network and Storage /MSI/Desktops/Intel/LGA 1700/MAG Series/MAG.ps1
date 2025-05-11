@@ -93,10 +93,10 @@ Write-Verbose "Processing: Extracting Ethernet drivers..." -Verbose
 
 Expand-7zip -ArchiveFileName "$MAGDestination\MSI-LGA1700-MAG Series-EthernetDrivers1.zip" -TargetPath $MAGEthernet1 
 Expand-7zip -ArchiveFileName "$MAGDestination\MSI-LGA1700-MAG Series-EthernetDrivers2.zip" -TargetPath $MAGEthernet2
-Expand-7zip -ArchiveFileName "$MAGDestination\MSI-LGA1700-MAG Series-EthernetDrivers3.zip" -TargetPath $MAGEthernet1 
-Expand-7zip -ArchiveFileName "$MAGDestination\MSI-LGA1700-MAG Series-EthernetDrivers4.zip" -TargetPath $MAGEthernet2
-Expand-7zip -ArchiveFileName "$MAGDestination\MSI-LGA1700-MAG Series-EthernetDrivers5.zip" -TargetPath $MAGEthernet1 
-Expand-7zip -ArchiveFileName "$MAGDestination\MSI-LGA1700-MAG Series-EthernetDrivers6.zip" -TargetPath $MAGEthernet2
+Expand-7zip -ArchiveFileName "$MAGDestination\MSI-LGA1700-MAG Series-EthernetDrivers3.zip" -TargetPath $MAGEthernet3 
+Expand-7zip -ArchiveFileName "$MAGDestination\MSI-LGA1700-MAG Series-EthernetDrivers4.zip" -TargetPath $MAGEthernet4
+Expand-7zip -ArchiveFileName "$MAGDestination\MSI-LGA1700-MAG Series-EthernetDrivers5.zip" -TargetPath $MAGEthernet5 
+Expand-7zip -ArchiveFileName "$MAGDestination\MSI-LGA1700-MAG Series-EthernetDrivers6.zip" -TargetPath $MAGEthernet6
 
 Write-Host
 Write-Verbose "Processing: Extracting NVMe Storage drivers..." -Verbose
@@ -108,8 +108,8 @@ Write-Host
 Write-Verbose "Processing: Extracting WLAN drivers..." -Verbose
 Write-Host
 
-Expand-7zip -ArchiveFileName "$MAGDestination\MSI-LGA1700-MAG Series-WLANDrivers1.zip" -TargetPath $MAGWLAN1 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$MAGDestination\MSI-LGA1700-MAG Series-WLANDrivers2.zip" -TargetPath $MAGWLAN2 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$MAGDestination\MSI-LGA1700-MAG Series-WLANDrivers1.zip" -TargetPath $MAGWLAN1 
+Expand-7zip -ArchiveFileName "$MAGDestination\MSI-LGA1700-MAG Series-WLANDrivers2.zip" -TargetPath $MAGWLAN2 
 
 Write-Host
 Write-Verbose "Completed: Extraction of ALL MSI MAG LGA1700 WLAN Drivers..." -Verbose
