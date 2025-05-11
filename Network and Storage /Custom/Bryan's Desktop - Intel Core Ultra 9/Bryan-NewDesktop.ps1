@@ -35,16 +35,16 @@ $BryanStorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/he
 # Bryan ASUS Z890-A STRIX Download Locations
 ################################################
 
-$ZIPDownload = "C:\OSDCloud\Drivers\Custom\Bryan Desktop\ASUS Z890-A STRIX\LGA1851"
+$ZIPDownload = "C:\Drivers\Custom\Bryan Desktop\ASUS Z890-A STRIX\LGA1851"
 
 ################################################
 # Bryan ASUS Z890-A STRIX Extraction Locations
 ################################################
 
-$Ethernet = "C:\OSDCloud\Drivers\Custom\Bryan Desktop\ASUS Z890-A STRIX\LGA1851\Ethernet"
-$WiFi = "C:\OSDCloud\Drivers\Custom\Bryan Desktop\ASUS Z890-A STRIX\LGA1851\WLAN"
-$Bluetooth = "C:\OSDCloud\Drivers\Custom\Bryan Desktop\ASUS Z890-A STRIX\LGA1851\Bluetooth"
-$Storage = "C:\OSDCloud\Drivers\Custom\Bryan Desktop\ASUS Z890-A STRIX\LGA1851\Storage"
+$Ethernet = "C:\Drivers\Custom\Bryan Desktop\ASUS Z890-A STRIX\LGA1851\Ethernet"
+$WiFi = "C:\Drivers\Custom\Bryan Desktop\ASUS Z890-A STRIX\LGA1851\WLAN"
+$Bluetooth = "C:\Drivers\Custom\Bryan Desktop\ASUS Z890-A STRIX\LGA1851\Bluetooth"
+$Storage = "C:\Drivers\Custom\Bryan Desktop\ASUS Z890-A STRIX\LGA1851\Storage"
 
 Write-Verbose "Processing: Bryan Desktop - Intel Core Ultra 9 285K ASUS Z890-A ROG STRIX LGA1851 Drivers..." -Verbose
 
