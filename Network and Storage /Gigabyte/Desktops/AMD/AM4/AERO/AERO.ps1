@@ -32,8 +32,8 @@ $AERODestination = "C:\Drivers\Motherboards\Gigabyte\AM4\AERO"
 
 $AEROEthernet = "$AERODestination\Ethernet"
 
-$AEROWiFi1 = "$AERODestination\WiFi1"
-$AEROWiFi2 = "$AERODestination\WiFi2"
+$AEROWiFi1 = "$AERODestination\WLAN1"
+$AEROWiFi2 = "$AERODestination\WLAN2"
 
 $AEROStorage1 = "$AERODestination\Storage1"
 $AEROStorage2 = "$AERODestination\Storage2"
