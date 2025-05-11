@@ -80,7 +80,7 @@ Write-Host
 Write-Verbose "Processing: Extracting Ethernet drivers..." -Verbose
 
 Expand-7zip -ArchiveFileName "$GamingDestination\MSI-LGA1700-GamingSeries-EthernetDrivers1.zip" -TargetPath $GamingEthernet1 
-Expand-7zip -ArchiveFileName "$GamingDestination\MSI-LGA1700-GamingSeries-EthernetDrivers1.zip" -TargetPath $GamingEthernet2
+Expand-7zip -ArchiveFileName "$GamingDestination\MSI-LGA1700-GamingSeries-EthernetDrivers2.zip" -TargetPath $GamingEthernet2
 
 Write-Host
 Write-Verbose "Processing: Extracting NVMe Storage drivers..." -Verbose
