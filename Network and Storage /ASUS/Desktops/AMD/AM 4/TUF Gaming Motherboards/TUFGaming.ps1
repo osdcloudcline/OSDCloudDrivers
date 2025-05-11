@@ -43,12 +43,12 @@ $TUFGamingEthernet3 = "$TUFGamingDestination\Ethernet3"
 $TUFGamingEthernet4 = "$TUFGamingDestination\Ethernet4"
 
 
-$TUFGamingWiFi1 = "$TUFGamingDestination\WiFi1"
-$TUFGamingWiFi2 = "$TUFGamingDestination\WiFi2"
-$TUFGamingWiFi3 = "$TUFGamingDestination\WiFi3"
-$TUFGamingWiFi4 = "$TUFGamingDestination\WiFi4"
-$TUFGamingWiFi5 = "$TUFGamingDestination\WiFi5"
-$TUFGamingWiFi6 = "$TUFGamingDestination\WiFi6"
+$TUFGamingWiFi1 = "$TUFGamingDestination\WLAN1"
+$TUFGamingWiFi2 = "$TUFGamingDestination\WLAN2"
+$TUFGamingWiFi3 = "$TUFGamingDestination\WLAN3"
+$TUFGamingWiFi4 = "$TUFGamingDestination\WLAN4"
+$TUFGamingWiFi5 = "$TUFGamingDestination\WLAN5"
+$TUFGamingWiFi6 = "$TUFGamingDestination\WLAN6"
 
 $TUFGamingStorage1 = "$TUFGamingDestination\Storage1"
 $TUFGamingStorage2 = "$TUFGamingDestination\Storage2"
