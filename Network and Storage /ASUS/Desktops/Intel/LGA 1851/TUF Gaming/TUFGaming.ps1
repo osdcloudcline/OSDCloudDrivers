@@ -13,19 +13,18 @@ $TUFEthernetURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/hea
 $TUFWiFiURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201851/TUF%20Gaming/Ethernet%20and%20WiFi/MediaTek-WiFiDrivers.zip"
 $TUFStorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASUS/Desktops/Intel/LGA%201851/TUF%20Gaming/Storage/IRST-StorageDrivers.zip"
 
-
 ####################################################################################
 #             LGA 1851 Ethernet, WiFi and Storage Driver Download Destination
 ####################################################################################
 
-$TUFDestination = "C:\OSDCloud\Drivers\Motherboards\ASUS\LGA1851\TUF"
+$TUFDestination = "C:\Drivers\Motherboards\ASUS\LGA1851\TUF"
 
 ####################################################################################
 #             LGA 1851 Ethernet, WiFi and Storage Driver Extraction Destination
 ####################################################################################
 
 $TUFEthernet = "$TUFDestination\Ethernet"
-$TUFWiFi = "$TUFDestination\WiFi"
+$TUFWiFi = "$TUFDestination\WLAN"
 $TUFStorage = "$TUFDestination\Storage"
 
 Import-Module -Name OSD -Force
@@ -47,14 +46,12 @@ Write-Verbose "ASUS LGA 1851 TUF Gaming Motherboard Drivers downloaded" -Verbose
 
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 
-Expand-7Zip -ArchiveFileName "$TUFDestination\Intel-LANDriver.zip" -TargetPath $TUFEthernet  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$TUFDestination\MediaTek-WiFiDrivers.zip" -TargetPath $TUFWiFi  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$TUFDestination\IRST-StorageDrivers.zip" -TargetPath $TUFStorage  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$TUFDestination\Intel-LANDriver.zip" -TargetPath $TUFEthernet   
+Expand-7Zip -ArchiveFileName "$TUFDestination\MediaTek-WiFiDrivers.zip" -TargetPath $TUFWiFi   
+Expand-7Zip -ArchiveFileName "$TUFDestination\IRST-StorageDrivers.zip" -TargetPath $TUFStorage 
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
 
 
 Stop-Transcript
 
-$ASUSOSDCloudISOMain = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloud/raw/refs/heads/main/Scripts/ISO%20Files/OEM/ASUS/Motherboards/CreateISO-Main.ps1")
-Invoke-Expression $($ASUSOSDCloudISOMain.Content)
