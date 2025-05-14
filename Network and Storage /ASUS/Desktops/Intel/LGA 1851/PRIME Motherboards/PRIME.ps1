@@ -18,14 +18,14 @@ $PRIMEStorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/he
 #             LGA 1851 Ethernet, WiFi and Storage Driver Download Destination
 ####################################################################################
 
-$PRIMEDestination = "C:\OSDCloud\Drivers\Motherboards\ASUS\LGA1851\PRIME"
+$PRIMEDestination = "C:\Drivers\Motherboards\ASUS\LGA1851\PRIME"
 
 ####################################################################################
 #             LGA 1851 Ethernet, WiFi and Storage Driver Extraction Destination
 ####################################################################################
 
 $PRIMEEthernet = "$PRIMEDestination\Ethernet"
-$PRIMEWiFi = "$PRIMEDestination\WiFi"
+$PRIMEWiFi = "$PRIMEDestination\WLAN"
 $PRIMEStorage = "$PRIMEDestination\Storage"
 
 Import-Module -Name OSD -Force
@@ -47,14 +47,12 @@ Write-Verbose "ASUS LGA 1851 PRIME Motherboard Drivers downloaded" -Verbose
 
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 
-Expand-7Zip -ArchiveFileName "$PRIMEDestination\Realtek-LANDriver.zip" -TargetPath $PRIMEEthernet  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PRIMEDestination\MediaTekWiFiDrivers.zip" -TargetPath $PRIMEWiFi  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PRIMEDestination\IRST-StorageDrivers.zip" -TargetPath $PRIMEStorage  -ErrorAction SilentlyContinue 
-
+Expand-7Zip -ArchiveFileName "$PRIMEDestination\Realtek-LANDriver.zip" -TargetPath $PRIMEEthernet 
+Expand-7Zip -ArchiveFileName "$PRIMEDestination\MediaTekWiFiDrivers.zip" -TargetPath $PRIMEWiFi  
+Expand-7Zip -ArchiveFileName "$PRIMEDestination\IRST-StorageDrivers.zip" -TargetPath $PRIMEStorage  
 Write-Verbose "ZIP Files extracted successfully" -Verbose
 
 
 Stop-Transcript
 
-$ASUSOSDCloudISOMain = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloud/raw/refs/heads/main/Scripts/ISO%20Files/OEM/ASUS/Motherboards/CreateISO-Main.ps1")
-Invoke-Expression $($ASUSOSDCloudISOMain.Content)
+
