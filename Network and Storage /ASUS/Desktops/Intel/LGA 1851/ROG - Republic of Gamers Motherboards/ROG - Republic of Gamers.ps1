@@ -24,7 +24,7 @@ $ROGStorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/head
 #             LGA 1851 Ethernet, WiFi and Storage Driver Download Destination
 ####################################################################################
 
-$ROGDestination = "C:\OSDCloud\Drivers\Motherboards\ASUS\LGA1851\ROG"
+$ROGDestination = "C:\Drivers\Motherboards\ASUS\LGA1851\ROG"
 
 ####################################################################################
 #             LGA 1851 Ethernet, WiFi and Storage Driver Extraction Destination
@@ -33,11 +33,11 @@ $ROGDestination = "C:\OSDCloud\Drivers\Motherboards\ASUS\LGA1851\ROG"
 $ROGEthernet1 = "$ROGDestination\Ethernet1"
 $ROGEthernet2 = "$ROGDestination\Ethernet2"
 $ROGEthernet3 = "$ROGDestination\Ethernet3"
-$ROGWiFi1 = "$ROGDestination\WiFi1"
-$ROGWiFi2 = "$ROGDestination\WiFi2"
-$ROGWiFi3 = "$ROGDestination\WiFi3"
-$ROGWiFi4 = "$ROGDestination\WiFi4"
-$ROGWiFi5 = "$ROGDestination\WiFi5"
+$ROGWiFi1 = "$ROGDestination\WLAN1"
+$ROGWiFi2 = "$ROGDestination\WLAN2"
+$ROGWiFi3 = "$ROGDestination\WLAN3"
+$ROGWiFi4 = "$ROGDestination\WLAN4"
+$ROGWiFi5 = "$ROGDestination\WLAN5"
 $ROGStorage = "$ROGDestination\Storage"
 
 Import-Module -Name OSD -Force
@@ -65,15 +65,15 @@ Write-Verbose "ASUS LGA 1851 ROG Motherboard Drivers downloaded" -Verbose
 
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 
-Expand-7Zip -ArchiveFileName "$ROGDestination\Intel-I226-LANDriver.zip" -TargetPath $ROGEthernet1  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$ROGDestination\Marvell-LANDriver.zip" -TargetPath $ROGEthernet2  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$ROGDestination\RealTek-LANDriver-1126.zip" -TargetPath $ROGEthernet3  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$ROGDestination\Intel-WiFiDrivers-1.zip" -TargetPath $ROGWiFi1  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$ROGDestination\Intel-WiFiDrivers-2.zip" -TargetPath $ROGWiFi2  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$ROGDestination\Intel-WiFiDrivers-3.zip" -TargetPath $ROGWiFi3  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$ROGDestination\Intel-WiFiDrivers-4.zip" -TargetPath $ROGWiFi4  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$ROGDestination\MK-WiFiDriver.zip" -TargetPath $ROGWiFi5  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$ROGDestination\IRST-StorageDriver.zip" -TargetPath $ROGStorage  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$ROGDestination\Intel-I226-LANDriver.zip" -TargetPath $ROGEthernet1  
+Expand-7Zip -ArchiveFileName "$ROGDestination\Marvell-LANDriver.zip" -TargetPath $ROGEthernet2  
+Expand-7Zip -ArchiveFileName "$ROGDestination\RealTek-LANDriver-1126.zip" -TargetPath $ROGEthernet3  
+Expand-7Zip -ArchiveFileName "$ROGDestination\Intel-WiFiDrivers-1.zip" -TargetPath $ROGWiFi1  
+Expand-7Zip -ArchiveFileName "$ROGDestination\Intel-WiFiDrivers-2.zip" -TargetPath $ROGWiFi2  
+Expand-7Zip -ArchiveFileName "$ROGDestination\Intel-WiFiDrivers-3.zip" -TargetPath $ROGWiFi3  
+Expand-7Zip -ArchiveFileName "$ROGDestination\Intel-WiFiDrivers-4.zip" -TargetPath $ROGWiFi4  
+Expand-7Zip -ArchiveFileName "$ROGDestination\MK-WiFiDriver.zip" -TargetPath $ROGWiFi5  
+Expand-7Zip -ArchiveFileName "$ROGDestination\IRST-StorageDriver.zip" -TargetPath $ROGStorage
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
 
