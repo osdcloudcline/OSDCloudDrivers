@@ -21,17 +21,17 @@ $ProArtStorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/h
 #             LGA 1851 Ethernet, WiFi and Storage Driver Download Destination
 ####################################################################################
 
-$ProArtDestination = "C:\OSDCloud\Drivers\Motherboards\ASUS\LGA1851\ProArt"
+$ProArtDestination = "C:\Drivers\Motherboards\ASUS\LGA1851\ProArt"
 
 ####################################################################################
 #             LGA 1851 Ethernet, WiFi and Storage Driver Extraction Destination
 ####################################################################################
 
 $ProArtEthernet = "$ProArtDestination\Ethernet"
-$ProArtWiFi1 = "$ProArtDestination\WiFi1"
-$ProArtWiFi2 = "$ProArtDestination\WiFi2"
-$ProArtWiFi3 = "$ProArtDestination\WiFi3"
-$ProArtWiFi4 = "$ProArtDestination\WiFi4"
+$ProArtWiFi1 = "$ProArtDestination\WLAN1"
+$ProArtWiFi2 = "$ProArtDestination\WLAN2"
+$ProArtWiFi3 = "$ProArtDestination\WLAN3"
+$ProArtWiFi4 = "$ProArtDestination\WLAN4"
 $ProArtStorage = "$ProArtDestination\Storage"
 
 Import-Module -Name OSD -Force
@@ -56,17 +56,15 @@ Write-Verbose "ASUS LGA 1851 ProArt Motherboard Drivers downloaded" -Verbose
 
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 
-Expand-7Zip -ArchiveFileName "$ProArtDestination\Marvell-LANDriver.zip" -TargetPath $ProArtEthernet  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$ProArtDestination\Intel-WiFiDrivers-1.zip" -TargetPath $ProArtWiFi1  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$ProArtDestination\Intel-WiFiDrivers-2.zip" -TargetPath $ProArtWiFi2  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$ProArtDestination\Intel-WiFiDrivers-3.zip" -TargetPath $ProArtWiFi3  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$ProArtDestination\Intel-WiFiDrivers-4.zip" -TargetPath $ProArtWiFi4  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$ProArtDestination\IRST-StorageDriver.zip" -TargetPath $ProArtStorage  -ErrorAction SilentlyContinue 
-
+Expand-7Zip -ArchiveFileName "$ProArtDestination\Marvell-LANDriver.zip" -TargetPath $ProArtEthernet  
+Expand-7Zip -ArchiveFileName "$ProArtDestination\Intel-WiFiDrivers-1.zip" -TargetPath $ProArtWiFi1  
+Expand-7Zip -ArchiveFileName "$ProArtDestination\Intel-WiFiDrivers-2.zip" -TargetPath $ProArtWiFi2  
+Expand-7Zip -ArchiveFileName "$ProArtDestination\Intel-WiFiDrivers-3.zip" -TargetPath $ProArtWiFi3  
+Expand-7Zip -ArchiveFileName "$ProArtDestination\Intel-WiFiDrivers-4.zip" -TargetPath $ProArtWiFi4  
+Expand-7Zip -ArchiveFileName "$ProArtDestination\IRST-StorageDriver.zip" -TargetPath $ProArtStorage  
 Write-Verbose "ZIP Files extracted successfully" -Verbose
 
 
 Stop-Transcript
 
-$ASUSOSDCloudISOMain = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloud/raw/refs/heads/main/Scripts/ISO%20Files/OEM/ASUS/Motherboards/CreateISO-Main.ps1")
-Invoke-Expression $($ASUSOSDCloudISOMain.Content)
+
