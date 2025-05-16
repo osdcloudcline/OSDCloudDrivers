@@ -18,14 +18,14 @@ $CSMStorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/head
 #             LGA 1851 Ethernet, WiFi and Storage Driver Download Destination
 ####################################################################################
 
-$CSMDestination = "C:\OSDCloud\Drivers\Motherboards\ASUS\LGA1851\CSM"
+$CSMDestination = "C:\Drivers\Motherboards\ASUS\LGA1851\CSM"
 
 ####################################################################################
 #             LGA 1851 Ethernet, WiFi and Storage Driver Extraction Destination
 ####################################################################################
 
 $CSMEthernet = "$CSMDestination\Ethernet"
-$CSMWiFi = "$CSMDestination\WiFi"
+$CSMWiFi = "$CSMDestination\WLAN"
 $CSMStorage = "$CSMDestination\Storage"
 
 Import-Module -Name OSD -Force
@@ -47,14 +47,11 @@ Write-Verbose "ASUS LGA 1851 CSM Motherboard Drivers downloaded" -Verbose
 
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 
-Expand-7Zip -ArchiveFileName "$CSMDestination\Realtek-LANDriver.zip" -TargetPath $CSMEthernet  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$CSMDestination\MediaTekWiFiDrivers.zip" -TargetPath $CSMWiFi  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$CSMDestination\IRST-StorageDrivers.zi" -TargetPath $CSMStorage  -ErrorAction SilentlyContinue 
-
+Expand-7Zip -ArchiveFileName "$CSMDestination\Realtek-LANDriver.zip" -TargetPath $CSMEthernet 
+Expand-7Zip -ArchiveFileName "$CSMDestination\MediaTekWiFiDrivers.zip" -TargetPath $CSMWiFi  
+Expand-7Zip -ArchiveFileName "$CSMDestination\IRST-StorageDrivers.zi" -TargetPath $CSMStorage  
 Write-Verbose "ZIP Files extracted successfully" -Verbose
-
 
 Stop-Transcript
 
-$ASUSOSDCloudISOMain = Invoke-WebRequest("https://github.com/osdcloudcline/OSDCloud/raw/refs/heads/main/Scripts/ISO%20Files/OEM/ASUS/Motherboards/CreateISO-Main.ps1")
-Invoke-Expression $($ASUSOSDCloudISOMain.Content)
+
