@@ -18,14 +18,14 @@ $BusinessStorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs
 #             LGA 1851 Ethernet, WiFi and Storage Driver Download Destination
 ####################################################################################
 
-$BusinessDestination = "C:\OSDCloud\Drivers\Motherboards\ASUS\LGA1851\Business"
+$BusinessDestination = "C:\Drivers\Motherboards\ASUS\LGA1851\Business"
 
 ####################################################################################
 #             LGA 1851 Ethernet, WiFi and Storage Driver Extraction Destination
 ####################################################################################
 
 $BusinessEthernet = "$BusinessDestination\Ethernet"
-$BusinessWiFi = "$BusinessDestination\WiFi"
+$BusinessWiFi = "$BusinessDestination\WLAN"
 $BusinessStorage = "$BusinessDestination\Storage"
 
 Import-Module -Name OSD -Force
@@ -47,9 +47,9 @@ Write-Verbose "ASUS LGA 1851 Business Motherboard Drivers downloaded" -Verbose
 
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 
-Expand-7Zip -ArchiveFileName "$BusinessDestination\Realtek-LANDriver.zip" -TargetPath $BusinessEthernet  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$BusinessDestination\MediaTekWiFiDrivers.zip" -TargetPath $BusinessWiFi  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$BusinessDestination\IRSTDrivers.zip" -TargetPath $BusinessStorage  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$BusinessDestination\Realtek-LANDriver.zip" -TargetPath $BusinessEthernet  
+Expand-7Zip -ArchiveFileName "$BusinessDestination\MediaTekWiFiDrivers.zip" -TargetPath $BusinessWiFi  
+Expand-7Zip -ArchiveFileName "$BusinessDestination\IRSTDrivers.zip" -TargetPath $BusinessStorage  
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
 
