@@ -49,7 +49,7 @@ Write-Verbose "Processing: ZIP File extraction" -Verbose
 
 Expand-7Zip -ArchiveFileName "$CSMDestination\Realtek-LANDriver.zip" -TargetPath $CSMEthernet 
 Expand-7Zip -ArchiveFileName "$CSMDestination\MediaTekWiFiDrivers.zip" -TargetPath $CSMWiFi  
-Expand-7Zip -ArchiveFileName "$CSMDestination\IRST-StorageDrivers.zi" -TargetPath $CSMStorage  
+Expand-7Zip -ArchiveFileName "$CSMDestination\IRST-StorageDrivers.zip" -TargetPath $CSMStorage  
 Write-Verbose "ZIP Files extracted successfully" -Verbose
 
 Stop-Transcript
