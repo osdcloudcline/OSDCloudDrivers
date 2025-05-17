@@ -49,7 +49,7 @@ Write-Verbose "Processing: ZIP File extraction" -Verbose
 
 Expand-7Zip -ArchiveFileName "$OtherDestination\Realtek-LANDriver.zip" -TargetPath $OtherEthernet   
 Expand-7Zip -ArchiveFileName "$OtherDestination\MediaTekWiFiDrivers.zip" -TargetPath $OtherWiFi   
-Expand-7Zip -ArchiveFileName "$OtherDestination\IRST-StorageDrivers.zi" -TargetPath $OtherStorage 
+Expand-7Zip -ArchiveFileName "$OtherDestination\IRST-StorageDrivers.zip" -TargetPath $OtherStorage 
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
 
