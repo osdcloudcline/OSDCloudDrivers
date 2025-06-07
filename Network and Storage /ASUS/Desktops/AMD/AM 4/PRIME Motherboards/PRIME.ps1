@@ -1,4 +1,4 @@
-$AM4PRIME = "C:\Logs\OSDCloud\AM4\PRIME.log"
+$AM4PRIME = "C:\Logs\OSDCloud\ASUS\AM4\PRIME.log"
 Start-Transcript -Path $AM4PRIME
 
 Get-Date
