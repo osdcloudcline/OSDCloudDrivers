@@ -1,4 +1,4 @@
-$AM4TUFGaming = "C:\Logs\OSDCloud\AM4\TUFGaming.log"
+$AM4TUFGaming = "C:\Logs\OSDCloud\ASUS\AM4\TUFGaming.log"
 Start-Transcript -Path $AM4TUFGaming
 
 Get-Date
