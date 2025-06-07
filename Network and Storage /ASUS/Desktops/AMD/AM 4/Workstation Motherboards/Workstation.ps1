@@ -1,4 +1,4 @@
-$AM4Workstation = "C:\Logs\OSDCloud\AM4\Workstation.log"
+$AM4Workstation = "C:\Logs\OSDCloud\ASUS\AM4\Workstation.log"
 Start-Transcript -Path $AM4Workstation
 
 Get-Date
