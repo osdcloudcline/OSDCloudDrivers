@@ -1,4 +1,4 @@
-$AM4ProArt = "C:\Logs\OSDCloud\AM4\ProArt.log"
+$AM4ProArt = "C:\Logs\OSDCloud\ASUS\AM4\ProArt.log"
 Start-Transcript -Path $AM4ProArt
 
 Get-Date
