@@ -36,7 +36,7 @@ $TaichiWiFi = "$TaichiDestination\WiFi"
 $TaichiStorage1 = "$TaichiDestination\Storage1"
 $TaichiStorage2 = "$TaichiDestination\Storage2"
 
-md $TaichiWiFi
+
 Import-Module -Name OSD -Force 
 
 Write-Verbose "Acquiring ASRock AM4 Taichi Motherboard Ethernet Drivers from $GHURL" -Verbose
@@ -65,7 +65,7 @@ Write-Verbose "Processing: ZIP File extraction" -Verbose
 Write-Host
 
 Expand-7Zip -ArchiveFileName "$TaichiDestination\ASRock-Taichi-Intel-LANDrivers.zip" -TargetPath $TaichiEthernet   
-Expand-7Zip -ArchiveFileName "$TaichiDestinationn\ASRock-Taichi-Intel-WLANDrivers.zip" -TargetPath $TaichiWiFi   
+Expand-7Zip -ArchiveFileName "$TaichiDestination\ASRock-Taichi-Intel-WLANDrivers.zip" -TargetPath $TaichiWiFi   
 Expand-7Zip -ArchiveFileName "$TaichiDestination\ASRock-Taichi-NVMe-StorageDrivers.zip" -TargetPath $TaichiStorage1   
 Expand-7Zip -ArchiveFileName "$TaichiDestination\ASRock-Taichi-SATA-StorageDrivers.zip" -TargetPath $TaichiStorage2     
 
