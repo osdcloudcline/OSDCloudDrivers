@@ -1,4 +1,4 @@
-$AM4ROG = "C:\Logs\OSDCloud\AM4\ROG.log"
+$AM4ROG = "C:\Logs\OSDCloud\ASUS\AM4\ROG.log"
 Start-Transcript -Path $AM4ROG
 
 Get-Date
