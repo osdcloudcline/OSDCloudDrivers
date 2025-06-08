@@ -78,22 +78,22 @@ Write-Verbose "Processing: MSI PRO AM5 motherboard drivers file extraction..." -
 Write-Host
 Write-Verbose "Processing: Extracting Ethernet drivers..." -Verbose
 
-Expand-7zip -ArchiveFileName "$PRODestination\MSI-PROSeries-AM5-Realtek-EthernetDrivers.zip" -TargetPath $PROEthernet -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$PRODestination\MSI-PROSeries-AM5-Realtek-EthernetDrivers.zip" -TargetPath $PROEthernet 
 
 Write-Host
 Write-Verbose "Processing: Extracting NVMe Storage drivers..." -Verbose
 Write-Host
 
-Expand-7zip -ArchiveFileName "$PRODestination\MSI-PROSeries-RAID-StorageDrivers.zip" -TargetPath $PROStorage -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$PRODestination\MSI-PROSeries-RAID-StorageDrivers.zip" -TargetPath $PROStorage 
 
 
 Write-Host
 Write-Verbose "Processing: Extracting WiFi drivers..." -Verbose
 Write-Host
 
-Expand-7zip -ArchiveFileName "$PRODestination\MSI-PROSeries-AMD-WLANDrivers.zip" -TargetPath $PROWLAN1 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$PRODestination\MSI-PROSeries-Qualcomm-WLANDrivers.zip" -TargetPath $PROWLAN2 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$PRODestination\MSI-PROSeries-Realtek-WLANDrivers.zip" -TargetPath $PROWLAN3 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$PRODestination\MSI-PROSeries-AMD-WLANDrivers.zip" -TargetPath $PROWLAN1 
+Expand-7zip -ArchiveFileName "$PRODestination\MSI-PROSeries-Qualcomm-WLANDrivers.zip" -TargetPath $PROWLAN2 
+Expand-7zip -ArchiveFileName "$PRODestination\MSI-PROSeries-Realtek-WLANDrivers.zip" -TargetPath $PROWLAN3 
 
 Write-Host
 Write-Verbose "Completed: Extraction of ALL MSI PRO AM5 WiFi Drivers..." -Verbose
