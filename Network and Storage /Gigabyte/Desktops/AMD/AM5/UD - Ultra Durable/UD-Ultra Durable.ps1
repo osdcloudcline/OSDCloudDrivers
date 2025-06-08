@@ -165,15 +165,6 @@ Write-Host
 Write-Verbose "Completed: Download of Gigabyte Ultra Durable AM5 B650 WiFi WLAN Drivers..." -Verbose
 Write-Host
 
-Write-Verbose "Processing: Acquiring Gigabyte Ultra Durable AM5 B650 Bluetooth Drivers..." -Verbose
-Write-Host
-
-Save-WebFile -SourceUrl $UDBluetoothURL3 -DestinationDirectory $UDDestinationB650
-Save-WebFile -SourceUrl $UDBluetoothURL4 -DestinationDirectory $UDDestinationB650
-Save-WebFile -SourceUrl $UDBluetoothURL5 -DestinationDirectory $UDDestinationB650
-Write-Host
-Write-Verbose "Completed: Download of Gigabyte Ultra Durable AM5 B650 Bluetooth Drivers..." -Verbose
-Write-Host
 
 Write-Verbose "Processing: Acquiring Gigabyte Ultra Durable AM5 B650 Storage Drivers..." -Verbose
 Write-Host
