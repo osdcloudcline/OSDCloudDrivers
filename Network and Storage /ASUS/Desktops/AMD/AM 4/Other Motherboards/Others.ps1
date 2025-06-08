@@ -32,9 +32,6 @@ $OtherDestination = "C:\Drivers\Motherboards\ASUS\AM4\Other"
 $OtherEthernet = "$OtherDestination\Ethernet"
 $OtherStorage = "$OtherDestination\Storage"
 
-
-Import-Module -Name OSD -Force 
-
 Write-Verbose "Acquiring ASUS AM4 Other Motherboard Ethernet Drivers from $GHURL" -Verbose
 Write-Host
 
