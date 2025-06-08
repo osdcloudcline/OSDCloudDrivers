@@ -76,20 +76,20 @@ Write-Verbose "Processing: MSI MPG AM5 motherboard drivers file extraction..." -
 Write-Host
 Write-Verbose "Processing: Extracting Ethernet drivers..." -Verbose
 
-Expand-7zip -ArchiveFileName "$MPGDestination\MSI-MPGSeries-AM5-Realtek-EthernetDrivers.zip" -TargetPath $MPGEthernet -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$MPGDestination\MSI-MPGSeries-AM5-Realtek-EthernetDrivers.zip" -TargetPath $MPGEthernet 
 
 Write-Host
 Write-Verbose "Processing: Extracting NVMe Storage drivers..." -Verbose
 Write-Host
 
-Expand-7zip -ArchiveFileName "$MPGDestination\MSI-MPGSeries-RAID-StorageDrivers.zip" -TargetPath $MPGStorage -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$MPGDestination\MSI-MPGSeries-RAID-StorageDrivers.zip" -TargetPath $MPGStorage 
 
 Write-Host
 Write-Verbose "Processing: Extracting WiFi drivers..." -Verbose
 Write-Host
 
-Expand-7zip -ArchiveFileName "$MPGDestination\MSI-MPGSeries-AMD-WLANDrivers.zip" -TargetPath $MPGWLAN1 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$MPGDestination\MSI-MPGSeries-Qualcomm-WLANDrivers.zip" -TargetPath $MPGWLAN2 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$MPGDestination\MSI-MPGSeries-AMD-WLANDrivers.zip" -TargetPath $MPGWLAN1 
+Expand-7zip -ArchiveFileName "$MPGDestination\MSI-MPGSeries-Qualcomm-WLANDrivers.zip" -TargetPath $MPGWLAN2 
 
 Write-Host
 Write-Verbose "Completed: Extraction of ALL MSI MPG AM5 WiFi Drivers..." -Verbose
