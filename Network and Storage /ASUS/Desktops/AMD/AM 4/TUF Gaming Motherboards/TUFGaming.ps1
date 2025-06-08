@@ -53,8 +53,6 @@ $TUFGamingWiFi6 = "$TUFGamingDestination\WLAN6"
 $TUFGamingStorage1 = "$TUFGamingDestination\Storage1"
 $TUFGamingStorage2 = "$TUFGamingDestination\Storage2"
 
-Import-Module -Name OSD -Force 
-
 Write-Verbose "Acquiring ASUS AM4 TUF Gaming Motherboard Ethernet Drivers from $GHURL" -Verbose
 Write-Host
 
