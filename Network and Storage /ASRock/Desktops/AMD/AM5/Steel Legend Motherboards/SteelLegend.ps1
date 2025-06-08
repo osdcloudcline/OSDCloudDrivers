@@ -15,7 +15,6 @@ Import-Module -Name 7Zip4Powershell -Force
 
 $SteelLegendEthernetURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM5/Steel%20Legend%20Motherboards/Network%20and%20WiFi/ASRock-AM5-SteelLegend-EthernetDrivers.zip"
 $SteelLegendWiFiURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM5/Steel%20Legend%20Motherboards/Network%20and%20WiFi/ASRock-AM5-SteelLegend-WiFiDrivers.zip"
-
 $SteelLegendStorageURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM5/Steel%20Legend%20Motherboards/Storage/ASRock-AM5-SteelLengend-RAID-NVMe-StorageDrivers.zip"
 
 
@@ -30,14 +29,8 @@ $SteelLegendDestination = "C:\Drivers\Motherboards\ASRock\AM5\SteelLegend"
 ####################################################################################
 
 $SteelLegendEthernet = "$SteelLegendDestination\Ethernet"
-$SteelLegendBluetooth = "$SteelLegendDestination\Bluetooth"
 $SteelLegendWiFi = "$SteelLegendDestination\WiFi"
-
-
 $SteelLegendStorage = "$SteelLegendDestination\Storage"
-
-
-Import-Module -Name OSD -Force 
 
 Write-Verbose "Acquiring ASRock AM5 Steel Legend Motherboard Ethernet Drivers from $GHURL" -Verbose
 Write-Host
