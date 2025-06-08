@@ -31,8 +31,6 @@ $CSMEthernet = "$CSMDestination\Ethernet"
 $CSMStorage1 = "$CSMDestination\Storage1"
 $CSMStorage2 = "$CSMDestination\Storage2"
 
-Import-Module -Name OSD -Force 
-
 Write-Verbose "Acquiring ASUS AM4 CSM Motherboard Ethernet Drivers from $GHURL" -Verbose
 Write-Host
 
