@@ -4,10 +4,8 @@ Start-Transcript -Path $HyperVLog
 
 Get-Date
 
-Install-Module -Name OSD -Force -AllowClobber -SkipPublisherCheck -Verbose
-Import-Module -Name OSD -Force
 
-Install-Module -Name 7Zip4Powershell -Force -AllowClobber -SkipPublisherCheck -Verbose
+Import-Module -Name OSD -Force
 Import-Module -Name 7Zip4Powershell -Force
 
 ################################
@@ -16,9 +14,7 @@ Import-Module -Name 7Zip4Powershell -Force
 
 $HyperVPath = "C:\Drivers\Virtualization\HyperV\Network"
 $HyperVNetworkDriversURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Hyper-V/HyperV-NetworkDrivers.zip"
-$HyperVDownloadPath = "C:\Drivers\Virtualization\HyperV"
-
-Import-Module -Name OSD -Force
+$HyperVDownloadPath = "C:\Drivers\Virtualization\HyperV\Network"
 
 Write-Verbose "Processing: Microsoft Hyper-V Network Drivers..." -Verbose
 
