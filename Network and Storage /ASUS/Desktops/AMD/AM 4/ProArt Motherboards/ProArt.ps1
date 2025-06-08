@@ -34,9 +34,6 @@ $ProArtWiFi = "$ProArtDestination\WiFi"
 
 $ProArtStorage = "$ProArtDestination\Storage"
 
-
-Import-Module -Name OSD -Force 
-
 Write-Verbose "Acquiring ASUS AM4 ProArt Motherboard Ethernet Drivers from $GHURL" -Verbose
 Write-Host
 
