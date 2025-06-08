@@ -71,14 +71,14 @@ Write-Host
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$TUFGamingDestination\ASUS-AM5-TUFGaming-EthernetDrivers1.zip" -TargetPath $TUFGamingEthernet1  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$TUFGamingDestination\ASUS-AM5-TUFGaming-EthernetDrivers2.zip" -TargetPath $TUFGamingEthernet2  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$TUFGamingDestination\ASUS-AM5-TUFGaming-EthernetDrivers3.zip" -TargetPath $TUFGamingEthernet3  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$TUFGamingDestination\ASUS-AM5-TUFGaming-WLANDrivers1.zip" -TargetPath $TUFGamingWiFi1  -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "$TUFGamingDestination\ASUS-AM5-TUFGaming-WLANDrivers2.zip" -TargetPath $TUFGamingWiFi2  -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "$TUFGamingDestination\ASUS-AM5-TUFGaming-WLANDrivers3.zip" -TargetPath $TUFGamingWiFi3  -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "$TUFGamingDestination\ASUS-AM5-TUFGaming-WLANDrivers4.zip" -TargetPath $TUFGamingWiFi4  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$TUFGamingDestination\ASUS-AM5-TUFGaming-RAID-StorageDrivers.zip" -TargetPath $TUFGamingStorage1  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$TUFGamingDestination\ASUS-AM5-TUFGaming-EthernetDrivers1.zip" -TargetPath $TUFGamingEthernet1   
+Expand-7Zip -ArchiveFileName "$TUFGamingDestination\ASUS-AM5-TUFGaming-EthernetDrivers2.zip" -TargetPath $TUFGamingEthernet2   
+Expand-7Zip -ArchiveFileName "$TUFGamingDestination\ASUS-AM5-TUFGaming-EthernetDrivers3.zip" -TargetPath $TUFGamingEthernet3   
+Expand-7Zip -ArchiveFileName "$TUFGamingDestination\ASUS-AM5-TUFGaming-WLANDrivers1.zip" -TargetPath $TUFGamingWiFi1  
+Expand-7Zip -ArchiveFileName "$TUFGamingDestination\ASUS-AM5-TUFGaming-WLANDrivers2.zip" -TargetPath $TUFGamingWiFi2  
+Expand-7Zip -ArchiveFileName "$TUFGamingDestination\ASUS-AM5-TUFGaming-WLANDrivers3.zip" -TargetPath $TUFGamingWiFi3  
+Expand-7Zip -ArchiveFileName "$TUFGamingDestination\ASUS-AM5-TUFGaming-WLANDrivers4.zip" -TargetPath $TUFGamingWiFi4   
+Expand-7Zip -ArchiveFileName "$TUFGamingDestination\ASUS-AM5-TUFGaming-RAID-StorageDrivers.zip" -TargetPath $TUFGamingStorage1 
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
 
