@@ -50,8 +50,6 @@ $ROGWiFi4 = "$ROGDestination\WLAN4"
 $ROGStorage1 = "$ROGDestination\Storage1"
 $ROGStorage2 = "$ROGDestination\Storage2"
 
-Import-Module -Name OSD -Force 
-
 Write-Verbose "Acquiring ASUS AM4 ROG - Republic of Gamers Motherboard Ethernet Drivers from $GHURL" -Verbose
 Write-Host
 
