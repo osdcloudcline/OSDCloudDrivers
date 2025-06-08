@@ -122,16 +122,6 @@ Write-Host
 Write-Verbose "Completed: Download of Gigabyte Ultra Durable AM5 A620 WiFi WLAN Drivers..." -Verbose
 Write-Host
 
-Write-Verbose "Processing: Acquiring Gigabyte Ultra Durable AM5 A620 Bluetooth Drivers..." -Verbose
-Write-Host
-
-Save-WebFile -SourceUrl $UDBluetoothURL1 -DestinationDirectory $UDDestinationA620
-Save-WebFile -SourceUrl $UDBluetoothURL2 -DestinationDirectory $UDDestinationA620
-
-Write-Host
-Write-Verbose "Completed: Download of Gigabyte Ultra Durable AM5 A620 Bluetooth Drivers..." -Verbose
-Write-Host
-
 Write-Verbose "Processing: Acquiring Gigabyte Ultra Durable AM5 A620 Storage Drivers..." -Verbose
 Write-Host
 
