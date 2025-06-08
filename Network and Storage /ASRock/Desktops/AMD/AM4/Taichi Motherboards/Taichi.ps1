@@ -36,9 +36,6 @@ $TaichiWiFi = "$TaichiDestination\WiFi"
 $TaichiStorage1 = "$TaichiDestination\Storage1"
 $TaichiStorage2 = "$TaichiDestination\Storage2"
 
-
-Import-Module -Name OSD -Force 
-
 Write-Verbose "Acquiring ASRock AM4 Taichi Motherboard Ethernet Drivers from $GHURL" -Verbose
 Write-Host
 
