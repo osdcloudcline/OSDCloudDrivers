@@ -53,9 +53,9 @@ Write-Host
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$ExpeditionDestination\ASUS-AM5-Expedition-EthernetDrivers1.zip" -TargetPath $ExpeditionEthernet1  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$ExpeditionDestination\ASUS-AM5-Expedition-EthernetDrivers2.zip" -TargetPath $ExpeditionEthernet2  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$ExpeditionDestination\ASUS-AM5-Expedition-RAID-StorageDrivers.zip" -TargetPath $ExpeditionStorage  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$ExpeditionDestination\ASUS-AM5-Expedition-EthernetDrivers1.zip" -TargetPath $ExpeditionEthernet1   
+Expand-7Zip -ArchiveFileName "$ExpeditionDestination\ASUS-AM5-Expedition-EthernetDrivers2.zip" -TargetPath $ExpeditionEthernet2   
+Expand-7Zip -ArchiveFileName "$ExpeditionDestination\ASUS-AM5-Expedition-RAID-StorageDrivers.zip" -TargetPath $ExpeditionStorage 
 
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
