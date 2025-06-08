@@ -1,13 +1,10 @@
-$VMWareWSPRONetLog = "C:\Logs\OSDCloud\VMWSPRO\NetworkDrivers.log"
+$VMWareWSPRONetLog = "D:\OSDCloud Boot ISOs\Logs\OSDCloud\VMWareWSPRO\NetworkDrivers.log"
 
 Start-Transcript -Path $VMWareWSPRONetLog
 
 Get-Date
 
-Install-Module -Name OSD -Force -AllowClobber -SkipPublisherCheck -Verbose
 Import-Module -Name OSD -Force
-
-Install-Module -Name 7Zip4Powershell -Force -AllowClobber -SkipPublisherCheck -Verbose
 Import-Module -Name 7Zip4Powershell -Force
 
 #########################
