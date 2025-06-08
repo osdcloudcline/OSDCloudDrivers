@@ -85,22 +85,22 @@ Write-Verbose "Processing: MSI Gaming AM5 motherboard drivers file extraction...
 Write-Host
 Write-Verbose "Processing: Extracting Ethernet drivers..." -Verbose
 
-Expand-7zip -ArchiveFileName "$GamingDestination\MSI-GamingSeries-AM5-Realtek-EthernetDrivers.zip" -TargetPath $GamingEthernet -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$GamingDestination\MSI-GamingSeries-AM5-Realtek-EthernetDrivers.zip" -TargetPath $GamingEthernet 
 
 Write-Host
 Write-Verbose "Processing: Extracting NVMe Storage drivers..." -Verbose
 Write-Host
 
-Expand-7zip -ArchiveFileName "$GamingDestination\MSI-GamingSeries-RAID-StorageDrivers.zip" -TargetPath $GamingStorage -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$GamingDestination\MSI-GamingSeries-RAID-StorageDrivers.zip" -TargetPath $GamingStorage 
 
 
 Write-Host
 Write-Verbose "Processing: Extracting WiFi drivers..." -Verbose
 Write-Host
 
-Expand-7zip -ArchiveFileName "$GamingDestination\MSI-GamingSeries-AMD-WLANDrivers.zip" -TargetPath $GamingWLAN1 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$GamingDestination\MSI-GamingSeries-Qualcomm-WLANDrivers.zip" -TargetPath $GamingWLAN2 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$GamingDestination\MSI-GamingSeries-Realtek-WLANDrivers.zip" -TargetPath $GamingWLAN3 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$GamingDestination\MSI-GamingSeries-AMD-WLANDrivers.zip" -TargetPath $GamingWLAN1 
+Expand-7zip -ArchiveFileName "$GamingDestination\MSI-GamingSeries-Qualcomm-WLANDrivers.zip" -TargetPath $GamingWLAN2 
+Expand-7zip -ArchiveFileName "$GamingDestination\MSI-GamingSeries-Realtek-WLANDrivers.zip" -TargetPath $GamingWLAN3 
 
 
 Write-Host
