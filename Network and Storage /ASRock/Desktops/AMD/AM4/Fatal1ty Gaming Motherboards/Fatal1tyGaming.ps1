@@ -40,8 +40,6 @@ $Fatal1tyGamingWiFi2 = "$Fatal1tyGamingDestination\WiFi2"
 $Fatal1tyGamingStorage1 = "$Fatal1tyGamingDestination\Storage1"
 $Fatal1tyGamingStorage2 = "$Fatal1tyGamingDestination\Storage2"
 
-Import-Module -Name OSD -Force 
-
 Write-Verbose "Acquiring ASRock AM4 Fatal1ty Gaming Motherboard Ethernet Drivers from $GHURL" -Verbose
 Write-Host
 
