@@ -92,23 +92,23 @@ Write-Host
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$CSMDestination\ASUS-AM5-CSM-EthernetDrivers1.zip" -TargetPath $CSMEthernet1  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$CSMDestination\ASUS-AM5-CSM-EthernetDrivers2.zip" -TargetPath $CSMEthernet2  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$CSMDestination\ASUS-AM5-CSM-EthernetDrivers3.zip" -TargetPath $CSMEthernet3  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$CSMDestination\ASUS-AM5-CSM-EthernetDrivers4.zip" -TargetPath $CSMEthernet4  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$CSMDestination\ASUS-AM5-CSM-EthernetDrivers5.zip" -TargetPath $CSMEthernet5  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$CSMDestination\ASUS-AM5-CSM-EthernetDrivers6.zip" -TargetPath $CSMEthernet6  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$CSMDestination\ASUS-AM5-CSM-EthernetDrivers7.zip" -TargetPath $CSMEthernet7  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$CSMDestination\ASUS-AM5-CSM-EthernetDrivers8.zip" -TargetPath $CSMEthernet8  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$CSMDestination\ASUS-AM5-CSM-EthernetDrivers9.zip" -TargetPath $CSMEthernet9  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$CSMDestination\ASUS-AM5-CSM-EthernetDrivers10.zip" -TargetPath $CSMEthernet10  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$CSMDestination\ASUS-AM5-CSM-EthernetDrivers1.zip" -TargetPath $CSMEthernet1   
+Expand-7Zip -ArchiveFileName "$CSMDestination\ASUS-AM5-CSM-EthernetDrivers2.zip" -TargetPath $CSMEthernet2   
+Expand-7Zip -ArchiveFileName "$CSMDestination\ASUS-AM5-CSM-EthernetDrivers3.zip" -TargetPath $CSMEthernet3   
+Expand-7Zip -ArchiveFileName "$CSMDestination\ASUS-AM5-CSM-EthernetDrivers4.zip" -TargetPath $CSMEthernet4   
+Expand-7Zip -ArchiveFileName "$CSMDestination\ASUS-AM5-CSM-EthernetDrivers5.zip" -TargetPath $CSMEthernet5   
+Expand-7Zip -ArchiveFileName "$CSMDestination\ASUS-AM5-CSM-EthernetDrivers6.zip" -TargetPath $CSMEthernet6   
+Expand-7Zip -ArchiveFileName "$CSMDestination\ASUS-AM5-CSM-EthernetDrivers7.zip" -TargetPath $CSMEthernet7   
+Expand-7Zip -ArchiveFileName "$CSMDestination\ASUS-AM5-CSM-EthernetDrivers8.zip" -TargetPath $CSMEthernet8   
+Expand-7Zip -ArchiveFileName "$CSMDestination\ASUS-AM5-CSM-EthernetDrivers9.zip" -TargetPath $CSMEthernet9   
+Expand-7Zip -ArchiveFileName "$CSMDestination\ASUS-AM5-CSM-EthernetDrivers10.zip" -TargetPath $CSMEthernet10   
 
-Expand-7Zip -ArchiveFileName "$CSMDestination\ASUS-AM5-CSM-StorageDrivers.zip" -TargetPath $CSMStorage  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$CSMDestination\ASUS-AM5-CSM-StorageDrivers.zip" -TargetPath $CSMStorage   
 
-Expand-7Zip -ArchiveFileName "$CSMDestination\ASUS-AM5-CSM-MediaTek-WLANDrivers1.zip" -TargetPath $CSMWLAN1  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$CSMDestination\ASUS-AM5-CSM-Realtek-WLANDrivers2.zip" -TargetPath $CSMWLAN2  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$CSMDestination\ASUS-AM5-CSM-Realtek-WLANDrivers3.zip" -TargetPath $CSMWLAN3  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$CSMDestination\ASUS-AM5-CSM-Realtek-WLANDrivers4.zip" -TargetPath $CSMWLAN4  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$CSMDestination\ASUS-AM5-CSM-MediaTek-WLANDrivers1.zip" -TargetPath $CSMWLAN1   
+Expand-7Zip -ArchiveFileName "$CSMDestination\ASUS-AM5-CSM-Realtek-WLANDrivers2.zip" -TargetPath $CSMWLAN2   
+Expand-7Zip -ArchiveFileName "$CSMDestination\ASUS-AM5-CSM-Realtek-WLANDrivers3.zip" -TargetPath $CSMWLAN3   
+Expand-7Zip -ArchiveFileName "$CSMDestination\ASUS-AM5-CSM-Realtek-WLANDrivers4.zip" -TargetPath $CSMWLAN4  
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
 Write-Host
