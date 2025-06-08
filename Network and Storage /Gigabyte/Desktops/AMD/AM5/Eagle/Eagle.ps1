@@ -161,21 +161,20 @@ Write-Host
 Write-Verbose "Processing: Gigabyte Eagle AM5 B650 ZIP File Extraction..." -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$EagleDestinationB650\Gigabyte-AM5-Eagle-B650-EthernetDrivers1.zip" -TargetPath $EagleEthernet1 -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "$EagleDestinationB650\Gigabyte-AM5-Eagle-B650-EthernetDrivers2.zip" -TargetPath $EagleEthernet2 -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "$EagleDestinationB650\Gigabyte-AM5-Eagle-B650-NVMe-RAID-StorageDrivers.zip" -TargetPath $EagleStorage1 -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "$EagleDestinationB650\Gigabyte-AM5-Eagle-B650-WLANDrivers1.zip" -TargetPath $EagleWLAN1 -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "$EagleDestinationB650\Gigabyte-AM5-Eagle-B650-WLANDrivers2.zip" -TargetPath $EagleWLAN2 -ErrorAction SilentlyContinue
-
+Expand-7Zip -ArchiveFileName "$EagleDestinationB650\Gigabyte-AM5-Eagle-B650-EthernetDrivers1.zip" -TargetPath $EagleEthernet1 
+Expand-7Zip -ArchiveFileName "$EagleDestinationB650\Gigabyte-AM5-Eagle-B650-EthernetDrivers2.zip" -TargetPath $EagleEthernet2 
+Expand-7Zip -ArchiveFileName "$EagleDestinationB650\Gigabyte-AM5-Eagle-B650-NVMe-RAID-StorageDrivers.zip" -TargetPath $EagleStorage1 
+Expand-7Zip -ArchiveFileName "$EagleDestinationB650\Gigabyte-AM5-Eagle-B650-WLANDrivers1.zip" -TargetPath $EagleWLAN1 
+Expand-7Zip -ArchiveFileName "$EagleDestinationB650\Gigabyte-AM5-Eagle-B650-WLANDrivers2.zip" -TargetPath $EagleWLAN2 
 Write-Host
 Write-Verbose "Processing: Gigabyte Eagle AM5 X870 ZIP File Extraction..." -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$EagleDestinationX870\Gigabyte-AM5-Eagle-X870-EthernetDrivers1.zip" -TargetPath $EagleEthernet3 -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "$EagleDestinationX870\Gigabyte-AM5-Eagle-X870-EthernetDrivers2.zip" -TargetPath $EagleEthernet4 -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "$EagleDestinationX870\Gigabyte-AM5-Eagle-X870-NVMe-RAID-StorageDrivers.zip" $EagleStorage2 -TargetPath -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "$EagleDestinationX870\Gigabyte-AM5-Eagle-X870-WLANDrivers1.zip" -TargetPath $EagleWLAN3 -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "$EagleDestinationX870\Gigabyte-AM5-Eagle-X870-WLANDrivers2.zip" -TargetPath $EagleWLAN4 -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "$EagleDestinationX870\Gigabyte-AM5-Eagle-X870-EthernetDrivers1.zip" -TargetPath $EagleEthernet3 
+Expand-7Zip -ArchiveFileName "$EagleDestinationX870\Gigabyte-AM5-Eagle-X870-EthernetDrivers2.zip" -TargetPath $EagleEthernet4 
+Expand-7Zip -ArchiveFileName "$EagleDestinationX870\Gigabyte-AM5-Eagle-X870-NVMe-RAID-StorageDrivers.zip" -TargetPath $EagleStorage2 
+Expand-7Zip -ArchiveFileName "$EagleDestinationX870\Gigabyte-AM5-Eagle-X870-WLANDrivers1.zip" -TargetPath $EagleWLAN3 
+Expand-7Zip -ArchiveFileName "$EagleDestinationX870\Gigabyte-AM5-Eagle-X870-WLANDrivers2.zip" -TargetPath $EagleWLAN4 
 
 Write-Host
 Write-Verbose "Completed: Gigabyte Eagle AM5 Eagle motherboard ZIP File Extraction..." -Verbose
