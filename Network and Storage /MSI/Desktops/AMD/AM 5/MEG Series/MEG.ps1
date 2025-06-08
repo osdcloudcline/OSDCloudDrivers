@@ -93,26 +93,24 @@ Write-Verbose "Processing: MSI MEG AM5 motherboard drivers file extraction..." -
 Write-Host
 Write-Verbose "Processing: Extracting Ethernet drivers..." -Verbose
 
-Expand-7zip -ArchiveFileName "$MEGDestination\MSI-MEGSeries-AM5-10GSuperLAN1-EthernetDrivers.zip" -TargetPath $MEGEthernet1 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$MEGDestination\MSI-MEGSeries-AM5-10GSuperLAN2-EthernetDrivers.zip" -TargetPath $MEGEthernet2 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$MEGDestination\MSI-MEGSeries-AM5-Intel-EthernetDrivers.zip" -TargetPath $MEGEthernet3 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$MEGDestination\MSI-MEGSeries-AM5-Realtek-EthernetDrivers.zip" -TargetPath $MEGEthernet4 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$MEGDestination\MSI-MEGSeries-AM5-10GSuperLAN1-EthernetDrivers.zip" -TargetPath $MEGEthernet1 
+Expand-7zip -ArchiveFileName "$MEGDestination\MSI-MEGSeries-AM5-10GSuperLAN2-EthernetDrivers.zip" -TargetPath $MEGEthernet2 
+Expand-7zip -ArchiveFileName "$MEGDestination\MSI-MEGSeries-AM5-Intel-EthernetDrivers.zip" -TargetPath $MEGEthernet3 
+Expand-7zip -ArchiveFileName "$MEGDestination\MSI-MEGSeries-AM5-Realtek-EthernetDrivers.zip" -TargetPath $MEGEthernet4 
 
 Write-Host
 Write-Verbose "Processing: Extracting NVMe Storage drivers..." -Verbose
 Write-Host
 
-Expand-7zip -ArchiveFileName "$MEGDestination\MSI-MEGSeries-RAID-StorageDrivers.zip" -TargetPath $MEGStorage -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$MEGDestination\MSI-MEGSeries-RAID-StorageDrivers.zip" -TargetPath $MEGStorage 
 
 
 Write-Host
 Write-Verbose "Processing: Extracting WiFi drivers..." -Verbose
 Write-Host
 
-Expand-7zip -ArchiveFileName "$MEGDestination\MSI-MEGSeries-AMD-WLANDrivers.zip" -TargetPath $MEGWLAN1 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$MEGDestination\MSI-MEGSeries-Qualcomm-WLANDrivers.zip" -TargetPath $MEGWLAN2 -ErrorAction SilentlyContinue
-
-
+Expand-7zip -ArchiveFileName "$MEGDestination\MSI-MEGSeries-AMD-WLANDrivers.zip" -TargetPath $MEGWLAN1 
+Expand-7zip -ArchiveFileName "$MEGDestination\MSI-MEGSeries-Qualcomm-WLANDrivers.zip" -TargetPath $MEGWLAN2 
 
 Write-Host
 Write-Verbose "Completed: Extraction of ALL MSI MEG AM5 WiFi Drivers..." -Verbose
