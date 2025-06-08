@@ -13,8 +13,6 @@ Import-Module -Name 7Zip4Powershell -Force
 ####################################################################################
 
 $ExtremeEthernetURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/Extreme%20Motherboards/Ethernet%20and%20WiFi/ASRock-Extreme-Intel-NetworkDrivers.zip"
-
-
 $ExtremeStorage1URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/Extreme%20Motherboards/Storage/ASRock-Extreme-NVMe-StorageDriver.zip"
 $ExtremeStorage2URL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/ASRock/Desktops/AMD/AM4/Extreme%20Motherboards/Storage/ASRock-Extreme-NVMe2-StorageDrivers.zip"
 
@@ -32,8 +30,6 @@ $ExtremeEthernet = "$ExtremeDestination\Ethernet"
 
 $ExtremeStorage1 = "$ExtremeDestination\Storage1"
 $ExtremeStorage2 = "$ExtremeDestination\Storage2"
-
-Import-Module -Name OSD -Force 
 
 Write-Verbose "Acquiring ASRock AM4 Extreme Motherboard Ethernet Drivers from $GHURL" -Verbose
 Write-Host
