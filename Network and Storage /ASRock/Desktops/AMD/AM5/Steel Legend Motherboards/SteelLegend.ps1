@@ -57,7 +57,7 @@ Save-WebFile -SourceUrl $SteelLegendStorageURL -DestinationDirectory $SteelLegen
 Write-Verbose "ASRock AM4 Steel Legend Motherboard Drivers downloaded" -Verbose
 Write-Host
 
-Write-Verbose "SteelLegendcessing: ZIP File extraction" -Verbose
+Write-Verbose "Processing: ZIP File extraction" -Verbose
 Write-Host
 
 Expand-7Zip -ArchiveFileName "$SteelLegendDestination\ASRock-AM5-SteelLegend-EthernetDrivers.zip" -TargetPath $SteelLegendEthernet   
