@@ -34,8 +34,6 @@ $BusinessEthernet2 = "$BusinessDestination\Ethernet2"
 $BusinessStorage1 = "$BusinessDestination\Storage1"
 $BusinessStorage2 = "$BusinessDestination\Storage2"
 
-Import-Module -Name OSD -Force 
-
 Write-Verbose "Acquiring ASUS AM4 Business Motherboard Ethernet Drivers from $GHURL" -Verbose
 Write-Host
 
