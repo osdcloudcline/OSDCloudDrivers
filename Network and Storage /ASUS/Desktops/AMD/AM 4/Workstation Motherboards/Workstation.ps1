@@ -33,13 +33,10 @@ $WorkstationEthernet = "$WorkstationDestination\Ethernet"
 $WorkstationStorage1 = "$WorkstationDestination\Storage1"
 $WorkstationStorage2 = "$WorkstationDestination\Storage2"
 
-Import-Module -Name OSD -Force 
-
 Write-Verbose "Acquiring ASUS AM4 ROG - Republic of Gamers Motherboard Ethernet Drivers from $GHURL" -Verbose
 Write-Host
 
 Save-WebFile -SourceUrl $WorkstationEthernetURL -DestinationDirectory $WorkstationDestination
-
 
 Write-Verbose "Acquiring ASUS AM4 ROG - Republic of Gamers Motherboard Storage Drivers from $GHURL" -Verbose
 Write-Host
