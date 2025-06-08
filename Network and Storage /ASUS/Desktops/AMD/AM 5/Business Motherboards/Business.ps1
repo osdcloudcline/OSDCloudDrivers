@@ -41,9 +41,6 @@ $BusinessWiFi = "$BusinessDestination\WLAN"
 
 $BusinessStorage = "$BusinessDestination\Storage"
 
-
-Import-Module -Name OSD -Force 
-
 Write-Verbose "Acquiring ASUS AM5 Business Motherboard Ethernet Drivers from $GHURL" -Verbose
 Write-Host
 
