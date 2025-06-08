@@ -45,8 +45,6 @@ $SteelLegendWiFi = "$SteelLegendDestination\WiFi"
 $SteelLegendStorage1 = "$SteelLegendDestination\Storage1"
 $SteelLegendStorage2 = "$SteelLegendDestination\Storage2"
 
-Import-Module -Name OSD -Force 
-
 Write-Verbose "Acquiring ASRock AM4 Steel Legend Motherboard Ethernet Drivers from $GHURL" -Verbose
 Write-Host
 
