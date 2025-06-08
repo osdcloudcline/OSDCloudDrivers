@@ -69,11 +69,11 @@ Write-Host
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$ProArtDestination\ASUS-AM5-ProArt-ThunderboltDrivers.zip" -TargetPath $ProArtThunderbolt  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$ProArtDestination\ASUS-AM5-ProArt-EthernetDrivers1.zip" -TargetPath $ProArtEthernet1  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$ProArtDestination\ASUS-AM5-ProArt-EthernetDrivers2.zip" -TargetPath $ProArtEthernet2  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$ProArtDestination\ASUS-AM5-ProArt-WLANDrivers.zip" -TargetPath $ProArtWLAN  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$ProArtDestination\ASUS-AM5-ProArt-RAID-StorageDrivers.zip" -TargetPath $ProArtStorage  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$ProArtDestination\ASUS-AM5-ProArt-ThunderboltDrivers.zip" -TargetPath $ProArtThunderbolt   
+Expand-7Zip -ArchiveFileName "$ProArtDestination\ASUS-AM5-ProArt-EthernetDrivers1.zip" -TargetPath $ProArtEthernet1   
+Expand-7Zip -ArchiveFileName "$ProArtDestination\ASUS-AM5-ProArt-EthernetDrivers2.zip" -TargetPath $ProArtEthernet2   
+Expand-7Zip -ArchiveFileName "$ProArtDestination\ASUS-AM5-ProArt-WLANDrivers.zip" -TargetPath $ProArtWLAN   
+Expand-7Zip -ArchiveFileName "$ProArtDestination\ASUS-AM5-ProArt-RAID-StorageDrivers.zip" -TargetPath $ProArtStorage 
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
 Write-Host
