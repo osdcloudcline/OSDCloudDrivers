@@ -44,8 +44,6 @@ $PhantomGamingWiFi = "$PhantomGamingDestination\WiFi"
 $PhantomGamingStorage1 = "$PhantomGamingDestination\Storage1"
 $PhantomGamingStorage2 = "$PhantomGamingDestination\Storage2"
 
-Import-Module -Name OSD -Force 
-
 Write-Verbose "Acquiring ASRock AM4 Phantom Gaming Motherboard Ethernet Drivers from $GHURL" -Verbose
 Write-Host
 
