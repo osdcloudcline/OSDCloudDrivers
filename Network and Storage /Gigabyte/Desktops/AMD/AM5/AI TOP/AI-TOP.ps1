@@ -58,10 +58,10 @@ Write-Host
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$AITOPDestination\Gigabyte-AM5-AI%20TOP-EthernetDrivers-Windows10.zip" -TargetPath $AITOPEthernet1  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$AITOPDestination\Gigabyte-AM5-AI%20TOP-EthernetDrivers-Windows11.zip" -TargetPath $AITOPEthernet2  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$AITOPDestination\Gigabyte-AM5-AI%20TOP-WLANDrivers.zip" -TargetPath $AITOPWiFi  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$AITOPDestination\Gigabyte-AM5-AI%20TOP-NVMe-RAID-StorageDrivers.zip" -TargetPath $AITOPStorage  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$AITOPDestination\Gigabyte-AM5-AI%20TOP-EthernetDrivers-Windows10.zip" -TargetPath $AITOPEthernet1   
+Expand-7Zip -ArchiveFileName "$AITOPDestination\Gigabyte-AM5-AI%20TOP-EthernetDrivers-Windows11.zip" -TargetPath $AITOPEthernet2   
+Expand-7Zip -ArchiveFileName "$AITOPDestination\Gigabyte-AM5-AI%20TOP-WLANDrivers.zip" -TargetPath $AITOPWiFi   
+Expand-7Zip -ArchiveFileName "$AITOPDestination\Gigabyte-AM5-AI%20TOP-NVMe-RAID-StorageDrivers.zip" -TargetPath $AITOPStorage  
 
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
