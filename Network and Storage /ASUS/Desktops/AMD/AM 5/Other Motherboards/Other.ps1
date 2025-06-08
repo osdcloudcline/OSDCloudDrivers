@@ -38,8 +38,6 @@ $OthersStorage = "$OthersDestination\Storage"
 $OthersWLAN1 = "$OthersDestination\WLAN1"
 $OthersWLAN2 = "$OthersDestination\WLAN2"
 
-Import-Module -Name OSD -Force 
-
 Write-Verbose "Acquiring ASUS AM5 Others Motherboard Ethernet Drivers from $GHURL" -Verbose
 Write-Host
 
@@ -63,11 +61,11 @@ Write-Host
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$OthersDestination\ASUS-AM5-Others-EthernetDrivers1.zip" -TargetPath $OthersEthernet1  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$OthersDestination\ASUS-AM5-Others-EthernetDrivers2.zip" -TargetPath $OthersEthernet2  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$OthersDestination\ASUS-AM5-Others-WLANDrivers1.zip" -TargetPath $OthersWLAN1  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$OthersDestination\ASUS-AM5-Others-WLANDrivers2.zip" -TargetPath $OthersWLAN2  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$OthersDestination\ASUS-AM5-Others-StorageDrivers.zip" -TargetPath $OthersStorage  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$OthersDestination\ASUS-AM5-Others-EthernetDrivers1.zip" -TargetPath $OthersEthernet1   
+Expand-7Zip -ArchiveFileName "$OthersDestination\ASUS-AM5-Others-EthernetDrivers2.zip" -TargetPath $OthersEthernet2   
+Expand-7Zip -ArchiveFileName "$OthersDestination\ASUS-AM5-Others-WLANDrivers1.zip" -TargetPath $OthersWLAN1   
+Expand-7Zip -ArchiveFileName "$OthersDestination\ASUS-AM5-Others-WLANDrivers2.zip" -TargetPath $OthersWLAN2   
+Expand-7Zip -ArchiveFileName "$OthersDestination\ASUS-AM5-Others-StorageDrivers.zip" -TargetPath $OthersStorage  
 
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
