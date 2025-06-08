@@ -277,11 +277,12 @@ Write-Host
 Write-Verbose "Completed: Download of Gigabyte AORUS AM5 X870 Storage Drivers..." -Verbose
 Write-Host
 
-Save-WebFile -SourceUrl $AORUSStorageX870EURL -DestinationDirectory $AORUSDestinationX870E
-
 Write-Host
 Write-Verbose "Processing: Acquiring Gigabyte AORUS AM5 X870E Storage Drivers..." -Verbose
 Write-Host
+
+Save-WebFile -SourceUrl $AORUSStorageX870EURL -DestinationDirectory $AORUSDestinationX870E
+
 Write-Verbose "Completed: Download of Gigabyte AORUS AM5 X870E Storage Drivers..." -Verbose
 Write-Host
 
@@ -289,50 +290,50 @@ Write-Host
 Write-Verbose "Processing: Gigabyte AORUS AM5 B650 ZIP File Extraction..." -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$AORUSDestinationB650\Gigabyte-AM5-AORUS-B650-EthernetDrivers1.zip" -TargetPath $AORUSEthernet1 -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "$AORUSDestinationB650\Gigabyte-AM5-AORUS-B650-EthernetDrivers2.zip" -TargetPath $AORUSEthernet2 -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "$AORUSDestinationB650\Gigabyte-AM5-AORUS-B650-EthernetDrivers3.zip" -TargetPath $AORUSEthernet3 -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "$AORUSDestinationB650\Gigabyte-AM5-AORUS-B650-NVMe-RAID-StorageDrivers.zip" -TargetPath $AORUSStorage1 -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "$AORUSDestinationB650\Gigabyte-AM5-AORUS-B650-WLANDrivers1.zip" -TargetPath $AORUSWLAN1 -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "$AORUSDestinationB650\Gigabyte-AM5-AORUS-B650-WLANDrivers2.zip" -TargetPath $AORUSWLAN2 -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "$AORUSDestinationB650\Gigabyte-AM5-AORUS-B650-WLANDrivers3.zip" -TargetPath $AORUSWLAN3 -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "$AORUSDestinationB650\Gigabyte-AM5-AORUS-B650-EthernetDrivers1.zip" -TargetPath $AORUSEthernet1 
+Expand-7Zip -ArchiveFileName "$AORUSDestinationB650\Gigabyte-AM5-AORUS-B650-EthernetDrivers2.zip" -TargetPath $AORUSEthernet2 
+Expand-7Zip -ArchiveFileName "$AORUSDestinationB650\Gigabyte-AM5-AORUS-B650-EthernetDrivers3.zip" -TargetPath $AORUSEthernet3 
+Expand-7Zip -ArchiveFileName "$AORUSDestinationB650\Gigabyte-AM5-AORUS-B650-NVMe-RAID-StorageDrivers.zip" -TargetPath $AORUSStorage1 
+Expand-7Zip -ArchiveFileName "$AORUSDestinationB650\Gigabyte-AM5-AORUS-B650-WLANDrivers1.zip" -TargetPath $AORUSWLAN1 
+Expand-7Zip -ArchiveFileName "$AORUSDestinationB650\Gigabyte-AM5-AORUS-B650-WLANDrivers2.zip" -TargetPath $AORUSWLAN2 
+Expand-7Zip -ArchiveFileName "$AORUSDestinationB650\Gigabyte-AM5-AORUS-B650-WLANDrivers3.zip" -TargetPath $AORUSWLAN3 
 
 
 Write-Host
 Write-Verbose "Processing: Gigabyte AORUS AM5 X670 ZIP File Extraction..." -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$AORUSDestinationX670\Gigabyte-AM5-AORUS-X670-EthernetDrivers1.zip" -TargetPath $AORUSEthernet4 -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "$AORUSDestinationX670\Gigabyte-AM5-AORUS-X670-EthernetDrivers2.zip" -TargetPath $AORUSEthernet5 -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "$AORUSDestinationX670\Gigabyte-AM5-AORUS-X670-EthernetDrivers3.zip" -TargetPath $AORUSEthernet6 -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "$AORUSDestinationX670\Gigabyte-AM5-AORUS-X670-EthernetDrivers4.zip" -TargetPath $AORUSEthernet7 -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "$AORUSDestinationX670\Gigabyte-AM5-AORUS-X670-EthernetDrivers5.zip" -TargetPath $AORUSEthernet8 -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "$AORUSDestinationX670\Gigabyte-AM5-AORUS-X670-EthernetDrivers6.zip" -TargetPath $AORUSEthernet9 -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "$AORUSDestinationX670\Gigabyte-AM5-AORUS-X670-NVMe-RAID-StorageDrivers.zip" -TargetPath $AORUSStorage2 -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "$AORUSDestinationX670\Gigabyte-AM5-AORUS-X670-WLANDrivers1.zip" -TargetPath $AORUSWLAN4 -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "$AORUSDestinationX670\Gigabyte-AM5-AORUS-X670-WLANDrivers2.zip" -TargetPath $AORUSWLAN5 -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "$AORUSDestinationX670\Gigabyte-AM5-AORUS-X670-WLANDrivers3.zip" -TargetPath $AORUSWLAN6 -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "$AORUSDestinationX670\Gigabyte-AM5-AORUS-X670-EthernetDrivers1.zip" -TargetPath $AORUSEthernet4 
+Expand-7Zip -ArchiveFileName "$AORUSDestinationX670\Gigabyte-AM5-AORUS-X670-EthernetDrivers2.zip" -TargetPath $AORUSEthernet5 
+Expand-7Zip -ArchiveFileName "$AORUSDestinationX670\Gigabyte-AM5-AORUS-X670-EthernetDrivers3.zip" -TargetPath $AORUSEthernet6 
+Expand-7Zip -ArchiveFileName "$AORUSDestinationX670\Gigabyte-AM5-AORUS-X670-EthernetDrivers4.zip" -TargetPath $AORUSEthernet7 
+Expand-7Zip -ArchiveFileName "$AORUSDestinationX670\Gigabyte-AM5-AORUS-X670-EthernetDrivers5.zip" -TargetPath $AORUSEthernet8 
+Expand-7Zip -ArchiveFileName "$AORUSDestinationX670\Gigabyte-AM5-AORUS-X670-EthernetDrivers6.zip" -TargetPath $AORUSEthernet9 
+Expand-7Zip -ArchiveFileName "$AORUSDestinationX670\Gigabyte-AM5-AORUS-X670-NVMe-RAID-StorageDrivers.zip" -TargetPath $AORUSStorage2 
+Expand-7Zip -ArchiveFileName "$AORUSDestinationX670\Gigabyte-AM5-AORUS-X670-WLANDrivers1.zip" -TargetPath $AORUSWLAN4 
+Expand-7Zip -ArchiveFileName "$AORUSDestinationX670\Gigabyte-AM5-AORUS-X670-WLANDrivers2.zip" -TargetPath $AORUSWLAN5 
+Expand-7Zip -ArchiveFileName "$AORUSDestinationX670\Gigabyte-AM5-AORUS-X670-WLANDrivers3.zip" -TargetPath $AORUSWLAN6 
 
 Write-Host
 Write-Verbose "Processing: Gigabyte AORUS AM5 X870 ZIP File Extraction..." -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$AORUSDestinationX870\Gigabyte-AM5-AORUS-X870-EthernetDrivers1.zip" -TargetPath $AORUSEthernet10 -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "$AORUSDestinationX870\Gigabyte-AM5-AORUS-X870-EthernetDrivers2.zip" -TargetPath $AORUSEthernet11 -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "$AORUSDestinationX870\Gigabyte-AM5-AORUS-X870-NVMe-RAID-StorageDrivers.zip" -TargetPath $AORUSStorage3 -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "$AORUSDestinationX870\Gigabyte-AM5-AORUS-X870-WLANDrivers.zip" -TargetPath $AORUSWLAN7 -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "$AORUSDestinationX870\Gigabyte-AM5-AORUS-X870-EthernetDrivers1.zip" -TargetPath $AORUSEthernet10 
+Expand-7Zip -ArchiveFileName "$AORUSDestinationX870\Gigabyte-AM5-AORUS-X870-EthernetDrivers2.zip" -TargetPath $AORUSEthernet11 
+Expand-7Zip -ArchiveFileName "$AORUSDestinationX870\Gigabyte-AM5-AORUS-X870-NVMe-RAID-StorageDrivers.zip" -TargetPath $AORUSStorage3 
+Expand-7Zip -ArchiveFileName "$AORUSDestinationX870\Gigabyte-AM5-AORUS-X870-WLANDrivers.zip" -TargetPath $AORUSWLAN7 
 
 Write-Host
 Write-Verbose "Processing: Gigabyte AORUS AM5 X870E ZIP File Extraction..." -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$AORUSDestinationX870E\Gigabyte-AM5-AORUS-X870E-EthernetDrivers1.zip" -TargetPath $AORUSEthernet12 -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "$AORUSDestinationX870E\Gigabyte-AM5-AORUS-X870E-EthernetDrivers2.zip" -TargetPath $AORUSEthernet13 -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "$AORUSDestinationX870E\Gigabyte-AM5-AORUS-X870E-NVMe-RAID-StorageDrivers.zip" -TargetPath $AORUSStorage4 -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "$AORUSDestinationX870E\Gigabyte-AM5-AORUS-X870E-WLANDrivers.zip" -TargetPath $AORUSWLAN8 -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "$AORUSDestinationX870E\Gigabyte-AM5-AORUS-X870E-EthernetDrivers1.zip" -TargetPath $AORUSEthernet12 
+Expand-7Zip -ArchiveFileName "$AORUSDestinationX870E\Gigabyte-AM5-AORUS-X870E-EthernetDrivers2.zip" -TargetPath $AORUSEthernet13 
+Expand-7Zip -ArchiveFileName "$AORUSDestinationX870E\Gigabyte-AM5-AORUS-X870E-NVMe-RAID-StorageDrivers.zip" -TargetPath $AORUSStorage4 
+Expand-7Zip -ArchiveFileName "$AORUSDestinationX870E\Gigabyte-AM5-AORUS-X870E-WLANDrivers.zip" -TargetPath $AORUSWLAN8 
 
 Write-Host
 Write-Verbose "Completed: Gigabyte AORUS AM5 AORUS motherboard ZIP File Extraction..." -Verbose
-Write-Host
+Write-Host           
 
 Stop-Transcript
