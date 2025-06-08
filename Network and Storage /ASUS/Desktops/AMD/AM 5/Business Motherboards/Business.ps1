@@ -66,14 +66,14 @@ Write-Host
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$BusinessDestination\ASUS-AM5-Business-EthernetDriver-Realtek-Windows10.zip" -TargetPath $BusinessEthernet1  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$BusinessDestination\ASUS-AM5-Business-EthernetDriver-Realtek-Windows10-2.zip" -TargetPath $BusinessEthernet2  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$BusinessDestination\ASUS-AM5-Business-EthernetDriver-Realtek-Windows11.zip" -TargetPath $BusinessEthernet3  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$BusinessDestination\ASUS-AM5-Business-EthernetDriver-Realtek-Windows11-2.zip" -TargetPath $BusinessEthernet4  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$BusinessDestination\ASUS-AM5-Business-EthernetDriver-Realtek-Windows10.zip" -TargetPath $BusinessEthernet1   
+Expand-7Zip -ArchiveFileName "$BusinessDestination\ASUS-AM5-Business-EthernetDriver-Realtek-Windows10-2.zip" -TargetPath $BusinessEthernet2   
+Expand-7Zip -ArchiveFileName "$BusinessDestination\ASUS-AM5-Business-EthernetDriver-Realtek-Windows11.zip" -TargetPath $BusinessEthernet3   
+Expand-7Zip -ArchiveFileName "$BusinessDestination\ASUS-AM5-Business-EthernetDriver-Realtek-Windows11-2.zip" -TargetPath $BusinessEthernet4   
 
-Expand-7Zip -ArchiveFileName "$BusinessDestination\ASUS-AM5-Business-MediaTek-WirelessDriver.zip" -TargetPath $BusinessWiFi  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$BusinessDestination\ASUS-AM5-Business-MediaTek-WirelessDriver.zip" -TargetPath $BusinessWiFi   
 
-Expand-7Zip -ArchiveFileName "$BusinessDestination\ASUS-AM5-Business-RAID-NVMe-StorageDriver.zip" -TargetPath $BusinessStorage1  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$BusinessDestination\ASUS-AM5-Business-RAID-NVMe-StorageDriver.zip" -TargetPath $BusinessStorage1    
 
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
