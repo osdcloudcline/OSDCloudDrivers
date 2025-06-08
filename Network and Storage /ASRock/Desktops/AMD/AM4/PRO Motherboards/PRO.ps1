@@ -39,9 +39,6 @@ $PROEthernet5 = "$PRODestination\Ethernet5"
 
 $PROStorage = "$PRODestination\Storage"
 
-
-Import-Module -Name OSD -Force 
-
 Write-Verbose "Acquiring ASRock AM4 PRO Motherboard Ethernet Drivers from $GHURL" -Verbose
 Write-Host
 
