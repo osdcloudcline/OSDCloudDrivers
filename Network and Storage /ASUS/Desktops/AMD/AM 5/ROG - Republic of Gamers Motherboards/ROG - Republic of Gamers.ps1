@@ -84,18 +84,18 @@ Write-Host
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$ROGDestination\ASUS-AM5-ROG-EthernetDrivers1.zip" -TargetPath $ROGEthernet1  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$ROGDestination\ASUS-AM5-ROG-EthernetDrivers2.zip" -TargetPath $ROGEthernet2  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$ROGDestination\ASUS-AM5-ROG-EthernetDrivers3.zip" -TargetPath $ROGEthernet3  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$ROGDestination\ASUS-AM5-ROG-EthernetDrivers4.zip" -TargetPath $ROGEthernet4  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$ROGDestination\ASUS-AM5-ROG-EthernetDrivers5.zip" -TargetPath $ROGEthernet5  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$ROGDestination\ASUS-AM5-ROG-EthernetDrivers6.zip" -TargetPath $ROGEthernet6  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$ROGDestination\ASUS-AM5-ROG-EthernetDrivers7.zip" -TargetPath $ROGEthernet7  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$ROGDestination\ASUS-AM5-ROG-WLANDrivers1.zip" -TargetPath $ROGWiFi1  -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "$ROGDestination\ASUS-AM5-ROG-WLANDrivers2.zip" -TargetPath $ROGWiFi2  -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "$ROGDestination\ASUS-AM5-ROG-WLANDrivers3.zip" -TargetPath $ROGWiFi3  -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "$ROGDestination\ASUS-AM5-ROG-WLANDrivers4.zip" -TargetPath $ROGWiFi4  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$ROGDestination\ASUS-AM5-ROG-RAID-StorageDrivers.zip" -TargetPath $ROGStorage1  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$ROGDestination\ASUS-AM5-ROG-EthernetDrivers1.zip" -TargetPath $ROGEthernet1   
+Expand-7Zip -ArchiveFileName "$ROGDestination\ASUS-AM5-ROG-EthernetDrivers2.zip" -TargetPath $ROGEthernet2   
+Expand-7Zip -ArchiveFileName "$ROGDestination\ASUS-AM5-ROG-EthernetDrivers3.zip" -TargetPath $ROGEthernet3   
+Expand-7Zip -ArchiveFileName "$ROGDestination\ASUS-AM5-ROG-EthernetDrivers4.zip" -TargetPath $ROGEthernet4   
+Expand-7Zip -ArchiveFileName "$ROGDestination\ASUS-AM5-ROG-EthernetDrivers5.zip" -TargetPath $ROGEthernet5   
+Expand-7Zip -ArchiveFileName "$ROGDestination\ASUS-AM5-ROG-EthernetDrivers6.zip" -TargetPath $ROGEthernet6   
+Expand-7Zip -ArchiveFileName "$ROGDestination\ASUS-AM5-ROG-EthernetDrivers7.zip" -TargetPath $ROGEthernet7   
+Expand-7Zip -ArchiveFileName "$ROGDestination\ASUS-AM5-ROG-WLANDrivers1.zip" -TargetPath $ROGWiFi1  
+Expand-7Zip -ArchiveFileName "$ROGDestination\ASUS-AM5-ROG-WLANDrivers2.zip" -TargetPath $ROGWiFi2  
+Expand-7Zip -ArchiveFileName "$ROGDestination\ASUS-AM5-ROG-WLANDrivers3.zip" -TargetPath $ROGWiFi3  
+Expand-7Zip -ArchiveFileName "$ROGDestination\ASUS-AM5-ROG-WLANDrivers4.zip" -TargetPath $ROGWiFi4   
+Expand-7Zip -ArchiveFileName "$ROGDestination\ASUS-AM5-ROG-RAID-StorageDrivers.zip" -TargetPath $ROGStorage1  
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
 
