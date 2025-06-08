@@ -52,8 +52,6 @@ $PRIMEWLAN2 = "$PRIMEDestination\WLAN2"
 $PRIMEWLAN3 = "$PRIMEDestination\WLAN3"
 $PRIMEWLAN4 = "$PRIMEDestination\WLAN4"
 
-Import-Module -Name OSD -Force 
-
 Write-Verbose "Acquiring ASUS AM5 PRIME Motherboard Ethernet Drivers from $GHURL" -Verbose
 Write-Host
 
@@ -84,18 +82,18 @@ Write-Host
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$PRIMEDestination\ASUS-AM5-PRIME-EthernetDrivers1.zip" -TargetPath $PRIMEEthernet1  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PRIMEDestination\ASUS-AM5-PRIME-EthernetDrivers2.zip" -TargetPath $PRIMEEthernet2  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PRIMEDestination\ASUS-AM5-PRIME-EthernetDrivers3.zip" -TargetPath $PRIMEEthernet3  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PRIMEDestination\ASUS-AM5-PRIME-EthernetDrivers4.zip" -TargetPath $PRIMEEthernet4  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PRIMEDestination\ASUS-AM5-PRIME-EthernetDrivers5.zip" -TargetPath $PRIMEEthernet5  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PRIMEDestination\ASUS-AM5-PRIME-EthernetDrivers6.zip" -TargetPath $PRIMEEthernet6  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PRIMEDestination\ASUS-AM5-PRIME-WLANDrivers1.zip" -TargetPath $PRIMEWLAN1  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PRIMEDestination\ASUS-AM5-PRIME-WLANDrivers2.zip" -TargetPath $PRIMEWLAN2  -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "$PRIMEDestination\ASUS-AM5-PRIME-WLANDrivers3.zip" -TargetPath $PRIMEWLAN1  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PRIMEDestination\ASUS-AM5-PRIME-WLANDrivers4.zip" -TargetPath $PRIMEWLAN2  -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "$PRIMEDestination\ASUS-AM5-PRIME-RAID-StorageDrivers1.zip" -TargetPath $PRIMEStorage1  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$PRIMEDestination\ASUS-AM5-PRIME-RAID-StorageDrivers2.zip" -TargetPath $PRIMEStorage1  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$PRIMEDestination\ASUS-AM5-PRIME-EthernetDrivers1.zip" -TargetPath $PRIMEEthernet1   
+Expand-7Zip -ArchiveFileName "$PRIMEDestination\ASUS-AM5-PRIME-EthernetDrivers2.zip" -TargetPath $PRIMEEthernet2   
+Expand-7Zip -ArchiveFileName "$PRIMEDestination\ASUS-AM5-PRIME-EthernetDrivers3.zip" -TargetPath $PRIMEEthernet3   
+Expand-7Zip -ArchiveFileName "$PRIMEDestination\ASUS-AM5-PRIME-EthernetDrivers4.zip" -TargetPath $PRIMEEthernet4   
+Expand-7Zip -ArchiveFileName "$PRIMEDestination\ASUS-AM5-PRIME-EthernetDrivers5.zip" -TargetPath $PRIMEEthernet5   
+Expand-7Zip -ArchiveFileName "$PRIMEDestination\ASUS-AM5-PRIME-EthernetDrivers6.zip" -TargetPath $PRIMEEthernet6   
+Expand-7Zip -ArchiveFileName "$PRIMEDestination\ASUS-AM5-PRIME-WLANDrivers1.zip" -TargetPath $PRIMEWLAN1   
+Expand-7Zip -ArchiveFileName "$PRIMEDestination\ASUS-AM5-PRIME-WLANDrivers2.zip" -TargetPath $PRIMEWLAN2  
+Expand-7Zip -ArchiveFileName "$PRIMEDestination\ASUS-AM5-PRIME-WLANDrivers3.zip" -TargetPath $PRIMEWLAN1   
+Expand-7Zip -ArchiveFileName "$PRIMEDestination\ASUS-AM5-PRIME-WLANDrivers4.zip" -TargetPath $PRIMEWLAN2  
+Expand-7Zip -ArchiveFileName "$PRIMEDestination\ASUS-AM5-PRIME-RAID-StorageDrivers1.zip" -TargetPath $PRIMEStorage1   
+Expand-7Zip -ArchiveFileName "$PRIMEDestination\ASUS-AM5-PRIME-RAID-StorageDrivers2.zip" -TargetPath $PRIMEStorage1   
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
 Write-Host
