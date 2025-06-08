@@ -35,9 +35,6 @@ $PROWiFi = "$PRODestination\WLAN"
 
 $PROStorage = "$PRODestination\Storage"
 
-
-Import-Module -Name OSD -Force 
-
 Write-Verbose "Acquiring ASRock AM5 PRO Motherboard Ethernet Drivers from $GHURL" -Verbose
 Write-Host
 
