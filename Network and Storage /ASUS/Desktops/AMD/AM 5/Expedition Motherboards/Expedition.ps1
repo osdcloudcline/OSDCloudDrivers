@@ -32,9 +32,6 @@ $ExpeditionEthernet1 = "$ExpeditionDestination\Ethernet1"
 $ExpeditionEthernet2 = "$ExpeditionDestination\Ethernet2"
 $ExpeditionStorage = "$ExpeditionDestination\Storage"
 
-
-Import-Module -Name OSD -Force 
-
 Write-Verbose "Acquiring ASUS AM5 Expedition Motherboard Ethernet Drivers from $GHURL" -Verbose
 Write-Host
 
@@ -45,7 +42,6 @@ Write-Verbose "Acquiring ASUS AM5 Expedition Motherboard Storage Drivers from $G
 Write-Host
 
 Save-WebFile -SourceUrl $ExpeditionStorageURL -DestinationDirectory $ExpeditionDestination
-
 
 Write-Verbose "ASUS AM5 Expedition Motherboard Drivers downloaded" -Verbose
 Write-Host
