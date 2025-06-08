@@ -56,9 +56,9 @@ Write-Host
 Write-Verbose "Processing: ZIP File extraction" -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$AERODestination\Gigabyte-AM5-AERO-EthernetDriver.zip" -TargetPath $AEROEthernet  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$AERODestination\Gigabyte-AM5-AERO-WLANDrivers.zip" -TargetPath $AEROWiFi  -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$AERODestination\Gigabyte-AM5-AERO-NVME-RAID-StorageDrivers.zip" -TargetPath $AEROStorage  -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$AERODestination\Gigabyte-AM5-AERO-EthernetDriver.zip" -TargetPath $AEROEthernet   
+Expand-7Zip -ArchiveFileName "$AERODestination\Gigabyte-AM5-AERO-WLANDrivers.zip" -TargetPath $AEROWiFi   
+Expand-7Zip -ArchiveFileName "$AERODestination\Gigabyte-AM5-AERO-NVME-RAID-StorageDrivers.zip" -TargetPath $AEROStorage 
 
 
 Write-Verbose "ZIP Files extracted successfully" -Verbose
