@@ -85,22 +85,22 @@ Write-Verbose "Processing: MSI MAG AM5 motherboard drivers file extraction..." -
 Write-Host
 Write-Verbose "Processing: Extracting Ethernet drivers..." -Verbose
 
-Expand-7zip -ArchiveFileName "$MAGDestination\MSI-MAGSeries-AM5-Realtek-EthernetDrivers.zip" -TargetPath $MAGEthernet -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$MAGDestination\MSI-MAGSeries-AM5-Realtek-EthernetDrivers.zip" -TargetPath $MAGEthernet 
 
 Write-Host
 Write-Verbose "Processing: Extracting NVMe Storage drivers..." -Verbose
 Write-Host
 
-Expand-7zip -ArchiveFileName "$MAGDestination\MSI-MAGSeries-RAID-StorageDrivers.zip" -TargetPath $MAGStorage -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$MAGDestination\MSI-MAGSeries-RAID-StorageDrivers.zip" -TargetPath $MAGStorage 
 
 
 Write-Host
 Write-Verbose "Processing: Extracting WiFi drivers..." -Verbose
 Write-Host
 
-Expand-7zip -ArchiveFileName "$MAGDestination\MSI-MAGSeries-AMD-WLANDrivers.zip" -TargetPath $MAGWLAN1 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$MAGDestination\MSI-MAGSeries-Qualcomm-WLANDrivers.zip" -TargetPath $MAGWLAN2 -ErrorAction SilentlyContinue
-Expand-7zip -ArchiveFileName "$MAGDestination\MSI-MAGSeries-Realtek-WLANDrivers.zip" -TargetPath $MAGWLAN3 -ErrorAction SilentlyContinue
+Expand-7zip -ArchiveFileName "$MAGDestination\MSI-MAGSeries-AMD-WLANDrivers.zip" -TargetPath $MAGWLAN1 
+Expand-7zip -ArchiveFileName "$MAGDestination\MSI-MAGSeries-Qualcomm-WLANDrivers.zip" -TargetPath $MAGWLAN2 
+Expand-7zip -ArchiveFileName "$MAGDestination\MSI-MAGSeries-Realtek-WLANDrivers.zip" -TargetPath $MAGWLAN3 
 
 
 Write-Host
