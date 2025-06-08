@@ -44,8 +44,6 @@ $PRIMEStorage2 = "$PRIMEDestination\Storage2"
 $PRIMEStorage3 = "$PRIMEDestination\Storage3"
 $PRIMEStorage4 = "$PRIMEDestination\Storage4"
 
-Import-Module -Name OSD -Force 
-
 Write-Verbose "Acquiring ASUS AM4 PRIME Motherboard Ethernet Drivers from $GHURL" -Verbose
 Write-Host
 
