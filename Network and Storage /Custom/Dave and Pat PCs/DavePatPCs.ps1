@@ -12,7 +12,7 @@ Import-Module -Name 7Zip4Powershell -Force
 # Dave Desktop Ethernet Drivers URL
 ################################################
 
-$DaveDesktopEthernetURL1 = ""
+$DaveDesktopEthernetURL1 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Custom/Dave%20and%20Pat%20PCs/DaveV-DVQ-EthernetDrivers1.zip"
 $DaveDesktopEthernetURL2 = ""
 $DaveDesktopEthernetURL3 = ""
 $DaveDesktopEthernetURL4 = ""
