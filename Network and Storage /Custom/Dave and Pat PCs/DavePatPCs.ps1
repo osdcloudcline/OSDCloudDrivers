@@ -18,7 +18,7 @@ $DaveDesktopEthernetURL3 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw
 $DaveDesktopEthernetURL4 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Custom/Dave%20and%20Pat%20PCs/DaveV-DVQ-EthernetDrivers4.zip"
 $DaveDesktopEthernetURL5 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Custom/Dave%20and%20Pat%20PCs/DaveV-DVQ-EthernetDrivers5.zip"
 $DaveDesktopEthernetURL6 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Custom/Dave%20and%20Pat%20PCs/DaveV-DVQ-EthernetDrivers6.zip"
-$DaveDesktopEthernetURL7 = ""
+$DaveDesktopEthernetURL7 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Custom/Dave%20and%20Pat%20PCs/DaveV-DVQ-EthernetDrivers7.zip"
 
 ################################################
 # PatV Lenovo WiFi Drivers URL
@@ -75,13 +75,13 @@ Save-WebFile -SourceUrl $PatVWiFi2 -DestinationDirectory $ZIPDownload
 Write-Verbose "Processing: Extracting Drivers..." -Verbose
 Write-Host
 
-Expand-7zip -ArchiveFileName "$ZIPDownload\" -TargetPath $Ethernet1
-Expand-7zip -ArchiveFileName "$ZIPDownload\" -TargetPath $Ethernet2
-Expand-7zip -ArchiveFileName "$ZIPDownload\" -TargetPath $Ethernet3
-Expand-7zip -ArchiveFileName "$ZIPDownload\" -TargetPath $Ethernet4
-Expand-7zip -ArchiveFileName "$ZIPDownload\" -TargetPath $Ethernet5
-Expand-7zip -ArchiveFileName "$ZIPDownload\" -TargetPath $Ethernet6
-Expand-7zip -ArchiveFileName "$ZIPDownload\" -TargetPath $Ethernet7
+Expand-7zip -ArchiveFileName "$ZIPDownload\DaveV-DVQ-EthernetDrivers1.zip" -TargetPath $Ethernet1
+Expand-7zip -ArchiveFileName "$ZIPDownload\DaveV-DVQ-EthernetDrivers2.zip" -TargetPath $Ethernet2
+Expand-7zip -ArchiveFileName "$ZIPDownload\DaveV-DVQ-EthernetDrivers3.zip" -TargetPath $Ethernet3
+Expand-7zip -ArchiveFileName "$ZIPDownload\DaveV-DVQ-EthernetDrivers4.zip" -TargetPath $Ethernet4
+Expand-7zip -ArchiveFileName "$ZIPDownload\DaveV-DVQ-EthernetDrivers5.zip" -TargetPath $Ethernet5
+Expand-7zip -ArchiveFileName "$ZIPDownload\DaveV-DVQ-EthernetDrivers6.zip" -TargetPath $Ethernet6
+Expand-7zip -ArchiveFileName "$ZIPDownload\DaveV-DVQ-EthernetDrivers7.zip" -TargetPath $Ethernet7
 
 Expand-7zip -ArchiveFileName "$ZIPDownload\" -TargetPath $PatVWiFi1 
 Expand-7zip -ArchiveFileName "$ZIPDownload\" -TargetPath $PatVWiFi2  
