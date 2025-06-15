@@ -25,7 +25,7 @@ $DaveDesktopEthernetURL7 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw
 ################################################
 
 $PatVLenovoWiFiURL1 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Custom/Dave%20and%20Pat%20PCs/PatV-IdeaPad3-17ITL6-WLANDrivers1.zip"
-$PatVLenovoWiFiURL2 = ""
+$PatVLenovoWiFiURL2 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Custom/Dave%20and%20Pat%20PCs/PatV-IdeaPad3-17ITL6-WLANDrivers2.zip"
 
 ################################################
 # Bryan ASUS Z890-A STRIX Storage Drivers URL
@@ -83,8 +83,9 @@ Expand-7zip -ArchiveFileName "$ZIPDownload\DaveV-DVQ-EthernetDrivers5.zip" -Targ
 Expand-7zip -ArchiveFileName "$ZIPDownload\DaveV-DVQ-EthernetDrivers6.zip" -TargetPath $Ethernet6
 Expand-7zip -ArchiveFileName "$ZIPDownload\DaveV-DVQ-EthernetDrivers7.zip" -TargetPath $Ethernet7
 
-Expand-7zip -ArchiveFileName "$ZIPDownload\" -TargetPath $PatVWiFi1 
-Expand-7zip -ArchiveFileName "$ZIPDownload\" -TargetPath $PatVWiFi2  
+Expand-7zip -ArchiveFileName "$ZIPDownload\PatV-IdeaPad3-17ITL6-WLANDrivers1.zip" -TargetPath $PatVWiFi1 
+Expand-7zip -ArchiveFileName "$ZIPDownload\PatV-IdeaPad3-17ITL6-WLANDrivers2.zip" -TargetPath $PatVWiFi2  
+
 Expand-7zip -ArchiveFileName "$ZIPDownload\" -TargetPath $Storage 
 
 Write-Verbose "Completed: Dave Desktop and Pat Laptop - Ethernet and WLAN Drivers..." -Verbose
