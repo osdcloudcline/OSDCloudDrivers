@@ -17,7 +17,7 @@ $DaveDesktopEthernetURL2 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw
 $DaveDesktopEthernetURL3 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Custom/Dave%20and%20Pat%20PCs/DaveV-DVQ-EthernetDrivers3.zip"
 $DaveDesktopEthernetURL4 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Custom/Dave%20and%20Pat%20PCs/DaveV-DVQ-EthernetDrivers4.zip"
 $DaveDesktopEthernetURL5 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Custom/Dave%20and%20Pat%20PCs/DaveV-DVQ-EthernetDrivers5.zip"
-$DaveDesktopEthernetURL6 = ""
+$DaveDesktopEthernetURL6 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Custom/Dave%20and%20Pat%20PCs/DaveV-DVQ-EthernetDrivers6.zip"
 $DaveDesktopEthernetURL7 = ""
 
 ################################################
