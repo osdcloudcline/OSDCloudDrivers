@@ -24,7 +24,7 @@ $DaveDesktopEthernetURL7 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw
 # PatV Lenovo WiFi Drivers URL
 ################################################
 
-$PatVLenovoWiFiURL1 = ""
+$PatVLenovoWiFiURL1 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Custom/Dave%20and%20Pat%20PCs/PatV-IdeaPad3-17ITL6-WLANDrivers1.zip"
 $PatVLenovoWiFiURL2 = ""
 
 ################################################
