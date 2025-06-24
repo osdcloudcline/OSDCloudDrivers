@@ -24,7 +24,7 @@ $DaveDesktopEthernetURL7 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw
 # Dave WiFi Drivers URL
 ################################################
 
-$DaveWiFiURL1 = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Custom/Dave%20and%20Pat%20PCs/PatV-IdeaPad3-17ITL6-WLANDrivers1.zip"
+$DaveWiFiURL = "https://github.com/osdcloudcline/OSDCloudDrivers/raw/refs/heads/main/Network%20and%20Storage%20/Custom/Dave%20and%20Pat%20PCs/DaveV-DVQ-WLANDrivers1.zip"
 
 
 ################################################
@@ -72,6 +72,8 @@ Save-WebFile -SourceUrl $DaveDesktopEthernetURL4 -DestinationDirectory $ZIPDownl
 Save-WebFile -SourceUrl $DaveDesktopEthernetURL5 -DestinationDirectory $ZIPDownload
 Save-WebFile -SourceUrl $DaveDesktopEthernetURL6 -DestinationDirectory $ZIPDownload
 Save-WebFile -SourceUrl $DaveDesktopEthernetURL7 -DestinationDirectory $ZIPDownload
+Save-WebFile -SourceUrl $DaveWiFiURL -DestinationDirectory $ZIPDownload
+
 
 Write-Verbose "Processing: Pat Laptop - WLAN Drivers..." -Verbose
 Write-Host
